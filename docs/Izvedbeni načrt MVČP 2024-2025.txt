@@ -1,0 +1,346 @@
+﻿Mednarodno varstvo človekovih pravic 
+Zimski semester, 2024/2025
+prof. dr. Petra Roter (petra.roter@fdv.uni-lj.si)
+asist. Ajda Hedžet, mag. medn. odn. (ajda.hedzet@fdv.uni-lj.si)  
+
+
+Splošno – pravila FDV: Predavanja, seminarji in vaje, ki se izvajajo v predavalnicah in/ali so spremljana preko videokonferenčnega sistema, so namenjena študentom Univerze v Ljubljani Fakultete za družbene vede za uresničitev njihovih lastnih študijskih obveznosti in interesov. Vsako predavanje je v skladu z Zakonom o avtorski in sorodnih pravicah (Uradni list RS, št. 16/07 – uradno prečiščeno besedilo, 68/08, 110/13, 56/15, 63/16 – ZKUASP in 59/19) pravno varovano kot avtorsko delo. Zato je potrebno upoštevati veljavne predpise o varstvu avtorskih pravic, zlasti 101. člen Zakona o avtorskih in sorodnih pravicah, v skladu s katerim so materialne avtorske pravice na avtorskem delu (predavanju, seminarju) izključno prenesene na fakulteto oz. univerzo. Brez predhodnega pisnega soglasja imetnika avtorske pravice, tj. Univerze v Ljubljani, ni dovoljeno reproduciranje (izdelava kopij, vključno s shranitvijo v elektronski obliki), razširjanje in druge javne priobčitve posnetka predavanja (npr. javno prikazovanje, spletna objava), spreminjanje in druge oblike izkoriščanja posnetka. Morebitne kršitve avtorske pravice bo Univerza v Ljubljani sodno preganjala. Kršitev moralnih in materialnih avtorskih pravic pomeni tudi kaznivo dejanje po 147. in 148. členu Kazenskega zakonika (Uradni list RS, št. 50/12 – uradno prečiščeno besedilo, 6/16 – popr., 54/15, 38/16 in 27/17). Pedagoškega procesa ni dovoljeno snemati in/ali slikati ter nobene vsebine (vključno z imeni sodelujočih v pedagoškem procesu) navajati na družbenih omrežjih. Uporaba elektronskih naprav v predavalnicah ni dovoljena (računalniki in telefoni morajo biti med predavanji in vajami pospravljeni), razen v primeru statusa študenta s posebnimi potrebami, ki takšno napravo potrebuje zaradi zdravstvenih razlogov, ali ko je to eksplicitno potrebno in dovoljeno za potrebe pedagoškega procesa. Materialov, ki so dostopni in pripravljeni v okviru predmeta, ni dovoljeno uporabljati za druge namene ali jih prepošiljati tretjim osebam. Predmet predpostavlja etično rabo umetne inteligence, lastno odgovornost študentov za njihove prispevke in izdelke, in sicer skladno s Priporočilom Unesca o etični rabi umetne inteligence (november 2021, dostopno prek https://unescodoc.unesco.org/ark:/48223/pf0000381137).
+
+Namen/cilji predmeta in kompetence
+Namen predmeta je poznati in razumeti človekove pravice ter mehanizme in politiko varstva človekovih pravic v sodobni mednarodni skupnosti. Študenti poznajo temeljne značilnosti mednarodnega varstva človekovih pravic – zgodovinski razvoj (z razumevanjem dejavnikov, ki so razvoj omogočili), različne institucionalne mehanizme mednarodnega varstva človekovih pravic, vsebino in omejitve mednarodnega režima za varstvo človekovih pravic. Drugi temeljni cilj predmeta je spremljati razvoj varstva človekovih pravic in kritično obravnavati mednarodno varstvo človekovih pravic v okviru strukture sodobne mednarodne skupnosti, pri čemer je posebna pozornost namenjena oviram pri uresničevanju pravic v praksi, vključno z regionalno perspektivo razvoja in uresničevanja človekovih pravic. 
+Kompetence, ki jih študent_ka pridobi, so: 
+- sposobnost analizirati implementacijo mednarodnih pogodb v posamezni državi in pripraviti raziskovalno poročilo o uresničevanju človekovih pravic v državah, 
+- sposobnost analizirati splošni periodični pregled (v več krogih) v okviru Sveta za človekove pravice, 
+- sposobnost zbirati, analizirati in vrednotiti podatke, relevantne za razumevanje in pojasnjevanje razvoja in vsebine posameznih človekovih pravic in temeljnih svoboščin, 
+- sposobnost pisnega in ustnega izražanja na podlagi kritičnega razmišljanja, ki je znanstveno utemeljeno, 
+- sposobnost individualnega in skupinskega analitičnega dela in razprave, in sicer na osnovi analize relevantnih primarnih in sekundarnih virov,  
+- sposobnost argumentiranja in empatije (razumevanje pomena mednarodnega varstva človekovih pravic z vidika posameznika, družbenih skupin, skupnosti in mednarodne skupnosti), 
+- sposobnost analizirati primarne vire (dokumente) z vidika vsebine varstva človekovih pravic ter v kontekstu sodobne mednarodne skupnosti (tj. ob upoštevanju različnih akterjev, dejavnikov, procesov in odnosov ter različnih norm).
+
+POMEMBNO: Vsebina predmeta se neposredno navezuje na vsebino predmeta Mednarodni odnosi in pomeni nadgradnjo na specifičnem področju mednarodnih odnosov, tj. mednarodnem varstvu človekovih pravic. Za raziskovanje in pripravo izdelkov pa predvideva osvojeno znanje in veščine znanstvenega pisanja, vključno z rabo besedilnih zbirk in veščino pisanja esejev. Vsi izdelki morajo biti pripravljeni skladno s pravili, osvojenimi pri predmetu Osnove znanstvenega pisanja (OZP), oziroma skladno s pravili FDV (citiranje virov, povzemanje virov, zapis virov, razmik med vrsticami, zapis odstavkov, obojestranska poravnava besedila, raba kratic, zapis tujk, velikost črk, zapis fraz in citatov ipd. – neustrezno pripravljeni pisni izdelki avtomatično ne bodo upoštevani kot oddani izdelki). Vsi izdelki so proizvod lastnega študija, raziskovanja in lastnega kritičnega razmišljanja. Plagiatorstvo in neetična uporaba orodij umetne inteligence oz. priprava izdelkov brez izrecne navedbe uporabljenih virov in brez lastnega kritičnega razmisleka o izboru virov, vsebini virov in ciljih predmeta ni dovoljeno, goljufanje se najstrožje kaznuje. V učilnici ni dovoljeno uporabljati nobenih elektronskih naprav (razen če se o njihovi uporabi izrecno ne dogovorimo za namen posamezne naloge). Izvedba predmeta predpostavlja reden in sproten študij literature (študij ne pomeni učenja na pamet, ampak zahteva kritičen razmislek o napisanem, soočenje več virov in izgradnjo lastnega odnosa do zapisanega), predvidene za posamezno srečanje ali ki so jo izbrali študenti za posamezno skupinsko analizo. 
+Za uspešno opravljen predmet je potrebno pridobiti vse kreditne točke v študijskem letu 2024/25, vsaka od kreditnih točk predpostavlja določene minimalne standarde, vključno z navzočnostjo, načinom oddajanja izdelkov, minimalnim zahtevanim znanjem ipd. (podrobnosti so spodaj). Izvedbeni načrt ne predvideva popolnoma vseh dejavnosti, zato bodo pomembna tudi sprotna navodila in vabila na različne dogodke, ko bodo ti objavljeni. Takšne priložnosti so objavljene prek spletnega referata oz. prek predstavnikov študentov. 
+Študenti, ki uspešno opravijo obštudijsko dejavnost Človekove pravice v praksi: Akademija Amnesty, lahko pridobljene kreditne in torej svoje dodatno delo na področju varstva človekovih pravic v praksi uveljavijo z dodatnimi petimi točkami pri tem predmetu, kar lahko dvigne oceno za plus eno oceno (pridobljenim točkam se prišteje do pet točk za obštudijsko dejavnost, ki je tako tudi način za izboljševanje ocene z dodatnim delom, tudi praktičnim). Nosilko o tem pisno obvestijo pred koncem semestra. Obštudijska dejavnost poteka ob po urniku v izvedbi Amnesty International Slovenije. To je sicer poseben akreditiran predmet, ki ga je mogoče tudi formalno vpisati prek službe za študijske zadeve. Vse informacije glede pristopa k predmetu na metka.naglic@amnesty.si (Metka Naglič).
+
+Vsebina predmeta
+Koncept človekovih pravic. Zgodovina razvoja varstva človekovih pravic in mednarodnega varstva človekovih pravic s poudarkom na poznavanju in razumevanju zgodovinskih okoliščin, v katerih se je razvil sklop norm na področju (mednarodnega) varstva človekovih pravic. Obravnava načel univerzalnosti/splošnosti in nedeljivosti človekovih pravic. Analiza načel mednarodnega prava o prijateljskih odnosih med državami z vidika razvoja in delovanja mednarodnega režima za varstvo človekovih pravic. Vsebina mednarodnega režima: načela, norme in pravila ter nadzorni mehanizmi – analiza na globalni ravni (sistem Organizacije združenih narodov) in na regionalni ravni (ameriški, evropski, afriški sistemi ter razvoj norm v drugih regijah). Analiza implementacije mednarodnih (globalnih in regionalnih) dokumentov varstva človekovih pravic. Obravnava posameznih sklopov človekovih pravic in temeljnih svoboščin (npr. pravic beguncev, žensk, svoboda govora, svoboda veroizpovedi – vsebina je odvisna tudi od interesa študentov) – razvoj norm, njihova vsebina in uresničevanje v praksi. Razprava o pomenu mednarodnega varstva človekovih pravic in o težavah pri zagotavljanju učinkovitega varstva človekovih pravic v praksi. Seznanitev s praktičnimi vidiki (ne)uresničevanja človekovih pravic.
+
+Predvideni študijski rezultati
+Študent_ka: pozna razvoj koncepta človekovih pravic in razume okoliščine/kontekst tega razvoja, pozna in razume razvoj mednarodnega varstva človekovih pravic, pozna vsebino mednarodnega režima za varstvo človekovih pravic (razvoj in vsebino načel, norm in nadzornih mehanizmov) na globalni in regionalni ravni, pozna proces implementacije človekovih pravic ter razume različne ovire pri uresničevanju človekovih pravic v praksi, razume mednarodni režim varstva človekovih pravic kot eno od področij mednarodnih odnosov in ga tako obravnava v okviru discipline Mednarodni odnosi.
+
+Metode poučevanja in učenja
+Predavanja in vaje, raziskovanje in raziskovalni seminarji, diskusije, diskusije s posamezniki, ki se poklicno ukvarjajo z varstvom človekovih pravic, udeležba na aktualnih dogodkih o človekovih pravicah na fakulteti in izven nje. Pomemben je sprotni študij, vključno z individualnimi pripravami na razprave in spoznavanje problematike v predavalnici. Bistveno: kot priprava na delo v predavalnici se predpostavlja branje1 dokumentov in znanstvenih ter drugih del, ki so zapisana v literaturi za posamezen teden (pri čemer se lahko posamezna tema obravnava v drugem terminu, odvisno od interesa študentov).
+
+Načini ocenjevanja in pridobivanja kreditnih točk
+Končno oceno pri predmetu sestavljajo:
+Izpit v razpisanih izpitnih rokih: 60 točk (= 60 % končne ocene), pri čemer je minimum za pozitivno opravljen izpit 35 točk; izpit temelji na celotni snovi pri predmetu, vključno z obvezno literaturo in literaturo, predvideno za posamezne seminarje in vaje). Izpit je sestavljen iz več vrst vprašanj, ki preverjajo znanje in razumevanje, vključno z razumevanjem aktualnih dogodkov v mednarodni skupnosti glede varstva človekovih pravic oz. kršitev človekovih pravic.
+Raziskovanje in diskusija: obvezno je potrebno uspešno opraviti vsaj dva od treh seminarjev in skupinsko raziskavo pri vajah, ki prinaša do 20 točk
+Opravljeni obvezni seminarji (za pridobitev kreditov in tako izpolnjevanje pogojev za uspešno opravljen predmet) pomeni uspešno opravljena vsaj dva seminarja, priporočajo se vsi trije, ker je to sestavni del predmeta in tako tudi izpitne materije.
+Uspešno opravljen seminar pomeni: aktivna udeležba s sodelovanjem v predavalnici; sodelovanje temelji na predhodnem raziskovanju primarnih virov; ti viri so zapisani skladno s pravili FDV/OZP in oddani v spletno učilnico vsaj en dan pred seminarjem; rezultati raziskovanja so zapisani v tabelo do 20h zvečer dan pred seminarjem (tabela je dostopna: https://docs.google.com/spreadsheets/d/1s3ywdSID2t6dR87VzdpCDr3QDnachLVws9LcjnATizk/edit?usp=sharing).
+Geslo za vpis v spletno učilnico je MVCP2024.
+
+    1) Seminar 1 (Mednarodni pakt o državljanskih in političnih pravicah) – 21. 10. 2024: rezultati vpisani v tabelo do en dan pred seminarjem (do 20h), aktivno sodelovanje na seminarju v predavalnici – podrobna navodila spodaj, oddani seznam uporabljenih primarnih virov (oddati v spletno učilnico).
+    2) Seminar 2 (Mednarodni pakt o ekonomskih, socialnih in kulturnih pravicah) – 28. 10. 2024: rezultati vpisani v tabelo do en dan pred seminarjem (do 20h), aktivno sodelovanje na seminarju v predavalnici – podrobna navodila spodaj, oddani seznam uporabljenih primarnih virov (oddati v spletno učilnico).
+    3) Seminar 3 (Splošni periodični pregled): 9. 12. 2024: rezultati vpisani v tabelo (v spletni učilnici) do en dan pred seminarjem (do 20h), aktivno sodelovanje na seminarju v predavalnici – podrobna navodila spodaj, oddani seznam uporabljenih primarnih virov (oddati v spletno učilnico).
+4) Vaje: skupinska raziskava s predstavitvijo: do 20 točk
+
+Študenti se razdelijo v skupine po dva ali tri in izberejo eno od področij človekovih pravic (zapisana spodaj v tedenskem načrtu in v google dokumentu) ali asist. A. Hedžet predlagajo svojo temo/področje, ki ga še ni na seznamu. Za vsako področje (pravico oz. svoboščino) analizirajo: 1) zgodovinski razvoj (kako, kdaj, zakaj se je oblikovala neka pravica v mednarodni skupnosti kot mednarodna norma), 2) kaj je njena vsebina (v ključnih mednarodnih dokumentih – na (2a) globalni in (2b) regionalni ravni – to zahteva primerjalno analizo, tj. analizo vsebine, ne opisovanje vsakega dokumenta posebej) in 3) kje so težave pri uresničevanju te norme v praksi. Za predstavitev težav naj študenti ne uporabijo posameznega primera (se ne osredotočijo na analizo in predstavitev enega primera ali dveh primerov), ampak analizirajo stanje v praksi na podlagi celostne analize težav, ki se pojavljajo oziroma so se pojavljali pri uresničevanju te pravice/svoboščine po svetu. To lahko naredijo na podlagi sekundarnih virov in s sklicevanjem na posamezne primere, lahko pa upoštevajo tudi sodno prakso mednarodnih sodišč ali poročila mednarodnih institucij.
+
+O svojih ugotovitvah pripravijo kratek pisni povzetek na 3–5 straneh, ki temelji na analizi literature (to ni povzetek enega učbenika, ampak vsaj 10–15 sekundarnih virov kot vseh relevantnih primarnih virov – vsi uporabljeni viri so tudi zapisani v povzetku: v vsebini in v seznamu virov; viri ne štejejo v obseg izdelka). V povzetku tudi zapišejo en sekundarni vir in relevantne primarne vire, ki jih sošolci preberejo pred predstavitvijo v predavalnici. Primerno urejen pisni izdelek v PDF obliki naložijo na spletno učilnico in ga tako delijo s sošolci vsaj v četrtek pred ponedeljkom, ko imajo predstavitev. Najkasneje v sredo pred predstavitvijo (med 14.00 in 15.30) potekajo obvezne konzultacije pri asist. A. Hedžet, osebno, celotna skupina (lahko tudi sredo pred tem – še boljše). Celotna skupina pride na konzultacije pripravljena, z razdelanimi idejami o obravnavani temi. Skupina pripravi kreativno in poučno predstavitev v 15–20 minutah, nato vodi oz. moderira razpravo. 
+ 
+Povzetke in  izbrane vire (primarne in sekundarnega) študenti (skupina) naložijo na spletno učilnico in posredujejo asist. Hedžet.  
+
+5) Vaje: pisna analiza predstavitve in prebrane literature ob koncu vaj: do 10 točk 
+Ob koncu vsake predstavitve vsi navzoči študenti na list papirja napišejo krajšo recenzijo o predstavitvi, predstavitev ocenijo z oceno od 1 do 5 (lahko tudi s polovičnimi ocenami – 3,5 ali 4,5) in o ključnem sporočilu prebrane literature ali podajo odgovor na vprašanje, ki ga zastavi asist. A. Hedžet in je povezano s prebrano literaturo, ki jo je izbrala skupina. Za to recenzijo, ki pokaže znanje o prebrani literaturi in razmislek o predstavitvi, študent_ka dobi eno točko, šteje tudi za navzočnost.
+Navzočnost se 'dokazuje' z oddanimi pisnimi analizami na vajah (do 10 točk) in s sodelovanjem na seminarjih s pripravljenimi podatki za izbrano državo.
+6) Namesto srečanja v predavalnici 23. 12. 2024 obvezna udeležba na Grounded po Grounded s pisno refleksijo o (ne)delovanju mednarodnega režima za varstvo človekovih pravic za Palestince. Pisno refleksijo študenti oddajo prek turnitina (Class ID: 45835046; Enrollment key: MVCP2024; oddajte le enkrat na povezavi »Refleksija«) in na spletni učilnici. Refleksija je vaš razmislek, z uporabljenimi relevantnimi viri, primarnimi in/ali sekundarnimi, članki v medijih. Refleksija na kritično ovrednoti mednarodno politiko do Palestincev in glede Palestine in Izraela, in sicer z vidika (ne)spoštovanja človekovih pravic in z vidika (ne)delovanja mednarodnega varstva človekovih pravic. Refleksija naj obsega približno 1.500 besed (brez virov in opomb), +/- 20 %. Ker refleksija prinaša do deset točk, temelji pa na vašem študiju in kritičnem razmisleku, vas lahko povabim na zagovor oddane refleksije. Oddate jo do konca leta 2024 (to je skrajni rok, ki ne bo prestavljen, dogodek bo potekal namreč v prvi polovici novembra). 
+
+
+Kreditne točke študent_ka pridobi z 80-odstotno navzočnostjo na seminarjih (dva od treh ter obvezna udeležba na dogodku o Palestini) in vajah (pri čemer navzočnost pomeni, da se je na seminar/vaje pripravil_a) in z uspešno opravljenim izpitom – navzočnost prinaša tudi točke za skupno končno oceno ter možnost razprave o problematiki pri predmetu, s tem pa tudi razumevanje snovi. Predmet študent_ka uspešno opravi, če pridobi vse kreditne točke in skupaj vsaj 60 točk (60 %), od tega vsaj 35 z izpitom.
+
+Končna ocena: 
+60–64,75 točke = zadostno 6 
+65–74,75 točke = dobro 7
+75–84,75 točke = prav dobro 8
+85–94,75 točke = prav dobro 9
+95 in več točk = odlično 10 
+
+Ob uspešno opravljeni obštudijski dejavnosti Človekove pravice v praksi - Akademija Amnesty študent_ka nosilko predmeta obvesti z namenom pridobitve dodatnih do pet točk, kar lahko dvigne oceno za plus eno oceno, odvisno od sicer zasluženih točk (to stori pisno, na izpitni poli, torej pred vpisom ocene v spletni referat). Te točke se prištejejo samo uspešno opravljenemu izpitu in veljajo v študijskem letu 2024/2025.
+
+Minimalni vsebinski standard za pozitivno oceno: študent_ka pozna in razume razvoj koncepta človekovih pravic in okoliščine/kontekst tega razvoja, pozna in razume razvoj mednarodnega varstva človekovih pravic, pozna vsebino mednarodnega režima za varstvo človekovih pravic (razvoj in vsebino načel, norm in nadzornih mehanizmov) na globalni in regionalni ravni, pozna proces implementacije človekovih pravic ter razume različne ovire pri uresničevanju človekovih pravic v praksi, razume mednarodni režim varstva človekovih pravic kot eno od področij mednarodnih odnosov in ga tako zna analizirati v okviru discipline Mednarodni odnosi.
+Predavanja, seminarji in vaje so ob ponedeljkih, od 14h do 18h, v predavalnici 13. 
+
+Podrobnejši tedenski načrt
+
+Izvajalka
+Datum
+Vsebina 
+2. teden
+
+Prof. PR 
+
+7. 10. 2024
+Uvodno predavanje: Mednarodni režim varstva človekovih pravic
+Izvedba predmeta 
+3. teden
+Asist. AH
+14. 10. 2024
+Uvodne vaje: Izvedba vaj, razporeditev v skupine in način dela, oblikovanje ideje človekovih pravic in pomen človekovih pravic
+
+4. teden
+Prof. PR 
+
+21. 10. 2024
+Predavanje + Seminar 1 MPDPP (Mednarodni pakt o državljanskih in političnih pravicah)
+Študenti izberejo dva člena (A in B) za seminar 28. 10. (MPESKP).
+5. teden
+Prof. PR 
+asist. AH
+28. 10. 2024
+Seminar 2 MPESKP (Mednarodni pakt o ekonomskih, socialnih in kulturnih pravicah)
+
+
+
+Predstavitvi:
+1. Prepoved mučenja in drugega okrutnega in nečloveškega ravnanja
+2. Pravica do življenja in njene omejitve
+6. teden
+Asist. AH
+4. 11. 2024
+Kulturni relativizem – delavnica 
+
+Predstavitev:
+    3. Varstvo pred prisilnimi izginotji
+7. teden
+Prof. Roter
+Asist. AH
+11. 11. 2024
+Predavanje 
+
+
+
+Predstavitvi:
+    4. Otrokove pravice 
+    5. Pravice žensk 
+8. teden
+Prof. PR
+Asist. AH
+18. 11. 2024
+Predavanje 
+
+
+
+Predstavitvi:
+    6. Pravice oseb z invalidnostjo 
+    7. Status in varstvo pravic beguncev in migrantov
+9. teden
+Prof. PR
+Asist. AH
+25. 11. 2024
+Predavanje 
+
+
+
+Predstavitvi:
+8. Socialne pravice
+9. Ekonomske pravice
+10. teden
+Prof. PR
+Asist. AH
+2. 12. 2024
+Predavanje 
+
+
+
+Predstavitvi
+10. Pravica do čistega okolja
+11. Pravica do razvoja
+11. teden
+Prof. PR
+Asist. AH
+
+9. 12. 2024
+Seminar 3 SPP (Splošni periodični pregled)
+
+
+
+Predstavitev:
+12. Prepoved genocida
+12. teden
+Prof. PR
+Asist. AH
+16. 12. 2024
+Predavanje: gostujoči predavatelj dr. Jussi Laine, University of Eastern Finland: Vpliv ruske agresije v Ukrajini na odnos do človekovih pravicah na severu Evrope 
+
+
+
+Predstavitvi: 
+13. Svoboda izražanja in njene omejitve v novem medijskem prostoru
+14. Svoboda veroizpovedi
+13. teden
+Prof. PR
+Asist. AH
+23.12.2024
+Namesto dela v predavalnici na ta dan se študenti obvezno udeležijo dogodka (v novembru) o Palestini in Palestincih ter oddajo kritično refleksijo (esej).
+
+
+
+Tudi vaje se nadomeščajo z udeležbo na tem dogodku v novembru.
+14. teden
+Asist. AH
+6. 1. 2025
+Vaje:
+Skupni ogled filma z razpravo.
+15. teden
+Asist. AH
+13. 1. 2025
+Predstavitvi: 
+15. Pravica do samoodločbe
+16. Varstvo manjšinskih pravic
+Sklepna razprava s pripravo na izpit
+
+
+
+
+Podrobnejši tedenski načrt
+
+Literatura za predavanja je aktualna za celotno izvedbo in ne nujno samo za neko določeno predavanje na določen termin. Literaturo je potrebno študirati sproti, kot osnova za razpravo v predavalnici pa bo uporabna za različne tedne.
+
+1. teden: 30. 9. 2024 – študijsko leto se začne 1. 10.
+
+2. teden: 7. 10. 2024, 14h–18h, uvodno predavanje – prof. P. Roter
+Aktualne teme in dogajanje na področju varstvo človekovih pravic doma in po svetu.
+Mednarodni režim varstva človekovih pravic – analiza v okviru discipline Mednarodni odnosi.
+Izvedba predmeta.
+Literatura:
+Freeman, M. (2002). Human rights: an interdisciplinary approach. Cambridge: Polity. Tretje poglavje (str. 32–54).
+Glendon, M. A. (2001). A world made new: Eleanor Roosevelt and the Universal Declaration of Human Rights. New York: Random House (kopija dela knjige v spletnem referatu – pod naslovom Eleanor Roosevelt).
+
+3. teden: 14. 10. 2024, 14h–18h, vaje – asist. A. Hedžet
+Oblikovanje ideje človekovih pravic in pomen človekovih pravic 
+Izvedba vaj, razporeditev v skupine in način dela 
+Literatura:
+Civics 101: A Podcast. Founding Documents: Magna Carta: Founding Documents: Magna Carta — Civics 101: A Podcast (civics101podcast.org)
+Information School, University of Washington. 2019. CODE OF HAMMURABI https://ischool.uw.edu/podcasts/dtctw/code-hammurabi
+Keith M Baker. 2018. University of Oxford Podcasts. Writing Rights in 1789. Writing Rights in 1789 | University of Oxford Podcasts
+The Documentary Podcast: Are Human Rights Really Universal? https://www.bbc.co.uk/sounds/play/p03szphv 
+Priprava: študent_ka identificira najbolj uporaben/všečen podcast o tematiki človekovih pravic na spletu.
+
+4. teden: 21. 10. 2024, 14h–18h, predavanja in seminar 1 MPDPP – prof. P. Roter
+Seminar 1 (Mednarodni pakt o državljanskih in političnih pravicah)
+Analiza Mednarodnega pakta o državljanskih in političnih pravicah (analiza in sodelovanje v predavalnici, oddaja virov v spletno učilnico).
+Cilj: Preveriti, kako posamezne države razumejo svoje obveznosti glede uresničevanja skupnih norm človekovih pravic, kot so zapisane v tej temeljni mednarodni pogodbi, in preveriti moč Odbora za človekove pravice (sestavljen iz 18 neodvisnih strokovnjakov, ki sprejema in obravnava poročila držav o uresničevanju mednarodnega pakta in daje priporočila za boljše uresničevanje določil te pogodbe s tem pa tudi za boljši dostop do človekovih pravic, ki so varovane skladno z določili tega mednarodnega pakta).
+Metodologija: Vsak_a študent_ka izbere eno državo pogodbenico Mednarodnega pakta o državljanskih in političnih pravicah (države naj se ne podvajajo in naj bodo iz različnih regij, za izbrano državo je potrebno pogledati dva zaporedna kroga poročanja, zato je pomembno preveriti, ali obstajajo ustrezni dokumenti, na voljo v e-obliki (na spletni strani UNHCHR). Analiza implementacije (za posamezno državo) 18. in 27. člena Mednarodnega pakta o državljanskih in političnih pravicah po vprašanjih v tabeli, rezultati raziskovanja se vpišejo v online tabelo do en dan pred raziskovalnim seminarjem (https://docs.google.com/spreadsheets/d/1s3ywdSID2t6dR87VzdpCDr3QDnachLVws9LcjnATizk/edit?usp=sharing), primerjalno bodo rezultati analizirani v predavalnici. Vire (primarne), ki so bili uporabljeni za analizo posamezne države, je potrebno oddati kot dokument v spletno učilnico – viri morajo biti napisati v celoti, z vsemi podatki (ne zgolj internetne povezave na dokumente), vse skladno s pravili FDV oz. OZP.
+Vsi dokumenti so dostopni na spletni strani Odbora za človekove pravice (s sekretariatom pri Visokem komisarju za človekove pravice: https://www.ohchr.org/en/treaty-bodies/ccpr, spodaj na tej strani izberete državo, desno dokument – najprej poročilo države, nato druge dokumente.
+
+Razmislite oz. dogovorite se o členu A in členu B za seminar 2 (javite v predavalnici, katera dva člena ste izbrali).
+
+5. teden: 28. 10. 2024, 14h–16h, seminar 2 – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+Seminar 2 (Mednarodni pakt o ekonomskih, socialnih in kulturnih pravicah)
+Analiza Mednarodnega pakta o ekonomskih, socialnih in kulturnih pravicah (analiza in sodelovanje v predavalnici, oddaja virov v spletno učilnico).
+Vse je enako kot za seminar 1 – glejte navodila zgoraj, le da sami določite dva člena (A in B) in spletna stran za dokumente je https://www.ohchr.org/en/treaty-bodies/cescr. 
+16.00 – 18.00 Vaje 
+Predstavitvi po skupinah: za vsako 45 minut skupaj z razpravo. 
+    1. Pravica do življenja in njene omejitve
+    2. Prepoved mučenja in drugega okrutnega in nečloveškega ravnanja
+
+6. teden: 4. 11. 2024, 14h–18h, vaje – asist. A. Hedžet, 
+
+14.00-16.00 delavnica 
+Je 'kulturni relativizem' dejanska ovira ali dober izgovor za izogibanje varstvu človekovih pravic oz. celo univerzalnosti/splošnosti človekovih pravic?
+
+Pred delavnico je potrebno prebrati prispevke:
+Jenco, L. (2013). Revisiting Asian Values. Journal of the History of Ideas, 74(2), 237–258.
+Lind, J. (2009). The perils of apology: What Japan shouldn't learn from Germany. Foreign Affairs, 88(3),132–146. (in audio and HTML form at DIKUL LINK)
+Sen, A. (2015). Human rights and Asian values. Sixteenth Annual Morgenthau Memorial lecture on Ethics and Foreign Policy, Carnegie council for Ethics in International Affairs. Dostopno prek www.carnegiecouncil.org/publications/archive/morgenthau/254.html   
+Petcharamesree, S. (2018). ASEAN Human Rights Mechanisms. V: G. Oberleitner (ur.), International Human Rights Institutions, Tribunals, and Courts. Singapore: Springer Nature.
+Na delavnici bomo na podlagi aktualnih primerov v skupinah razpravljali o uporabi 'kulturnega relativizma' kot ovire oz. izgovora za izogibanje varstvu človekovih pravic po svetu. Dodatna navodila bodo dostopna na spletni učilnici. 
+
+Vaje: Diskusija in skupinska predstavitev 
+    3. Varstvo pred prisilnimi izginotji
+
+7. teden: 11. 11. 2024, 14h–16h, predavanje – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+Predavanje: Globalna raven MVČP
+Literatura:
+Donders, Y. (2010). Do cultural diversity and human rights make a good match? International Social Science Journal 61(199), 15–35.
+Macklem, P. (2015). Human rights in international law: three generations or one? Forthcoming in 3 London Review of International Law (2015).
+
+Vaje: predstavitvi
+4. Otrokove pravice 
+5. Pravice žensk 
+
+8. teden: 18. 11. 2024, 14h–16h, predavanje – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+
+Predavanje - nadaljevanje
+
+Vaje: predstavitvi 
+6. Pravice oseb z invalidnostjo
+7. Status in varstvo pravic beguncev in migrantov
+
+    9. teden: 25. 11. 2024, 14h–16h, predavanje – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+
+Predavanje: regionalno varstvo človekovih pravic
+Literatura:
+Gomez, V. (2018). The Inter-American Commission and Court of Human Rights. V:  G. Oberleitner (ur.), International Human Rights Institutions, Tribunals, and Courts. Singapore: Springer Nature.
+Leach, P. (2018). The European Court of Human Rights: Achievements and Prospects. V:  G. Oberleitner (ur.), International Human Rights Institutions, Tribunals, and Courts. Singapore: Springer Nature.
+Ssenyonjo, M. (2018). The African Commission and Court on Human and Peoples’ Rights. V:  G. Oberleitner (ur.), International Human Rights Institutions, Tribunals, and Courts. Singapore: Springer Nature.
+Eyadat, Z. & Okasheh, H. (2018). Human Rights Mechanisms in the Arab World: Politics and Protection. V G. Oberleitner (ur.), International Human Rights Institutions, Tribunals, and Courts. Singapore: Springer Nature.
+Natančen pregled spletne strani Sveta Evrope (coe.int), zlasti komisarke za človekove pravice in evropskega sodišča za človekove pravice.
+
+Vaje: predstavitvi
+8. Socialne pravice 
+9. Ekonomske pravice
+
+    10. teden: 2. 12. 2024, 14h–16h, predavanje – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+
+Predavanje: nadaljevanje
+
+Vaje: predstavitvi
+    10. Pravica do čistega okolja
+    11. Pravica do razvoja
+
+11. teden: 9. 12. 2024, 14h–16h, seminar 3 – prof. P. Roter in 16h–18h, vaje – asist. A. Hedžet
+
+Seminar 3: Splošni periodični pregled (SPP)
+Splošni periodični pregled (Universal periodic review – UPR) (analiza, sodelovanje v predavalnici in oddaja seznama uporabljenih primarnih virov v spletno učilnico).
+Cilj: Razmisliti, da sankcije niso edino sredstvo vpliva na ravnanja držav na področju varstva človekovih pravic, in preveriti, kako se države medsebojno spodbujajo, da bi boljše uresničevale človekove pravice.
+Metodologija: Vsak_a študent_ka izbere eno državo (te naj se ne podvajajo in naj bodo iz različnih regij) in analizira, kako je sodelovala v vseh krogih splošnega periodičnega pregleda. Po eni strani analizira poročila držav in priporočila, ki jih je država prejela, katera je zavračala in katera ter koliko jih je sprejela. Kako jih je uresničila? Po drugi strani pa analizira, kakšna priporočila je ta država dajala drugim državam, ko so bile te v pregledu. Svoje raziskovalne rezultate študent_ka vnese v online tabelo (https://docs.google.com/spreadsheets/d/1s3ywdSID2t6dR87VzdpCDr3QDnachLVws9LcjnATizk/edit?usp=sharing). Vse informacije oz. dokumenti so dostopni na: https://www.upr-info.org/en/upr-process (državo morate odtipkati v iskalnik). Rezultati morajo biti vpisani v skupno tabelo vsaj dan pred seminarjem (do 20h), prav tako oddan seznam uporabljenih virov.
+Literatura:
+Resolucija Generalne skupščine 60/251: Svet za človekove pravice, A/RES/60251, 3. 4. 2006, https://www2.ohchr.org/english/bodies/hrcouncil/docs/a.res.60.251_en.pdf.
+Pregled spletne strani Sveta za človekove pravice o posebnih postopkih: https://www.ohchr.org/en/special-procedures-human-rights-council. 
+
+Vaje: predstavitev
+12. Prepoved genocida
+
+12. teden 16. 12. 2024 14h–16h, predavanje – prof. P. Roter in gostujoči predavatelj Jussi Laine (University of Eastern Finland) in 16h–18h, vaje – asist. A. Hedžet
+
+Predavanje: Vpliv ruske agresije v Ukrajini na odnos do človekovih pravicah na severu Evrope
+
+Vaje: predstavitvi
+13. Svoboda izražanja in njene omejitve v novem medijskem prostoru
+14. Svoboda veroizpovedi
+
+
+13. teden 23. 12. 2024 14h–15h, – prof. P. Roter in 15h–18h, vaje – asist. A. Hedžet
+
+Srečanje v predavalnici se nadomešča z obveznim obiskom dogodka o Palestini s pisno refleksijo – glejte navodila zgoraj.
+
+16. teden: 6. 1. 2024, 14h–18h, vaje – asist. A. Hedžet
+Film – študentje pogledajo film Citizenfour. 
+Diskusija o pravicah, tehnologiji in posegih v zasebnost. 
+
+16. teden: 13. 1. 2024, 14h–18h, sklepno srečanje – asist. A. Hedžet
+Vaje: predstavitvi 
+15. Pravica do samoodločbe
+16. Varstvo manjšinskih pravic
+Sklepna razprava s pripravo na izpit. 
+
+Literatura:
+Roth, K. (2017). The dangerous rise of populism: Global attacks on human rights values. Journal of International Affairs, Special Issue, str. 79–84. The Dangerous Rise of Populism: Global Attacks on Human Rights Values on JSTOR 
+Helfer, L. R. (2020). Populism and International Human Rights Institutions: A Survival Guide. V G. L. Neuman (ur.) Human Rights in a Time of Populism: Challenges and Responses (str. 218–249). Cambridge, Cambridge University Press. c10_218-249 (researchgate.net) 
+
+
+Študijska literatura in literatura, zapisana v tedenskem načrtu zgoraj, ter literatura za skupinske naloge
+Cerar, Miro, Jon Jamnikar in Maja Smrkolj (ur.) (2002/2004) Dokumenti človekovih pravic z uvodnimi pojasnili. Mirovni inštitut in Amnesty International Slovenije, Ljubljana. (Ta knjiga je zaradi primarnih virov nujen študijski pripomoček. Študenti jo lahko imajo s sabo tudi med pisnim preverjanjem znanja. Amnesty International je doslej vedno omogočil določen popust za njen nakup – svetujem, da se zorganizirate in skupaj kontaktirate Amnesty ter se dogovorite za popust in način prevzema knjig. Lahko pa jih odkupite od študentov iz prejšnjih let ipd.)
+Nekaj dodatnih primarnih virov (temeljnih konvencij na področju mednarodnega varstva človekovih pravic), ki še niso vključeni v knjigo Dokumenti človekovih pravic z uvodnimi pojasnili: konvencija o pravicah delavcev migrantov in članov njihovih družin, konvencija proti prisilnim izginotjem, dodatni protokol mednarodnega pakta o ekonomskih, socialnih in kulturnih pravicah, dodatni protokol h konvenciji o otrokovih pravicah ipd. – ti dokumenti so na voljo na spretni strani OHCHR (ohchr.org, natančneje na: https://www.ohchr.org/EN/ProfessionalInterest/Pages/CoreInstruments.aspx).
+Nekaj drugih primarnih virov, ki so pomembni za oblikovanje koncepta (ideje) človekovih pravic na nacionalni ravni: Magna Carta (http://www.constitution.org/eng/magnacar.htm, 1. marec 2017), Angleška listina pravic (http://avalon.law.yale.edu/17th_century/england.asp, 1. marec 2017), obe deklaraciji: ameriška (http://www.ushistory.org/declaration/document/index.htm, 1. 3. 2021) in francoska (http://avalon.law.yale.edu/18th_century/rightsof.asp, 1. 3. 2021).
+Aktualni znanstveni in strokovni članki, zapisani pri posameznih srečanjih.

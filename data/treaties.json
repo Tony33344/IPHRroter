@@ -1,0 +1,274 @@
+{
+  "treaties": [
+    {
+      "id": "un-charter",
+      "fullName": "Charter of the United Nations",
+      "shortName": "UN Charter",
+      "adopted": "1945-06-26",
+      "enteredForce": "1945-10-24",
+      "type": "charter",
+      "system": "un",
+      "color": "#3B82F6",
+      "keyProvisions": [
+        { "article": "1(3)", "content": "Promoting respect for human rights" },
+        { "article": "55", "content": "Universal respect for human rights" },
+        { "article": "56", "content": "Member pledge to take action" }
+      ],
+      "significance": "Foundation of modern international human rights system",
+      "statesParties": 193
+    },
+    {
+      "id": "udhr",
+      "fullName": "Universal Declaration of Human Rights",
+      "shortName": "UDHR",
+      "adopted": "1948-12-10",
+      "type": "declaration",
+      "system": "un",
+      "color": "#3B82F6",
+      "legalStatus": "soft-law",
+      "articles": 30,
+      "significance": "First universal articulation of human rights. Adopted by UN General Assembly Resolution 217 A (III). December 10 is celebrated as Human Rights Day.",
+      "relatedTreaties": ["iccpr", "icescr"],
+      "keyArticles": [
+        { "number": 1, "title": "Born free and equal", "text": "All human beings are born free and equal in dignity and rights." },
+        { "number": 2, "title": "Non-discrimination", "text": "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind." },
+        { "number": 3, "title": "Right to life", "text": "Everyone has the right to life, liberty and security of person." }
+      ]
+    },
+    {
+      "id": "iccpr",
+      "fullName": "International Covenant on Civil and Political Rights",
+      "shortName": "ICCPR",
+      "adopted": "1966-12-16",
+      "enteredForce": "1976-03-23",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "generation": 1,
+      "monitoringBody": "ccpr",
+      "statesParties": 173,
+      "optionalProtocols": [
+        { "name": "First Optional Protocol", "year": 1966, "function": "Individual complaints" },
+        { "name": "Second Optional Protocol", "year": 1989, "function": "Abolition of death penalty" }
+      ],
+      "keyArticles": [
+        { "number": 1, "title": "Self-determination" },
+        { "number": 2, "title": "Non-discrimination" },
+        { "number": 6, "title": "Right to life" },
+        { "number": 7, "title": "Prohibition of torture" },
+        { "number": 9, "title": "Liberty and security" },
+        { "number": 14, "title": "Fair trial" },
+        { "number": 18, "title": "Freedom of thought, conscience and religion" },
+        { "number": 19, "title": "Freedom of expression" },
+        { "number": 26, "title": "Equality before law" },
+        { "number": 27, "title": "Minority rights" }
+      ],
+      "significance": "Together with ICESCR, transforms UDHR into binding treaty law. Part of the International Bill of Human Rights."
+    },
+    {
+      "id": "icescr",
+      "fullName": "International Covenant on Economic, Social and Cultural Rights",
+      "shortName": "ICESCR",
+      "adopted": "1966-12-16",
+      "enteredForce": "1976-01-03",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "generation": 2,
+      "monitoringBody": "cescr",
+      "statesParties": 171,
+      "optionalProtocols": [
+        { "name": "Optional Protocol", "year": 2008, "function": "Individual complaints" }
+      ],
+      "keyArticles": [
+        { "number": 6, "title": "Right to work" },
+        { "number": 7, "title": "Just conditions of work" },
+        { "number": 9, "title": "Social security" },
+        { "number": 11, "title": "Adequate standard of living" },
+        { "number": 12, "title": "Health" },
+        { "number": 13, "title": "Education" },
+        { "number": 15, "title": "Cultural life and science" }
+      ],
+      "significance": "Codifies economic, social and cultural rights. Subject to progressive realization based on available resources."
+    },
+    {
+      "id": "icerd",
+      "fullName": "International Convention on the Elimination of All Forms of Racial Discrimination",
+      "shortName": "ICERD",
+      "adopted": "1965-12-21",
+      "enteredForce": "1969-01-04",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "cerd",
+      "statesParties": 182,
+      "significance": "First UN human rights treaty. Defines racial discrimination and requires states to eliminate it in all forms."
+    },
+    {
+      "id": "cedaw",
+      "fullName": "Convention on the Elimination of All Forms of Discrimination against Women",
+      "shortName": "CEDAW",
+      "adopted": "1979-12-18",
+      "enteredForce": "1981-09-03",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "cedaw-committee",
+      "statesParties": 189,
+      "optionalProtocols": [
+        { "name": "Optional Protocol", "year": 1999, "function": "Individual complaints, inquiry procedure" }
+      ],
+      "significance": "Often described as international bill of rights for women. Addresses discrimination in political, economic, social, cultural and civil spheres."
+    },
+    {
+      "id": "cat",
+      "fullName": "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+      "shortName": "CAT",
+      "adopted": "1984-12-10",
+      "enteredForce": "1987-06-26",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "cat-committee",
+      "statesParties": 173,
+      "optionalProtocols": [
+        { "name": "OPCAT", "year": 2002, "function": "Preventive visits mechanism (NPMs and SPT)" }
+      ],
+      "significance": "Establishes absolute prohibition of torture. Creates obligation of non-refoulement."
+    },
+    {
+      "id": "crc",
+      "fullName": "Convention on the Rights of the Child",
+      "shortName": "CRC",
+      "adopted": "1989-11-20",
+      "enteredForce": "1990-09-02",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "crc-committee",
+      "statesParties": 196,
+      "optionalProtocols": [
+        { "name": "Armed conflict", "year": 2000, "function": "Children in armed conflict" },
+        { "name": "Sale of children", "year": 2000, "function": "Sale, prostitution, pornography" },
+        { "name": "Communications procedure", "year": 2011, "function": "Individual complaints" }
+      ],
+      "significance": "Most widely ratified human rights treaty (only US not party). Introduces 'best interests of the child' principle."
+    },
+    {
+      "id": "icrmw",
+      "fullName": "International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families",
+      "shortName": "ICRMW",
+      "adopted": "1990-12-18",
+      "enteredForce": "2003-07-01",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "cmw",
+      "statesParties": 57,
+      "significance": "Comprehensive treaty on migrant workers' rights. Low ratification, especially among destination countries."
+    },
+    {
+      "id": "crpd",
+      "fullName": "Convention on the Rights of Persons with Disabilities",
+      "shortName": "CRPD",
+      "adopted": "2006-12-13",
+      "enteredForce": "2008-05-03",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "crpd-committee",
+      "statesParties": 186,
+      "optionalProtocols": [
+        { "name": "Optional Protocol", "year": 2006, "function": "Individual complaints" }
+      ],
+      "significance": "Paradigm shift from medical to social model of disability. First treaty negotiated with significant civil society participation."
+    },
+    {
+      "id": "icpped",
+      "fullName": "International Convention for the Protection of All Persons from Enforced Disappearance",
+      "shortName": "ICPPED",
+      "adopted": "2006-12-20",
+      "enteredForce": "2010-12-23",
+      "type": "treaty",
+      "system": "un",
+      "color": "#3B82F6",
+      "monitoringBody": "ced",
+      "statesParties": 71,
+      "significance": "Addresses enforced disappearance as crime against humanity. Creates urgent action procedure."
+    },
+    {
+      "id": "echr",
+      "fullName": "European Convention on Human Rights",
+      "shortName": "ECHR",
+      "adopted": "1950-11-04",
+      "enteredForce": "1953-09-03",
+      "type": "treaty",
+      "system": "european",
+      "color": "#8B5CF6",
+      "organization": "coe",
+      "monitoringBody": "ecthr",
+      "statesParties": 46,
+      "protocols": 16,
+      "keyArticles": [
+        { "number": 2, "title": "Right to life" },
+        { "number": 3, "title": "Prohibition of torture" },
+        { "number": 5, "title": "Right to liberty and security" },
+        { "number": 6, "title": "Right to a fair trial" },
+        { "number": 8, "title": "Right to respect for private and family life" },
+        { "number": 10, "title": "Freedom of expression" },
+        { "number": 14, "title": "Prohibition of discrimination" }
+      ],
+      "significance": "First regional human rights treaty. Most developed enforcement mechanism with individual access to court."
+    },
+    {
+      "id": "eu-charter",
+      "fullName": "Charter of Fundamental Rights of the European Union",
+      "shortName": "EU Charter",
+      "adopted": "2000-12-07",
+      "bindingForce": "2009-12-01",
+      "type": "charter",
+      "system": "european",
+      "color": "#8B5CF6",
+      "organization": "eu",
+      "statesParties": 27,
+      "titles": [
+        { "number": 1, "name": "Dignity", "articles": "1-5" },
+        { "number": 2, "name": "Freedoms", "articles": "6-19" },
+        { "number": 3, "name": "Equality", "articles": "20-26" },
+        { "number": 4, "name": "Solidarity", "articles": "27-38" },
+        { "number": 5, "name": "Citizens' Rights", "articles": "39-46" },
+        { "number": 6, "name": "Justice", "articles": "47-50" },
+        { "number": 7, "name": "General Provisions", "articles": "51-54" }
+      ],
+      "significance": "Became legally binding with Lisbon Treaty. Applies to EU institutions and member states when implementing EU law."
+    },
+    {
+      "id": "achr",
+      "fullName": "American Convention on Human Rights",
+      "shortName": "Pact of San José",
+      "adopted": "1969-11-22",
+      "enteredForce": "1978-07-18",
+      "type": "treaty",
+      "system": "inter-american",
+      "color": "#10B981",
+      "organization": "oas",
+      "monitoringBody": "iacthr",
+      "statesParties": 23,
+      "significance": "Core instrument of Inter-American human rights system. US has not ratified."
+    },
+    {
+      "id": "achpr",
+      "fullName": "African Charter on Human and Peoples' Rights",
+      "shortName": "Banjul Charter",
+      "adopted": "1981-06-27",
+      "enteredForce": "1986-10-21",
+      "type": "treaty",
+      "system": "african",
+      "color": "#F59E0B",
+      "organization": "au",
+      "monitoringBody": "achpr-commission",
+      "statesParties": 54,
+      "significance": "Unique in including peoples' rights and individual duties. Reflects African communitarian values."
+    }
+  ]
+}

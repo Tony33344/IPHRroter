@@ -1,0 +1,1082 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "totalQuestions": 312,
+    "lastUpdated": "2025-01-10",
+    "categories": [
+      "foundations",
+      "un-system", 
+      "un-treaties",
+      "european-coe",
+      "european-eu",
+      "inter-american",
+      "african",
+      "procedures",
+      "case-law",
+      "contemporary",
+      "slovenia"
+    ],
+    "difficulties": ["basic", "intermediate", "advanced", "expert"]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Kateri dokument velja za temelj sodobnega mednarodnega varovanja človekovih pravic?",
+      "questionEN": "Which document is considered the foundation of modern international human rights protection?",
+      "options": [
+        "Magna Carta (1215)",
+        "Splošna deklaracija človekovih pravic (1948)",
+        "Ustanovna listina OZN (1945)",
+        "Evropska konvencija o človekovih pravicah (1950)"
+      ],
+      "optionsEN": [
+        "Magna Carta (1215)",
+        "Universal Declaration of Human Rights (1948)",
+        "UN Charter (1945)",
+        "European Convention on Human Rights (1950)"
+      ],
+      "correct": 1,
+      "explanation": "Splošna deklaracija človekovih pravic (SDČP), sprejeta 10. decembra 1948, je prvi mednarodni dokument, ki je artikuliral univerzalne človekove pravice. Čeprav ni pravno zavezujoča, je postala temelj za vse kasnejše mednarodne pogodbe o človekovih pravicah.",
+      "explanationEN": "The Universal Declaration of Human Rights (UDHR), adopted on December 10, 1948, is the first international document to articulate universal human rights. While not legally binding, it became the foundation for all subsequent international human rights treaties.",
+      "relatedTopics": ["udhr", "un-system", "1948"],
+      "examTip": "Pogosto vprašanje na izpitu - razlikujte med pravno zavezujočimi pogodbami in deklaracijami!"
+    },
+    {
+      "id": 2,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Kdaj praznujemo Mednarodni dan človekovih pravic?",
+      "questionEN": "When do we celebrate International Human Rights Day?",
+      "options": [
+        "26. junij",
+        "24. oktober",
+        "10. december",
+        "1. januar"
+      ],
+      "correct": 2,
+      "explanation": "Mednarodni dan človekovih pravic praznujemo 10. decembra, na obletnico sprejetja Splošne deklaracije človekovih pravic leta 1948.",
+      "examTip": "Zapomni si datume ključnih dokumentov!"
+    },
+    {
+      "id": 3,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Kdo je bil predsednik komisije, ki je pripravila osnutek SDČP?",
+      "questionEN": "Who chaired the commission that drafted the UDHR?",
+      "options": [
+        "Dag Hammarskjöld",
+        "Eleanor Roosevelt",
+        "René Cassin",
+        "Charles Malik"
+      ],
+      "correct": 1,
+      "explanation": "Eleanor Roosevelt, žena nekdanjega ameriškega predsednika Franklina D. Roosevelta, je predsedovala Komisiji OZN za človekove pravice, ki je pripravila osnutek SDČP. René Cassin je bil glavni avtor besedila.",
+      "relatedTopics": ["udhr", "un-commission"]
+    },
+    {
+      "id": 4,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Kateri koncept označuje idejo, da so človekove pravice veljavne za vse ljudi ne glede na kulturne razlike?",
+      "questionEN": "Which concept refers to the idea that human rights apply to all people regardless of cultural differences?",
+      "options": [
+        "Kulturni relativizem",
+        "Partikularizem",
+        "Univerzalnost človekovih pravic",
+        "Pravni pozitivizem"
+      ],
+      "correct": 2,
+      "explanation": "Univerzalnost človekovih pravic pomeni, da te pravice pripadajo vsem ljudem zgolj na podlagi njihovega človeškega dostojanstva, ne glede na državljanstvo, kulturo, spol ali druge značilnosti. To načelo je potrjeno v Dunajski deklaraciji iz leta 1993.",
+      "examTip": "Dunajska konferenca 1993 je ključna za razumevanje sodobnega pristopa k ČP!"
+    },
+    {
+      "id": 5,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Katere so tri generacije človekovih pravic po klasifikaciji Karela Vasaka?",
+      "questionEN": "What are the three generations of human rights according to Karel Vasak's classification?",
+      "options": [
+        "Politične, ekonomske, kulturne",
+        "Državljanske in politične; ekonomske, socialne in kulturne; solidarnostne",
+        "Individualne, kolektivne, procesne",
+        "Negativne, pozitivne, programske"
+      ],
+      "correct": 1,
+      "explanation": "Karel Vasak je leta 1977 predlagal delitev na tri generacije: 1. generacija (modra) - državljanske in politične pravice; 2. generacija (rdeča) - ekonomske, socialne in kulturne pravice; 3. generacija (zelena) - solidarnostne/kolektivne pravice (pravica do razvoja, miru, čistega okolja).",
+      "relatedTopics": ["generations", "vasak", "theory"]
+    },
+    {
+      "id": 6,
+      "type": "truefalse",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Splošna deklaracija človekovih pravic je pravno zavezujoč mednarodni dokument.",
+      "questionEN": "The Universal Declaration of Human Rights is a legally binding international document.",
+      "correct": false,
+      "explanation": "SDČP je bila sprejeta kot resolucija Generalne skupščine OZN in kot taka ni pravno zavezujoča pogodba. Vendar so številne njene določbe postale del mednarodnega običajnega prava, poleg tega pa je bila osnova za zavezujoče pogodbe kot sta MPDPP in MPESKP."
+    },
+    {
+      "id": 7,
+      "type": "truefalse",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Naravnopravna teorija človekovih pravic temelji na ideji, da pravice izhajajo iz človeškega dostojanstva in obstajajo neodvisno od države.",
+      "correct": true,
+      "explanation": "Naravnopravna teorija (natural law theory) trdi, da človekove pravice izhajajo iz človekove narave oziroma dostojanstva in niso podeljene s strani države. To je v nasprotju s pravnim pozitivizmom, ki pravice vidi kot produkt pozitivnega (državnega) prava."
+    },
+    {
+      "id": 8,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "advanced",
+      "question": "Kaj pomeni načelo 'margin of appreciation' v kontekstu ESČP?",
+      "questionEN": "What does the 'margin of appreciation' doctrine mean in the context of the ECtHR?",
+      "options": [
+        "Absolutna prepoved posegov v pravice",
+        "Prostor presoje, ki ga imajo države pri implementaciji konvencijskih pravic",
+        "Obveznost sodišča, da upošteva mnenje držav",
+        "Pravica posameznika do pritožbe"
+      ],
+      "correct": 1,
+      "explanation": "Doktrina 'margin of appreciation' (polje proste presoje) pomeni, da ESČP prizna državam določeno diskrecijo pri implementaciji konvencijskih pravic, zlasti kadar gre za občutljiva vprašanja, kjer ni evropskega konsenza. Širina tega polja je odvisna od narave pravice in konteksta.",
+      "examTip": "To je eden najpomembnejših konceptov za razumevanje sodne prakse ESČP!"
+    },
+    {
+      "id": 9,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "Kateri organ je nasledil Komisijo OZN za človekove pravice leta 2006?",
+      "questionEN": "Which body succeeded the UN Commission on Human Rights in 2006?",
+      "options": [
+        "Odbor za človekove pravice",
+        "Svet za človekove pravice",
+        "OHCHR",
+        "ECOSOC"
+      ],
+      "correct": 1,
+      "explanation": "Svet za človekove pravice (Human Rights Council) je bil ustanovljen z resolucijo Generalne skupščine 60/251 leta 2006 kot naslednik Komisije za človekove pravice, ki je bila kritizirana zaradi politizacije in članstva držav s slabim stanjem človekovih pravic.",
+      "relatedTopics": ["hrc", "un-reform", "2006"]
+    },
+    {
+      "id": 10,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "Koliko držav članic ima Svet OZN za človekove pravice?",
+      "questionEN": "How many member states does the UN Human Rights Council have?",
+      "options": [
+        "15",
+        "27",
+        "47",
+        "193"
+      ],
+      "correct": 2,
+      "explanation": "Svet za človekove pravice ima 47 držav članic, ki jih izvoli Generalna skupščina OZN za triletne mandate. Sedeži so geografsko porazdeljeni med regionalne skupine."
+    },
+    {
+      "id": 11,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kaj je UPR (Universal Periodic Review)?",
+      "questionEN": "What is the UPR (Universal Periodic Review)?",
+      "options": [
+        "Postopek individualnih pritožb",
+        "Periodični pregled stanja človekovih pravic v vseh državah članicah OZN",
+        "Letno poročilo Visokega komisarja",
+        "Revizija mednarodnih pogodb"
+      ],
+      "correct": 1,
+      "explanation": "Univerzalni periodični pregled (UPR) je mehanizem Sveta za človekove pravice, v okviru katerega se pregleduje stanje človekovih pravic v vseh 193 državah članicah OZN vsakih 4,5 leta. Gre za medvladni postopek medsebojnega pregleda (peer review).",
+      "examTip": "UPR je unikaten mehanizem - zajema VSE države OZN, ne le pogodbenic posameznih pogodb!"
+    },
+    {
+      "id": 12,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kateri so trije glavni mehanizmi Sveta OZN za človekove pravice?",
+      "questionEN": "What are the three main mechanisms of the UN Human Rights Council?",
+      "options": [
+        "Sodišče, tožilstvo, obramba",
+        "UPR, posebni postopki, pritožbeni postopek",
+        "Poročila, resolucije, sankcije",
+        "Odbori, komisije, delovne skupine"
+      ],
+      "correct": 1,
+      "explanation": "Trije glavni mehanizmi Sveta za človekove pravice so: 1) Univerzalni periodični pregled (UPR), 2) Posebni postopki (Special Procedures) - posebni poročevalci in delovne skupine, 3) Pritožbeni postopek (Complaint Procedure) - naslednik postopka 1503."
+    },
+    {
+      "id": 13,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kje ima sedež Urad Visokega komisarja OZN za človekove pravice (OHCHR)?",
+      "questionEN": "Where is the Office of the UN High Commissioner for Human Rights (OHCHR) headquartered?",
+      "options": [
+        "New York",
+        "Ženeva",
+        "Dunaj",
+        "Haag"
+      ],
+      "correct": 1,
+      "explanation": "OHCHR ima sedež v Ženevi (Švica). Urad je bil ustanovljen leta 1993 po Dunajski svetovni konferenci o človekovih pravicah. Visoki komisar je najvišji uradnik OZN za človekove pravice."
+    },
+    {
+      "id": 14,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Katera dva mednarodna pakta skupaj s SDČP tvorita t.i. 'International Bill of Human Rights'?",
+      "questionEN": "Which two international covenants together with the UDHR form the 'International Bill of Human Rights'?",
+      "options": [
+        "EKČP in Socialna listina",
+        "MPDPP in MPESKP",
+        "Konvencija o otrokovih pravicah in CEDAW",
+        "Konvencija proti mučenju in MPDPP"
+      ],
+      "correct": 1,
+      "explanation": "'Mednarodna listina človekovih pravic' (International Bill of Human Rights) obsega: 1) Splošno deklaracijo človekovih pravic (1948), 2) Mednarodni pakt o državljanskih in političnih pravicah - MPDPP (1966), 3) Mednarodni pakt o ekonomskih, socialnih in kulturnih pravicah - MPESKP (1966), ter njuna izbirna protokola.",
+      "examTip": "To je temeljni sklop dokumentov - poznati morate razlike med MPDPP in MPESKP!"
+    },
+    {
+      "id": 15,
+      "type": "truefalse",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "Posebni poročevalci OZN za človekove pravice so predstavniki držav.",
+      "correct": false,
+      "explanation": "Posebni poročevalci (Special Rapporteurs) so neodvisni strokovnjaki, ki jih imenuje Svet za človekove pravice. Delujejo v osebni funkciji in niso predstavniki držav. Obstajajo tematski poročevalci (npr. za mučenje, svobodo izražanja) in državno-specifični mandati."
+    },
+    {
+      "id": 16,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "Koliko temeljnih (core) pogodb OZN o človekovih pravicah obstaja?",
+      "questionEN": "How many core UN human rights treaties exist?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "Obstaja 9 temeljnih pogodb OZN o človekovih pravicah: MPDPP, MPESKP, CERD, CEDAW, CAT, CRC, CMW, CRPD in CED. Vsaka ima svoj nadzorni odbor (treaty body).",
+      "relatedTopics": ["treaty-bodies", "core-treaties"]
+    },
+    {
+      "id": 17,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "Katera pogodba OZN o človekovih pravicah ima največ pogodbenic?",
+      "questionEN": "Which UN human rights treaty has the most states parties?",
+      "options": [
+        "MPDPP",
+        "MPESKP",
+        "Konvencija o otrokovih pravicah (CRC)",
+        "CEDAW"
+      ],
+      "correct": 2,
+      "explanation": "Konvencija o otrokovih pravicah (CRC) iz leta 1989 je najbolj univerzalno ratificirana pogodba o človekovih pravicah s 196 pogodbenicami. Edina država članica OZN, ki je ni ratificirala, so ZDA.",
+      "examTip": "CRC ima skoraj univerzalno ratifikacijo - to je pogosto izpitno vprašanje!"
+    },
+    {
+      "id": 18,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "Kdaj sta bila sprejeta MPDPP in MPESKP?",
+      "questionEN": "When were the ICCPR and ICESCR adopted?",
+      "options": [
+        "1948",
+        "1966",
+        "1976",
+        "1993"
+      ],
+      "correct": 1,
+      "explanation": "Oba mednarodna pakta sta bila sprejeta 16. decembra 1966, vendar sta začela veljati šele leta 1976 (MPESKP 3. januarja, MPDPP 23. marca), ko je bilo doseženo potrebno število ratifikacij.",
+      "relatedTopics": ["iccpr", "icescr", "1966"]
+    },
+    {
+      "id": 19,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "Kaj omogoča Prvi izbirni protokol k MPDPP?",
+      "questionEN": "What does the First Optional Protocol to the ICCPR enable?",
+      "options": [
+        "Odpravo smrtne kazni",
+        "Individualne pritožbe na Odbor za človekove pravice",
+        "Meddržavne pritožbe",
+        "Preventivne obiske zaporov"
+      ],
+      "correct": 1,
+      "explanation": "Prvi izbirni protokol k MPDPP (1966) omogoča posameznikom, da vložijo pritožbe (communications) na Odbor za človekove pravice, če menijo, da jim je država pogodbenica kršila pravice iz pakta. Drugi izbirni protokol (1989) se nanaša na odpravo smrtne kazni."
+    },
+    {
+      "id": 20,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "Kateri odbor nadzoruje izvajanje Konvencije proti mučenju (CAT)?",
+      "questionEN": "Which committee monitors the implementation of the Convention against Torture (CAT)?",
+      "options": [
+        "Odbor za človekove pravice",
+        "Odbor proti mučenju",
+        "Pododbor za preprečevanje mučenja",
+        "B in C sta pravilna"
+      ],
+      "correct": 3,
+      "explanation": "Konvencijo proti mučenju nadzoruje Odbor proti mučenju (CAT Committee). Poleg tega Izbirni protokol h Konvenciji (OPCAT) iz leta 2002 ustanovi Pododbor za preprečevanje mučenja (SPT), ki opravlja preventivne obiske krajev odvzema prostosti.",
+      "examTip": "OPCAT uvaja sistem preventivnih obiskov - to je inovacija v sistemu pogodb!"
+    },
+    {
+      "id": 21,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "Katero načelo izvajanja ekonomskih, socialnih in kulturnih pravic je ključno za razumevanje MPESKP?",
+      "questionEN": "Which principle of implementation is key to understanding the ICESCR?",
+      "options": [
+        "Takojšnja in popolna implementacija",
+        "Progresivna realizacija z uporabo maksimalnih razpoložljivih sredstev",
+        "Implementacija po presoji države",
+        "Implementacija le ob mednarodnem nadzoru"
+      ],
+      "correct": 1,
+      "explanation": "Člen 2(1) MPESKP določa, da se države zavezujejo k 'progresivni realizaciji' (progressive realization) pravic z uporabo 'maksimalnih razpoložljivih sredstev' (maximum available resources). To priznava, da polna realizacija ESK pravic zahteva čas in sredstva, vendar prepoveduje nazadovanje (retrogression).",
+      "examTip": "Razlikujte med takojšnjimi obveznostmi (npr. nediskriminacija) in postopnimi!"
+    },
+    {
+      "id": 22,
+      "type": "truefalse",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "Odbori za človekove pravice (treaty bodies) sprejemajo pravno zavezujoče sodbe.",
+      "correct": false,
+      "explanation": "Pogodbeni odbori sprejemajo 'stališča' (views) ali 'priporočila' (recommendations), ki formalno niso pravno zavezujoča kot sodbe sodišč. Vendar imajo velik avtoritativni pomen in države jih morajo upoštevati v dobri veri (good faith)."
+    },
+    {
+      "id": 23,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "Kaj so 'General Comments' v sistemu pogodbenih teles OZN?",
+      "questionEN": "What are 'General Comments' in the UN treaty body system?",
+      "options": [
+        "Pripombe držav na poročila",
+        "Avtoritativne razlage določb pogodb s strani odborov",
+        "Komentarji nevladnih organizacij",
+        "Splošna stališča Generalne skupščine"
+      ],
+      "correct": 1,
+      "explanation": "Splošne pripombe (General Comments/Recommendations) so avtoritativne razlage določb pogodb, ki jih sprejemajo pogodbeni odbori. Čeprav niso formalno zavezujoče, imajo veliko avtoriteto pri razlagi pogodbenih obveznosti. Npr. Splošna pripomba št. 14 CESCR o pravici do zdravja.",
+      "examTip": "Poznati morate ključne General Comments - to je pogosto izpitno vprašanje!"
+    },
+    {
+      "id": 24,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "Kdaj je bila sprejeta Evropska konvencija o človekovih pravicah?",
+      "questionEN": "When was the European Convention on Human Rights adopted?",
+      "options": [
+        "1948",
+        "1950",
+        "1953",
+        "1959"
+      ],
+      "correct": 1,
+      "explanation": "Evropska konvencija o varstvu človekovih pravic in temeljnih svoboščin (EKČP) je bila sprejeta 4. novembra 1950 v okviru Sveta Evrope in je začela veljati 3. septembra 1953.",
+      "relatedTopics": ["echr", "coe", "1950"]
+    },
+    {
+      "id": 25,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "Koliko držav je trenutno članic Sveta Evrope?",
+      "questionEN": "How many states are currently members of the Council of Europe?",
+      "options": [
+        "27",
+        "46",
+        "47",
+        "50"
+      ],
+      "correct": 1,
+      "explanation": "Svet Evrope ima trenutno 46 držav članic (po izključitvi Rusije marca 2022 zaradi agresije na Ukrajino). Vse članice SE so pogodbenice EKČP.",
+      "examTip": "Ne zamenjujte Sveta Evrope (46 članic) z Evropsko unijo (27 članic)!"
+    },
+    {
+      "id": 26,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "Kje ima sedež Evropsko sodišče za človekove pravice?",
+      "questionEN": "Where is the European Court of Human Rights located?",
+      "options": [
+        "Bruselj",
+        "Luxembourg",
+        "Strasbourg",
+        "Ženeva"
+      ],
+      "correct": 2,
+      "explanation": "Evropsko sodišče za človekove pravice (ESČP) ima sedež v Strasbourgu (Francija), kjer je tudi sedež Sveta Evrope. Ne zamenjujte s Sodiščem EU, ki je v Luxembourgu."
+    },
+    {
+      "id": 27,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Koliko sodnikov ima ESČP?",
+      "questionEN": "How many judges does the ECtHR have?",
+      "options": [
+        "15",
+        "27",
+        "46",
+        "47"
+      ],
+      "correct": 2,
+      "explanation": "ESČP ima 46 sodnikov - po enega iz vsake države pogodbenice EKČP. Sodniki so izvoljeni za devetletni mandat in ne morejo biti ponovno izvoljeni. Delujejo v svoji osebni funkciji, ne kot predstavniki držav.",
+      "relatedTopics": ["ecthr", "judges"]
+    },
+    {
+      "id": 28,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kateri člen EKČP varuje pravico do življenja?",
+      "questionEN": "Which article of the ECHR protects the right to life?",
+      "options": [
+        "Člen 1",
+        "Člen 2",
+        "Člen 3",
+        "Člen 5"
+      ],
+      "correct": 1,
+      "explanation": "Člen 2 EKČP varuje pravico do življenja. Člen 1 določa obveznost držav, da zagotovijo konvencijske pravice. Člen 3 prepoveduje mučenje, člen 5 pa varuje pravico do svobode in varnosti.",
+      "examTip": "Poznati morate člene EKČP na pamet - to je pogosto na izpitu!"
+    },
+    {
+      "id": 29,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kateri člen EKČP zagotavlja pravico do poštenega sojenja?",
+      "questionEN": "Which article of the ECHR guarantees the right to a fair trial?",
+      "options": [
+        "Člen 5",
+        "Člen 6",
+        "Člen 7",
+        "Člen 13"
+      ],
+      "correct": 1,
+      "explanation": "Člen 6 EKČP zagotavlja pravico do poštenega sojenja (fair trial). Vključuje pravico do neodvisnega in nepristranskega sodišča, javne obravnave, razumnega roka, domneve nedolžnosti in pravice obrambe v kazenskih zadevah.",
+      "relatedTopics": ["article-6", "fair-trial"]
+    },
+    {
+      "id": 30,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kateri člen EKČP vsebuje prepoved mučenja?",
+      "questionEN": "Which article of the ECHR contains the prohibition of torture?",
+      "options": [
+        "Člen 2",
+        "Člen 3",
+        "Člen 4",
+        "Člen 5"
+      ],
+      "correct": 1,
+      "explanation": "Člen 3 EKČP določa: 'Nikogar se ne sme mučiti ali nečloveško in ponižujoče z njim ravnati ali ga kaznovati.' To je absolutna pravica - ne dopušča izjem ali omejitev, niti v času vojne ali izrednih razmer.",
+      "examTip": "Člen 3 je ABSOLUTNA pravica - to je bistveno za razumevanje sistema!"
+    },
+    {
+      "id": 31,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "Kakšna je razlika med 'mučenjem' in 'nečloveškim ravnanjem' po členu 3 EKČP?",
+      "questionEN": "What is the difference between 'torture' and 'inhuman treatment' under Article 3 ECHR?",
+      "options": [
+        "Ni razlike - izraza sta sinonima",
+        "Mučenje vključuje element namerne povzročitve trpljenja za določen namen",
+        "Nečloveško ravnanje je hujše od mučenja",
+        "Mučenje je le fizično, nečloveško ravnanje pa tudi psihično"
+      ],
+      "correct": 1,
+      "explanation": "Po sodni praksi ESČP mučenje od nečloveškega ravnanja ločuje poseben element - namerno povzročitev hudega trpljenja za določen namen (npr. pridobitev informacij, kaznovanje, ustrahovanje). Obe ravnanji sta prepovedani, vendar mučenje predstavlja hujšo kršitev. Sodišče je to razlago razvilo v zadevi Ireland v. UK (1978)."
+    },
+    {
+      "id": 32,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kateri člen EKČP varuje pravico do spoštovanja zasebnega in družinskega življenja?",
+      "questionEN": "Which article of the ECHR protects the right to respect for private and family life?",
+      "options": [
+        "Člen 6",
+        "Člen 7",
+        "Člen 8",
+        "Člen 9"
+      ],
+      "correct": 2,
+      "explanation": "Člen 8 EKČP varuje pravico do spoštovanja zasebnega in družinskega življenja, stanovanja in dopisovanja. To je kvalificirana pravica - dopušča omejitve, ki so določene z zakonom, nujne v demokratični družbi in sledijo legitimnim ciljem.",
+      "relatedTopics": ["article-8", "privacy", "family-life"]
+    },
+    {
+      "id": 33,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "Kakšen je tripartitni test za dopustnost omejitev kvalificiranih pravic po EKČP?",
+      "questionEN": "What is the three-part test for permissible limitations on qualified ECHR rights?",
+      "options": [
+        "Nujnost, sorazmernost, nediskriminacija",
+        "Predpisanost z zakonom, legitimni cilj, nujnost v demokratični družbi",
+        "Javni interes, nacionalna varnost, javna morala",
+        "Zakonitost, razumnost, objektivnost"
+      ],
+      "correct": 1,
+      "explanation": "Omejitve kvalificiranih pravic (npr. členi 8-11) so dopustne le, če izpolnjujejo tri pogoje: 1) predpisane z zakonom (prescribed by law), 2) sledijo legitimnemu cilju (legitimate aim), 3) so nujne v demokratični družbi (necessary in a democratic society), kar vključuje test sorazmernosti.",
+      "examTip": "Ta tripartitni test je ključen za analizo primerov na izpitu!"
+    },
+    {
+      "id": 34,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kaj je 'pilot judgment' (pilotna sodba) ESČP?",
+      "questionEN": "What is a 'pilot judgment' of the ECtHR?",
+      "options": [
+        "Prva sodba v novi kategoriji zadev",
+        "Sodba, ki obravnava sistemski problem in določi splošne ukrepe",
+        "Sodba manjšega senata",
+        "Nezavezujoče mnenje sodišča"
+      ],
+      "correct": 1,
+      "explanation": "Pilotna sodba (pilot judgment) je postopek, ki ga je ESČP razvilo za obravnavo situacij, ko ponavljajoče se pritožbe izvirajo iz istega sistemskega problema v državi. Sodišče identificira strukturni problem in naloži splošne ukrepe, ne le individualno zadoščenje. Primer: Broniowski v. Poljska (2004)."
+    },
+    {
+      "id": 35,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "Sodbe ESČP so pravno zavezujoče za države pogodbenice.",
+      "correct": true,
+      "explanation": "Po členu 46 EKČP so sodbe ESČP pravno zavezujoče za toženo državo. Izvajanje sodb nadzoruje Odbor ministrov Sveta Evrope. To je ključna razlika med ESČP in pogodbenimi odbori OZN."
+    },
+    {
+      "id": 36,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Posameznik lahko vloži pritožbo na ESČP šele po izčrpanju domačih pravnih sredstev.",
+      "correct": true,
+      "explanation": "Člen 35(1) EKČP določa, da mora pritožnik pred vložitvijo pritožbe izčrpati vsa domača pravna sredstva (exhaustion of domestic remedies). Pritožbo mora vložiti v štirih mesecih od končne domače odločitve. Ta pravila o dopustnosti so bistvena za delovanje sistema."
+    },
+    {
+      "id": 37,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "Kateri protokol k EKČP je ukinil smrtno kazen v vseh okoliščinah?",
+      "questionEN": "Which Protocol to the ECHR abolished the death penalty in all circumstances?",
+      "options": [
+        "Protokol št. 6",
+        "Protokol št. 7",
+        "Protokol št. 13",
+        "Protokol št. 14"
+      ],
+      "correct": 2,
+      "explanation": "Protokol št. 13 (2002) je ukinil smrtno kazen v vseh okoliščinah, vključno v času vojne. Protokol št. 6 (1983) je ukinil smrtno kazen v času miru, vendar je dopuščal izjemo za čas vojne ali neposredne vojne nevarnosti."
+    },
+    {
+      "id": 38,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "Kateri člen EKČP ureja derogacijo (začasno omejitev) pravic v času izrednih razmer?",
+      "questionEN": "Which article of the ECHR regulates derogation of rights in times of emergency?",
+      "options": [
+        "Člen 14",
+        "Člen 15",
+        "Člen 16",
+        "Člen 17"
+      ],
+      "correct": 1,
+      "explanation": "Člen 15 EKČP dopušča derogacijo v času 'vojne ali druge splošne nevarnosti'. Vendar derogacija ni dopustna za člene 2 (razen zakonite vojne), 3, 4(1) in 7. Derogacija mora biti skladna z drugimi mednarodnimi obveznostmi in obveščena Generalnemu sekretarju SE.",
+      "examTip": "Poznati morate, katere pravice so absolutne in jih NI mogoče derogirati!"
+    },
+    {
+      "id": 39,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Kaj je Evropski odbor za preprečevanje mučenja (CPT)?",
+      "questionEN": "What is the European Committee for the Prevention of Torture (CPT)?",
+      "options": [
+        "Sodni organ Sveta Evrope",
+        "Preventivni mehanizem, ki opravlja obiske krajev odvzema prostosti",
+        "Odbor ministrov za človekove pravice",
+        "Pododbor ESČP"
+      ],
+      "correct": 1,
+      "explanation": "CPT je bil ustanovljen z Evropsko konvencijo o preprečevanju mučenja (1987) kot preventivni (ne-sodni) mehanizem. Neodvisni strokovnjaki opravljajo periodične in ad hoc obiske zaporov, policijskih postaj in drugih krajev odvzema prostosti v državah članicah Sveta Evrope.",
+      "relatedTopics": ["cpt", "prevention", "detention"]
+    },
+    {
+      "id": 40,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "basic",
+      "question": "Kdaj je Listina EU o temeljnih pravicah postala pravno zavezujoča?",
+      "questionEN": "When did the EU Charter of Fundamental Rights become legally binding?",
+      "options": [
+        "2000",
+        "2007",
+        "2009",
+        "2012"
+      ],
+      "correct": 2,
+      "explanation": "Listina EU o temeljnih pravicah je bila razglašena leta 2000, vendar je postala pravno zavezujoča šele z začetkom veljavnosti Lizbonske pogodbe 1. decembra 2009 (člen 6 PEU ji daje enako pravno veljavo kot pogodbama).",
+      "relatedTopics": ["eu-charter", "lisbon-treaty", "2009"]
+    },
+    {
+      "id": 41,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "intermediate",
+      "question": "Na koliko naslovov (poglavij) je razdeljena Listina EU o temeljnih pravicah?",
+      "questionEN": "Into how many titles (chapters) is the EU Charter of Fundamental Rights divided?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "Listina EU je razdeljena na 7 naslovov: I. Dostojanstvo, II. Svoboščine, III. Enakost, IV. Solidarnost, V. Pravice državljanov, VI. Sodno varstvo, VII. Splošne določbe. Ta struktura odraža inovativen pristop, ki združuje različne generacije pravic."
+    },
+    {
+      "id": 42,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "intermediate",
+      "question": "Kje ima sedež Sodišče Evropske unije (SEU)?",
+      "questionEN": "Where is the Court of Justice of the European Union (CJEU) located?",
+      "options": [
+        "Bruselj",
+        "Strasbourg",
+        "Luxembourg",
+        "Haag"
+      ],
+      "correct": 2,
+      "explanation": "Sodišče Evropske unije ima sedež v Luxembourgu. Ne zamenjujte ga z Evropskim sodiščem za človekove pravice (Strasbourg) ali s Splošnim sodiščem (prav tako v Luxembourgu kot del SEU)."
+    },
+    {
+      "id": 43,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "intermediate",
+      "question": "Kaj je Agencija EU za temeljne pravice (FRA)?",
+      "questionEN": "What is the EU Agency for Fundamental Rights (FRA)?",
+      "options": [
+        "Sodni organ EU",
+        "Agencija za raziskave in svetovanje na področju temeljnih pravic",
+        "Organ za individualne pritožbe",
+        "Nadzorni mehanizem za države kandidatke"
+      ],
+      "correct": 1,
+      "explanation": "Agencija za temeljne pravice (FRA) s sedežem na Dunaju (ustanovljena 2007) je agencija EU, ki zagotavlja neodvisno, na dokazih temelječo pomoč in strokovno znanje o temeljnih pravicah. Ne obravnava individualnih pritožb, ampak opravlja raziskave in svetuje institucijam EU.",
+      "relatedTopics": ["fra", "eu-agencies", "vienna"]
+    },
+    {
+      "id": 44,
+      "type": "truefalse",
+      "category": "european-eu",
+      "difficulty": "advanced",
+      "question": "EU je že pristopila k Evropski konvenciji o človekovih pravicah.",
+      "correct": false,
+      "explanation": "Čeprav člen 6(2) PEU določa, da EU 'pristopi' k EKČP, pristop še ni bil realiziran. Sodišče EU je v Mnenju 2/13 (2014) izrazilo pomisleke glede osnutka pristopnega sporazuma. Pogajanja so še v teku."
+    },
+    {
+      "id": 45,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "advanced",
+      "question": "Kakšen je obseg uporabe Listine EU o temeljnih pravicah?",
+      "questionEN": "What is the scope of application of the EU Charter of Fundamental Rights?",
+      "options": [
+        "Velja za vse ravnanje držav članic",
+        "Velja za institucije EU in države članice pri izvajanju prava EU",
+        "Velja le za institucije EU",
+        "Velja le za čezmejne situacije"
+      ],
+      "correct": 1,
+      "explanation": "Člen 51(1) Listine določa, da Listina velja za institucije, organe, urade in agencije EU ter za države članice 'samo kadar izvajajo pravo Unije'. To pomeni, da Listina nima splošne uporabe v nacionalnem pravu - velja le v 'obsegu prava EU'.",
+      "examTip": "Obseg uporabe Listine je ključno vprašanje - razlikujte od EKČP, ki velja splošno!"
+    },
+    {
+      "id": 46,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "basic",
+      "question": "Kdaj je bila sprejeta Ameriška konvencija o človekovih pravicah?",
+      "questionEN": "When was the American Convention on Human Rights adopted?",
+      "options": [
+        "1948",
+        "1959",
+        "1969",
+        "1978"
+      ],
+      "correct": 2,
+      "explanation": "Ameriška konvencija o človekovih pravicah (znana tudi kot Pakt iz San Joséja) je bila sprejeta 22. novembra 1969 in je začela veljati 18. julija 1978. Je osrednji pravno zavezujoč instrument meramiriškega sistema.",
+      "relatedTopics": ["achr", "oas", "1969"]
+    },
+    {
+      "id": 47,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "basic",
+      "question": "Katera regionalna organizacija je okvir meramiriškega sistema človekovih pravic?",
+      "questionEN": "Which regional organization is the framework for the Inter-American human rights system?",
+      "options": [
+        "NAFTA",
+        "Mercosur",
+        "Organizacija ameriških držav (OAS)",
+        "Latinskoameriška gospodarska komisija"
+      ],
+      "correct": 2,
+      "explanation": "Organizacija ameriških držav (Organization of American States - OAS), ustanovljena leta 1948, je okvir meramiriškega sistema človekovih pravic. Ima 35 držav članic iz Severne, Srednje in Južne Amerike ter Karibov."
+    },
+    {
+      "id": 48,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "intermediate",
+      "question": "Katera sta dva glavna organa meramiriškega sistema človekovih pravic?",
+      "questionEN": "What are the two main organs of the Inter-American human rights system?",
+      "options": [
+        "Sodišče in Tožilstvo",
+        "Komisija in Sodišče",
+        "Svet in Sekretariat",
+        "Skupščina in Odbor"
+      ],
+      "correct": 1,
+      "explanation": "Merimiški sistem sestavljata Meramiriška komisija za človekove pravice (sedež Washington D.C., ustanovljena 1959) in Merimiško sodišče za človekove pravice (sedež San José, Kostarika, ustanovljeno 1979). Komisija prejema individualne pritožbe, opravlja obiske in lahko posreduje primere sodišču.",
+      "relatedTopics": ["iachr", "iacthr"]
+    },
+    {
+      "id": 49,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "intermediate",
+      "question": "Koliko sodnikov ima Merimiško sodišče za človekove pravice?",
+      "questionEN": "How many judges does the Inter-American Court of Human Rights have?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "correct": 1,
+      "explanation": "Merimiško sodišče za človekove pravice ima 7 sodnikov, izvoljenih za šestletni mandat z možnostjo enkratne ponovne izvolitve. Sodniki so državljani držav članic OAS."
+    },
+    {
+      "id": 50,
+      "type": "truefalse",
+      "category": "inter-american",
+      "difficulty": "intermediate",
+      "question": "Vse države članice OAS so pogodbenice Ameriške konvencije o človekovih pravicah.",
+      "correct": false,
+      "explanation": "Ameriške konvencije o človekovih pravicah ni ratificiralo več pomembnih držav, vključno z ZDA, Kanado in več karibskimi državami. Od 35 držav članic OAS jih je le 23 pogodbenic konvencije. Nekatere države (Venezuela, Trinidad in Tobago) so celo odstopile od konvencije."
+    },
+    {
+      "id": 51,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "basic",
+      "question": "Kako se imenuje osrednja listina afriškega sistema človekovih pravic?",
+      "questionEN": "What is the name of the main instrument of the African human rights system?",
+      "options": [
+        "Afriška konvencija o človekovih pravicah",
+        "Afriška listina o človekovih pravicah in pravicah ljudstev",
+        "Afriška deklaracija človekovih pravic",
+        "Listina Afriške unije o temeljnih pravicah"
+      ],
+      "correct": 1,
+      "explanation": "Afriška listina o človekovih pravicah in pravicah ljudstev (znana tudi kot Banjulska listina) je bila sprejeta leta 1981 in je začela veljati leta 1986. Edinstvena je po tem, da poleg individualnih pravic vsebuje tudi kolektivne pravice (pravice ljudstev) in obveznosti posameznikov.",
+      "relatedTopics": ["achpr", "banjul-charter", "au"]
+    },
+    {
+      "id": 52,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "intermediate",
+      "question": "Kaj je posebnost afriške Listine v primerjavi z drugimi regionalnimi sistemi?",
+      "questionEN": "What is unique about the African Charter compared to other regional systems?",
+      "options": [
+        "Nima sodnega organa",
+        "Vključuje le državljanske in politične pravice",
+        "Vključuje tudi dolžnosti posameznikov",
+        "Velja le za demokratične države"
+      ],
+      "correct": 2,
+      "explanation": "Afriška listina je edinstvena, ker poleg pravic vključuje tudi dolžnosti (duties) posameznikov do družine, družbe, države in mednarodne skupnosti (členi 27-29). Prav tako vključuje pravice ljudstev (peoples' rights) in ekonomske, socialne in kulturne pravice v istem dokumentu.",
+      "examTip": "Dolžnosti posameznikov so edinstvena afriška inovacija - poznati morate primere!"
+    },
+    {
+      "id": 53,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "intermediate",
+      "question": "Katera sta glavna organa afršikega sistema človekovih pravic?",
+      "questionEN": "What are the main organs of the African human rights system?",
+      "options": [
+        "Svet in sekretariat",
+        "Komisija in sodišče",
+        "Kongres in tribunal",
+        "Skupščina in parlament"
+      ],
+      "correct": 1,
+      "explanation": "Afriški sistem ima dva glavna organa: Afriško komisijo za človekove pravice in pravice ljudstev (sedež Banjul, Gambija, ustanovljena 1987) in Afriško sodišče za človekove pravice in pravice ljudstev (sedež Arusha, Tanzanija, ustanovljeno 2006)."
+    },
+    {
+      "id": 54,
+      "type": "truefalse",
+      "category": "african",
+      "difficulty": "advanced",
+      "question": "Posamezniki imajo neposreden dostop do Afriškega sodišča za človekove pravice in pravice ljudstev.",
+      "correct": false,
+      "explanation": "Neposreden dostop posameznikov in NVO do Afriškega sodišča je omejen. Države morajo posebej podati izjavo po členu 34(6) Protokola, da priznavajo pristojnost sodišča za neposredne individualne pritožbe. Le majhno število držav je podalo takšno izjavo."
+    },
+    {
+      "id": 55,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "basic",
+      "question": "Kaj pomeni načelo 'izčrpanja domačih pravnih sredstev'?",
+      "questionEN": "What does the principle of 'exhaustion of domestic remedies' mean?",
+      "options": [
+        "Država mora uporabiti vsa sredstva",
+        "Pritožnik mora najprej uporabiti nacionalne pravne poti pred mednarodnimi",
+        "Mednarodna telesa morajo preizkusiti vse možnosti",
+        "Finančna sredstva morajo biti porabljena"
+      ],
+      "correct": 1,
+      "explanation": "Izčrpanje domačih pravnih sredstev je procesna zahteva, po kateri mora pritožnik pred vložitvijo mednarodne pritožbe najprej uporabiti vse razpoložljive in učinkovite nacionalne pravne poti (npr. pritožbe na višja sodišča). To je splošno načelo mednarodnega prava.",
+      "relatedTopics": ["admissibility", "domestic-remedies"]
+    },
+    {
+      "id": 56,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "Kakšen je rok za vložitev pritožbe na ESČP po končni domači odločitvi?",
+      "questionEN": "What is the time limit to lodge an application with the ECtHR after the final domestic decision?",
+      "options": [
+        "6 mesecev",
+        "4 mesece",
+        "1 leto",
+        "3 mesece"
+      ],
+      "correct": 1,
+      "explanation": "Po Protokolu št. 15, ki je začel veljati avgusta 2021, je rok za vložitev pritožbe na ESČP 4 mesece od končne domače odločitve (prej je bil 6 mesecev). Rok začne teči z dnem, ko je pritožnik seznanjen s končno odločitvijo.",
+      "examTip": "Pozor na spremembo! Protokol 15 je skrajšal rok s 6 na 4 mesece!"
+    },
+    {
+      "id": 57,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "Kaj pomeni 'actio popularis' v kontekstu pravice do pritožbe?",
+      "questionEN": "What does 'actio popularis' mean in the context of the right to petition?",
+      "options": [
+        "Pritožba v imenu ljudstva",
+        "Pritožba brez osebnega statusa žrtve",
+        "Javna pritožba",
+        "Popularna pritožba"
+      ],
+      "correct": 1,
+      "explanation": "'Actio popularis' je pritožba v splošnem interesu, brez da bi pritožnik sam bil žrtev kršitve. ESČP takšne pritožbe na podlagi člena 34 EKČP ne dopušča - zahteva, da je pritožnik sam 'žrtev' kršitve. To je eno od pravil o dopustnosti.",
+      "relatedTopics": ["victim-status", "admissibility"]
+    },
+    {
+      "id": 58,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "advanced",
+      "question": "Kakšna je razlika med 'hard law' in 'soft law' v mednarodnem pravu človekovih pravic?",
+      "questionEN": "What is the difference between 'hard law' and 'soft law' in international human rights law?",
+      "options": [
+        "Hard law je starejše od soft law",
+        "Hard law je pravno zavezujoče, soft law pa ne",
+        "Hard law velja za države, soft law za posameznike",
+        "Ni razlike - izraza sta sinonima"
+      ],
+      "correct": 1,
+      "explanation": "'Hard law' so pravno zavezujoči instrumenti (pogodbe, konvencije), katerih kršitev sproži mednarodno odgovornost. 'Soft law' so nezavezujoči instrumenti (deklaracije, resolucije, smernice), ki imajo moralno in politično težo, vendar ne ustvarjajo pravnih obveznosti. SDČP je prvotno soft law, vendar so številne določbe postale del običajnega prava.",
+      "examTip": "Razumevanje razlike med hard in soft law je bistveno za razumevanje sistema!"
+    },
+    {
+      "id": 59,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "V kateri zadevi je ESČP prvič uporabilo doktorino 'margin of appreciation'?",
+      "questionEN": "In which case did the ECtHR first apply the 'margin of appreciation' doctrine?",
+      "options": [
+        "Golder v. UK",
+        "Handyside v. UK",
+        "Ireland v. UK",
+        "Tyrer v. UK"
+      ],
+      "correct": 1,
+      "explanation": "Doktrina 'margin of appreciation' je bila sistematično razvita v zadevi Handyside v. UK (1976), ki se je nanašala na omejitve svobode izražanja. Sodišče je priznalo, da je 'nemogoče v evropskem pravu najti enotno pojmovanje morale' in da imajo nacionalni organi boljši položaj za presojo nujnosti ukrepov.",
+      "relatedTopics": ["handyside", "margin-of-appreciation", "article-10"]
+    },
+    {
+      "id": 60,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "Katera zadeva ESČP je postavila temelje za procesno obveznost po členu 2 EKČP (pravica do življenja)?",
+      "questionEN": "Which ECtHR case established the procedural obligation under Article 2 ECHR (right to life)?",
+      "options": [
+        "McCann v. UK",
+        "Osman v. UK",
+        "Öneryıldız v. Turkey",
+        "Vsi navedeni"
+      ],
+      "correct": 3,
+      "explanation": "Procesna obveznost po členu 2 zahteva učinkovito preiskavo smrti. Razvita je bila v več zadevah: McCann v. UK (1995) - uporaba sile s strani policije, Osman v. UK (1998) - preventivna obveznost, Öneryıldız v. Turkey (2004) - okoljske nesreče. Procesna obveznost je samostojna kršitev.",
+      "relatedTopics": ["procedural-obligation", "article-2", "effective-investigation"]
+    },
+    {
+      "id": 61,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "Katera zadeva ESČP se nanaša na varstvo okolja v povezavi s členom 8 EKČP?",
+      "questionEN": "Which ECtHR case relates to environmental protection in connection with Article 8 ECHR?",
+      "options": [
+        "López Ostra v. Spain",
+        "Hatton v. UK",
+        "Tătar v. Romania",
+        "Vsi navedeni"
+      ],
+      "correct": 3,
+      "explanation": "ESČP je razvilo obsežno sodno prakso o okoljskih vprašanjih pod členom 8 (zasebno življenje). López Ostra (1994) - onesnaževanje iz tovarne usnja, Hatton (2003) - hrup letališča, Tătar (2009) - uporaba cianida v rudarstvu. Ta sodna praksa povezuje človekove pravice z varstvom okolja.",
+      "examTip": "Okoljska tematika je vse bolj aktualna - poznati morate ključne primere!"
+    },
+    {
+      "id": 62,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Katera globalna agenda 2030 vključuje človekove pravice?",
+      "questionEN": "Which 2030 global agenda incorporates human rights?",
+      "options": [
+        "Pariški sporazum",
+        "Cilji trajnostnega razvoja (SDG)",
+        "Globalni dogovor o migracijah",
+        "Vsi navedeni"
+      ],
+      "correct": 3,
+      "explanation": "Vsi navedeni dokumenti vključujejo vidik človekovih pravic. SDG (2015) temeljijo na človeških pravicah in načelu 'nikogar ne pustiti za seboj'. Pariški sporazum (2015) omenja človekove pravice v preambuli. Globalni dogovor o migracijah (2018) je utemeljen na mednarodnem pravu človekovih pravic.",
+      "relatedTopics": ["sdg", "climate", "migration"]
+    },
+    {
+      "id": 63,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "Kaj je 'business and human rights' okvir OZN?",
+      "questionEN": "What is the UN 'business and human rights' framework?",
+      "options": [
+        "Pogodba o odgovornosti podjetij",
+        "Vodilna načela o podjetništvu in človekovih pravicah (Ruggie Principles)",
+        "Globalni dogovor OZN (Global Compact)",
+        "B in C sta pravilna"
+      ],
+      "correct": 3,
+      "explanation": "Okvir podjetništva in človekovih pravic vključuje Vodilna načela OZN (2011), ki jih je razvil Prof. John Ruggie (tri stebra: državna dolžnost varovanja, korporativna odgovornost spoštovanja, dostop do pravnih sredstev) in Globalni dogovor OZN (2000), ki je prostovoljna pobuda za odgovorno poslovanje.",
+      "relatedTopics": ["ungp", "ruggie-principles", "corporate-accountability"]
+    },
+    {
+      "id": 64,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "Kaj je 'ius cogens' v mednarodnem pravu človekovih pravic?",
+      "questionEN": "What is 'ius cogens' in international human rights law?",
+      "options": [
+        "Načelo suverenosti",
+        "Prisilne norme, od katerih ni dopustno odstopanje",
+        "Pravna podlaga za sankcije",
+        "Sodna praksa mednarodnih sodišč"
+      ],
+      "correct": 1,
+      "explanation": "'Ius cogens' (prisilno pravo) so peremptorne norme mednarodnega prava, od katerih ni dopustno odstopanje. Primeri: prepoved genocida, suženjstva, mučenja, rasne diskriminacije. Po Dunajski konvenciji o pogodbenem pravu je pogodba, ki je v nasprotju z ius cogens, nična.",
+      "examTip": "Ius cogens je hierarhično najvišja kategorija norm mednarodnega prava!"
+    },
+    {
+      "id": 65,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "basic",
+      "question": "Kdaj je Slovenija ratificirala Evropsko konvencijo o človekovih pravicah?",
+      "questionEN": "When did Slovenia ratify the European Convention on Human Rights?",
+      "options": [
+        "1991",
+        "1993",
+        "1994",
+        "2004"
+      ],
+      "correct": 2,
+      "explanation": "Slovenija je postala članica Sveta Evrope 14. maja 1993, istega dne je podpisala EKČP. Ratifikacija je sledila 28. junija 1994. EKČP je tako za Slovenijo začela veljati 28. junija 1994.",
+      "relatedTopics": ["slovenia-coe", "1994"]
+    },
+    {
+      "id": 66,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "intermediate",
+      "question": "Kateri organ v Sloveniji je pristojen za ustavne pritožbe v zvezi s človekovimi pravicami?",
+      "questionEN": "Which body in Slovenia handles constitutional complaints regarding human rights?",
+      "options": [
+        "Vrhovno sodišče",
+        "Ustavno sodišče",
+        "Varuh človekovih pravic",
+        "Upravno sodišče"
+      ],
+      "correct": 1,
+      "explanation": "Ustavno sodišče RS je pristojno za ustavne pritožbe (člen 160 Ustave), s katerimi se lahko izpodbijajo kršitve ustavnih pravic s posamičnimi akti državnih organov. Ustavna pritožba je praviloma potrebna za izčrpanje domačih pravnih sredstev pred ESČP.",
+      "relatedTopics": ["constitutional-court", "constitutional-complaint"]
+    },
+    {
+      "id": 67,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "intermediate",
+      "question": "Kakšen je status mednarodnih pogodb o človekovih pravicah v slovenskem pravnem redu?",
+      "questionEN": "What is the status of international human rights treaties in the Slovenian legal order?",
+      "options": [
+        "Pod zakonodajo",
+        "Enaki zakonodaji",
+        "Nad zakonodajo, pod ustavo",
+        "Enaki ustavi"
+      ],
+      "correct": 2,
+      "explanation": "Po členu 8 Ustave RS se ratificirane in objavljene mednarodne pogodbe uporabljajo neposredno. Po ustaljeni razlagi imajo pogodbe nadzakonsko veljavo (nad zakoni), vendar so podrejene Ustavi. Ustavno sodišče lahko presoja skladnost zakonov s 

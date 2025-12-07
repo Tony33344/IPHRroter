@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Protection of Human Rights | Visual Learning Platform</title>
+    <meta name="description" content="Interactive educational platform for learning about international human rights law, treaties, and institutions. FDV Ljubljana.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    
+    <!-- D3.js for visualizations -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-section="home">
+                <i data-lucide="scale" class="logo-icon"></i>
+                <span>Human Rights EDU</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#" class="nav-link active" data-section="home">Home</a>
+                <a href="#" class="nav-link" data-section="timeline">Timeline</a>
+                <a href="#" class="nav-link" data-section="spider-web">Systems Map</a>
+                <a href="#" class="nav-link" data-section="treaties">Treaties</a>
+                <a href="#" class="nav-link" data-section="quiz">Quiz</a>
+                <a href="#" class="nav-link" data-section="study-guides">Study Guides</a>
+                <a href="#" class="nav-link" data-section="about">About</a>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-wrapper">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="globalSearch" placeholder="Search treaties, institutions... (⌘K)" autocomplete="off">
+                    <kbd class="search-kbd">⌘K</kbd>
+                </div>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-badge">FDV Ljubljana | Prof. Petra Roter</div>
+                    <h1 class="hero-title">International Protection of<br><span class="text-gradient">Human Rights</span></h1>
+                    <p class="hero-subtitle">Interactive visual learning platform for understanding the complex web of international human rights law, treaties, institutions, and mechanisms.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="treatyCount">15+</span>
+                            <span class="stat-label">Core Treaties</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">193</span>
+                            <span class="stat-label">UN Members</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Regional Systems</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">75+</span>
+                            <span class="stat-label">Years of Progress</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" data-section="timeline">
+                            <i data-lucide="clock"></i>
+                            Explore Timeline
+                        </button>
+                        <button class="btn btn-secondary" data-section="spider-web">
+                            <i data-lucide="share-2"></i>
+                            View Systems Map
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-diagram" id="heroMiniDiagram"></div>
+                </div>
+            </div>
+            
+            <!-- Quick Navigation Cards -->
+            <div class="cards-section">
+                <h2 class="section-title">Explore Human Rights Systems</h2>
+                <div class="cards-grid">
+                    <div class="card card-un" data-section="spider-web" data-filter="un">
+                        <div class="card-icon">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>UN System</h3>
+                        <p>Charter-based and treaty-based bodies, Human Rights Council, OHCHR, and 9 core treaties</p>
+                        <span class="card-link">Explore <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    
+                    <div class="card card-european" data-section="spider-web" data-filter="european">
+                        <div class="card-icon">
+                            <i data-lucide="landmark"></i>
+                        </div>
+                        <h3>European System</h3>
+                        <p>Council of Europe, ECHR, European Court of Human Rights, and EU Charter</p>
+                        <span class="card-link">Explore <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    
+                    <div class="card card-americas" data-section="spider-web" data-filter="inter-american">
+                        <div class="card-icon">
+                            <i data-lucide="map"></i>
+                        </div>
+                        <h3>Inter-American</h3>
+                        <p>OAS, American Convention, Inter-American Court and Commission</p>
+                        <span class="card-link">Explore <i data-lucide="arrow-right"></i></span>
+                    </div>
+                    
+                    <div class="card card-african" data-section="spider-web" data-filter="african">
+                        <div class="card-icon">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <h3>African System</h3>
+                        <p>African Union, Banjul Charter, African Court and Commission</p>
+                        <span class="card-link">Explore <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Stats (populated by JS) -->
+            <div id="homeStats" class="home-stats-section"></div>
+            
+            <!-- Generations of Rights -->
+            <div class="generations-section">
+                <h2 class="section-title">Three Generations of Rights</h2>
+                <p class="section-subtitle">Karel Vasak's framework (1977) for understanding the evolution of human rights</p>
+                
+                <div class="generations-grid">
+                    <div class="generation gen-1">
+                        <div class="gen-header">
+                            <span class="gen-number">1st</span>
+                            <h3>Civil & Political</h3>
+                            <span class="gen-color blue"></span>
+                        </div>
+                        <p class="gen-principle"><strong>LIBERTY</strong> — "Negative rights"</p>
+                        <p class="gen-desc">State must NOT interfere</p>
+                        <ul class="gen-rights">
+                            <li>Right to life</li>
+                            <li>Freedom from torture</li>
+                            <li>Freedom of expression</li>
+                            <li>Right to fair trial</li>
+                            <li>Right to vote</li>
+                        </ul>
+                        <div class="gen-instrument">Key: ICCPR (1966)</div>
+                    </div>
+                    
+                    <div class="generation gen-2">
+                        <div class="gen-header">
+                            <span class="gen-number">2nd</span>
+                            <h3>Economic, Social, Cultural</h3>
+                            <span class="gen-color red"></span>
+                        </div>
+                        <p class="gen-principle"><strong>EQUALITY</strong> — "Positive rights"</p>
+                        <p class="gen-desc">State must PROVIDE</p>
+                        <ul class="gen-rights">
+                            <li>Right to education</li>
+                            <li>Right to health</li>
+                            <li>Right to work</li>
+                            <li>Right to housing</li>
+                            <li>Cultural rights</li>
+                        </ul>
+                        <div class="gen-instrument">Key: ICESCR (1966)</div>
+                    </div>
+                    
+                    <div class="generation gen-3">
+                        <div class="gen-header">
+                            <span class="gen-number">3rd</span>
+                            <h3>Solidarity / Collective</h3>
+                            <span class="gen-color green"></span>
+                        </div>
+                        <p class="gen-principle"><strong>FRATERNITY</strong> — "Group rights"</p>
+                        <p class="gen-desc">Peoples and communities</p>
+                        <ul class="gen-rights">
+                            <li>Right to development</li>
+                            <li>Right to environment</li>
+                            <li>Right to peace</li>
+                            <li>Self-determination</li>
+                            <li>Indigenous rights</li>
+                        </ul>
+                        <div class="gen-instrument">Emerging: Climate, Digital</div>
+                    </div>
+                </div>
+                
+                <div class="vienna-note">
+                    <i data-lucide="info"></i>
+                    <p><strong>Vienna Declaration 1993:</strong> "All human rights are universal, indivisible, interdependent and interrelated"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="clock"></i> Evolution of Human Rights</h1>
+                <p>From Magna Carta to the Digital Age — explore key milestones in human rights history</p>
+            </div>
+            
+            <div class="timeline-controls">
+                <div class="timeline-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="treaty">Treaties</button>
+                    <button class="filter-btn" data-filter="institution">Institutions</button>
+                    <button class="filter-btn" data-filter="declaration">Declarations</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                </div>
+                <div class="timeline-zoom">
+                    <button class="zoom-btn" id="zoomOut"><i data-lucide="zoom-out"></i></button>
+                    <span class="zoom-level">100%</span>
+                    <button class="zoom-btn" id="zoomIn"><i data-lucide="zoom-in"></i></button>
+                    <button class="zoom-btn" id="zoomReset"><i data-lucide="maximize-2"></i></button>
+                </div>
+            </div>
+            
+            <div class="timeline-container" id="timelineContainer">
+                <div class="timeline-wrapper" id="timelineWrapper">
+                    <!-- Timeline will be rendered here by D3.js -->
+                </div>
+            </div>
+            
+            <div class="timeline-legend">
+                <div class="legend-item"><span class="legend-dot treaty"></span> Treaty</div>
+                <div class="legend-item"><span class="legend-dot institution"></span> Institution</div>
+                <div class="legend-item"><span class="legend-dot declaration"></span> Declaration</div>
+                <div class="legend-item"><span class="legend-dot event"></span> Event</div>
+                <div class="legend-item"><span class="legend-dot charter"></span> Charter</div>
+            </div>
+        </section>
+
+        <!-- Spider Web Section -->
+        <section id="spider-web" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="share-2"></i> Human Rights Systems Map</h1>
+                <p>Interactive visualization of treaties, institutions, and their connections</p>
+            </div>
+            
+            <div class="web-controls">
+                <div class="web-filters">
+                    <button class="filter-btn active" data-filter="all">All Systems</button>
+                    <button class="filter-btn" data-filter="un">UN System</button>
+                    <button class="filter-btn" data-filter="european">European</button>
+                    <button class="filter-btn" data-filter="inter-american">Inter-American</button>
+                    <button class="filter-btn" data-filter="african">African</button>
+                </div>
+                <div class="web-search">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="webSearch" placeholder="Search nodes...">
+                </div>
+                <button class="btn btn-sm" id="resetWeb">
+                    <i data-lucide="refresh-cw"></i> Reset
+                </button>
+            </div>
+            
+            <div class="web-container">
+                <div class="web-svg-container" id="webContainer">
+                    <!-- Spider web will be rendered here by D3.js -->
+                </div>
+                <div class="web-info-panel" id="webInfoPanel">
+                    <div class="info-panel-header">
+                        <h3 id="infoPanelTitle">Select a node</h3>
+                        <button class="close-panel" id="closeInfoPanel"><i data-lucide="x"></i></button>
+                    </div>
+                    <div class="info-panel-content" id="infoPanelContent">
+                        <p class="info-placeholder">Click on any node to see details about that treaty, institution, or mechanism.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="web-legend">
+                <h4>Node Types</h4>
+                <div class="legend-items">
+                    <div class="legend-item"><span class="legend-shape hexagon"></span> Organization</div>
+                    <div class="legend-item"><span class="legend-shape circle"></span> Treaty</div>
+                    <div class="legend-item"><span class="legend-shape square"></span> Body/Committee</div>
+                    <div class="legend-item"><span class="legend-shape triangle"></span> Court</div>
+                    <div class="legend-item"><span class="legend-shape diamond"></span> Mechanism</div>
+                </div>
+                <h4>Systems</h4>
+                <div class="legend-items">
+                    <div class="legend-item"><span class="legend-color un"></span> UN System</div>
+                    <div class="legend-item"><span class="legend-color european"></span> European</div>
+                    <div class="legend-item"><span class="legend-color inter-american"></span> Inter-American</div>
+                    <div class="legend-item"><span class="legend-color african"></span> African</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treaties Section -->
+        <section id="treaties" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="file-text"></i> Core Human Rights Treaties</h1>
+                <p>Explore the major international human rights instruments</p>
+            </div>
+            
+            <div class="treaties-filters">
+                <button class="filter-btn active" data-filter="all">All Treaties</button>
+                <button class="filter-btn" data-filter="un">UN System</button>
+                <button class="filter-btn" data-filter="european">European</button>
+                <button class="filter-btn" data-filter="inter-american">Inter-American</button>
+                <button class="filter-btn" data-filter="african">African</button>
+            </div>
+            
+            <div class="treaties-grid" id="treatiesGrid">
+                <!-- Treaties will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="help-circle"></i> Test Your Knowledge</h1>
+                <p>Interactive quiz to help you prepare for exams</p>
+            </div>
+            
+            <div class="quiz-setup" id="quizSetup">
+                <div class="quiz-options">
+                    <div class="option-group">
+                        <label>Category</label>
+                        <select id="quizCategory">
+                            <option value="all">All Topics</option>
+                            <option value="un-system">UN System &amp; UN bodies</option>
+                            <option value="treaties">Core treaties</option>
+                            <option value="european-system">European system (ECHR, ECtHR)</option>
+                            <option value="regional-systems">Other regional systems</option>
+                            <option value="rights">Specific rights (116)</option>
+                            <option value="theory">Theory &amp; concepts</option>
+                            <option value="contemporary">Contemporary issues</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>Difficulty</label>
+                        <select id="quizDifficulty">
+                            <option value="all">All Levels</option>
+                            <option value="basic">Basic</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label>Questions</label>
+                        <select id="quizCount">
+                            <option value="5">5 Questions</option>
+                            <option value="10" selected>10 Questions</option>
+                            <option value="20">20 Questions</option>
+                            <option value="all">All Available</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg" id="startQuiz">
+                    <i data-lucide="play"></i>
+                    Start Quiz
+                </button>
+            </div>
+            
+            <div class="quiz-container" id="quizContainer" style="display: none;">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quizProgressBar"></div>
+                    </div>
+                    <span class="progress-text" id="quizProgressText">Question 1 of 10</span>
+                </div>
+                
+                <div class="quiz-question" id="quizQuestion">
+                    <!-- Question will be loaded here -->
+                </div>
+                
+                <div class="quiz-options-container" id="quizOptions">
+                    <!-- Options will be loaded here -->
+                </div>
+                
+                <div class="quiz-feedback" id="quizFeedback" style="display: none;">
+                    <div class="feedback-icon"></div>
+                    <p class="feedback-text"></p>
+                    <p class="feedback-explanation"></p>
+                </div>
+                
+                <div class="quiz-actions">
+                    <button class="btn btn-secondary" id="skipQuestion">Skip</button>
+                    <button class="btn btn-primary" id="nextQuestion" disabled>Next Question</button>
+                </div>
+            </div>
+            
+            <div class="quiz-results" id="quizResults" style="display: none;">
+                <div class="results-icon">
+                    <i data-lucide="award"></i>
+                </div>
+                <h2>Quiz Complete!</h2>
+                <div class="results-score">
+                    <span class="score-number" id="finalScore">0</span>
+                    <span class="score-total">/ <span id="totalQuestions">10</span></span>
+                </div>
+                <p class="results-message" id="resultsMessage"></p>
+                <div class="results-breakdown" id="resultsBreakdown">
+                    <!-- Breakdown will be shown here -->
+                </div>
+                <div class="results-actions">
+                    <button class="btn btn-secondary" id="reviewAnswers">Review Answers</button>
+                    <button class="btn btn-primary" id="retakeQuiz">Take Another Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Guides Section -->
+        <section id="study-guides" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="book-open"></i> Study Guides</h1>
+                <p>Exam-oriented summaries aligned with the course "Mednarodno varstvo človekovih pravic" (MVČP)</p>
+            </div>
+            
+            <div class="study-grid">
+                <article class="study-card">
+                    <h3>1. Koncept in razvoj človekovih pravic</h3>
+                    <p class="study-intro">Zgodovinski razvoj ideje človekovih pravic in ključna načela, na katerih temelji mednarodni režim.</p>
+                    <ul>
+                        <li><strong>Idejni viri:</strong> Magna Carta, listina pravic, ameriška in francoska deklaracija</li>
+                        <li><strong>UDHR:</strong> politični kontekst po 2. svetovni vojni, vloga Eleanor Roosevelt</li>
+                        <li><strong>Načela:</strong> univerzalnost, nedeljivost, medsebojna odvisnost, intergeneracijski pristop (1., 2. in 3. generacija)</li>
+                        <li><strong>Razprava:</strong> univerzalnost vs. kulturni relativizem ("azijske vrednote", pluralizem)</li>
+                    </ul>
+                </article>
+
+                <article class="study-card">
+                    <h3>2. Globalni režim: ZN, pogodbe in organi</h3>
+                    <p class="study-intro">Struktura sistema ZN za varstvo človekovih pravic in ključni mehanizmi nadzora.</p>
+                    <ul>
+                        <li><strong>Organi ZN:</strong> GS, VS, ECOSOC, HRC, OHCHR</li>
+                        <li><strong>9 temeljnih pogodb:</strong> ICCPR, ICESCR, ICERD, CEDAW, CAT, CRC, ICRMW, CRPD, ICPPED</li>
+                        <li><strong>Odbori:</strong> sestava, pristojnosti, periodično poročanje, splošni komentarji</li>
+                        <li><strong>SPP/UPR:</strong> cikli, vrste dokumentov, vloga držav in deležnikov, pomen priporočil</li>
+                        <li><strong>Posebni postopki:</strong> tematski in državni mandati, vloge posebnih poročevalcev</li>
+                    </ul>
+                </article>
+
+                <article class="study-card">
+                    <h3>3. Regionalni sistemi</h3>
+                    <p class="study-intro">Primerjava evropskega, medameriškega, afriškega in arabskega sistema varstva človekovih pravic.</p>
+                    <ul>
+                        <li><strong>Evropa:</strong> ECHR, ESC, ECtHR, Svet Evrope, komisarka za človekove pravice</li>
+                        <li><strong>Amerike:</strong> Ameriška deklaracija, Ameriška konvencija, Komisija in Sodišče</li>
+                        <li><strong>Afrika:</strong> Afriška listina, Komisija in Sodišče, pravice narodov in dolžnosti</li>
+                        <li><strong>Arabski svet:</strong> Arabska listina in politični kontekst</li>
+                        <li><strong>Primerjava:</strong> dostop posameznikov, obseg pravic, izvrševanje odločb</li>
+                    </ul>
+                </article>
+
+                <article class="study-card">
+                    <h3>4. Tematske pravice (vaje 116)</h3>
+                    <p class="study-intro">Pregled pravic, ki jih obravnavate v skupinskih predstavitvah in vajah.</p>
+                    <ul>
+                        <li><strong>Temeljne zaščitne pravice:</strong> življenje, prepoved mučenja, prisilna izginotja, prepoved genocida</li>
+                        <li><strong>Ranljive skupine:</strong> otrokove pravice (CRC), pravice žensk (CEDAW), invalidi (CRPD), begunci in migranti (Ženevska konvencija, UNHCR)</li>
+                        <li><strong>ESC pravice:</strong> socialne in ekonomske pravice, pravica do razvoja, pravica do čistega okolja</li>
+                        <li><strong>Kolektivne pravice:</strong> pravica do samoodločbe, varstvo manjšin (FCNM, čl. 27 ICCPR)</li>
+                        <li><strong>Svoboščine:</strong> svoboda izražanja (novi mediji), svoboda veroizpovedi</li>
+                    </ul>
+                </article>
+
+                <article class="study-card">
+                    <h3>5. Teorija, kritika in sodobni izzivi</h3>
+                    <p class="study-intro">Poglabljanje v konceptualne in aktualne razprave, pomembne za esej in refleksijo.</p>
+                    <ul>
+                        <li><strong>Kulturni relativizem:</strong> ali ovira ali izgovor? (Asian values, pluralizem)</li>
+                        <li><strong>Generacije pravic:</strong> vprašanje, ali so res ločene ali enoten sklop</li>
+                        <li><strong>Populizem:</strong> napadi na človekove pravice in institucije (Roth, Helfer)</li>
+                        <li><strong>Varnost in tehnologija:</strong> nadzor, Snowden, film Citizenfour, zasebnost</li>
+                        <li><strong>Konflikti:</strong> Ukrajina, Palestina/Izrael in (ne)delovanje mednarodnega režima</li>
+                    </ul>
+                </article>
+
+                <article class="study-card">
+                    <h3>6. Kako se pripravljati na izpit</h3>
+                    <p class="study-intro">Praktični nasveti, kako uporabiti to platformo skupaj z literaturo.</p>
+                    <ul>
+                        <li>Poveži <strong>časovnico</strong> z uvodnimi tedni in zgodovino razvoja režima.</li>
+                        <li>Uporabi <strong>Systems Map</strong> za vizualizacijo povezav med organi ZN in regionalnimi sistemi.</li>
+                        <li>Reši kvize po <strong>kategorijah</strong> (UN system, treaties, rights, theory, contemporary).</li>
+                        <li>Pri vsaki pravici pomisli na: razvoj, vsebino (globalno/regionalno) in težave v praksi.</li>
+                        <li>V refleksijah (Palestina, populizem, tehnologija) vedno poveži <strong>norme</strong>, <strong>mehanizme</strong> in <strong>politiko</strong>.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h1><i data-lucide="info"></i> About This Platform</h1>
+                <p>Educational resource for the study of international human rights law</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Course Information</h3>
+                    <p><strong>Subject:</strong> International Protection of Human Rights<br>
+                    <strong>Institution:</strong> Faculty of Social Sciences (FDV), University of Ljubljana<br>
+                    <strong>Instructor:</strong> Prof. Petra Roter</p>
+                </div>
+                
+                <div class="about-card">
+                    <h3>Learning Objectives</h3>
+                    <ul>
+                        <li>Understand the evolution of international human rights law</li>
+                        <li>Know the structure and function of UN human rights bodies</li>
+                        <li>Compare regional human rights systems</li>
+                        <li>Analyze treaty monitoring mechanisms</li>
+                        <li>Apply knowledge to contemporary human rights challenges</li>
+                    </ul>
+                </div>
+                
+                <div class="about-card">
+                    <h3>Resources</h3>
+                    <ul class="resources-list">
+                        <li><a href="https://www.ohchr.org" target="_blank"><i data-lucide="external-link"></i> OHCHR (UN Human Rights)</a></li>
+                        <li><a href="https://www.echr.coe.int" target="_blank"><i data-lucide="external-link"></i> European Court of Human Rights</a></li>
+                        <li><a href="https://hudoc.echr.coe.int" target="_blank"><i data-lucide="external-link"></i> HUDOC Database</a></li>
+                        <li><a href="https://treaties.un.org" target="_blank"><i data-lucide="external-link"></i> UN Treaty Collection</a></li>
+                        <li><a href="https://www.corteidh.or.cr" target="_blank"><i data-lucide="external-link"></i> Inter-American Court</a></li>
+                        <li><a href="https://www.african-court.org" target="_blank"><i data-lucide="external-link"></i> African Court</a></li>
+                    </ul>
+                </div>
+                
+                <div class="about-card about-credits">
+                    <h3>Credits</h3>
+                    <p>This interactive learning platform was created to support students in understanding the complex international human rights system through visual learning.</p>
+                    <p class="tech-stack">Built with: HTML5, CSS3, JavaScript, D3.js</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed views -->
+    <div class="modal" id="detailModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal"><i data-lucide="x"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

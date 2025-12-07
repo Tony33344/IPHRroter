@@ -1,0 +1,2550 @@
+{
+  "metadata": {
+    "totalQuestions": 172,
+    "lastUpdated": "2025-01-20",
+    "categories": [
+      "un-system",
+      "european-system",
+      "regional-systems",
+      "treaties",
+      "history",
+      "mechanisms",
+      "cases",
+      "theory"
+    ],
+    "difficultyLevels": [
+      "basic",
+      "intermediate",
+      "advanced",
+      "expert"
+    ]
+  },
+  "questions": [
+    {
+      "id": 51,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "Which article of the ECHR permits derogation in time of emergency?",
+      "options": [
+        "Article 13",
+        "Article 14",
+        "Article 15",
+        "Article 17"
+      ],
+      "correct": 2,
+      "explanation": "Article 15 permits derogation 'in time of war or other public emergency threatening the life of the nation,' but not from Articles 2, 3, 4(1), and 7."
+    },
+    {
+      "id": 52,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "Which ECHR rights are absolute and cannot be limited?",
+      "options": [
+        "Freedom of expression",
+        "Prohibition of torture (Art. 3), prohibition of slavery (Art. 4(1)), no punishment without law (Art. 7)",
+        "Right to privacy",
+        "Freedom of assembly"
+      ],
+      "correct": 1,
+      "explanation": "Articles 3, 4(1), and 7 are absolute rights with no limitation clauses or derogation permitted."
+    },
+    {
+      "id": 53,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What does Article 8 ECHR protect?",
+      "options": [
+        "Freedom of thought",
+        "Right to respect for private and family life, home, and correspondence",
+        "Right to property",
+        "Right to education"
+      ],
+      "correct": 1,
+      "explanation": "Article 8 ECHR protects private life, family life, home, and correspondence. It's a qualified right."
+    },
+    {
+      "id": 54,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "Under Article 10 ECHR (freedom of expression), limitations must be:",
+      "options": [
+        "Approved by the ECtHR first",
+        "Prescribed by law, pursuing a legitimate aim, and necessary in a democratic society",
+        "Minimal in all cases",
+        "Never permitted"
+      ],
+      "correct": 1,
+      "explanation": "Limitations on Art. 10 must meet the three-part test: prescribed by law, legitimate aim, and necessary in a democratic society."
+    },
+    {
+      "id": 55,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "What did the Handyside case establish about Article 10?",
+      "options": [
+        "Expression can never be limited",
+        "Freedom of expression applies also to shocking or offensive ideas",
+        "Only political speech is protected",
+        "States have no margin of appreciation"
+      ],
+      "correct": 1,
+      "explanation": "Handyside v. UK (1976) stated that Art. 10 protects ideas that 'offend, shock or disturb.'"
+    },
+    {
+      "id": 56,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "Where is the main UN human rights office located?",
+      "options": [
+        "New York",
+        "Geneva",
+        "Vienna",
+        "Nairobi"
+      ],
+      "correct": 1,
+      "explanation": "OHCHR headquarters is in Geneva, Switzerland."
+    },
+    {
+      "id": 57,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "basic",
+      "question": "CAT stands for:",
+      "options": [
+        "Convention Against Terrorism",
+        "Convention Against Torture",
+        "Committee Against Trafficking",
+        "Council on Armed Threats"
+      ],
+      "correct": 1,
+      "explanation": "CAT is the Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment, adopted in 1984."
+    },
+    {
+      "id": 58,
+      "type": "true-false",
+      "category": "european-system",
+      "difficulty": "basic",
+      "question": "The European Union and the Council of Europe are the same organization.",
+      "correct": false,
+      "explanation": "They are distinct: the Council of Europe (46 states) focuses on human rights; the EU (27 states) is an economic and political union."
+    },
+    {
+      "id": 59,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "intermediate",
+      "question": "The ILO (International Labour Organization) was established in:",
+      "options": [
+        "1919",
+        "1945",
+        "1948",
+        "1966"
+      ],
+      "correct": 0,
+      "explanation": "The ILO was established in 1919 as part of the Treaty of Versailles."
+    },
+    {
+      "id": 60,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "intermediate",
+      "question": "The first Geneva Convention was adopted in:",
+      "options": [
+        "1848",
+        "1864",
+        "1899",
+        "1949"
+      ],
+      "correct": 1,
+      "explanation": "The first Geneva Convention was adopted in 1864, focusing on wounded soldiers."
+    },
+    {
+      "id": 61,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Which UN organ has primary responsibility for international peace and security?",
+      "options": [
+        "General Assembly",
+        "ECOSOC",
+        "Security Council",
+        "ICJ"
+      ],
+      "correct": 2,
+      "explanation": "The Security Council has primary peace/security responsibility."
+    },
+    {
+      "id": 62,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "intermediate",
+      "question": "What is the difference between Special Rapporteurs and Working Groups?",
+      "options": [
+        "No difference",
+        "Rapporteurs are individuals, Working Groups are teams of 5 experts",
+        "Rapporteurs are permanent, Working Groups temporary",
+        "Rapporteurs focus on countries, Working Groups on themes"
+      ],
+      "correct": 1,
+      "explanation": "Special Rapporteurs are individual mandate holders; Working Groups consist of 5 experts."
+    },
+    {
+      "id": 63,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What does 'erga omnes' mean in human rights context?",
+      "options": [
+        "Against everyone",
+        "Obligations owed to all states/the international community as a whole",
+        "Only against enemies",
+        "Universal jurisdiction"
+      ],
+      "correct": 1,
+      "explanation": "Erga omnes obligations are owed to the international community as a whole."
+    },
+    {
+      "id": 64,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "The American Declaration of the Rights and Duties of Man was adopted in:",
+      "options": [
+        "1945",
+        "1948",
+        "1969",
+        "1978"
+      ],
+      "correct": 1,
+      "explanation": "The American Declaration was adopted in May 1948, before the UDHR."
+    },
+    {
+      "id": 65,
+      "type": "true-false",
+      "category": "regional-systems",
+      "difficulty": "advanced",
+      "question": "The African Court on Human and Peoples' Rights can receive cases directly from individuals.",
+      "correct": false,
+      "explanation": "Generally no - only states and the African Commission can bring cases unless the state made a special declaration."
+    },
+    {
+      "id": 66,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "What is a 'pilot judgment' in ECtHR practice?",
+      "options": [
+        "The first judgment of the Court",
+        "A test case procedure addressing systemic problems",
+        "A preliminary ruling",
+        "A judgment about aviation rights"
+      ],
+      "correct": 1,
+      "explanation": "Pilot judgments address systemic/structural problems affecting many similar cases."
+    },
+    {
+      "id": 67,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "What was the significance of the Marckx v. Belgium case?",
+      "options": [
+        "First case on torture",
+        "Recognized positive obligations and rights of children born out of wedlock",
+        "Established margin of appreciation",
+        "First inter-state case"
+      ],
+      "correct": 1,
+      "explanation": "Marckx v. Belgium (1979) was landmark for recognizing positive obligations under Article 8."
+    },
+    {
+      "id": 68,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "What did the Osman v. UK case establish?",
+      "options": [
+        "Right to privacy",
+        "Positive obligation to protect life from criminal acts when authorities know of risk",
+        "Right to education",
+        "Freedom of religion"
+      ],
+      "correct": 1,
+      "explanation": "Osman v. UK (1998) established the 'Osman test' for positive obligations under Art. 2."
+    },
+    {
+      "id": 69,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "The Hirst v. UK case concerned:",
+      "options": [
+        "Freedom of expression",
+        "Right to life",
+        "Prisoners' right to vote",
+        "Right to a fair trial"
+      ],
+      "correct": 2,
+      "explanation": "Hirst v. UK (No. 2) (2005) found UK's blanket ban on prisoner voting violated Protocol 1, Article 3."
+    },
+    {
+      "id": 70,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "What is the Optional Protocol to ICESCR about?",
+      "options": [
+        "Creates new economic rights",
+        "Establishes individual communications procedure for ICESCR",
+        "Abolishes certain rights",
+        "Creates monitoring mechanism"
+      ],
+      "correct": 1,
+      "explanation": "The OP-ICESCR (2008) establishes individual communications procedures for ICESCR."
+    },
+    {
+      "id": 71,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "How often does the UPR review each state?",
+      "options": [
+        "Annually",
+        "Every 4.5 years (third cycle)",
+        "Every 10 years",
+        "Only once"
+      ],
+      "correct": 1,
+      "explanation": "In the third cycle, all 193 UN members are reviewed every 4.5 years."
+    },
+    {
+      "id": 72,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What are 'Concluding Observations' issued by treaty bodies?",
+      "options": [
+        "Final decisions on individual cases",
+        "Recommendations to states after examining their periodic reports",
+        "Summary of general comments",
+        "Rules of procedure"
+      ],
+      "correct": 1,
+      "explanation": "Concluding Observations are recommendations issued after examining a state's periodic report."
+    },
+    {
+      "id": 73,
+      "type": "true-false",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "The views of the Human Rights Committee in individual communications are legally binding.",
+      "correct": false,
+      "explanation": "Views are not legally binding like court judgments, but states are expected to comply in good faith."
+    },
+    {
+      "id": 74,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "basic",
+      "question": "Which court interprets EU law, including the Charter of Fundamental Rights?",
+      "options": [
+        "European Court of Human Rights",
+        "Court of Justice of the European Union",
+        "International Court of Justice",
+        "International Criminal Court"
+      ],
+      "correct": 1,
+      "explanation": "The CJEU (Luxembourg) interprets EU law including the Charter."
+    },
+    {
+      "id": 75,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What is the FRA?",
+      "options": [
+        "French Rights Association",
+        "Fundamental Rights Agency of the EU",
+        "Framework for Rights Analysis",
+        "Federal Republic Act"
+      ],
+      "correct": 1,
+      "explanation": "The European Union Agency for Fundamental Rights (FRA) provides advice on fundamental rights."
+    },
+    {
+      "id": 76,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "expert",
+      "question": "What is the 'solange' doctrine?",
+      "options": [
+        "A German constitutional principle limiting EU law primacy regarding rights protection",
+        "A Swiss legal principle",
+        "An ECtHR doctrine",
+        "A treaty provision"
+      ],
+      "correct": 0,
+      "explanation": "The German Federal Constitutional Court's Solange decisions established it would review EU acts for fundamental rights."
+    },
+    {
+      "id": 77,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "basic",
+      "question": "What are 'second generation' rights?",
+      "options": [
+        "Voting rights",
+        "Economic, social, and cultural rights",
+        "Environmental rights",
+        "Digital rights"
+      ],
+      "correct": 1,
+      "explanation": "Second generation rights are economic, social, and cultural rights."
+    },
+    {
+      "id": 78,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What does 'progressive realization' mean regarding ESC rights?",
+      "options": [
+        "Rights get better over time automatically",
+        "States must progressively achieve full realization using maximum available resources",
+        "Rights are gradually eliminated",
+        "Only progressive states have these rights"
+      ],
+      "correct": 1,
+      "explanation": "Article 2 ICESCR requires states to take steps 'to the maximum of available resources' to achieve rights."
+    },
+    {
+      "id": 79,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What are 'minimum core obligations' in ESC rights?",
+      "options": [
+        "Optional obligations",
+        "Obligations to ensure minimum essential levels of rights regardless of resources",
+        "Core human rights treaties",
+        "Minimum number of ratifications"
+      ],
+      "correct": 1,
+      "explanation": "CESCR General Comment 3 established minimum core obligations for essential levels of rights."
+    },
+    {
+      "id": 80,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "expert",
+      "question": "What are the 'Paris Principles' concerning?",
+      "options": [
+        "Climate change",
+        "Standards for national human rights institutions (NHRIs)",
+        "European integration",
+        "Treaty interpretation"
+      ],
+      "correct": 1,
+      "explanation": "The Paris Principles (1993) set international standards for NHRIs."
+    },
+    {
+      "id": 81,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is the ICC?",
+      "options": [
+        "International Complaints Commission",
+        "International Criminal Court",
+        "International Constitutional Court",
+        "International Coordination Committee"
+      ],
+      "correct": 1,
+      "explanation": "The ICC (Rome Statute, 1998) prosecutes individuals for genocide, crimes against humanity, war crimes."
+    },
+    {
+      "id": 82,
+      "type": "true-false",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "The ICC can only prosecute when national courts are unwilling or unable to do so (complementarity principle).",
+      "correct": true,
+      "explanation": "The complementarity principle means the ICC is a court of last resort."
+    },
+    {
+      "id": 83,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "basic",
+      "question": "Human Rights Day is celebrated on which date?",
+      "options": [
+        "January 1",
+        "June 26",
+        "October 24",
+        "December 10"
+      ],
+      "correct": 3,
+      "explanation": "Human Rights Day is December 10, commemorating the UDHR adoption."
+    },
+    {
+      "id": 84,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "intermediate",
+      "question": "The Nuremberg Trials were significant for human rights because:",
+      "options": [
+        "They created the UN",
+        "They established individual criminal responsibility for international crimes",
+        "They drafted the UDHR",
+        "They created the first human rights treaty"
+      ],
+      "correct": 1,
+      "explanation": "Nuremberg established that individuals can be held criminally responsible for international crimes."
+    },
+    {
+      "id": 85,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "intermediate",
+      "question": "Which was the first case decided by the European Court of Human Rights?",
+      "options": [
+        "Handyside v. UK",
+        "Lawless v. Ireland",
+        "Golder v. UK",
+        "Ireland v. UK"
+      ],
+      "correct": 1,
+      "explanation": "Lawless v. Ireland (1961) was the first case decided on merits by the ECtHR."
+    },
+    {
+      "id": 86,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "What principle did the Golder v. UK case establish?",
+      "options": [
+        "Right to access to court is implicit in Article 6",
+        "Torture is always prohibited",
+        "Prisoners have no rights",
+        "Margin of appreciation applies"
+      ],
+      "correct": 0,
+      "explanation": "Golder v. UK (1975) established that the right of access to a court is implicit in Article 6."
+    },
+    {
+      "id": 87,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "The Ireland v. UK case was significant for:",
+      "options": [
+        "First inter-state case",
+        "Distinguishing between torture and inhuman/degrading treatment",
+        "Creating the pilot judgment procedure",
+        "Establishing environmental rights"
+      ],
+      "correct": 1,
+      "explanation": "Ireland v. UK (1978) distinguished torture from inhuman and degrading treatment."
+    },
+    {
+      "id": 88,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "What changed with the Brighton Declaration (2012)?",
+      "options": [
+        "Created the ECtHR",
+        "Emphasized subsidiarity, margin of appreciation, and Court reform",
+        "Abolished the Court",
+        "Created new rights"
+      ],
+      "correct": 1,
+      "explanation": "The Brighton Declaration led to Protocol 15 and continuing reform efforts."
+    },
+    {
+      "id": 89,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "How many judges sit in an ECtHR Grand Chamber?",
+      "options": [
+        "7",
+        "9",
+        "17",
+        "46"
+      ],
+      "correct": 2,
+      "explanation": "Grand Chamber consists of 17 judges."
+    },
+    {
+      "id": 90,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "A Chamber of the ECtHR typically consists of how many judges?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "correct": 2,
+      "explanation": "A Chamber consists of 7 judges."
+    },
+    {
+      "id": 91,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "advanced",
+      "question": "What is an 'interim measure' (Rule 39) at the ECtHR?",
+      "options": [
+        "Preliminary judgment",
+        "Urgent measure to prevent irreparable harm pending full consideration",
+        "Procedural formality",
+        "Appeal mechanism"
+      ],
+      "correct": 1,
+      "explanation": "Rule 39 allows urgent measures to prevent irreparable harm."
+    },
+    {
+      "id": 92,
+      "type": "true-false",
+      "category": "mechanisms",
+      "difficulty": "advanced",
+      "question": "ECtHR interim measures under Rule 39 are legally binding on states.",
+      "correct": true,
+      "explanation": "Following Mamatkulov v. Turkey (2005), Rule 39 measures are considered binding."
+    },
+    {
+      "id": 93,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "basic",
+      "question": "Which treaty focuses specifically on the rights of persons with disabilities?",
+      "options": [
+        "ICERD",
+        "CEDAW",
+        "CRPD",
+        "CRC"
+      ],
+      "correct": 2,
+      "explanation": "The CRPD (2006) focuses on disability rights with a social model of disability."
+    },
+    {
+      "id": 94,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "What is unique about the CRPD's approach to disability?",
+      "options": [
+        "Medical model focus",
+        "Adopts social/human rights model viewing disability as interaction between impairments and barriers",
+        "Excludes mental disabilities",
+        "Only covers physical disabilities"
+      ],
+      "correct": 1,
+      "explanation": "CRPD adopts the social/human rights model of disability."
+    },
+    {
+      "id": 95,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What was the 'Commission on Human Rights'?",
+      "options": [
+        "Current main UN human rights body",
+        "Predecessor to HRC, criticized for politicization, replaced in 2006",
+        "A treaty body",
+        "An NGO"
+      ],
+      "correct": 1,
+      "explanation": "The Commission (1946-2006) was replaced by the Human Rights Council."
+    },
+    {
+      "id": 96,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is the 'respect, protect, fulfill' framework?",
+      "options": [
+        "Three UN organs for rights",
+        "Typology of state obligations: not violate, prevent third-party violations, take positive steps",
+        "Three generations of rights",
+        "Three regional systems"
+      ],
+      "correct": 1,
+      "explanation": "This framework describes state obligations: respect, protect, and fulfill rights."
+    },
+    {
+      "id": 97,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "In ECHR terminology, what is 'just satisfaction' under Article 41?",
+      "options": [
+        "A satisfactory judgment",
+        "Compensation the Court may award when domestic law allows only partial reparation",
+        "Apology requirement",
+        "Settlement between parties"
+      ],
+      "correct": 1,
+      "explanation": "Article 41 allows the Court to afford 'just satisfaction' (usually monetary compensation)."
+    },
+    {
+      "id": 98,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "What did the M.C. v. Bulgaria case establish?",
+      "options": [
+        "Environmental rights",
+        "Positive obligation to penalize and prosecute rape effectively",
+        "Freedom of expression",
+        "Property rights"
+      ],
+      "correct": 1,
+      "explanation": "M.C. v. Bulgaria (2003) established positive obligations regarding rape prosecution."
+    },
+    {
+      "id": 99,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "The Chahal v. UK case established what regarding Article 3?",
+      "options": [
+        "States can deport terrorists",
+        "Prohibition of torture is absolute - no deportation to face torture regardless of national security",
+        "National security can override Article 3",
+        "Diplomatic assurances always suffice"
+      ],
+      "correct": 1,
+      "explanation": "Chahal (1996) confirmed Article 3 is absolute: no deportation to face torture."
+    },
+    {
+      "id": 100,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "What principle did the Kudla v. Poland judgment establish?",
+      "options": [
+        "Right to property",
+        "Article 13 requires remedy for excessive length of proceedings",
+        "Freedom of religion",
+        "Environmental rights"
+      ],
+      "correct": 1,
+      "explanation": "Kudła v. Poland (2000) held that Article 13 requires an effective remedy for length of proceedings."
+    },
+    {
+      "id": 101,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What does 'exhaustion of domestic remedies' mean?",
+      "options": [
+        "All local courts are closed",
+        "Applicant must use available national remedies before applying to ECtHR",
+        "Remedies must be exhausting",
+        "The state is exhausted"
+      ],
+      "correct": 1,
+      "explanation": "Under Article 35(1) ECHR, applicants must exhaust effective domestic remedies first."
+    },
+    {
+      "id": 102,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "What is the time limit for applying to the ECtHR after final domestic decision?",
+      "options": [
+        "3 months",
+        "4 months (since Protocol 15)",
+        "6 months",
+        "1 year"
+      ],
+      "correct": 1,
+      "explanation": "Protocol 15 changed the time limit from 6 months to 4 months."
+    },
+    {
+      "id": 103,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What are 'qualified rights' in the ECHR?",
+      "options": [
+        "Rights for qualified professionals",
+        "Rights that can be limited under specified conditions",
+        "Rights that don't exist",
+        "Rights only for certain people"
+      ],
+      "correct": 1,
+      "explanation": "Qualified rights (Arts. 8-11) can be limited if prescribed by law, with legitimate aim, and necessary."
+    },
+    {
+      "id": 104,
+      "type": "true-false",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "The right to property is contained in the main text of the ECHR.",
+      "correct": false,
+      "explanation": "The right to property is in Protocol 1, Article 1, not the main Convention text."
+    },
+    {
+      "id": 105,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "Protocol 1 to the ECHR covers which rights?",
+      "options": [
+        "Torture prohibition",
+        "Property, education, free elections",
+        "Death penalty abolition",
+        "Criminal procedure rights"
+      ],
+      "correct": 1,
+      "explanation": "Protocol 1 (1952) adds protection of property, right to education, and right to free elections."
+    },
+    {
+      "id": 106,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What is 'horizontal effect' (Drittwirkung) of human rights?",
+      "options": [
+        "Rights apply across borders",
+        "Human rights norms apply in private relations between individuals",
+        "Rights are applied uniformly",
+        "Rights spread through society"
+      ],
+      "correct": 1,
+      "explanation": "Drittwirkung refers to whether human rights apply between private parties."
+    },
+    {
+      "id": 107,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "What principle did the Von Hannover v. Germany cases develop?",
+      "options": [
+        "Freedom of assembly",
+        "Balance between right to privacy and freedom of expression",
+        "Right to life",
+        "Fair trial"
+      ],
+      "correct": 1,
+      "explanation": "Von Hannover cases developed criteria for balancing privacy and press freedom."
+    },
+    {
+      "id": 108,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "advanced",
+      "question": "The Lautsi v. Italy (Grand Chamber) case concerned:",
+      "options": [
+        "Torture",
+        "Crucifixes in public school classrooms",
+        "Prisoners' rights",
+        "Immigration"
+      ],
+      "correct": 1,
+      "explanation": "Lautsi (2011 GC) found crucifixes in Italian classrooms didn't violate the Convention."
+    },
+    {
+      "id": 109,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "expert",
+      "question": "What was the significance of S.A.S. v. France regarding the face veil ban?",
+      "options": [
+        "Ban was illegal",
+        "Court accepted 'living together' as legitimate aim; upheld ban",
+        "Ban was required by ECHR",
+        "Court didn't decide"
+      ],
+      "correct": 1,
+      "explanation": "S.A.S. v. France (2014) accepted 'living together' as a legitimate aim for the ban."
+    },
+    {
+      "id": 110,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "advanced",
+      "question": "What is the Maputo Protocol?",
+      "options": [
+        "European treaty",
+        "Protocol to the African Charter on the Rights of Women in Africa",
+        "UN document",
+        "American human rights treaty"
+      ],
+      "correct": 1,
+      "explanation": "The Maputo Protocol (2003) protects women's rights in Africa."
+    },
+    {
+      "id": 111,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "What are treaty body 'follow-up procedures'?",
+      "options": [
+        "Procedures after treaty adoption",
+        "Mechanisms to monitor state implementation of Views/Concluding Observations",
+        "Procedures for new treaties",
+        "Court appeal procedures"
+      ],
+      "correct": 1,
+      "explanation": "Follow-up procedures track whether states implement treaty body recommendations."
+    },
+    {
+      "id": 112,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is the difference between 'hard law' and 'soft law' in human rights?",
+      "options": [
+        "Difficult vs easy law",
+        "Legally binding treaties vs non-binding declarations/resolutions",
+        "National vs international law",
+        "Old vs new law"
+      ],
+      "correct": 1,
+      "explanation": "Hard law is legally binding; soft law is not formally binding but may influence law development."
+    },
+    {
+      "id": 113,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "The UN Guiding Principles on Business and Human Rights are:",
+      "options": [
+        "A binding treaty",
+        "Soft law framework of 'Protect, Respect, Remedy'",
+        "A court decision",
+        "Replaced by a treaty"
+      ],
+      "correct": 1,
+      "explanation": "The UNGPs (2011) are a soft law framework for business and human rights."
+    },
+    {
+      "id": 114,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What is 'transitional justice'?",
+      "options": [
+        "Law during government transitions",
+        "Measures to address past human rights violations after conflict",
+        "Temporary legal systems",
+        "International criminal law only"
+      ],
+      "correct": 1,
+      "explanation": "Transitional justice encompasses measures to address legacies of massive human rights abuses."
+    },
+    {
+      "id": 115,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "expert",
+      "question": "What is the 'Responsibility to Protect' (R2P)?",
+      "options": [
+        "A binding treaty obligation",
+        "Political commitment that sovereignty implies responsibility to protect from atrocities",
+        "Military intervention right",
+        "Humanitarian law principle"
+      ],
+      "correct": 1,
+      "explanation": "R2P (2005) is a political commitment about state responsibility to protect populations from atrocities."
+    },
+    {
+      "id": 116,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "basic",
+      "question": "Who was the first UN High Commissioner for Human Rights?",
+      "options": [
+        "Kofi Annan",
+        "José Ayala-Lasso",
+        "Mary Robinson",
+        "Sergio Vieira de Mello"
+      ],
+      "correct": 1,
+      "explanation": "José Ayala-Lasso served as the first High Commissioner from 1994-1997."
+    },
+    {
+      "id": 117,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "Who can bring inter-state cases to the ECtHR?",
+      "options": [
+        "Only the Commission",
+        "Any state party against another state party",
+        "Only EU member states",
+        "Only after Security Council authorization"
+      ],
+      "correct": 1,
+      "explanation": "Under Article 33 ECHR, any state party may refer alleged violations by another state party."
+    },
+    {
+      "id": 118,
+      "type": "true-false",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "The European Social Charter is part of the ECHR system.",
+      "correct": false,
+      "explanation": "The European Social Charter is a separate Council of Europe treaty with its own monitoring system."
+    },
+    {
+      "id": 119,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "What is the collective complaints procedure under the European Social Charter?",
+      "options": [
+        "Individual complaints",
+        "NGOs and social partners can lodge complaints alleging non-compliance",
+        "State reporting only",
+        "Court procedure"
+      ],
+      "correct": 1,
+      "explanation": "The 1995 Additional Protocol allows certain organizations to bring collective complaints."
+    },
+    {
+      "id": 120,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "intermediate",
+      "question": "What is the CPT?",
+      "options": [
+        "Central Protection Treaty",
+        "European Committee for the Prevention of Torture",
+        "Commission on People's Tribunals",
+        "Convention Protocol Text"
+      ],
+      "correct": 1,
+      "explanation": "The CPT conducts visits to places of detention in CoE states."
+    },
+    {
+      "id": 121,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "The Arab Charter on Human Rights entered into force in:",
+      "options": [
+        "1981",
+        "1994",
+        "2004",
+        "2008"
+      ],
+      "correct": 3,
+      "explanation": "The revised Arab Charter entered into force in 2008."
+    },
+    {
+      "id": 122,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "advanced",
+      "question": "What is the ASEAN Intergovernmental Commission on Human Rights (AICHR)?",
+      "options": [
+        "A court",
+        "A consultative body on human rights without protection mandate",
+        "A treaty body",
+        "An NGO network"
+      ],
+      "correct": 1,
+      "explanation": "AICHR (2009) is primarily a consultative body for promotion of human rights."
+    },
+    {
+      "id": 123,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "expert",
+      "question": "What is 'fragmentation' in international human rights law?",
+      "options": [
+        "Breaking apart of treaties",
+        "Proliferation of overlapping regimes potentially leading to conflicting interpretations",
+        "Division of rights into categories",
+        "Separation of systems"
+      ],
+      "correct": 1,
+      "explanation": "Fragmentation refers to proliferation of tribunals that may issue different interpretations."
+    },
+    {
+      "id": 124,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "What is the purpose of state reporting to treaty bodies?",
+      "options": [
+        "To criticize states",
+        "States report on measures taken to implement treaty obligations",
+        "To rank states",
+        "Only for violations"
+      ],
+      "correct": 1,
+      "explanation": "States submit periodic reports on implementation; treaty bodies examine and provide recommendations."
+    },
+    {
+      "id": 125,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "intermediate",
+      "question": "The UN was founded in:",
+      "options": [
+        "1919",
+        "1945",
+        "1948",
+        "1950"
+      ],
+      "correct": 1,
+      "explanation": "The United Nations was founded on October 24, 1945."
+    },
+    {
+      "id": 126,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "basic",
+      "question": "What is PACE?",
+      "options": [
+        "Protocol for Additional Civil Enforcement",
+        "Parliamentary Assembly of the Council of Europe",
+        "Pan-European Assembly for Civil Engagement",
+        "Protection Agency for Citizens in Europe"
+      ],
+      "correct": 1,
+      "explanation": "PACE is the Parliamentary Assembly of the Council of Europe, one of its main organs."
+    },
+    {
+      "id": 127,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is ECOSOC's role in human rights?",
+      "options": [
+        "No role",
+        "Oversees some human rights mechanisms and coordinates with specialized agencies",
+        "Only economic matters",
+        "Replaced by HRC"
+      ],
+      "correct": 1,
+      "explanation": "ECOSOC has a coordinating role and originally oversaw the Commission on Human Rights."
+    },
+    {
+      "id": 128,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "What does ICRMW stand for?",
+      "options": [
+        "International Convention on Rights of Migrant Workers",
+        "International Committee for Rights of Military Workers",
+        "International Council on Refugee and Migrant Welfare",
+        "International Convention on Religious and Minority Welfare"
+      ],
+      "correct": 0,
+      "explanation": "ICRMW is the International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families (1990)."
+    },
+    {
+      "id": 129,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "What is ICPPED?",
+      "options": [
+        "International Convention for Protection of Prisoners and Detained",
+        "International Convention for Protection of All Persons from Enforced Disappearance",
+        "International Committee on Prevention of Political and Economic Discrimination",
+        "International Council for Protection of the Environment and Development"
+      ],
+      "correct": 1,
+      "explanation": "ICPPED (2006) is the International Convention for the Protection of All Persons from Enforced Disappearance."
+    },
+    {
+      "id": 130,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "intermediate",
+      "question": "What is the SPT?",
+      "options": [
+        "Special Procedures Team",
+        "Subcommittee on Prevention of Torture",
+        "State Party Tribunal",
+        "Standard Protocol for Treaties"
+      ],
+      "correct": 1,
+      "explanation": "The SPT is created by OPCAT to conduct visits to places of detention."
+    },
+    {
+      "id": 131,
+      "type": "true-false",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "The UN Security Council can refer situations to the ICC.",
+      "correct": true,
+      "explanation": "The Security Council can refer situations to the ICC under Chapter VII, even for non-states parties to the Rome Statute."
+    },
+    {
+      "id": 132,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "advanced",
+      "question": "The Tokyo Trials after WWII focused on:",
+      "options": [
+        "European war crimes",
+        "Japanese war crimes and crimes against peace",
+        "Treaty negotiations",
+        "UN formation"
+      ],
+      "correct": 1,
+      "explanation": "The International Military Tribunal for the Far East (1946-1948) tried Japanese leaders for war crimes and crimes against peace."
+    },
+    {
+      "id": 133,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is the principle of 'universality' of human rights?",
+      "options": [
+        "Rights apply only universally, not individually",
+        "Human rights apply to all persons regardless of nationality, culture, or other status",
+        "Rights are universal across all treaties",
+        "Only universal treaties are binding"
+      ],
+      "correct": 1,
+      "explanation": "Universality means human rights apply to all human beings by virtue of their humanity."
+    },
+    {
+      "id": 134,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What is the Venice Commission?",
+      "options": [
+        "A tourism organization",
+        "The Council of Europe's advisory body on constitutional matters",
+        "An EU institution",
+        "A human rights court"
+      ],
+      "correct": 1,
+      "explanation": "The Venice Commission (European Commission for Democracy through Law) advises on constitutional law."
+    },
+    {
+      "id": 135,
+      "type": "multiple",
+      "category": "mechanisms",
+      "difficulty": "advanced",
+      "question": "What are National Preventive Mechanisms (NPMs)?",
+      "options": [
+        "National armies",
+        "Bodies required by OPCAT to conduct regular visits to places of detention",
+        "National courts",
+        "Government ministries"
+      ],
+      "correct": 1,
+      "explanation": "OPCAT requires states to establish NPMs to conduct preventive visits to all places of detention."
+    },
+    {
+      "id": 136,
+      "type": "multiple",
+      "category": "cases",
+      "difficulty": "intermediate",
+      "question": "What is the significance of the Kadi case in EU law?",
+      "options": [
+        "Established EU citizenship",
+        "CJEU reviewed UN Security Council sanctions for fundamental rights compliance",
+        "Created the EU Charter",
+        "Addressed Brexit"
+      ],
+      "correct": 1,
+      "explanation": "Kadi (2008) established that EU courts can review implementation of UN sanctions for fundamental rights."
+    },
+    {
+      "id": 137,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "What is the Durban Declaration and Programme of Action?",
+      "options": [
+        "Climate agreement",
+        "Outcome of 2001 World Conference against Racism",
+        "Economic development plan",
+        "Refugee protection framework"
+      ],
+      "correct": 1,
+      "explanation": "The Durban Declaration (2001) addressed racism, racial discrimination, xenophobia, and related intolerance."
+    },
+    {
+      "id": 138,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What is 'intersectionality' in human rights?",
+      "options": [
+        "Intersection of different treaties",
+        "How multiple forms of discrimination interact and compound",
+        "Intersection of national and international law",
+        "Cooperation between regional systems"
+      ],
+      "correct": 1,
+      "explanation": "Intersectionality recognizes that individuals may face multiple, intersecting forms of discrimination."
+    },
+    {
+      "id": 139,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "expert",
+      "question": "What is the principle of 'subsidiarity' in the ECHR system?",
+      "options": [
+        "States are subsidiary to the Court",
+        "Primary responsibility lies with states; ECtHR is subsidiary mechanism",
+        "Subsidiary rights are less important",
+        "Regional systems are subsidiary to UN"
+      ],
+      "correct": 1,
+      "explanation": "Subsidiarity means states have primary responsibility for protecting rights; the ECtHR plays a subsidiary role."
+    },
+    {
+      "id": 140,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "How many members does ECOSOC have?",
+      "options": [
+        "15",
+        "27",
+        "54",
+        "193"
+      ],
+      "correct": 2,
+      "explanation": "ECOSOC has 54 member states elected by the General Assembly for three-year terms."
+    },
+    {
+      "id": 141,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "The Organization of American States (OAS) was established in:",
+      "options": [
+        "1945",
+        "1948",
+        "1959",
+        "1969"
+      ],
+      "correct": 1,
+      "explanation": "The OAS was established in 1948 by the Charter of Bogotá."
+    },
+    {
+      "id": 142,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "The African Union was established in:",
+      "options": [
+        "1963",
+        "1981",
+        "2001",
+        "2002"
+      ],
+      "correct": 3,
+      "explanation": "The AU was established in 2002, succeeding the Organization of African Unity (OAU, 1963)."
+    },
+    {
+      "id": 143,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "expert",
+      "question": "What is the 'Limburg Principles'?",
+      "options": [
+        "Environmental treaty",
+        "Guidelines on implementing ICESCR",
+        "Criminal procedure rules",
+        "Diplomatic immunity principles"
+      ],
+      "correct": 1,
+      "explanation": "The Limburg Principles (1986) are expert guidelines on the nature and scope of ICESCR obligations."
+    },
+    {
+      "id": 144,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "expert",
+      "question": "What are the 'Maastricht Guidelines'?",
+      "options": [
+        "EU economic rules",
+        "Guidelines on violations of economic, social and cultural rights",
+        "Trade regulations",
+        "Migration procedures"
+      ],
+      "correct": 1,
+      "explanation": "The Maastricht Guidelines (1997) elaborate on what constitutes violations of ESC rights."
+    },
+    {
+      "id": 145,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is the ICJ?",
+      "options": [
+        "International Criminal Court",
+        "International Court of Justice",
+        "International Claims Jurisdiction",
+        "International Civil Judiciary"
+      ],
+      "correct": 1,
+      "explanation": "The ICJ (World Court) is the principal judicial organ of the UN, settling disputes between states."
+    },
+    {
+      "id": 146,
+      "type": "true-false",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "The ICJ can hear human rights cases brought by individuals.",
+      "correct": false,
+      "explanation": "The ICJ only hears cases between states; individuals cannot bring cases directly to it."
+    },
+    {
+      "id": 147,
+      "type": "multiple",
+      "category": "history",
+      "difficulty": "intermediate",
+      "question": "The Genocide Convention was adopted in:",
+      "options": [
+        "1945",
+        "1948",
+        "1951",
+        "1966"
+      ],
+      "correct": 1,
+      "explanation": "The Convention on the Prevention and Punishment of the Crime of Genocide was adopted in 1948."
+    },
+    {
+      "id": 148,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What are 'third generation' rights?",
+      "options": [
+        "Civil and political rights",
+        "Economic and social rights",
+        "Solidarity/collective rights like right to development, peace, environment",
+        "Digital rights"
+      ],
+      "correct": 2,
+      "explanation": "Third generation rights are collective/solidarity rights including development, peace, and environment."
+    },
+    {
+      "id": 149,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "What is the GRECO?",
+      "options": [
+        "Greek human rights organization",
+        "Group of States against Corruption (CoE monitoring body)",
+        "General Rights European Commission Office",
+        "Grand European Court Organization"
+      ],
+      "correct": 1,
+      "explanation": "GRECO monitors compliance with CoE anti-corruption standards."
+    },
+    {
+      "id": 150,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "expert",
+      "question": "What is the 'treaty body strengthening process'?",
+      "options": [
+        "Creating new treaties",
+        "UN efforts to make treaty body system more effective and sustainable",
+        "Strengthening treaty ratification",
+        "Making treaties legally stronger"
+      ],
+      "correct": 1,
+      "explanation": "This ongoing process aims to improve efficiency, accessibility, and impact of the treaty body system."
+    },
+    {
+      "id": 101,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kdaj je bil ustanovljen Svet za človekove pravice (HRC) in kaj je nadomestil?",
+      "options": [
+        "2006, nadomestil Komisijo za človekove pravice",
+        "2011, nadomestil Varuha človekovih pravic",
+        "2000, nadomestil Ekonomske in socialne svet",
+        "1993, nadomestil Komisijo za človekove pravice"
+      ],
+      "correct": 0,
+      "explanation": "Svet za človekove pravice je bil ustanovljen leta 2006 s sklepom 60/251 Generalne skupščine ZN, da bi nadomestil Komisijo za človekove pravice, ki je bila podvržena politizaciji."
+    },
+    {
+      "id": 102,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Katera institucija je sekretariat za vse človekovopravne organe ZN?",
+      "options": [
+        "Varuh človekovih pravic ZN",
+        "Svet za človekove pravice",
+        "Generalna skupščina ZN",
+        "Ekonomska in socialna svet"
+      ],
+      "correct": 0,
+      "explanation": "Varuh človekovih pravic ZN (OHCHR) je sekretariat za vse človekovopravne organe ZN, vključno s Svetom za človekove pravice in devetimi odbori za pogodbe."
+    },
+    {
+      "id": 103,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Kaj je osnovni namen Splošnega periodičnega pregleda (SPP/UPR)?",
+      "options": [
+        "Pregledati poročila držav o izvajanju gospodarskih reform",
+        "Ocena uresničevanja človekovih pravic v vseh državah članicah ZN",
+        "Pregledati delovanje sodišč za človekove pravice",
+        "Določiti nove človekovopravne standarde"
+      ],
+      "correct": 1,
+      "explanation": "SPP/UPR je mehanizem, ki ocenjuje uresničevanje človekovih pravic v vseh 193 državah članicah ZN, ne glede na njihov razvojni nivo ali podpisane pogodbe."
+    },
+    {
+      "id": 104,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Kateri od naslednjih ni eden izmed devetih odborov za človekovopravne pogodbe ZN?",
+      "options": [
+        "Odbor za človekove pravice (CCPR)",
+        "Odbor za ekonomske, socialne in kulturne pravice (CESCR)",
+        "Odbor za odpravo diskriminacije žensk (CEDAW)",
+        "Svet za človekove pravice"
+      ],
+      "correct": 3,
+      "explanation": "Svet za človekove pravice je politično telo, ne pa eden izmed devetih strokovnih odborov za človekovopravne pogodbe."
+    },
+    {
+      "id": 105,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavna funkcija posebnih postopkov Sveta za človekove pravice?",
+      "options": [
+        "Sprejemanje mednarodnih človekovopravnih pogodb",
+        "Neodvisno preiskovanje tematskih ali državnih človekovopravnih vprašanj",
+        "Izvajanje kazenskih postopkov proti kršiteljem človekovih pravic",
+        "Spremljanje izvajanja Splošne deklaracije človekovih pravic"
+      ],
+      "correct": 1,
+      "explanation": "Posebni postopki so neodvisni strokovnjaki, ki preiskujejo tematska (npr. pravica do stanovanja) ali državna (npr. situacija v Eritreji) človekovopravna vprašanja."
+    },
+    {
+      "id": 106,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "Katera pogodba se osredotoča na ekonomske, socialne in kulturne pravice?",
+      "options": [
+        "Mednarodni pakt o državljanskih in političnih pravicah (ICCPR)",
+        "Mednarodni pakt o ekonomskih, socialnih in kulturnih pravicah (ICESCR)",
+        "Konvencija o odpravi vseh oblik diskriminacije žensk (CEDAW)",
+        "Konvencija proti mučenju (CAT)"
+      ],
+      "correct": 1,
+      "explanation": "ICESCR je eden izmed dveh temeljnih človekovopravnih paktof, ki se osredotoča na ekonomske, socialne in kulturne pravice kot so pravica do dela, izobraževanja, zdravja in stanovanja."
+    },
+    {
+      "id": 107,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Katera pravica je absolutna in nima dopustnih omejitev pod nobenimi pogoji?",
+      "options": [
+        "Pravica do svobode izražanja",
+        "Pravica do poštenega sojenja",
+        "Prepoved mučenja in nečloveškega ravnanja",
+        "Pravica do zasebnega in družinskega življenja"
+      ],
+      "correct": 2,
+      "explanation": "Prepoved mučenja in nečloveškega ravnanja (člen 3 ICCPR) je absolutna pravica, ki nima nobenih izjem ali dopustnih omejitev, niti v času vojne ali izrednih razmer."
+    },
+    {
+      "id": 108,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "Kateri odbor nadzoruje izvajanje Konvencije o odpravi vseh oblik diskriminacije žensk (CEDAW)?",
+      "options": [
+        "Odbor za človekove pravice",
+        "Odbor za odpravo diskriminacije žensk",
+        "Odbor za ekonomske, socialne in kulturne pravice",
+        "Varuh človekovih pravic ZN"
+      ],
+      "correct": 1,
+      "explanation": "Odbor za odpravo diskriminacije žensk (CEDAW Committee) je strokovno telo, ki nadzoruje izvajanje CEDAW pogodbe."
+    },
+    {
+      "id": 109,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "intermediate",
+      "question": "Katera institucija je najvišje sodišče za človekove pravice v Evropi?",
+      "options": [
+        "Sodišče EU v Luksemburgu",
+        "Evropsko sodišče za človekove pravice (ECtHR)",
+        "Svet Evrope",
+        "Komisarka za človekove pravice Sveta Evrope"
+      ],
+      "correct": 1,
+      "explanation": "Evropsko sodišče za človekove pravice (ECtHR) v Strasbourgu je najvišje sodišče za človekove pravice v Evropi, ki sodi v zadevah kršitev Evropske konvencije o človekovih pravicah."
+    },
+    {
+      "id": 110,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Katera konvencija je temeljna pogodba medameriškega sistema varstva človekovih pravic?",
+      "options": [
+        "Ameriška deklaracija o pravicah in dolžnostih človeka",
+        "Ameriška konvencija o človekovih pravicah (Pakt iz San Joseja)",
+        "Evropska konvencija o človekovih pravicah",
+        "Afriška listina o človekovih pravicah in pravicah narodov"
+      ],
+      "correct": 1,
+      "explanation": "Ameriška konvencija o človekovih pravicah (Pakt iz San Joseja) iz leta 1969 je temeljna pogodba medameriškega sistema."
+    },
+    {
+      "id": 111,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Katera institucija je glavno sodišče Afriške unije za človekove pravice?",
+      "options": [
+        "Afriško sodišče za človekove in pravice narodov",
+        "Afriška komisija za človekove in pravice narodov",
+        "Afriški parlament",
+        "Afriški svet za mir in varnost"
+      ],
+      "correct": 0,
+      "explanation": "Afriško sodišče za človekove in pravice narodov (ACmHPR) v Tanzaniji je glavno sodišče Afriške unije za človekove pravice, ustanovljeno leta 2004."
+    },
+    {
+      "id": 112,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "advanced",
+      "question": "Katera regija ima človekovopravni sistem, ki vključuje tudi 'pravice narodov'?",
+      "options": [
+        "Evropa",
+        "Amerika",
+        "Afrika",
+        "Azija"
+      ],
+      "correct": 2,
+      "explanation": "Afriška listina o človekovih pravicah in pravicah narodov (Banjulska listina) iz leta 1981 edina vključuje tudi pravice narodov, kot so pravica do samoodločbe in pravica do razvoja."
+    },
+    {
+      "id": 113,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera konvencija posebej naslavlja pravice otrok?",
+      "options": [
+        "Konvencija o pravicah otrok (CRC)",
+        "Konvencija o statusu beguncev",
+        "Konvencija o odpravi diskriminacije žensk",
+        "Mednarodni pakt o državljanskih in političnih pravicah"
+      ],
+      "correct": 0,
+      "explanation": "Konvencija o pravicah otrok (CRC) iz leta 1989 je najbolj ratificirana človekovopravna pogodba, ki posebej naslavlja pravice otrok."
+    },
+    {
+      "id": 114,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavna značilnost Konvencije proti prisilnim izginotvam (ICPPED)?",
+      "options": [
+        "Prepoved mučenja",
+        "Prepoved diskriminacije",
+        "Prepoved izginotij in obveznost države, da preiskuje",
+        "Pravica do svobode izražanja"
+      ],
+      "correct": 2,
+      "explanation": "ICPPED iz leta 2006 prepoveduje prisilna izginotja in obvezuje države, da preiskujejo takšne primere ter kaznujejo odgovorne."
+    },
+    {
+      "id": 115,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera pravica je posebej zaščitena v Konvenciji o pravicah oseb s posebnimi potrebami (CRPD)?",
+      "options": [
+        "Pravica do dela",
+        "Pravica do izobraževanja",
+        "Pravica do dostopa do informacij in komunikacije",
+        "Vse naštete"
+      ],
+      "correct": 3,
+      "explanation": "CRPD iz leta 2006 temelji na socialnem modelu invalidnosti in zaščitu vseh človekovih pravic za osebe s posebnimi potrebami, vključno z delom, izobraževanjem in dostopom do informacij."
+    },
+    {
+      "id": 116,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kaj je koncept 'progressive realization' v kontekstu ekonomskih in socialnih pravic?",
+      "options": [
+        "Pravice se uresničujejo takoj in popolnoma",
+        "Države morajo postopoma uresničevati pravice glede na razpoložljive vire",
+        "Pravice so vedno podvržene političnim odločitvam",
+        "Pravice so manj pomembne kot državljanske pravice"
+      ],
+      "correct": 1,
+      "explanation": "Koncept 'progressive realization' iz člena 2(1) ICESCR pomeni, da države morajo postopoma uresničevati ekonomske in socialne pravice z vsemi razpoložljivimi sredstvi, vendar imajo tudi takojšnje obveznosti (npr. prepoved retrocesije)."
+    },
+    {
+      "id": 117,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "Kaj pomeni koncept 'univerzalnosti' človekovih pravic?",
+      "options": [
+        "Pravice veljajo le za razvite države",
+        "Pravice so enake v vseh kulturah",
+        "Pravice veljajo za vse ljudi ne glede na državljanstvo, kulturo ali status",
+        "Pravice se lahko razlikujejo glede na religijo"
+      ],
+      "correct": 2,
+      "explanation": "Univerzalnost pomeni, da človekove pravice veljajo za vse ljudi povsod na svetu, ne glede na njihov položaj, kulturo ali državljanstvo. To je osnovno načelo človekovih pravic, čeprav obstajajo pomisleki glede kulturnega relativizma."
+    },
+    {
+      "id": 118,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "Kaj so 'tretje generacije' človekovih pravic?",
+      "options": [
+        "Pravice do zasebnosti",
+        "Skupinske/solidarne pravice kot pravica do razvoja, okolja, miru",
+        "Pravice do svobode izražanja",
+        "Pravice do poštenega sojenja"
+      ],
+      "correct": 1,
+      "explanation": "Tretje generacije pravic so skupinske ali solidarne pravice, ki vključujejo pravico do razvoja, čistega okolja, miru in dediščine."
+    },
+    {
+      "id": 119,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavna funkcija posebnih poročevalcev Sveta ZN za človekove pravice?",
+      "options": [
+        "Sprejemanje mednarodnih pogodb",
+        "Neodvisno preiskovanje človekovopravnih kršitev",
+        "Izvajanje kazenskih postopkov",
+        "Spremljanje volitev"
+      ],
+      "correct": 1,
+      "explanation": "Posebni poročevalci so neodvisni strokovnjaki, ki preiskujejo specifične človekovopravne teme (npr. mučenje, svoboda izražanja) ali situacije v posameznih državah."
+    },
+    {
+      "id": 120,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Katera regija ima mehanizem za človekove pravice, ki vključuje tako komisijo kot sodišče?",
+      "options": [
+        "Evropa",
+        "Amerika",
+        "Afrika",
+        "Vse naštete"
+      ],
+      "correct": 3,
+      "explanation": "Vse tri regije (Evropa, Amerika, Afrika) imajo tako komisijo kot sodišče za človekove pravice, čeprav z različnimi pooblastili in strukturami."
+    },
+    {
+      "id": 121,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Kateri člen MPDPP določa pravico do izobraževanja za narodnostne skupnosti?",
+      "options": [
+        "Člen 18 - svoboda vere",
+        "Člen 27 - pravica narodnostnih manjšin",
+        "Člen 14 - pravica do izobraževanja",
+        "Člen 26 - enakost pred zakonom"
+      ],
+      "correct": 1,
+      "explanation": "Člen 27 MPDPP zagotavlja pravico narodnostnih manjšin do kulturne, verske in jezikovne identitete, vključno z izobraževanjem."
+    },
+    {
+      "id": 122,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Kaj je 'reserva', 'izjava' in 'objekt' v kontekstu MPDPP?",
+      "options": [
+        "Vrste pritožb posameznikov",
+        "Pravna sredstva za zaščito pravic",
+        "Načini, kako države interpretirajo ali omejijo pogodbo",
+        "Vrste sodišč za človekove pravice"
+      ],
+      "correct": 2,
+      "explanation": "Države lahko ob ratifikaciji MPDPP oddajo 'reserve' (izjeme), 'izjave' (interpretacije) ali 'objekte' (omejitve), ki vplivajo na obseg njihovih obveznosti."
+    },
+    {
+      "id": 123,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Kaj je 'minimum core obligation' v kontekstu ICESCR?",
+      "options": [
+        "Minimalna višina socialnih prispevkov",
+        "Osnovna raven pravic, ki jo morajo zagotoviti vse države",
+        "Najnižja stopnja inflacije",
+        "Osnovni standardi za delovna mesta"
+      ],
+      "correct": 1,
+      "explanation": "Koncept 'minimum core obligation' iz splošnega komentarja št. 3 CESCR pomeni, da imajo države takojšnje obveznosti za zagotavljanje osnovne ravni ekonomskih in socialnih pravic, ne glede na razpoložljive vire."
+    },
+    {
+      "id": 124,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Kateri dodatni protokol omogoča posameznikom, da vložijo pritožbe na CESCR odbor?",
+      "options": [
+        "Prvi dodatni protokol k ICCPR",
+        "Dodatni protokol k ICESCR o posamičnih komunikacijah",
+        "Protokol o pravici do razvoja",
+        "Protokol o pravici do okolja"
+      ],
+      "correct": 1,
+      "explanation": "Dodatni protokol k ICESCR o posamičnih komunikacijah, ki je začel veljati leta 2013, omogoča posameznikom, da vložijo pritožbe na CESCR odbor."
+    },
+    {
+      "id": 125,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Kako pogosto se vsaka država pregleda v okviru SPP/UPR?",
+      "options": [
+        "Vsakih 5 let",
+        "Vsakih 4,5 let (v tretjem ciklusu)",
+        "Vsakih 10 let",
+        "Enkrat med vsakim mandatom HRC"
+      ],
+      "correct": 1,
+      "explanation": "V tretjem ciklusu SPP/UPR se vsaka od 193 držav pregleda vsakih 4,5 let, kar pomeni, da se celoten cikel zaključi vsakih 4,5 leta."
+    },
+    {
+      "id": 126,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Kdo pripravi poročilo o državi za SPP/UPR?",
+      "options": [
+        "Država sama",
+        "Varuh človekovih pravic ZN",
+        "Svet za človekove pravice",
+        "Skupina neodvisnih strokovnjakov"
+      ],
+      "correct": 0,
+      "explanation": "Vsaka država sama pripravi nacionalno poročilo o uresničevanju človekovih pravic, ki služi kot osnova za pregled v okviru SPP/UPR."
+    },
+    {
+      "id": 127,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera pravica je najbolj ogrožena v kontekstu migracij in beguncev?",
+      "options": [
+        "Pravica do svobode izražanja",
+        "Pravica do nedotakljivosti",
+        "Pravica do dostopa do dela in izobraževanja",
+        "Pravica do volitev"
+      ],
+      "correct": 2,
+      "explanation": "Begunci in migranti pogosto nimajo dostopa do osnovnih pravic kot so delo, izobraževanje in zdravstvena oskrba, kar je ključno vprašanje v mednarodnem varstvu človekovih pravic."
+    },
+    {
+      "id": 128,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kaj je glavna težava pri uresničevanju pravice do čistega okolja?",
+      "options": [
+        "Pomanjkanje znanstvenih dokazov",
+        "Težave s financiranjem",
+        "Pomanjkanje pravnih mehanizmov za preprečevanje onesnaževanja",
+        "Nepopolna pravna definicija pravice"
+      ],
+      "correct": 3,
+      "explanation": "Čeprav je pravica do čistega okolja prepoznana v številnih mednarodnih dokumentih, pogosto manjka jasna pravna definicija in učinkoviti mehanizmi za uveljavljanje te pravice."
+    },
+    {
+      "id": 129,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera konvencija posebej naslavlja pravice žensk?",
+      "options": [
+        "Konvencija o odpravi vseh oblik diskriminacije žensk (CEDAW)",
+        "Konvencija o pravicah otrok (CRC)",
+        "Konvencija proti mučenju (CAT)",
+        "Konvencija o statusu beguncev"
+      ],
+      "correct": 0,
+      "explanation": "CEDAW je temeljna konvencija, ki posebej naslavlja pravice žensk in obvezuje države, da odpravijo diskriminacijo na podlagi spola."
+    },
+    {
+      "id": 130,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Kaj je 'margin of appreciation' v kontekstu Evropske konvencije?",
+      "options": [
+        "Dovoljena stopnja diskriminacije",
+        "Prostor za nacionalno presojo držav pri izvajanju pravic",
+        "Časovna meja za vložitev tožbe",
+        "Omejitev pravic v izrednih razmerah"
+      ],
+      "correct": 1,
+      "explanation": "Koncept 'margin of appreciation' ECtHR pomeni, da države imajo določen prostor za lastno presojo pri izvajanju človekovih pravic, zlasti pri kvalitativnih in družbenih vprašanjih."
+    },
+    {
+      "id": 131,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "Kaj je glavni izziv 'kulturnega relativizma' za univerzalnost človekovih pravic?",
+      "options": [
+        "Različne kulturne tradicije",
+        "Uporaba kot izgovor za kršenje človekovih pravic",
+        "Jezikovne ovire pri prevajanju pogodb",
+        "Različni politični sistemi"
+      ],
+      "correct": 1,
+      "explanation": "Kulturni relativizem se pogosto uporablja kot izgovor za kršenje človekovih pravic, kar ogroža univerzalnost teh pravic. Mednarodna skupnost poudarja, da človekove pravice so univerzalne in ne podvržene kulturnim izgovorom."
+    },
+    {
+      "id": 132,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "Kako je ruska agresija v Ukrajini vplivala na človekove pravice v severni Evropi?",
+      "options": [
+        "Povečala je begunski tok in pritisk na sisteme azila",
+        "Zmanjšala je financiranje človekovih pravic",
+        "Povečala je nacionalizem in populizem",
+        "Vse našteto"
+      ],
+      "correct": 3,
+      "explanation": "Ruska agresija v Ukrajini je imela številne posledice za človekove pravice v severni Evropi, vključno z begunskimi tokovi, pritiskom na sisteme azila, povečanjem nacionalizma in populizma ter vprašanji financiranja človekovih pravic."
+    },
+    {
+      "id": 133,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "Kaj je glavna težava pri mednarodnem varstvu človekovih pravic v kontekstu Izraela in Palestine?",
+      "options": [
+        "Pomanjkanje mednarodnih sodišč",
+        "Nepopolno izvajanje mednarodnega prava in neodvisnost mednarodnih organov",
+        "Pomanjkanje volje držav članic ZN",
+        "Slaba medijska pokritost"
+      ],
+      "correct": 1,
+      "explanation": "Glavna težava pri varstvu človekovih pravic v kontekstu Izraela in Palestine je nepopolno izvajanje mednarodnega prava in vprašanja neodvisnosti mednarodnih organov pri preiskovanju kršitev."
+    },
+    {
+      "id": 134,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je 'responsibility to protect' (R2P)?",
+      "options": [
+        "Dolžnost držav, da zaščitijo svoje državljane pred zunanjo agresijo",
+        "Načelo, da ima mednarodna skupnost odgovornost za zaščito prebivalstva pred genocidom, vojno hudodelstvom, etničnim čiščenjem in zatiranjem",
+        "Načelo, da države ne smejo posegati v notranje zadeve drugih držav",
+        "Načelo suverenosti držav"
+      ],
+      "correct": 1,
+      "explanation": "Načelo 'responsibility to protect' (R2P), sprejeto leta 2005, poudarja, da ima mednarodna skupnost odgovornost za zaščito prebivalstva pred genocidom, vojno hudodelstvom, etničnim čiščenjem in zatiranjem, če država tega ne stori sama."
+    },
+    {
+      "id": 135,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavna značilnost 'populizma' v kontekstu človekovih pravic?",
+      "options": [
+        "Podpora mednarodnim človekovopravnim standardom",
+        "Poudarjanje pravic manjšin",
+        "Uporaba nacionalistične retorike za napade na človekove pravice",
+        "Podpora večstrankarskemu sistemu"
+      ],
+      "correct": 2,
+      "explanation": "Populizem pogosto uporablja nacionalistično retoriko za napade na človekove pravice, zlasti pravice manjšin, priseljencev in drugih ranljivih skupin."
+    },
+    {
+      "id": 136,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kako vpliva tehnologija na človekove pravice, kot je zasebnost?",
+      "options": [
+        "Popolnoma jih zaščiti",
+        "Ne vpliva na zasebnost",
+        "Ustvarja nove izzive za zaščito zasebnosti in nadzor nad podatki",
+        "Popolnoma odpravi potrebo po zasebnosti"
+      ],
+      "correct": 2,
+      "explanation": "Tehnologija, zlasti digitalna, ustvarja nove izzive za zaščito zasebnosti in nadzor nad osebnimi podatki, kot je razvidno iz primerov kot je Snowdenov primer."
+    },
+    {
+      "id": 137,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavni namen filma 'Citizenfour'?",
+      "options": [
+        "Promocija turizma v ZDA",
+        "Razkritje obsega nadzora obveščevalnih služb nad zasebnostjo",
+        "Promocija novih tehnologij",
+        "Kritika ameriškega filmskega industrije"
+      ],
+      "correct": 1,
+      "explanation": "Film 'Citizenfour' razkriva obseg nadzora obveščevalnih služb (predvsem NSA) nad zasebnostjo posameznikov in dvigne zavezanost zaščiti pravice do zasebnosti."
+    },
+    {
+      "id": 138,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je 'jus cogens' v mednarodnem pravu?",
+      "options": [
+        "Načelo enakosti med državami",
+        "Načelo nevtičnosti",
+        "Imperativne norme mednarodnega prava, ki jih ni mogoče odstopati",
+        "Načelo suverenosti"
+      ],
+      "correct": 2,
+      "explanation": "'Jus cogens' so imperativne norme mednarodnega prava (npr. prepoved genocida, mučenja, suženjstva), ki jih ni mogoče odstopati z mednarodnimi pogodbami."
+    },
+    {
+      "id": 139,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je 'erga omnes' obveznost?",
+      "options": [
+        "Obveznost do lastnih državljanov",
+        "Obveznost do vseh držav svetovne skupnosti",
+        "Obveznost do mednarodnih organizacij",
+        "Obveznost do zgodovinskih zaveznikov"
+      ],
+      "correct": 1,
+      "explanation": "'Erga omnes' obveznosti so dolžnosti držav do mednarodne skupnosti kot celote, na primer v zvezi s temeljnimi človekovimi pravicami."
+    },
+    {
+      "id": 140,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kaj je glavni namen 'dodatnih protokolov' k človekovopravnim pogodbam?",
+      "options": [
+        "Zmanjšanje obsega pravic",
+        "Uvajanje novih mehanizmov za zaščito pravic",
+        "Podaljšanje veljavnosti pogodb",
+        "Zamenjava osnovnih pogodb"
+      ],
+      "correct": 1,
+      "explanation": "Dodatni protokoli k človekovopravnim pogodbam pogosto uvajajo nove mehanizme za zaščito pravic, kot so posamične komunikacije ali pravica do pritožbe."
+    },
+    {
+      "id": 151,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Katere pravice sta študenti analizirali pri Seminarju 1 (MPDPP)?",
+      "options": [
+        "Člena 17 in 19",
+        "Člena 18 in 27",
+        "Člena 2 in 3",
+        "Člena 8 in 9"
+      ],
+      "correct": 1,
+      "explanation": "Seminar 1 se osredotoča na analizo člena 18 (svoboda misli, vesti in vere) in člena 27 (pravice narodnostnih manjšin) v državnih poročilih."
+    },
+    {
+      "id": 152,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Katere izjave države pogosto vlagajo ob ratifikaciji MPDPP?",
+      "options": [
+        "Izjave o minimalnem jedru",
+        "Razlage člena 40 in omejitev individualnih pritožb",
+        "Obvezno sprejetje člena 28",
+        "Izjave o stroških"
+      ],
+      "correct": 1,
+      "explanation": "Države pogosto vlagajo razlage glede člena 40 (poročanje) ter omejujejo individualne pritožbe po Prvem dodatnem protokolu."
+    },
+    {
+      "id": 153,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "Kaj omogoča Prvi dodatni protokol k MPDPP?",
+      "options": [
+        "Meddržavne tožbe",
+        "Posamezne komunikacije k Odboru za človekove pravice",
+        "Pregled posebnih postopkov",
+        "Sodni postopek pred ICJ"
+      ],
+      "correct": 1,
+      "explanation": "Prvi dodatni protokol k MPDPP daje posameznikom pravico, da vložijo pritožbo pri Odboru za človekove pravice po izčrpanju domačih sredstev."
+    },
+    {
+      "id": 154,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "intermediate",
+      "question": "Kako pogosto države poročajo Odboru CESCR?",
+      "options": [
+        "Vsako leto",
+        "Na štiri do pet let",
+        "Samo enkrat po ratifikaciji",
+        "Ko jih Svet za človekove pravice pozove"
+      ],
+      "correct": 1,
+      "explanation": "Države redno poročajo CESCR približno vsakih štiri do pet let, odvisno od koledarja Odbora."
+    },
+    {
+      "id": 155,
+      "type": "multiple",
+      "category": "treaties",
+      "difficulty": "advanced",
+      "question": "Katera obveznost je takojšnja glede ICESCR?",
+      "options": [
+        "Zagotavljanje popolne socialne varnosti",
+        "Prepoved diskriminacije pri uresničevanju ESC pravic",
+        "Uvedba univerzalnega temeljnega dohodka",
+        "Zagotovitev brezplačnega interneta"
+      ],
+      "correct": 1,
+      "explanation": "Čeprav se ESC pravice uresničujejo postopno, je prepoved diskriminacije takojšnja in ne dopušča odlašanja."
+    },
+    {
+      "id": 156,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "Kdo daje priporočila državam v postopku SPP/UPR?",
+      "options": [
+        "Samo posebni poročevalci",
+        "Vse države članice ZN",
+        "Generalni sekretar",
+        "Nevladne organizacije"
+      ],
+      "correct": 1,
+      "explanation": "SPP temelji na meddržavnem vrstniškem pregledu, kjer vse države ZN dajejo priporočila državi v pregledu."
+    },
+    {
+      "id": 157,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kateri trije dokumenti sestavljajo bazo za razpravo SPP?",
+      "options": [
+        "Nacionalno poročilo, zbirka informacij OHCHR, prispevki deležnikov",
+        "Nacionalno poročilo, mnenje ICJ, medijska poročila",
+        "Zapisnik posebnega poročevalca, odločba ECtHR, resolucija GS",
+        "Samo nacionalno poročilo"
+      ],
+      "correct": 0,
+      "explanation": "Podlaga so nacionalno poročilo, zbirka informacij OHCHR in zbrani prispevki deležnikov (NGO, NHRIs)."
+    },
+    {
+      "id": 158,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "Kateri sta dve vrsti mandatov posebnih postopkov?",
+      "options": [
+        "Obvezni in neobvezni",
+        "Tematski in državni",
+        "Regionalni in globalni",
+        "Sodni in izvršilni"
+      ],
+      "correct": 1,
+      "explanation": "Posebni postopki so razdeljeni na tematske mandate (npr. mučenje) in državne mandate."
+    },
+    {
+      "id": 159,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "Koliko mesecev ima pritožnik po izčrpanju domačih sredstev za vložitev pritožbe na ESČP (po protokolu 15)?",
+      "options": [
+        "6",
+        "4",
+        "12",
+        "3"
+      ],
+      "correct": 1,
+      "explanation": "Po uveljavitvi Protokola 15 se je rok skrajšal na 4 mesece."
+    },
+    {
+      "id": 160,
+      "type": "multiple",
+      "category": "european-system",
+      "difficulty": "advanced",
+      "question": "Kaj je pogoj sprejemljivosti po členu 35 ECHR?",
+      "options": [
+        "Plačilo takse",
+        "Izčrpanost učinkovitih notranjih pravnih sredstev",
+        "Obvezna zastopanost države",
+        "Priložen prevod v francoščino"
+      ],
+      "correct": 1,
+      "explanation": "Pravilo izčrpanja učinkovitih notranjih pravnih sredstev je ključno za sprejemljivost."
+    },
+    {
+      "id": 161,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Kaj je posebnost Afriške listine o človekovih pravicah in pravicah narodov?",
+      "options": [
+        "Vključuje tudi dolžnosti posameznikov",
+        "Ima neposredno izvršljivost v EU",
+        "Prepoveduje pravico do razvoja",
+        "Ne priznava kolektivnih pravic"
+      ],
+      "correct": 0,
+      "explanation": "Afriška listina med pravicami vključuje tudi dolžnosti posameznikov."
+    },
+    {
+      "id": 162,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Katere institucije sestavljajo medameriški sistem?",
+      "options": [
+        "Komisija in Odbor",
+        "Komisija in Sodišče",
+        "Sodišče in Parlament",
+        "Samo Sodišče"
+      ],
+      "correct": 1,
+      "explanation": "Medameriški sistem sestavljata Inter-ameriška komisija in Inter-ameriško sodišče za človekove pravice."
+    },
+    {
+      "id": 163,
+      "type": "multiple",
+      "category": "regional-systems",
+      "difficulty": "intermediate",
+      "question": "Kateri dokument je temelj arabske človekovopravne ureditve?",
+      "options": [
+        "Arabska listina o človekovih pravicah",
+        "Deklaracija OAS",
+        "ASEAN listina",
+        "Pakt iz San Joseja"
+      ],
+      "correct": 0,
+      "explanation": "Arabska listina o človekovih pravicah (2004/2008) je regionalni instrument."
+    },
+    {
+      "id": 164,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Katera omejitev pravice do življenja je dovoljena po MPDPP?",
+      "options": [
+        "Izvedba smrtne kazni v skladu s strogimi pogoji člena 6",
+        "Izrek smrtne kazni za politične delikte",
+        "Smrtna kazen za mladoletnike",
+        "Samovoljni odvzem življenja"
+      ],
+      "correct": 0,
+      "explanation": "Člen 6 MPDPP dopušča smrtno kazen v državah, kjer še ni ukinjena, a pod zelo strogimi pogoji."
+    },
+    {
+      "id": 165,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katero orodje dopolnjuje Konvencijo proti mučenju z preventivnimi obiski?",
+      "options": [
+        "Dodatni protokol (OPCAT)",
+        "Prvi protokol",
+        "Resolucija GS 60/251",
+        "Deklaracija iz 1948"
+      ],
+      "correct": 0,
+      "explanation": "OPCAT (2002) uvaja pododbor za preprečevanje mučenja in nacionalne preventivne mehanizme."
+    },
+    {
+      "id": 166,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kaj morajo države storiti po ICPPED?",
+      "options": [
+        "Zagotavljati popolno odškodnino",
+        "Kriminalizirati prisilna izginotja in preiskovati",
+        "Prijaviti ICJ",
+        "Prepovedati izstop iz države"
+      ],
+      "correct": 1,
+      "explanation": "ICPPED zahteva kriminalizacijo prisilnih izginotij, preiskave in odškodnine žrtvam."
+    },
+    {
+      "id": 167,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Koliko dodatnih protokolov ima KOP (CRC)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "explanation": "CRC ima tri protokole: o otrocih v oboroženih spopadih, o prodaji otrok in o postopkih pritožb."
+    },
+    {
+      "id": 168,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kaj poudarja Splošna priporočila CEDAW št. 19?",
+      "options": [
+        "Pravico do razvoja",
+        "Nasilje nad ženskami kot oblika diskriminacije",
+        "Pravico do izobraževanja",
+        "Pravico do politične participacije"
+      ],
+      "correct": 1,
+      "explanation": "GR 19 opredeli nasilje nad ženskami kot obliko diskriminacije in zahteva državne ukrepe."
+    },
+    {
+      "id": 169,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Kateri model invalidnosti sprejema CRPD?",
+      "options": [
+        "Medicinski model",
+        "Socialni in človekovopravni model",
+        "Kultni model",
+        "Finančni model"
+      ],
+      "correct": 1,
+      "explanation": "CRPD temelji na socialnem in človekovopravnem modelu, ki poudarja odstranjevanje ovir."
+    },
+    {
+      "id": 170,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera načela sta ključna v Konvenciji o statusu beguncev?",
+      "options": [
+        "Non-refoulement in pravica do dela",
+        "Pravica do glasovanja",
+        "Varnostna klavzula",
+        "Pravica do univerzalnega temeljnega dohodka"
+      ],
+      "correct": 0,
+      "explanation": "Konvencija vključuje načelo non-refoulement in določa gospodarske/socialne pravice (npr. delo)."
+    },
+    {
+      "id": 171,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "Kaj je izmed naštetega ekonomska pravica?",
+      "options": [
+        "Pravica do združevanja",
+        "Pravica do poštenega sojenja",
+        "Pravica do premoženja",
+        "Pravica do varstva pred mučenjem"
+      ],
+      "correct": 2,
+      "explanation": "Pravica do premoženja je ekonomska pravica (npr. čl. 1 Protokola 1 k ECHR)."
+    },
+    {
+      "id": 172,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Kateri dokument je leta 1986 priznal pravico do razvoja?",
+      "options": [
+        "Splošna deklaracija",
+        "Deklaracija o pravici do razvoja",
+        "ICESCR",
+        "CEDAW"
+      ],
+      "correct": 1,
+      "explanation": "Deklaracija o pravici do razvoja (1986) priznava razvoj kot človekovo pravico."
+    },
+    {
+      "id": 173,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kateri mednarodni organ je leta 2022 priznal pravico do čistega okolja kot univerzalno pravico?",
+      "options": [
+        "ECtHR",
+        "UN General Assembly",
+        "ICJ",
+        "UNEP"
+      ],
+      "correct": 1,
+      "explanation": "Generalna skupščina ZN je leta 2022 sprejela resolucijo, ki priznava pravico do čistega, zdravega okolja."
+    },
+    {
+      "id": 174,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kaj morajo države zagotavljati po Konvenciji o genocidu?",
+      "options": [
+        "Zmanjšanje migracij",
+        "Preprečevanje in kaznovanje genocida",
+        "Zagotavljanje kulturnih pravic",
+        "Izvajanje humanitarne pomoči"
+      ],
+      "correct": 1,
+      "explanation": "Konvencija iz 1948 zahteva preprečevanje in kaznovanje dejanj genocida."
+    },
+    {
+      "id": 175,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Na katerih temeljih je mogoče omejiti svobodo izražanja po členu 19 ICCPR?",
+      "options": [
+        "Nacionalna varnost, javni red, javno zdravje ali morala",
+        "Zaščita ekonomske stabilnosti",
+        "Religiozni mir",
+        "Politična stabilnost"
+      ],
+      "correct": 0,
+      "explanation": "Člen 19(3) ICCPR dopušča omejitve zaradi spoštovanja pravic drugih ali zaščite nacionalne varnosti, javnega reda, zdravja ali morale."
+    },
+    {
+      "id": 176,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Kaj vključuje svoboda religije po členu 18 ICCPR?",
+      "options": [
+        "Samo notranje prepričanje",
+        "Svobodo sprejemati, menjati in prakticirati vero",
+        "Samo kolektivne obrede",
+        "Samo pravico do kritike"
+      ],
+      "correct": 1,
+      "explanation": "Člen 18 vključuje svobodo sprejemati ali spreminjati vero, manifestirati jo individualno ali kolektivno."
+    },
+    {
+      "id": 177,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Katera pravica se pojavi v členu 1 ICCPR in ICESCR?",
+      "options": [
+        "Pravica do zasebnosti",
+        "Pravica do samoodločbe",
+        "Pravica do azila",
+        "Pravica do politične participacije"
+      ],
+      "correct": 1,
+      "explanation": "Člen 1 obeh paktov potvrjuje pravico narodov do samoodločbe."
+    },
+    {
+      "id": 178,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Kateri evropski dokument posebej ureja manjšinska vprašanja?",
+      "options": [
+        "Okvirna konvencija za varstvo narodnih manjšin",
+        "CEDAW",
+        "CRC",
+        "ACHR"
+      ],
+      "correct": 0,
+      "explanation": "Okvirna konvencija Sveta Evrope je ključni evropski instrument za varstvo manjšin."
+    },
+    {
+      "id": 179,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Kako populizem vpliva na mednarodne institucije?",
+      "options": [
+        "Krepi podporo mednarodnim sodiščem",
+        "Pogosto spodkopava zaupanje v institucije in pravila",
+        "Povečuje financiranje",
+        "Nima vpliva"
+      ],
+      "correct": 1,
+      "explanation": "Populistične vlade pogosto napadajo legitimnost mednarodnih institucij in človekovopravnih standardov."
+    },
+    {
+      "id": 180,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "Na kaj se mora osredotočiti pisna refleksija o Palestini?",
+      "options": [
+        "Na ekonomijo Izraela",
+        "Na kritično analizo (ne)delovanja mednarodnega režima varstva človekovih pravic",
+        "Na zgodovino religije",
+        "Na turistične posledice"
+      ],
+      "correct": 1,
+      "explanation": "Refleksija se osredotoča na kritično ovrednotenje (ne)delovanja mednarodnega režima za varstvo človekovih pravic v palestinskem kontekstu."
+    },
+    {
+      "id": 181,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Katero človekovopravno vprašanje izpostavlja Citizenfour?",
+      "options": [
+        "Svobodo veroizpovedi",
+        "Zasebnost in nadzor podatkov",
+        "Pravice otrok",
+        "Pravico do razvoja"
+      ],
+      "correct": 1,
+      "explanation": "Film Citizenfour izpostavlja nadzor nad komunikacijami in kršenje pravice do zasebnosti."
+    },
+    {
+      "id": 182,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "Katera resolucija ZN se osredotoča na zaščito zagovornikov človekovih pravic?",
+      "options": [
+        "Deklaracija o zagovornikih človekovih pravic (1998)",
+        "Deklaracija o pravici do razvoja",
+        "Resolucija 60/251",
+        "Deklaracija o pravicah otrok"
+      ],
+      "correct": 0,
+      "explanation": "Deklaracija iz leta 1998 potrjuje vlogo zagovornikov človekovih pravic in odgovornost držav za njihovo zaščito."
+    }
+  ]
+}

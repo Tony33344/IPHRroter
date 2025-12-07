@@ -1,0 +1,65 @@
+{
+  "connections": [
+    { "source": "un-charter", "target": "udhr", "type": "foundation", "strength": 1, "label": "Established framework for" },
+    { "source": "un-charter", "target": "un-ga", "type": "creates", "strength": 1 },
+    { "source": "un-charter", "target": "ecosoc", "type": "creates", "strength": 1 },
+    { "source": "un-charter", "target": "security-council", "type": "creates", "strength": 1 },
+    
+    { "source": "udhr", "target": "iccpr", "type": "elaboration", "strength": 1, "label": "Codifies civil & political rights" },
+    { "source": "udhr", "target": "icescr", "type": "elaboration", "strength": 1, "label": "Codifies ESC rights" },
+    { "source": "udhr", "target": "echr", "type": "inspiration", "strength": 0.9, "label": "Influenced drafting" },
+    { "source": "udhr", "target": "achr", "type": "inspiration", "strength": 0.8 },
+    { "source": "udhr", "target": "achpr", "type": "inspiration", "strength": 0.7 },
+    
+    { "source": "iccpr", "target": "ccpr", "type": "monitoring", "strength": 1, "label": "Monitored by" },
+    { "source": "icescr", "target": "cescr", "type": "monitoring", "strength": 1, "label": "Monitored by" },
+    { "source": "icerd", "target": "cerd", "type": "monitoring", "strength": 1 },
+    { "source": "cedaw", "target": "cedaw-committee", "type": "monitoring", "strength": 1 },
+    { "source": "cat", "target": "cat-committee", "type": "monitoring", "strength": 1 },
+    { "source": "crc", "target": "crc-committee", "type": "monitoring", "strength": 1 },
+    
+    { "source": "un-ga", "target": "hrc", "type": "creates", "strength": 1, "label": "Established in 2006" },
+    { "source": "hrc", "target": "ohchr", "type": "serviced-by", "strength": 0.8, "label": "Secretariat support" },
+    { "source": "hrc", "target": "upr", "type": "mechanism", "strength": 1 },
+    { "source": "hrc", "target": "special-procedures", "type": "mechanism", "strength": 1 },
+    
+    { "source": "coe", "target": "echr", "type": "adopts", "strength": 1 },
+    { "source": "coe", "target": "ecthr", "type": "creates", "strength": 1 },
+    { "source": "coe", "target": "coe-cm", "type": "organ", "strength": 1 },
+    { "source": "coe", "target": "pace", "type": "organ", "strength": 1 },
+    { "source": "coe", "target": "commissioner-hr", "type": "creates", "strength": 0.9 },
+    
+    { "source": "echr", "target": "ecthr", "type": "interpreted-by", "strength": 1, "label": "Interpreted by" },
+    { "source": "ecthr", "target": "coe-cm", "type": "supervised-by", "strength": 0.9, "label": "Judgments supervised" },
+    
+    { "source": "eu", "target": "eu-charter", "type": "adopts", "strength": 1 },
+    { "source": "eu", "target": "cjeu", "type": "organ", "strength": 1 },
+    { "source": "eu", "target": "fra", "type": "creates", "strength": 0.8 },
+    { "source": "eu-charter", "target": "cjeu", "type": "interpreted-by", "strength": 1 },
+    { "source": "echr", "target": "eu-charter", "type": "reference", "strength": 0.7, "label": "Art 52(3) correspondence" },
+    
+    { "source": "oas", "target": "achr", "type": "adopts", "strength": 1 },
+    { "source": "oas", "target": "iacthr", "type": "creates", "strength": 1 },
+    { "source": "oas", "target": "iacmhr", "type": "creates", "strength": 1 },
+    { "source": "achr", "target": "iacthr", "type": "interpreted-by", "strength": 1 },
+    { "source": "iacmhr", "target": "iacthr", "type": "refers-to", "strength": 0.9, "label": "Can refer cases" },
+    
+    { "source": "au", "target": "achpr", "type": "adopts", "strength": 1 },
+    { "source": "au", "target": "acthpr", "type": "creates", "strength": 1 },
+    { "source": "au", "target": "achpr-comm", "type": "creates", "strength": 1 },
+    { "source": "achpr", "target": "acthpr", "type": "interpreted-by", "strength": 1 },
+    { "source": "achpr-comm", "target": "acthpr", "type": "refers-to", "strength": 0.8 },
+    
+    { "source": "iccpr", "target": "echr", "type": "parallel", "strength": 0.7, "label": "Similar rights" },
+    { "source": "iccpr", "target": "achr", "type": "parallel", "strength": 0.7 },
+    { "source": "iccpr", "target": "achpr", "type": "parallel", "strength": 0.6 },
+    
+    { "source": "cat", "target": "iccpr", "type": "elaboration", "strength": 0.8, "label": "Elaborates Art 7" },
+    { "source": "crc", "target": "cedaw", "type": "thematic-link", "strength": 0.6, "label": "Girl child rights" },
+    { "source": "crc", "target": "crpd", "type": "thematic-link", "strength": 0.6, "label": "Children with disabilities" },
+    { "source": "crpd", "target": "icescr", "type": "thematic-link", "strength": 0.6 },
+    
+    { "source": "security-council", "target": "icc", "type": "refers-to", "strength": 0.7, "label": "Can refer situations" },
+    { "source": "un", "target": "icc", "type": "relationship", "strength": 0.5, "label": "Relationship agreement" }
+  ]
+}
