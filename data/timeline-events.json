@@ -1,4 +1,15 @@
 {
+  "metadata": {
+    "totalEvents": 105,
+    "lastUpdated": "2025-01-20",
+    "eras": [
+      { "id": "origins", "name": "Origins", "nameEN": "Origins", "nameSL": "Začetki", "start": 1215, "end": 1944, "color": "#6B7280", "description": "Historical foundations of human rights concepts" },
+      { "id": "foundation", "name": "Foundation Era", "nameEN": "Foundation Era", "nameSL": "Obdobje temeljev", "start": 1945, "end": 1966, "color": "#3B82F6", "description": "Post-WWII establishment of international human rights framework" },
+      { "id": "expansion", "name": "Expansion Era", "nameEN": "Expansion Era", "nameSL": "Obdobje širitve", "start": 1966, "end": 1990, "color": "#10B981", "description": "Development of specialized treaties and regional systems" },
+      { "id": "postcold", "name": "Post-Cold War", "nameEN": "Post-Cold War", "nameSL": "Po hladni vojni", "start": 1990, "end": 2006, "color": "#8B5CF6", "description": "Vienna Conference, new institutions, and global expansion" },
+      { "id": "modern", "name": "Modern Era", "nameEN": "Modern Era", "nameSL": "Sodobno obdobje", "start": 2006, "end": 2030, "color": "#F59E0B", "description": "Human Rights Council, new treaties, and contemporary challenges" }
+    ]
+  },
   "events": [
     {
       "id": "magna-carta",
@@ -6,9 +17,20 @@
       "title": "Magna Carta",
       "type": "historical",
       "system": "historical",
+      "era": "origins",
       "description": "English charter limiting royal power. Established principles of due process and rule of law that would influence human rights development.",
       "significance": "Foundation of constitutional liberties and due process",
       "highlight": true
+    },
+    {
+      "id": "petition-of-right",
+      "year": 1628,
+      "title": "Petition of Right",
+      "type": "historical",
+      "system": "historical",
+      "era": "origins",
+      "description": "English constitutional document setting out specific liberties that the king could not infringe. Prohibited taxation without Parliament's consent and arbitrary imprisonment.",
+      "significance": "Early limitation on executive power"
     },
     {
       "id": "habeas-corpus",
@@ -16,8 +38,19 @@
       "title": "Habeas Corpus Act",
       "type": "historical",
       "system": "historical",
+      "era": "origins",
       "description": "English law requiring that a person under arrest be brought before a judge. Fundamental protection against arbitrary detention.",
       "significance": "Core procedural right against arbitrary detention"
+    },
+    {
+      "id": "english-bill-rights",
+      "year": 1689,
+      "title": "English Bill of Rights",
+      "type": "historical",
+      "system": "historical",
+      "era": "origins",
+      "description": "Act of Parliament declaring the rights and liberties of subjects. Established parliamentary sovereignty and limited royal power.",
+      "significance": "Foundation of constitutional monarchy and rights"
     },
     {
       "id": "us-declaration",
@@ -25,6 +58,7 @@
       "title": "US Declaration of Independence",
       "type": "historical",
       "system": "historical",
+      "era": "origins",
       "description": "Declared 'all men are created equal' with unalienable rights to 'life, liberty and the pursuit of happiness.' Based on natural law philosophy.",
       "significance": "Natural rights philosophy in founding document"
     },
@@ -34,9 +68,20 @@
       "title": "Declaration of the Rights of Man",
       "type": "declaration",
       "system": "historical",
+      "era": "origins",
       "description": "French Revolution document proclaiming universal rights including liberty, property, security, and resistance to oppression.",
       "significance": "Universal rights concept and citizen sovereignty",
       "highlight": true
+    },
+    {
+      "id": "us-bill-rights",
+      "year": 1791,
+      "title": "US Bill of Rights",
+      "type": "historical",
+      "system": "historical",
+      "era": "origins",
+      "description": "First ten amendments to the US Constitution guaranteeing fundamental rights and freedoms including speech, religion, and due process.",
+      "significance": "Constitutional entrenchment of individual rights"
     },
     {
       "id": "slavery-abolition-uk",
@@ -44,8 +89,19 @@
       "title": "Slavery Abolition Act (UK)",
       "type": "historical",
       "system": "historical",
+      "era": "origins",
       "description": "British Parliament abolished slavery throughout the British Empire. Compensation paid to slave owners.",
       "significance": "Major step in abolition of slavery"
+    },
+    {
+      "id": "lieber-code",
+      "year": 1863,
+      "title": "Lieber Code",
+      "type": "historical",
+      "system": "ihl",
+      "era": "origins",
+      "description": "Instructions for the Government of Armies of the United States in the Field. First codification of laws of war.",
+      "significance": "Foundation of modern laws of armed conflict"
     },
     {
       "id": "geneva-1864",
@@ -53,6 +109,7 @@
       "title": "First Geneva Convention",
       "type": "treaty",
       "system": "ihl",
+      "era": "origins",
       "description": "First international treaty for protection of wounded soldiers. Birth of international humanitarian law and the Red Cross movement.",
       "significance": "Foundation of international humanitarian law",
       "highlight": true
@@ -63,8 +120,19 @@
       "title": "First Hague Peace Conference",
       "type": "event",
       "system": "historical",
+      "era": "origins",
       "description": "International conference establishing laws of war. Created Permanent Court of Arbitration.",
       "significance": "Early international law codification"
+    },
+    {
+      "id": "hague-1907",
+      "year": 1907,
+      "title": "Second Hague Peace Conference",
+      "type": "event",
+      "system": "historical",
+      "era": "origins",
+      "description": "Expanded laws of war and established conventions on conduct of hostilities, neutral rights, and maritime warfare.",
+      "significance": "Expanded humanitarian law framework"
     },
     {
       "id": "ilo-creation",
@@ -72,6 +140,7 @@
       "title": "ILO Established",
       "type": "institution",
       "system": "un",
+      "era": "origins",
       "description": "International Labour Organization created as part of Treaty of Versailles. First specialized agency for workers' rights.",
       "significance": "First international labor standards body",
       "highlight": true
@@ -82,6 +151,7 @@
       "title": "League of Nations Minorities System",
       "type": "institution",
       "system": "historical",
+      "era": "origins",
       "description": "First international system for minority protection through bilateral treaties. Applied mainly to new states in Central/Eastern Europe.",
       "significance": "First international minority protection regime"
     },
@@ -91,8 +161,19 @@
       "title": "Slavery Convention",
       "type": "treaty",
       "system": "un",
+      "era": "origins",
       "description": "League of Nations convention to suppress slavery and slave trade. First universal anti-slavery treaty.",
       "significance": "First universal anti-slavery instrument"
+    },
+    {
+      "id": "ilo-forced-labour",
+      "year": 1930,
+      "title": "ILO Forced Labour Convention",
+      "type": "treaty",
+      "system": "un",
+      "era": "origins",
+      "description": "ILO Convention No. 29 requiring suppression of forced or compulsory labour in all its forms.",
+      "significance": "Fundamental labor rights protection"
     },
     {
       "id": "un-charter",
@@ -100,6 +181,7 @@
       "title": "UN Charter Signed",
       "type": "charter",
       "system": "un",
+      "era": "foundation",
       "description": "Founding document of the United Nations. Article 1(3) establishes human rights promotion as a UN purpose. Article 55-56 create obligations.",
       "significance": "Human rights as international concern",
       "highlight": true,
@@ -111,6 +193,7 @@
       "title": "Nuremberg Trials Begin",
       "type": "event",
       "system": "historical",
+      "era": "foundation",
       "description": "International Military Tribunal prosecuted Nazi leaders for crimes against humanity, war crimes, and crimes against peace.",
       "significance": "Individual criminal responsibility for international crimes",
       "highlight": true
@@ -121,6 +204,7 @@
       "title": "UN Commission on Human Rights",
       "type": "institution",
       "system": "un",
+      "era": "foundation",
       "description": "First UN body dedicated to human rights. Eleanor Roosevelt as first chair. Drafted UDHR.",
       "significance": "First dedicated UN human rights body"
     },
@@ -130,6 +214,7 @@
       "title": "Genocide Convention",
       "type": "treaty",
       "system": "un",
+      "era": "foundation",
       "description": "Convention on the Prevention and Punishment of the Crime of Genocide. First human rights treaty adopted by UN.",
       "significance": "First UN human rights treaty",
       "highlight": true
@@ -140,6 +225,7 @@
       "title": "Universal Declaration of Human Rights",
       "type": "declaration",
       "system": "un",
+      "era": "foundation",
       "description": "Adopted by UN General Assembly on December 10. 30 articles covering civil, political, economic, social and cultural rights. Non-binding but highly influential.",
       "significance": "Foundation of international human rights law",
       "highlight": true,
@@ -151,6 +237,7 @@
       "title": "American Declaration of Rights",
       "type": "declaration",
       "system": "inter-american",
+      "era": "foundation",
       "description": "American Declaration of the Rights and Duties of Man. Adopted months before UDHR. First international human rights instrument.",
       "significance": "First international human rights declaration"
     },
@@ -160,6 +247,7 @@
       "title": "Geneva Conventions (1949)",
       "type": "treaty",
       "system": "ihl",
+      "era": "foundation",
       "description": "Four conventions forming core of international humanitarian law. Protection of wounded, POWs, and civilians in armed conflict.",
       "significance": "Modern foundation of humanitarian law",
       "highlight": true
@@ -170,6 +258,7 @@
       "title": "ECHR Adopted",
       "type": "treaty",
       "system": "european",
+      "era": "foundation",
       "description": "European Convention on Human Rights signed in Rome. First binding international human rights treaty with enforcement mechanism.",
       "significance": "First enforceable human rights treaty",
       "highlight": true,
@@ -181,6 +270,7 @@
       "title": "Refugee Convention",
       "type": "treaty",
       "system": "un",
+      "era": "foundation",
       "description": "Convention Relating to the Status of Refugees. Defines refugee status and principle of non-refoulement.",
       "significance": "Foundation of international refugee law",
       "relatedId": "refugee-convention"
@@ -191,8 +281,59 @@
       "title": "ECHR Enters into Force",
       "type": "event",
       "system": "european",
+      "era": "foundation",
       "description": "European Convention on Human Rights becomes binding law after ratification by 10 states.",
       "significance": "First operational human rights treaty system"
+    },
+    {
+      "id": "statelessness-convention",
+      "year": 1954,
+      "title": "Statelessness Convention",
+      "type": "treaty",
+      "system": "un",
+      "era": "foundation",
+      "description": "Convention relating to the Status of Stateless Persons. Defines statelessness and provides for minimum standards of treatment.",
+      "significance": "Protection for stateless persons"
+    },
+    {
+      "id": "supplementary-slavery",
+      "year": 1956,
+      "title": "Supplementary Slavery Convention",
+      "type": "treaty",
+      "system": "un",
+      "era": "foundation",
+      "description": "Supplementary Convention on the Abolition of Slavery. Expanded to cover debt bondage, serfdom, and practices similar to slavery.",
+      "significance": "Expanded anti-slavery protections"
+    },
+    {
+      "id": "ecthr-established",
+      "year": 1959,
+      "title": "ECtHR Established",
+      "type": "institution",
+      "system": "european",
+      "era": "foundation",
+      "description": "European Court of Human Rights begins operations in Strasbourg. First international human rights court.",
+      "significance": "First international human rights court"
+    },
+    {
+      "id": "crc-declaration",
+      "year": 1959,
+      "title": "Declaration of Rights of Child",
+      "type": "declaration",
+      "system": "un",
+      "era": "foundation",
+      "description": "UN Declaration of the Rights of the Child. Non-binding precursor to the 1989 Convention.",
+      "significance": "Early recognition of children's rights"
+    },
+    {
+      "id": "unesco-discrimination",
+      "year": 1960,
+      "title": "UNESCO Convention Against Discrimination in Education",
+      "type": "treaty",
+      "system": "un",
+      "era": "foundation",
+      "description": "First binding international instrument on right to education. Prohibits discrimination in education.",
+      "significance": "Right to education protection"
     },
     {
       "id": "esc-adoption",
@@ -200,8 +341,39 @@
       "title": "European Social Charter",
       "type": "treaty",
       "system": "european",
+      "era": "foundation",
       "description": "Council of Europe treaty on economic and social rights. Complements ECHR with ESC rights.",
       "significance": "European economic and social rights protection"
+    },
+    {
+      "id": "lawless-case",
+      "year": 1961,
+      "title": "Lawless v. Ireland (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "foundation",
+      "description": "First case decided on merits by ECtHR. Concerned detention without trial during IRA emergency.",
+      "significance": "First ECtHR merits judgment"
+    },
+    {
+      "id": "reduction-statelessness",
+      "year": 1961,
+      "title": "Convention on Reduction of Statelessness",
+      "type": "treaty",
+      "system": "un",
+      "era": "foundation",
+      "description": "Convention on the Reduction of Statelessness. Establishes rules to prevent statelessness.",
+      "significance": "Prevention of statelessness"
+    },
+    {
+      "id": "vienna-consular",
+      "year": 1963,
+      "title": "Vienna Convention on Consular Relations",
+      "type": "treaty",
+      "system": "un",
+      "era": "foundation",
+      "description": "Establishes framework for consular relations including right to consular notification for detained foreign nationals.",
+      "significance": "Consular protection rights"
     },
     {
       "id": "icerd",
@@ -209,6 +381,7 @@
       "title": "ICERD Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "foundation",
       "description": "International Convention on the Elimination of All Forms of Racial Discrimination. First of the 9 core UN human rights treaties.",
       "significance": "First core UN human rights treaty",
       "highlight": true,
@@ -220,10 +393,31 @@
       "title": "ICCPR & ICESCR Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "expansion",
       "description": "International Covenants on Civil and Political Rights and Economic, Social and Cultural Rights. Together with UDHR form the International Bill of Rights.",
       "significance": "Binding human rights covenants",
       "highlight": true,
       "relatedId": "iccpr"
+    },
+    {
+      "id": "op1-iccpr",
+      "year": 1966,
+      "title": "First Optional Protocol to ICCPR",
+      "type": "treaty",
+      "system": "un",
+      "era": "expansion",
+      "description": "Enables individual complaints to the Human Rights Committee for alleged violations of ICCPR.",
+      "significance": "Individual complaint mechanism for civil and political rights"
+    },
+    {
+      "id": "refugee-protocol",
+      "year": 1967,
+      "title": "Protocol Relating to Status of Refugees",
+      "type": "treaty",
+      "system": "un",
+      "era": "expansion",
+      "description": "Removed temporal and geographical limitations of 1951 Refugee Convention, making it truly universal.",
+      "significance": "Universal refugee protection"
     },
     {
       "id": "achr-adoption",
@@ -231,9 +425,50 @@
       "title": "American Convention on Human Rights",
       "type": "treaty",
       "system": "inter-american",
-      "description": "Pact of San Jos\u00e9. Main human rights treaty of the Inter-American system. Creates Inter-American Court.",
+      "era": "expansion",
+      "description": "Pact of San José. Main human rights treaty of the Inter-American system. Creates Inter-American Court.",
       "significance": "Inter-American human rights treaty",
       "relatedId": "achr"
+    },
+    {
+      "id": "vienna-treaties",
+      "year": 1969,
+      "title": "Vienna Convention on Law of Treaties",
+      "type": "treaty",
+      "system": "un",
+      "era": "expansion",
+      "description": "Codifies rules on treaty interpretation and application. Article 53 establishes jus cogens concept.",
+      "significance": "Foundation for treaty law including human rights treaties"
+    },
+    {
+      "id": "apartheid-convention",
+      "year": 1973,
+      "title": "Apartheid Convention",
+      "type": "treaty",
+      "system": "un",
+      "era": "expansion",
+      "description": "International Convention on the Suppression and Punishment of the Crime of Apartheid.",
+      "significance": "Criminalization of apartheid"
+    },
+    {
+      "id": "helsinki-final-act",
+      "year": 1975,
+      "title": "Helsinki Final Act",
+      "type": "declaration",
+      "system": "european",
+      "era": "expansion",
+      "description": "CSCE Final Act including human rights provisions. Basket III on human contacts influenced Eastern Europe.",
+      "significance": "Human rights in East-West relations"
+    },
+    {
+      "id": "golder-case",
+      "year": 1975,
+      "title": "Golder v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Established right of access to court is implicit in Article 6. Prisoner correspondence rights.",
+      "significance": "Implied rights doctrine"
     },
     {
       "id": "covenants-force",
@@ -241,8 +476,50 @@
       "title": "ICCPR & ICESCR Enter into Force",
       "type": "event",
       "system": "un",
+      "era": "expansion",
       "description": "Both International Covenants become binding after achieving required ratifications.",
       "significance": "Binding international human rights law"
+    },
+    {
+      "id": "handyside-case",
+      "year": 1976,
+      "title": "Handyside v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Freedom of expression protects ideas that 'offend, shock or disturb.' Margin of appreciation doctrine.",
+      "significance": "Expression includes offensive speech",
+      "highlight": true
+    },
+    {
+      "id": "additional-protocols-geneva",
+      "year": 1977,
+      "title": "Additional Protocols to Geneva Conventions",
+      "type": "treaty",
+      "system": "ihl",
+      "era": "expansion",
+      "description": "Two protocols expanding protection in international and non-international armed conflicts.",
+      "significance": "Expanded humanitarian law protection"
+    },
+    {
+      "id": "ireland-uk",
+      "year": 1978,
+      "title": "Ireland v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Distinguished torture from inhuman/degrading treatment. Five techniques case.",
+      "significance": "Torture definition clarified"
+    },
+    {
+      "id": "tyrer-case",
+      "year": 1978,
+      "title": "Tyrer v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Corporal punishment as degrading treatment. ECHR as 'living instrument' doctrine established.",
+      "significance": "Living instrument doctrine"
     },
     {
       "id": "iachr-court",
@@ -250,7 +527,8 @@
       "title": "Inter-American Court Established",
       "type": "institution",
       "system": "inter-american",
-      "description": "Inter-American Court of Human Rights begins operations in San Jos\u00e9, Costa Rica.",
+      "era": "expansion",
+      "description": "Inter-American Court of Human Rights begins operations in San José, Costa Rica.",
       "significance": "Regional human rights court for Americas"
     },
     {
@@ -259,10 +537,21 @@
       "title": "CEDAW Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "expansion",
       "description": "Convention on the Elimination of All Forms of Discrimination Against Women. Often called international bill of rights for women.",
       "significance": "Women's rights treaty",
       "highlight": true,
       "relatedId": "cedaw"
+    },
+    {
+      "id": "airey-case",
+      "year": 1979,
+      "title": "Airey v. Ireland (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Right to effective access to court may require legal aid. Positive obligations under Article 6.",
+      "significance": "Effective access to justice"
     },
     {
       "id": "african-charter",
@@ -270,9 +559,20 @@
       "title": "African Charter Adopted",
       "type": "charter",
       "system": "african",
+      "era": "expansion",
       "description": "African Charter on Human and Peoples' Rights (Banjul Charter). Unique in including peoples' rights and duties.",
       "significance": "African human rights system foundation",
       "relatedId": "achpr"
+    },
+    {
+      "id": "dudgeon-case",
+      "year": 1981,
+      "title": "Dudgeon v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Criminalization of homosexual acts violates Article 8. Landmark LGBTQ+ rights case.",
+      "significance": "Decriminalization of homosexuality"
     },
     {
       "id": "cat",
@@ -280,10 +580,21 @@
       "title": "CAT Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "expansion",
       "description": "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment.",
       "significance": "Absolute prohibition of torture",
       "highlight": true,
       "relatedId": "cat"
+    },
+    {
+      "id": "cescr-committee",
+      "year": 1985,
+      "title": "CESCR Committee Established",
+      "type": "institution",
+      "system": "un",
+      "era": "expansion",
+      "description": "Committee on Economic, Social and Cultural Rights established by ECOSOC to monitor ICESCR.",
+      "significance": "Monitoring body for ESC rights"
     },
     {
       "id": "drtd",
@@ -291,8 +602,29 @@
       "title": "Declaration on Right to Development",
       "type": "declaration",
       "system": "un",
+      "era": "expansion",
       "description": "UN Declaration on the Right to Development. Recognizes development as a human right.",
       "significance": "Third generation rights recognition"
+    },
+    {
+      "id": "cat-force",
+      "year": 1987,
+      "title": "CAT Enters into Force",
+      "type": "event",
+      "system": "un",
+      "era": "expansion",
+      "description": "Convention against Torture becomes binding international law.",
+      "significance": "Binding torture prohibition"
+    },
+    {
+      "id": "cpt-convention",
+      "year": 1987,
+      "title": "European Convention for Prevention of Torture",
+      "type": "treaty",
+      "system": "european",
+      "era": "expansion",
+      "description": "Establishes CPT (Committee for Prevention of Torture) for preventive visits to places of detention.",
+      "significance": "Preventive torture monitoring"
     },
     {
       "id": "crc",
@@ -300,10 +632,32 @@
       "title": "CRC Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "expansion",
       "description": "Convention on the Rights of the Child. Most widely ratified human rights treaty. Only US and Somalia initially did not ratify.",
       "significance": "Universal children's rights",
       "highlight": true,
       "relatedId": "crc"
+    },
+    {
+      "id": "op2-iccpr",
+      "year": 1989,
+      "title": "Second Optional Protocol to ICCPR",
+      "type": "treaty",
+      "system": "un",
+      "era": "expansion",
+      "description": "Aims at abolition of the death penalty.",
+      "significance": "Death penalty abolition"
+    },
+    {
+      "id": "soering-case",
+      "year": 1989,
+      "title": "Soering v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "expansion",
+      "description": "Extradition to face death row conditions would violate Article 3. Extraterritorial application.",
+      "significance": "Non-refoulement under Article 3",
+      "highlight": true
     },
     {
       "id": "berlin-wall",
@@ -311,8 +665,19 @@
       "title": "Fall of Berlin Wall",
       "type": "event",
       "system": "historical",
+      "era": "expansion",
       "description": "End of Cold War division. Enabled expansion of human rights systems to Eastern Europe.",
       "significance": "End of Cold War, human rights expansion"
+    },
+    {
+      "id": "crc-force",
+      "year": 1990,
+      "title": "CRC Enters into Force",
+      "type": "event",
+      "system": "un",
+      "era": "postcold",
+      "description": "Convention on the Rights of the Child becomes binding law after rapid ratification.",
+      "significance": "Universal children's rights law"
     },
     {
       "id": "icrmw",
@@ -320,9 +685,20 @@
       "title": "ICRMW Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "postcold",
       "description": "International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families.",
       "significance": "Migrant workers' rights protection",
       "relatedId": "icrmw"
+    },
+    {
+      "id": "minorities-declaration",
+      "year": 1992,
+      "title": "Declaration on Minorities",
+      "type": "declaration",
+      "system": "un",
+      "era": "postcold",
+      "description": "UN Declaration on the Rights of Persons Belonging to National or Ethnic, Religious and Linguistic Minorities.",
+      "significance": "Minority rights recognition"
     },
     {
       "id": "paris-principles",
@@ -330,6 +706,7 @@
       "title": "Paris Principles",
       "type": "event",
       "system": "un",
+      "era": "postcold",
       "description": "Principles relating to the Status of National Institutions (Paris Principles). Standards for NHRIs.",
       "significance": "Standards for national human rights institutions"
     },
@@ -339,6 +716,7 @@
       "title": "Vienna World Conference",
       "type": "event",
       "system": "un",
+      "era": "postcold",
       "description": "World Conference on Human Rights. Reaffirmed universality. Created OHCHR position.",
       "significance": "Universality reaffirmed, OHCHR created",
       "highlight": true
@@ -349,7 +727,8 @@
       "title": "OHCHR Established",
       "type": "institution",
       "system": "un",
-      "description": "Office of the High Commissioner for Human Rights created. Jos\u00e9 Ayala-Lasso first High Commissioner.",
+      "era": "postcold",
+      "description": "Office of the High Commissioner for Human Rights created. José Ayala-Lasso first High Commissioner.",
       "significance": "UN human rights leadership"
     },
     {
@@ -358,6 +737,7 @@
       "title": "ICTY Established",
       "type": "institution",
       "system": "un",
+      "era": "postcold",
       "description": "International Criminal Tribunal for the former Yugoslavia. First international criminal tribunal since Nuremberg.",
       "significance": "Revival of international criminal justice"
     },
@@ -367,8 +747,19 @@
       "title": "ICTR Established",
       "type": "institution",
       "system": "un",
+      "era": "postcold",
       "description": "International Criminal Tribunal for Rwanda following genocide.",
       "significance": "Genocide accountability"
+    },
+    {
+      "id": "fcnm",
+      "year": 1995,
+      "title": "Framework Convention for National Minorities",
+      "type": "treaty",
+      "system": "european",
+      "era": "postcold",
+      "description": "Council of Europe treaty on minority rights. First legally binding multilateral instrument on minority protection.",
+      "significance": "European minority protection"
     },
     {
       "id": "beijing-conference",
@@ -376,8 +767,29 @@
       "title": "Beijing Women's Conference",
       "type": "event",
       "system": "un",
+      "era": "postcold",
       "description": "Fourth World Conference on Women. Beijing Declaration and Platform for Action.",
       "significance": "Women's rights advancement"
+    },
+    {
+      "id": "mccann-case",
+      "year": 1995,
+      "title": "McCann v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Use of lethal force by security forces. Established strict scrutiny under Article 2.",
+      "significance": "Standards for use of lethal force"
+    },
+    {
+      "id": "chahal-case",
+      "year": 1996,
+      "title": "Chahal v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Absolute nature of Article 3 in deportation cases. National security cannot justify torture risk.",
+      "significance": "Absolute non-refoulement"
     },
     {
       "id": "echr-protocol-11",
@@ -385,6 +797,7 @@
       "title": "ECtHR Reformed (Protocol 11)",
       "type": "event",
       "system": "european",
+      "era": "postcold",
       "description": "Protocol 11 creates permanent full-time European Court of Human Rights. Direct individual access.",
       "significance": "Permanent European human rights court",
       "highlight": true
@@ -395,9 +808,70 @@
       "title": "Rome Statute Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "postcold",
       "description": "Statute of the International Criminal Court. Permanent court for genocide, crimes against humanity, war crimes.",
       "significance": "Permanent international criminal court",
       "highlight": true
+    },
+    {
+      "id": "osman-case",
+      "year": 1998,
+      "title": "Osman v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Positive obligation to protect life when authorities know of real and immediate risk.",
+      "significance": "Osman test for positive obligations"
+    },
+    {
+      "id": "op-cedaw",
+      "year": 1999,
+      "title": "Optional Protocol to CEDAW",
+      "type": "treaty",
+      "system": "un",
+      "era": "postcold",
+      "description": "Enables individual complaints and inquiry procedure for CEDAW violations.",
+      "significance": "Individual complaints for women's rights"
+    },
+    {
+      "id": "selmouni-case",
+      "year": 1999,
+      "title": "Selmouni v. France (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Police brutality constituted torture. Raised threshold for what constitutes torture.",
+      "significance": "Evolving standards on torture"
+    },
+    {
+      "id": "op-crc-armed",
+      "year": 2000,
+      "title": "OP-CRC on Armed Conflict",
+      "type": "treaty",
+      "system": "un",
+      "era": "postcold",
+      "description": "Optional Protocol on involvement of children in armed conflict. Raises minimum age for recruitment.",
+      "significance": "Child soldiers protection"
+    },
+    {
+      "id": "op-crc-sale",
+      "year": 2000,
+      "title": "OP-CRC on Sale of Children",
+      "type": "treaty",
+      "system": "un",
+      "era": "postcold",
+      "description": "Optional Protocol on sale of children, child prostitution and child pornography.",
+      "significance": "Child exploitation protection"
+    },
+    {
+      "id": "eu-charter-proclaimed",
+      "year": 2000,
+      "title": "EU Charter of Fundamental Rights",
+      "type": "charter",
+      "system": "european",
+      "era": "postcold",
+      "description": "Charter of Fundamental Rights of the European Union proclaimed. Not yet legally binding.",
+      "significance": "EU fundamental rights codification"
     },
     {
       "id": "icc-force",
@@ -405,8 +879,29 @@
       "title": "ICC Enters into Force",
       "type": "event",
       "system": "un",
+      "era": "postcold",
       "description": "International Criminal Court becomes operational after 60 ratifications.",
       "significance": "Permanent international criminal justice"
+    },
+    {
+      "id": "opcat",
+      "year": 2002,
+      "title": "OPCAT Adopted",
+      "type": "treaty",
+      "system": "un",
+      "era": "postcold",
+      "description": "Optional Protocol to CAT establishing system of preventive visits to places of detention.",
+      "significance": "Preventive torture monitoring"
+    },
+    {
+      "id": "pretty-case",
+      "year": 2002,
+      "title": "Pretty v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Right to die not included in Article 2. Article 8 includes right to choose manner of death.",
+      "significance": "End of life rights"
     },
     {
       "id": "african-court",
@@ -414,6 +909,7 @@
       "title": "African Court Established",
       "type": "institution",
       "system": "african",
+      "era": "postcold",
       "description": "African Court on Human and Peoples' Rights begins operations in Arusha, Tanzania.",
       "significance": "African regional human rights court"
     },
@@ -423,8 +919,19 @@
       "title": "Responsibility to Protect",
       "type": "event",
       "system": "un",
+      "era": "postcold",
       "description": "World Summit Outcome Document endorses R2P. States have responsibility to protect populations from atrocities.",
       "significance": "Sovereignty as responsibility concept"
+    },
+    {
+      "id": "hirst-case",
+      "year": 2005,
+      "title": "Hirst v. UK (No. 2) (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "postcold",
+      "description": "Blanket ban on prisoner voting violates Protocol 1, Article 3. UK non-compliance controversy.",
+      "significance": "Prisoner voting rights"
     },
     {
       "id": "hrc-created",
@@ -432,6 +939,7 @@
       "title": "Human Rights Council Created",
       "type": "institution",
       "system": "un",
+      "era": "modern",
       "description": "UN Human Rights Council replaces Commission on Human Rights. Universal Periodic Review mechanism.",
       "significance": "Reformed UN human rights body",
       "highlight": true
@@ -442,6 +950,7 @@
       "title": "CRPD Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "modern",
       "description": "Convention on the Rights of Persons with Disabilities. Social model of disability. First treaty of 21st century.",
       "significance": "Disability rights paradigm shift",
       "highlight": true,
@@ -453,9 +962,20 @@
       "title": "ICPPED Adopted",
       "type": "treaty",
       "system": "un",
+      "era": "modern",
       "description": "International Convention for the Protection of All Persons from Enforced Disappearance.",
       "significance": "Enforced disappearance prohibition",
       "relatedId": "icpped"
+    },
+    {
+      "id": "undrip",
+      "year": 2007,
+      "title": "Declaration on Indigenous Peoples",
+      "type": "declaration",
+      "system": "un",
+      "era": "modern",
+      "description": "UN Declaration on the Rights of Indigenous Peoples. Comprehensive instrument on indigenous rights.",
+      "significance": "Indigenous peoples' rights recognition"
     },
     {
       "id": "upr-first",
@@ -463,8 +983,70 @@
       "title": "First UPR Cycle Begins",
       "type": "event",
       "system": "un",
+      "era": "modern",
       "description": "Universal Periodic Review begins examining all 193 UN member states' human rights records.",
       "significance": "Universal human rights review mechanism"
+    },
+    {
+      "id": "op-icescr",
+      "year": 2008,
+      "title": "Optional Protocol to ICESCR",
+      "type": "treaty",
+      "system": "un",
+      "era": "modern",
+      "description": "Enables individual complaints for violations of economic, social and cultural rights.",
+      "significance": "Justiciability of ESC rights"
+    },
+    {
+      "id": "saadi-case",
+      "year": 2008,
+      "title": "Saadi v. Italy (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Diplomatic assurances cannot remove Article 3 protection. Absolute nature confirmed.",
+      "significance": "Limits of diplomatic assurances"
+    },
+    {
+      "id": "lisbon-treaty",
+      "year": 2009,
+      "title": "Lisbon Treaty (EU Charter Binding)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "EU Charter of Fundamental Rights becomes legally binding with same value as EU treaties.",
+      "significance": "EU fundamental rights binding law",
+      "highlight": true
+    },
+    {
+      "id": "al-skeini-case",
+      "year": 2011,
+      "title": "Al-Skeini v. UK (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "ECHR jurisdiction extends to military operations abroad when state exercises authority and control.",
+      "significance": "Extraterritorial jurisdiction"
+    },
+    {
+      "id": "mss-case",
+      "year": 2011,
+      "title": "M.S.S. v. Belgium and Greece (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Dublin transfers to Greece violated Article 3 due to reception conditions. Systemic deficiencies.",
+      "significance": "Asylum and Dublin system"
+    },
+    {
+      "id": "lautsi-case",
+      "year": 2011,
+      "title": "Lautsi v. Italy (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Grand Chamber: crucifixes in classrooms within margin of appreciation. Religious symbols case.",
+      "significance": "Religious symbols in public spaces"
     },
     {
       "id": "ungp-business",
@@ -472,17 +1054,69 @@
       "title": "UN Guiding Principles on Business",
       "type": "event",
       "system": "un",
+      "era": "modern",
       "description": "UN Guiding Principles on Business and Human Rights endorsed. Protect, Respect, Remedy framework.",
       "significance": "Business and human rights framework"
     },
     {
       "id": "op-crc-ic",
+      "year": 2011,
+      "title": "OP-CRC on Communications",
+      "type": "treaty",
+      "system": "un",
+      "era": "modern",
+      "description": "Third Optional Protocol to CRC establishing individual complaints procedure.",
+      "significance": "Individual complaints for children's rights"
+    },
+    {
+      "id": "brighton-declaration",
+      "year": 2012,
+      "title": "Brighton Declaration",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Declaration on reform of ECtHR. Emphasized subsidiarity and margin of appreciation.",
+      "significance": "ECtHR reform direction"
+    },
+    {
+      "id": "hirsi-jamaa-case",
+      "year": 2012,
+      "title": "Hirsi Jamaa v. Italy (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Push-backs on high seas violate Article 3 and Protocol 4. Extraterritorial obligations.",
+      "significance": "Maritime push-backs prohibited"
+    },
+    {
+      "id": "asean-declaration",
+      "year": 2012,
+      "title": "ASEAN Human Rights Declaration",
+      "type": "declaration",
+      "system": "historical",
+      "era": "modern",
+      "description": "First human rights declaration in Southeast Asia. Criticized for limitations and qualifications.",
+      "significance": "Asian regional human rights development"
+    },
+    {
+      "id": "op-crc-ic-force",
       "year": 2014,
       "title": "OP-CRC-IC Enters into Force",
       "type": "event",
       "system": "un",
+      "era": "modern",
       "description": "Optional Protocol to CRC on communications procedure. Children can bring complaints to CRC Committee.",
       "significance": "Individual complaints for children's rights"
+    },
+    {
+      "id": "sas-case",
+      "year": 2014,
+      "title": "S.A.S. v. France (ECtHR)",
+      "type": "event",
+      "system": "european",
+      "era": "modern",
+      "description": "Full-face veil ban within margin of appreciation. 'Living together' as legitimate aim.",
+      "significance": "Face covering bans"
     },
     {
       "id": "sdgs",
@@ -490,6 +1124,7 @@
       "title": "Sustainable Development Goals",
       "type": "event",
       "system": "un",
+      "era": "modern",
       "description": "2030 Agenda for Sustainable Development. 17 SDGs integrating human rights throughout.",
       "significance": "Human rights in development agenda"
     },
@@ -499,17 +1134,39 @@
       "title": "Paris Climate Agreement",
       "type": "treaty",
       "system": "un",
+      "era": "modern",
       "description": "Paris Agreement on climate change. Preamble references human rights obligations.",
       "significance": "Climate and human rights linkage"
     },
     {
-      "id": "brighton-declaration",
-      "year": 2012,
-      "title": "Brighton Declaration",
-      "type": "event",
-      "system": "european",
-      "description": "Declaration on reform of ECtHR. Emphasized subsidiarity and margin of appreciation.",
-      "significance": "ECtHR reform direction"
+      "id": "new-york-declaration",
+      "year": 2016,
+      "title": "New York Declaration for Refugees",
+      "type": "declaration",
+      "system": "un",
+      "era": "modern",
+      "description": "UN Declaration addressing large movements of refugees and migrants. Led to Global Compacts.",
+      "significance": "Refugee and migration governance"
+    },
+    {
+      "id": "global-compact-migration",
+      "year": 2018,
+      "title": "Global Compact for Migration",
+      "type": "declaration",
+      "system": "un",
+      "era": "modern",
+      "description": "Global Compact for Safe, Orderly and Regular Migration. Non-binding framework.",
+      "significance": "International migration cooperation"
+    },
+    {
+      "id": "global-compact-refugees",
+      "year": 2018,
+      "title": "Global Compact on Refugees",
+      "type": "declaration",
+      "system": "un",
+      "era": "modern",
+      "description": "Framework for more predictable and equitable responsibility-sharing for refugees.",
+      "significance": "Refugee responsibility sharing"
     },
     {
       "id": "protocol-15",
@@ -517,72 +1174,20 @@
       "title": "Protocol 15 to ECHR",
       "type": "treaty",
       "system": "european",
+      "era": "modern",
       "description": "Adds subsidiarity and margin of appreciation to ECHR preamble. Reduces time limit to 4 months.",
       "significance": "ECHR modernization"
     },
     {
-      "id": "lawless-case",
-      "year": 1961,
-      "title": "Lawless v. Ireland (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "First case decided on merits by ECtHR. Concerned detention without trial during IRA emergency.",
-      "significance": "First ECtHR merits judgment"
-    },
-    {
-      "id": "golder-case",
-      "year": 1975,
-      "title": "Golder v. UK (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Established right of access to court is implicit in Article 6. Prisoner correspondence rights.",
-      "significance": "Implied rights doctrine"
-    },
-    {
-      "id": "handyside-case",
-      "year": 1976,
-      "title": "Handyside v. UK (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Freedom of expression protects ideas that 'offend, shock or disturb.' Margin of appreciation doctrine.",
-      "significance": "Expression includes offensive speech",
+      "id": "right-environment",
+      "year": 2022,
+      "title": "Right to Healthy Environment",
+      "type": "declaration",
+      "system": "un",
+      "era": "modern",
+      "description": "UN General Assembly recognizes right to clean, healthy and sustainable environment.",
+      "significance": "Environmental rights recognition",
       "highlight": true
-    },
-    {
-      "id": "ireland-uk",
-      "year": 1978,
-      "title": "Ireland v. UK (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Distinguished torture from inhuman/degrading treatment. Five techniques case.",
-      "significance": "Torture definition clarified"
-    },
-    {
-      "id": "soering-case",
-      "year": 1989,
-      "title": "Soering v. UK (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Extradition to face death row conditions would violate Article 3. Extraterritorial application.",
-      "significance": "Non-refoulement under Article 3"
-    },
-    {
-      "id": "osman-case",
-      "year": 1998,
-      "title": "Osman v. UK (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Positive obligation to protect life when authorities know of real and immediate risk.",
-      "significance": "Osman test for positive obligations"
-    },
-    {
-      "id": "hirst-case",
-      "year": 2005,
-      "title": "Hirst v. UK (No. 2) (ECtHR)",
-      "type": "event",
-      "system": "european",
-      "description": "Blanket ban on prisoner voting violates Protocol 1, Article 3. UK non-compliance controversy.",
-      "significance": "Prisoner voting rights"
     }
   ]
 }

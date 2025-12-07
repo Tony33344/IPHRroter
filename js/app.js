@@ -27,7 +27,9 @@ const App = {
         },
         timeline: {
             zoom: 1,
-            filter: 'all'
+            filter: 'all',
+            viewMode: 'eras', // 'eras', 'zoom', 'stacked'
+            selectedEra: null
         },
         web: {
             filter: 'all',
@@ -182,9 +184,15 @@ async function loadAllData() {
         App.data.institutions = institutions.institutions;
         App.data.connections = connections.connections;
         App.data.timelineEvents = timeline.events;
+        App.data.timelineMetadata = timeline.metadata || null;
         App.data.quizQuestions = quiz.questions;
         
-        console.log('Data loaded successfully');
+        console.log('Data loaded successfully:', {
+            treaties: App.data.treaties.length,
+            institutions: App.data.institutions.length,
+            timelineEvents: App.data.timelineEvents.length,
+            quizQuestions: App.data.quizQuestions.length
+        });
     } catch (error) {
         console.error('Error loading data:', error);
         showToast('Error loading data. Please refresh the page.');
@@ -417,22 +425,225 @@ function initHeroDiagram() {
 }
 
 // =====================================================
-// TIMELINE VISUALIZATION (IMPROVED)
+// TIMELINE VISUALIZATION (3-VIEW SYSTEM)
 // =====================================================
 
+const TIMELINE_COLORS = {
+    'treaty': '#3B82F6',
+    'institution': '#8B5CF6',
+    'declaration': '#10B981',
+    'event': '#F59E0B',
+    'charter': '#EF4444',
+    'historical': '#6B7280'
+};
+
+const DEFAULT_ERAS = [
+    { id: 'origins', name: 'Origins', start: 1215, end: 1944, color: '#6B7280', description: 'Historical foundations of human rights concepts' },
+    { id: 'foundation', name: 'Foundation Era', start: 1945, end: 1966, color: '#3B82F6', description: 'Post-WWII establishment of international human rights framework' },
+    { id: 'expansion', name: 'Expansion Era', start: 1966, end: 1990, color: '#10B981', description: 'Development of specialized treaties and regional systems' },
+    { id: 'postcold', name: 'Post-Cold War', start: 1990, end: 2006, color: '#8B5CF6', description: 'Vienna Conference, new institutions, and global expansion' },
+    { id: 'modern', name: 'Modern Era', start: 2006, end: 2030, color: '#F59E0B', description: 'Human Rights Council, new treaties, and contemporary challenges' }
+];
+
 function initTimeline() {
-    const container = document.getElementById('timelineWrapper');
+    const events = App.data.timelineEvents;
+    if (!events || !events.length) return;
+    
+    // Get eras from metadata or use defaults
+    const eras = App.data.timelineMetadata?.eras || DEFAULT_ERAS;
+    
+    // Update stats
+    document.getElementById('timelineEventCount').textContent = events.length;
+    document.getElementById('timelineEraCount').textContent = eras.length;
+    
+    // Setup view toggle
+    setupTimelineViewToggle();
+    
+    // Initialize with eras view (default)
+    renderErasView(events, eras);
+    
+    // Setup filters
+    setupTimelineFilters();
+}
+
+function setupTimelineViewToggle() {
+    document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const view = btn.dataset.view;
+            
+            // Update active button
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // Update state
+            App.state.timeline.viewMode = view;
+            
+            // Show/hide views
+            const erasView = document.getElementById('timelineErasView');
+            const zoomView = document.getElementById('timelineWrapper');
+            const stackedView = document.getElementById('timelineStackedView');
+            const eraQuickNav = document.getElementById('eraQuickNav');
+            
+            erasView.style.display = view === 'eras' ? 'grid' : 'none';
+            zoomView.style.display = view === 'zoom' ? 'block' : 'none';
+            stackedView.style.display = view === 'stacked' ? 'block' : 'none';
+            eraQuickNav.style.display = view === 'zoom' ? 'flex' : 'none';
+            
+            // Render the selected view
+            const events = App.data.timelineEvents;
+            const eras = App.data.timelineMetadata?.eras || DEFAULT_ERAS;
+            
+            if (view === 'eras') {
+                renderErasView(events, eras);
+            } else if (view === 'zoom') {
+                renderZoomTimeline(events, eras);
+            } else if (view === 'stacked') {
+                renderStackedView(events);
+            }
+            
+            lucide.createIcons();
+        });
+    });
+}
+
+function setupTimelineFilters() {
+    document.querySelectorAll('#timeline .filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#timeline .filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.dataset.filter;
+            App.state.timeline.filter = filter;
+            
+            // Re-render current view with filter
+            const events = App.data.timelineEvents;
+            const eras = App.data.timelineMetadata?.eras || DEFAULT_ERAS;
+            const view = App.state.timeline.viewMode;
+            
+            if (view === 'eras') {
+                renderErasView(events, eras);
+            } else if (view === 'zoom') {
+                filterZoomTimeline(filter);
+            } else if (view === 'stacked') {
+                renderStackedView(events);
+            }
+        });
+    });
+}
+
+// =====================================================
+// ERAS VIEW
+// =====================================================
+
+function renderErasView(events, eras) {
+    const container = document.getElementById('timelineErasView');
     if (!container) return;
     
-    const events = App.data.timelineEvents;
-    if (!events.length) return;
+    const filter = App.state.timeline.filter;
+    
+    container.innerHTML = eras.map(era => {
+        // Get events for this era
+        let eraEvents = events.filter(e => e.year >= era.start && e.year < era.end);
+        
+        // Apply filter
+        if (filter !== 'all') {
+            eraEvents = eraEvents.filter(e => e.type === filter);
+        }
+        
+        // Sort by year
+        eraEvents.sort((a, b) => a.year - b.year);
+        
+        // Get highlight events for preview
+        const highlightEvents = eraEvents.filter(e => e.highlight).slice(0, 3);
+        const previewEvents = highlightEvents.length > 0 ? highlightEvents : eraEvents.slice(0, 3);
+        
+        const isExpanded = App.state.timeline.selectedEra === era.id;
+        
+        return `
+            <div class="era-block ${isExpanded ? 'expanded' : ''}" 
+                 data-era="${era.id}" 
+                 style="--era-color: ${era.color}">
+                <div class="era-count">${eraEvents.length}</div>
+                <div class="era-header">
+                    <div class="era-name">${era.name}</div>
+                    <div class="era-years">${era.start} – ${era.end === 2030 ? 'Present' : era.end}</div>
+                </div>
+                <div class="era-description">${era.description || ''}</div>
+                <div class="era-events-preview">
+                    ${previewEvents.map(e => `<span class="era-event-tag">${e.title}</span>`).join('')}
+                    ${eraEvents.length > 3 ? `<span class="era-event-tag">+${eraEvents.length - 3} more</span>` : ''}
+                </div>
+                <div class="era-expand-hint">
+                    <i data-lucide="${isExpanded ? 'chevron-up' : 'chevron-down'}"></i>
+                    ${isExpanded ? 'Collapse' : 'Click to expand'}
+                </div>
+                ${isExpanded ? renderEraEventsList(eraEvents) : ''}
+            </div>
+        `;
+    }).join('');
+    
+    // Add click handlers
+    container.querySelectorAll('.era-block').forEach(block => {
+        block.addEventListener('click', (e) => {
+            // Don't toggle if clicking on an event card
+            if (e.target.closest('.era-event-card')) return;
+            
+            const eraId = block.dataset.era;
+            
+            if (App.state.timeline.selectedEra === eraId) {
+                App.state.timeline.selectedEra = null;
+            } else {
+                App.state.timeline.selectedEra = eraId;
+            }
+            
+            renderErasView(events, eras);
+            lucide.createIcons();
+        });
+    });
+    
+    // Add event card click handlers
+    container.querySelectorAll('.era-event-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const eventId = card.dataset.eventId;
+            const event = events.find(ev => ev.id === eventId);
+            if (event) showTimelineDetail(event);
+        });
+    });
+    
+    lucide.createIcons();
+}
+
+function renderEraEventsList(eraEvents) {
+    return `
+        <div class="era-events-list">
+            ${eraEvents.map(event => `
+                <div class="era-event-card" 
+                     data-event-id="${event.id}"
+                     style="--event-type-color: ${TIMELINE_COLORS[event.type] || '#6B7280'}">
+                    <div class="era-event-year">${event.year}</div>
+                    <div class="era-event-title">${event.title}</div>
+                    <div class="era-event-type">${event.type}</div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
+// =====================================================
+// ZOOM TIMELINE VIEW
+// =====================================================
+
+function renderZoomTimeline(events, eras) {
+    const container = document.getElementById('timelineWrapper');
+    if (!container) return;
     
     // Sort events by year
     const sortedEvents = [...events].sort((a, b) => a.year - b.year);
     
-    // Setup dimensions - more space per event
+    // Setup dimensions
     const margin = { top: 100, right: 100, bottom: 100, left: 100 };
-    const eventSpacing = 120; // More space between events
+    const eventSpacing = 120;
     const width = Math.max(3000, sortedEvents.length * eventSpacing);
     const height = 600 - margin.top - margin.bottom;
     
@@ -453,24 +664,7 @@ function initTimeline() {
         .domain([timeExtent[0] - 20, timeExtent[1] + 20])
         .range([0, width]);
     
-    // Color scale
-    const colorScale = {
-        'treaty': '#3B82F6',
-        'institution': '#8B5CF6',
-        'declaration': '#10B981',
-        'event': '#F59E0B',
-        'charter': '#EF4444',
-        'historical': '#6B7280'
-    };
-    
     // Draw era backgrounds
-    const eras = [
-        { start: 1200, end: 1800, label: 'Pre-Modern Era', color: 'rgba(107, 114, 128, 0.05)' },
-        { start: 1800, end: 1945, label: 'Modern Era', color: 'rgba(59, 130, 246, 0.05)' },
-        { start: 1945, end: 1990, label: 'Post-WWII Era', color: 'rgba(16, 185, 129, 0.05)' },
-        { start: 1990, end: 2030, label: 'Contemporary Era', color: 'rgba(139, 92, 246, 0.05)' }
-    ];
-    
     eras.forEach(era => {
         const x1 = Math.max(0, xScale(era.start));
         const x2 = Math.min(width, xScale(era.end));
@@ -480,7 +674,8 @@ function initTimeline() {
                 .attr('y', 0)
                 .attr('width', x2 - x1)
                 .attr('height', height)
-                .attr('fill', era.color);
+                .attr('fill', era.color)
+                .attr('opacity', 0.1);
             
             svg.append('text')
                 .attr('x', (x1 + x2) / 2)
@@ -488,8 +683,8 @@ function initTimeline() {
                 .attr('text-anchor', 'middle')
                 .attr('font-size', '14px')
                 .attr('font-weight', '600')
-                .attr('fill', '#9ca3af')
-                .text(era.label);
+                .attr('fill', era.color)
+                .text(era.name);
         }
     });
     
@@ -534,15 +729,15 @@ function initTimeline() {
         .attr('y1', 0)
         .attr('x2', 0)
         .attr('y2', (d, i) => height/2 - positions[i].y)
-        .attr('stroke', d => colorScale[d.type] || '#6B7280')
+        .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke-width', 2)
         .attr('stroke-opacity', 0.4);
     
-    // Draw larger circles with better visibility
+    // Draw circles
     eventGroups.append('circle')
         .attr('class', 'event-circle')
         .attr('r', d => d.highlight ? 18 : 14)
-        .attr('fill', d => colorScale[d.type] || '#6B7280')
+        .attr('fill', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke', 'white')
         .attr('stroke-width', 3)
         .style('filter', 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))');
@@ -562,7 +757,6 @@ function initTimeline() {
         .attr('class', 'label-group')
         .attr('transform', (d, i) => `translate(0, ${positions[i].y < height/2 ? -25 : 25})`);
     
-    // Label background
     labelGroups.append('rect')
         .attr('class', 'label-bg')
         .attr('x', -60)
@@ -571,11 +765,10 @@ function initTimeline() {
         .attr('height', 24)
         .attr('rx', 4)
         .attr('fill', 'white')
-        .attr('stroke', d => colorScale[d.type] || '#6B7280')
+        .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke-width', 1)
         .attr('opacity', 0.95);
     
-    // Label text
     labelGroups.append('text')
         .attr('class', 'event-label')
         .attr('text-anchor', 'middle')
@@ -585,32 +778,19 @@ function initTimeline() {
         .attr('fill', '#1f2937')
         .text(d => truncateText(d.title, 18));
     
-    // Add hover and click interactions
+    // Add interactions
     eventGroups
         .on('mouseenter', function(event, d) {
-            const group = d3.select(this);
-            
-            // Enlarge circle
-            group.select('.event-circle')
-                .transition()
-                .duration(150)
+            d3.select(this).select('.event-circle')
+                .transition().duration(150)
                 .attr('r', d.highlight ? 22 : 18);
-            
-            // Show full tooltip
-            showTimelineTooltip(event, d, colorScale[d.type]);
+            showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
         })
-        .on('mousemove', function(event, d) {
-            updateTooltipPosition(event);
-        })
+        .on('mousemove', updateTooltipPosition)
         .on('mouseleave', function(event, d) {
-            const group = d3.select(this);
-            
-            // Reset circle
-            group.select('.event-circle')
-                .transition()
-                .duration(150)
+            d3.select(this).select('.event-circle')
+                .transition().duration(150)
                 .attr('r', d.highlight ? 18 : 14);
-            
             hideTimelineTooltip();
         })
         .on('click', function(event, d) {
@@ -618,24 +798,119 @@ function initTimeline() {
             showTimelineDetail(d);
         });
     
-    // Setup filters
-    document.querySelectorAll('#timeline .filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('#timeline .filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filterTimeline(btn.dataset.filter);
-        });
-    });
-    
-    // Setup zoom
+    // Setup zoom controls
     setupTimelineZoom(container, svg);
     
-    // Scroll to 1945 (UDHR era) initially
+    // Setup era quick nav
+    setupEraQuickNav(container, xScale);
+    
+    // Scroll to 1945 initially
     setTimeout(() => {
         const scrollTo = xScale(1940) - container.clientWidth / 3;
         container.scrollLeft = Math.max(0, scrollTo);
     }, 100);
+    
+    // Apply current filter
+    filterZoomTimeline(App.state.timeline.filter);
 }
+
+function setupEraQuickNav(container, xScale) {
+    document.querySelectorAll('.era-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const start = parseInt(btn.dataset.start);
+            const scrollTo = xScale(start) - 100;
+            container.scrollTo({ left: Math.max(0, scrollTo), behavior: 'smooth' });
+            
+            document.querySelectorAll('.era-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+}
+
+function filterZoomTimeline(filter) {
+    d3.selectAll('.timeline-event')
+        .transition()
+        .duration(300)
+        .style('opacity', d => {
+            if (filter === 'all') return 1;
+            return d.type === filter ? 1 : 0.15;
+        });
+}
+
+// =====================================================
+// STACKED TRACKS VIEW
+// =====================================================
+
+function renderStackedView(events) {
+    const container = document.getElementById('timelineStackedView');
+    if (!container) return;
+    
+    const filter = App.state.timeline.filter;
+    
+    // Group events by type
+    const tracks = [
+        { type: 'treaty', label: 'Treaties', color: TIMELINE_COLORS.treaty },
+        { type: 'institution', label: 'Institutions', color: TIMELINE_COLORS.institution },
+        { type: 'declaration', label: 'Declarations', color: TIMELINE_COLORS.declaration },
+        { type: 'event', label: 'Events', color: TIMELINE_COLORS.event },
+        { type: 'charter', label: 'Charters', color: TIMELINE_COLORS.charter },
+        { type: 'historical', label: 'Historical', color: TIMELINE_COLORS.historical }
+    ];
+    
+    // Calculate time scale
+    const timeExtent = d3.extent(events, d => d.year);
+    const width = 2000;
+    const xScale = d3.scaleLinear()
+        .domain([timeExtent[0] - 20, timeExtent[1] + 20])
+        .range([50, width - 50]);
+    
+    container.innerHTML = `
+        <div class="stacked-tracks-container" style="overflow-x: auto;">
+            ${tracks.map(track => {
+                const trackEvents = events.filter(e => e.type === track.type);
+                if (trackEvents.length === 0) return '';
+                
+                const isFiltered = filter !== 'all' && filter !== track.type;
+                
+                return `
+                    <div class="stacked-track" style="--track-color: ${track.color}; opacity: ${isFiltered ? 0.3 : 1}">
+                        <div class="stacked-track-label">${track.label} (${trackEvents.length})</div>
+                        <div class="stacked-track-line" style="min-width: ${width}px;">
+                            <div class="stacked-track-axis"></div>
+                            ${trackEvents.map(event => `
+                                <div class="stacked-event ${event.highlight ? 'highlight' : ''}" 
+                                     data-event-id="${event.id}"
+                                     style="left: ${xScale(event.year)}px;"
+                                     title="${event.year}: ${event.title}">
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('')}
+            
+            <!-- Time axis -->
+            <div class="stacked-axis" style="min-width: ${width}px; padding: 10px 0; display: flex; justify-content: space-between;">
+                ${d3.range(Math.ceil(timeExtent[0] / 50) * 50, timeExtent[1] + 50, 50).map(year => `
+                    <span style="font-size: 12px; color: var(--text-muted); position: absolute; left: ${xScale(year)}px;">${year}</span>
+                `).join('')}
+            </div>
+        </div>
+    `;
+    
+    // Add click handlers
+    container.querySelectorAll('.stacked-event').forEach(el => {
+        el.addEventListener('click', () => {
+            const eventId = el.dataset.eventId;
+            const event = events.find(e => e.id === eventId);
+            if (event) showTimelineDetail(event);
+        });
+    });
+}
+
+// =====================================================
+// TIMELINE HELPER FUNCTIONS
+// =====================================================
 
 function calculateEventPositions(events, xScale, height) {
     const positions = [];

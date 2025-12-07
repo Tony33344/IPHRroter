@@ -221,7 +221,23 @@
         <section id="timeline" class="section">
             <div class="section-header">
                 <h1><i data-lucide="clock"></i> Evolution of Human Rights</h1>
-                <p>From Magna Carta to the Digital Age — explore key milestones in human rights history</p>
+                <p>From Magna Carta to the Digital Age — explore 100+ key milestones in human rights history</p>
+            </div>
+            
+            <!-- Timeline View Toggle -->
+            <div class="timeline-view-toggle">
+                <button class="view-btn active" data-view="eras" title="Era Blocks View">
+                    <i data-lucide="layout-grid"></i>
+                    <span>Era Blocks</span>
+                </button>
+                <button class="view-btn" data-view="zoom" title="Zoom Timeline View">
+                    <i data-lucide="move-horizontal"></i>
+                    <span>Zoom Timeline</span>
+                </button>
+                <button class="view-btn" data-view="stacked" title="Stacked Tracks View">
+                    <i data-lucide="layers"></i>
+                    <span>Stacked Tracks</span>
+                </button>
             </div>
             
             <div class="timeline-controls">
@@ -231,6 +247,7 @@
                     <button class="filter-btn" data-filter="institution">Institutions</button>
                     <button class="filter-btn" data-filter="declaration">Declarations</button>
                     <button class="filter-btn" data-filter="event">Events</button>
+                    <button class="filter-btn" data-filter="historical">Historical</button>
                 </div>
                 <div class="timeline-zoom">
                     <button class="zoom-btn" id="zoomOut"><i data-lucide="zoom-out"></i></button>
@@ -240,9 +257,29 @@
                 </div>
             </div>
             
+            <!-- Era Quick Navigation (for zoom view) -->
+            <div class="era-quick-nav" id="eraQuickNav" style="display: none;">
+                <button class="era-btn" data-start="1215" data-end="1944">Pre-1945</button>
+                <button class="era-btn" data-start="1945" data-end="1966">1945-1966</button>
+                <button class="era-btn" data-start="1966" data-end="1990">1966-1990</button>
+                <button class="era-btn" data-start="1990" data-end="2006">1990-2006</button>
+                <button class="era-btn" data-start="2006" data-end="2030">2006-Now</button>
+            </div>
+            
             <div class="timeline-container" id="timelineContainer">
-                <div class="timeline-wrapper" id="timelineWrapper">
+                <!-- Eras View -->
+                <div class="timeline-eras-view" id="timelineErasView">
+                    <!-- Era blocks will be rendered here -->
+                </div>
+                
+                <!-- Zoom Timeline View -->
+                <div class="timeline-wrapper" id="timelineWrapper" style="display: none;">
                     <!-- Timeline will be rendered here by D3.js -->
+                </div>
+                
+                <!-- Stacked Tracks View -->
+                <div class="timeline-stacked-view" id="timelineStackedView" style="display: none;">
+                    <!-- Stacked tracks will be rendered here -->
                 </div>
             </div>
             
@@ -252,6 +289,12 @@
                 <div class="legend-item"><span class="legend-dot declaration"></span> Declaration</div>
                 <div class="legend-item"><span class="legend-dot event"></span> Event</div>
                 <div class="legend-item"><span class="legend-dot charter"></span> Charter</div>
+                <div class="legend-item"><span class="legend-dot historical"></span> Historical</div>
+            </div>
+            
+            <!-- Event count display -->
+            <div class="timeline-stats">
+                <span id="timelineEventCount">0</span> events across <span id="timelineEraCount">5</span> eras
             </div>
         </section>
 

@@ -2003,13 +2003,351 @@ main {
     }
 }
 
+/* =====================================================
+   TIMELINE 3-VIEW SYSTEM
+   ===================================================== */
+
+/* Timeline View Toggle */
+.timeline-view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.view-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.view-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+.view-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Era Quick Navigation */
+.era-quick-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.era-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border: 1px solid var(--gray-300);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.era-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.era-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+/* Timeline Stats */
+.timeline-stats {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.timeline-stats span {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* =====================================================
+   ERAS VIEW
+   ===================================================== */
+
+.timeline-eras-view {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+}
+
+@media (max-width: 1024px) {
+    .timeline-eras-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .timeline-eras-view {
+        grid-template-columns: 1fr;
+    }
+}
+
+.era-block {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    border: 2px solid var(--gray-200);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.era-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--era-color, var(--gray-400));
+}
+
+.era-block:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--era-color, var(--gray-400));
+}
+
+.era-block.expanded {
+    grid-column: 1 / -1;
+}
+
+.era-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.era-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.era-years {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.era-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--era-color, var(--gray-400));
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--spacing-sm);
+}
+
+.era-description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-md);
+}
+
+.era-events-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.era-event-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+}
+
+.era-expand-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.era-expand-hint svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Expanded Era Events List */
+.era-events-list {
+    margin-top: var(--spacing-lg);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.era-event-card {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border-left: 3px solid var(--event-type-color, var(--gray-400));
+}
+
+.era-event-card:hover {
+    background: var(--bg-tertiary);
+    transform: translateX(4px);
+}
+
+.era-event-year {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--event-type-color, var(--primary));
+    margin-bottom: var(--spacing-xs);
+}
+
+.era-event-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.era-event-type {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* =====================================================
+   STACKED TRACKS VIEW
+   ===================================================== */
+
+.timeline-stacked-view {
+    padding: var(--spacing-lg);
+    overflow-x: auto;
+}
+
+.stacked-track {
+    margin-bottom: var(--spacing-lg);
+    position: relative;
+}
+
+.stacked-track-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.stacked-track-label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background: var(--track-color, var(--gray-400));
+}
+
+.stacked-track-line {
+    position: relative;
+    height: 60px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    min-width: 2000px;
+}
+
+.stacked-track-axis {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gray-300);
+}
+
+.stacked-event {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-full);
+    background: var(--track-color, var(--gray-400));
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    z-index: 1;
+}
+
+.stacked-event:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 10;
+}
+
+.stacked-event.highlight {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+/* Historical color */
+.legend-dot.historical {
+    background: #6B7280;
+}
+
 /* Print Styles */
 @media print {
     .navbar,
     .hero-actions,
     .quiz-actions,
     .web-controls,
-    .timeline-controls {
+    .timeline-controls,
+    .timeline-view-toggle,
+    .era-quick-nav {
         display: none;
     }
     
@@ -2020,5 +2358,9 @@ main {
     
     main {
         padding-top: 0;
+    }
+    
+    .timeline-eras-view {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
