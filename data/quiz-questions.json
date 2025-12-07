@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalQuestions": 220,
+    "totalQuestions": 240,
     "lastUpdated": "2025-01-20",
     "version": "2.0",
     "categories": [
@@ -3575,6 +3575,468 @@
       "correct": 1,
       "explanation": "The International Convention for the Protection of All Persons from Enforced Disappearance (2006) defines enforced disappearance as arrest, detention, or abduction by state agents, followed by refusal to acknowledge the deprivation of liberty or concealment of the fate of the disappeared person.",
       "explanationSL": "Mednarodna konvencija o zaščiti vseh oseb pred prisilnim izginotjem (2006) opredeljuje prisilno izginotje kot aretacijo, pridržanje ali ugrabitev s strani državnih agentov, ki ji sledi zavrnitev priznanja odvzema prostosti ali prikrivanje usode izginule osebe."
+    },
+    {
+      "id": 231,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "What is the distinction between forum internum and forum externum in Article 18 ICCPR?",
+      "questionSL": "Kakšna je razlika med forum internum in forum externum v členu 18 MPDPP?",
+      "options": [
+        "Forum internum is limited, forum externum is absolute",
+        "Forum internum (inner belief) is absolute, forum externum (manifestation) can be limited",
+        "Both can be equally limited",
+        "They refer to domestic vs international courts"
+      ],
+      "optionsSL": [
+        "Forum internum je omejen, forum externum je absoluten",
+        "Forum internum (notranje prepričanje) je absoluten, forum externum (izražanje) se lahko omeji",
+        "Oba se lahko enako omejita",
+        "Nanašata se na domača in mednarodna sodišča"
+      ],
+      "correct": 1,
+      "explanation": "Forum internum (the internal dimension - freedom to have beliefs) is absolute and non-derogable. Forum externum (the external dimension - manifestation of religion) can be subject to limitations under Article 18(3).",
+      "explanationSL": "Forum internum (notranja razsežnost - svoboda imeti prepričanja) je absoluten in se ne more derogirati. Forum externum (zunanja razsežnost - izražanje vere) se lahko omeji po členu 18(3).",
+      "examTip": "Key distinction for Seminar 1: The internal belief is ALWAYS protected!"
+    },
+    {
+      "id": 232,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "Under Article 18(3) ICCPR, what are the permitted grounds for limiting the manifestation of religion?",
+      "questionSL": "Kateri so dovoljeni razlogi za omejevanje izražanja vere po členu 18(3) MPDPP?",
+      "options": [
+        "Public order, morals, and state interests",
+        "Public safety, order, health, morals, or fundamental rights and freedoms of others",
+        "National security and economic well-being",
+        "Any legitimate aim prescribed by law"
+      ],
+      "optionsSL": [
+        "Javni red, morala in državni interesi",
+        "Javna varnost, red, zdravje, morala ali temeljne pravice in svoboščine drugih",
+        "Nacionalna varnost in ekonomska blaginja",
+        "Kateri koli legitimen cilj, predpisan z zakonom"
+      ],
+      "correct": 1,
+      "explanation": "Article 18(3) allows limitations that are prescribed by law and necessary to protect public safety, order, health, or morals, or the fundamental rights and freedoms of others. Note: national security is NOT listed.",
+      "explanationSL": "Člen 18(3) dopušča omejitve, ki so predpisane z zakonom in nujne za varstvo javne varnosti, reda, zdravja ali morale ali temeljnih pravic in svoboščin drugih. Opomba: nacionalna varnost NI navedena.",
+      "examTip": "Compare with ECHR Art 9(2) which is similar but not identical!"
+    },
+    {
+      "id": 233,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "What does General Comment 22 say about coercion to change one's religion?",
+      "questionSL": "Kaj pravi Splošna pripomba 22 o prisili za spremembo vere?",
+      "options": [
+        "It is permitted under certain circumstances",
+        "It is absolutely prohibited",
+        "States have discretion",
+        "It requires judicial authorization"
+      ],
+      "optionsSL": [
+        "Dovoljena je v določenih okoliščinah",
+        "Absolutno je prepovedana",
+        "Države imajo diskrecijo",
+        "Zahteva sodno pooblastilo"
+      ],
+      "correct": 1,
+      "explanation": "General Comment 22 (para. 5) states that Article 18 prohibits coercion that would impair the right to have or adopt a religion, including the use or threat of physical force or penal sanctions.",
+      "explanationSL": "Splošna pripomba 22 (odst. 5) navaja, da člen 18 prepoveduje prisilo, ki bi posegala v pravico imeti ali sprejeti vero, vključno z uporabo ali grožnjo s fizično silo ali kazenskimi sankcijami."
+    },
+    {
+      "id": 234,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "What does Article 27 ICCPR protect?",
+      "questionSL": "Kaj varuje člen 27 MPDPP?",
+      "options": [
+        "Rights of all citizens",
+        "Rights of persons belonging to minorities to enjoy their culture, religion, and language",
+        "Collective rights of minority groups",
+        "Rights of indigenous peoples only"
+      ],
+      "optionsSL": [
+        "Pravice vseh državljanov",
+        "Pravice pripadnikov manjšin, da uživajo svojo kulturo, vero in jezik",
+        "Kolektivne pravice manjšinskih skupin",
+        "Samo pravice avtohtonih ljudstev"
+      ],
+      "correct": 1,
+      "explanation": "Article 27 protects the rights of persons belonging to ethnic, religious, or linguistic minorities to enjoy their own culture, profess and practice their own religion, or use their own language. It is an individual right exercised in community.",
+      "explanationSL": "Člen 27 varuje pravice pripadnikov etničnih, verskih ali jezikovnih manjšin, da uživajo svojo kulturo, izpovedujejo in prakticirajo svojo vero ali uporabljajo svoj jezik. Gre za individualno pravico, ki se izvršuje v skupnosti.",
+      "examTip": "Note: Article 27 uses 'shall not be denied' - a negative formulation, not positive obligations!"
+    },
+    {
+      "id": 235,
+      "type": "truefalse",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "Article 27 ICCPR imposes positive obligations on states to actively promote minority cultures.",
+      "questionSL": "Člen 27 MPDPP državam nalaga pozitivne obveznosti za aktivno spodbujanje manjšinskih kultur.",
+      "correct": false,
+      "explanation": "Article 27 uses negative formulation ('shall not be denied'). However, the Human Rights Committee in General Comment 23 has interpreted some positive measures may be necessary for effective protection.",
+      "explanationSL": "Člen 27 uporablja negativno formulacijo ('se ne sme odreči'). Vendar je Odbor za človekove pravice v Splošni pripombi 23 razlagal, da so lahko potrebni nekateri pozitivni ukrepi za učinkovito varstvo.",
+      "examTip": "Compare with the more explicit positive obligations in FCNM!"
+    },
+    {
+      "id": 236,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "How many members does the Human Rights Committee have?",
+      "questionSL": "Koliko članov ima Odbor za človekove pravice?",
+      "options": [
+        "10",
+        "14",
+        "18",
+        "47"
+      ],
+      "optionsSL": [
+        "10",
+        "14",
+        "18",
+        "47"
+      ],
+      "correct": 2,
+      "explanation": "The Human Rights Committee consists of 18 independent experts who serve in their personal capacity (not as state representatives). They are elected by states parties to the ICCPR.",
+      "explanationSL": "Odbor za človekove pravice sestavlja 18 neodvisnih strokovnjakov, ki služijo v osebnem svojstvu (ne kot predstavniki držav). Izvolijo jih države pogodbenice MPDPP."
+    },
+    {
+      "id": 237,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "What is the principle of 'progressive realization' in ICESCR?",
+      "questionSL": "Kaj je načelo 'postopnega uresničevanja' v MPESKP?",
+      "options": [
+        "States can ignore economic rights until they are wealthy",
+        "States must take steps to the maximum of available resources to progressively achieve full realization of rights",
+        "Rights must be achieved within 10 years",
+        "Only democratic states must realize these rights"
+      ],
+      "optionsSL": [
+        "Države lahko ignorirajo ekonomske pravice, dokler niso bogate",
+        "Države morajo sprejeti ukrepe do maksimuma razpoložljivih virov za postopno doseganje polnega uresničenja pravic",
+        "Pravice morajo biti dosežene v 10 letih",
+        "Samo demokratične države morajo uresničevati te pravice"
+      ],
+      "correct": 1,
+      "explanation": "Article 2(1) ICESCR requires states to take steps 'to the maximum of its available resources' to achieve 'progressively' the full realization of covenant rights. This acknowledges resource constraints while still creating obligations.",
+      "explanationSL": "Člen 2(1) MPESKP zahteva od držav, da sprejmejo ukrepe 'do maksimuma razpoložljivih virov' za 'postopno' doseganje polnega uresničenja pravic iz pakta.",
+      "examTip": "Key for Seminar 2: Progressive realization doesn't mean states can do nothing!"
+    },
+    {
+      "id": 238,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "What are 'minimum core obligations' under ICESCR?",
+      "questionSL": "Kaj so 'minimalne temeljne obveznosti' po MPESKP?",
+      "options": [
+        "Obligations that only apply to wealthy states",
+        "The bare minimum of each right that must be satisfied immediately, regardless of resources",
+        "Obligations that can be derogated in emergencies",
+        "Guidelines that are not legally binding"
+      ],
+      "optionsSL": [
+        "Obveznosti, ki veljajo samo za bogate države",
+        "Goli minimum vsake pravice, ki mora biti izpolnjen takoj, ne glede na vire",
+        "Obveznosti, od katerih se lahko odstopi v izrednih razmerah",
+        "Smernice, ki niso pravno zavezujoče"
+      ],
+      "correct": 1,
+      "explanation": "The CESCR Committee developed 'minimum core obligations' doctrine in General Comment 3, stating that states must ensure minimum essential levels of each right regardless of resource constraints. Failure to do so creates a presumption of violation.",
+      "explanationSL": "Odbor CESCR je razvil doktrino 'minimalnih temeljnih obveznosti' v Splošni pripombi 3, ki navaja, da morajo države zagotoviti minimalne bistvene ravni vsake pravice ne glede na omejitve virov.",
+      "examTip": "Example: minimum core of right to food = freedom from hunger."
+    },
+    {
+      "id": 239,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "What does UPR stand for?",
+      "questionSL": "Kaj pomeni kratica UPR (SPP)?",
+      "options": [
+        "United People's Rights",
+        "Universal Periodic Review",
+        "UN Protection of Rights",
+        "Universal Protection Regulation"
+      ],
+      "optionsSL": [
+        "Združene pravice ljudi",
+        "Splošni periodični pregled",
+        "Varstvo pravic OZN",
+        "Uredba o univerzalnem varstvu"
+      ],
+      "correct": 1,
+      "explanation": "UPR (Universal Periodic Review / Splošni periodični pregled) is a unique process of the Human Rights Council that reviews the human rights record of all 193 UN member states every 4.5 years.",
+      "explanationSL": "SPP (Splošni periodični pregled / Universal Periodic Review) je edinstven proces Sveta za človekove pravice, ki pregleduje stanje človekovih pravic vseh 193 članic OZN vsakih 4,5 leta.",
+      "examTip": "Key for Seminar 3: UPR reviews ALL states, not just those with problems!"
+    },
+    {
+      "id": 240,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is a 'troika' in the UPR process?",
+      "questionSL": "Kaj je 'trojka' v procesu SPP?",
+      "options": [
+        "Three complaints against a state",
+        "Three rapporteurs who facilitate the review",
+        "Three categories of rights",
+        "Three rounds of questions"
+      ],
+      "optionsSL": [
+        "Tri pritožbe proti državi",
+        "Trije poročevalci, ki olajšujejo pregled",
+        "Tri kategorije pravic",
+        "Trije krogi vprašanj"
+      ],
+      "correct": 1,
+      "explanation": "The troika consists of three states selected by drawing of lots to facilitate the review, including preparation of the Working Group report. One member must be from the same regional group as the state under review.",
+      "explanationSL": "Trojko sestavljajo tri države, izbrane z žrebom, ki olajšujejo pregled, vključno s pripravo poročila Delovne skupine. En član mora biti iz iste regionalne skupine kot država v pregledu."
+    },
+    {
+      "id": 241,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What are the three documents prepared for UPR review?",
+      "questionSL": "Kateri trije dokumenti se pripravijo za SPP pregled?",
+      "options": [
+        "Legal brief, NGO report, UN report",
+        "National report, UN compilation, stakeholder summary",
+        "State report, OHCHR assessment, civil society input",
+        "Government position, treaty body views, special procedures findings"
+      ],
+      "optionsSL": [
+        "Pravni dokument, poročilo NVO, poročilo OZN",
+        "Nacionalno poročilo, kompilacija OZN, povzetek deležnikov",
+        "Poročilo države, ocena OHCHR, prispevek civilne družbe",
+        "Vladna pozicija, stališča pogodbenih teles, ugotovitve posebnih postopkov"
+      ],
+      "correct": 1,
+      "explanation": "Three documents form the basis for UPR: (1) National report by the state (20 pages), (2) UN compilation of treaty body and special procedures info (10 pages), (3) Summary of stakeholder submissions including NGOs (10 pages).",
+      "explanationSL": "Tri dokumenti tvorijo osnovo za SPP: (1) Nacionalno poročilo države (20 strani), (2) Kompilacija OZN informacij pogodbenih teles in posebnih postopkov (10 strani), (3) Povzetek prispevkov deležnikov, vključno z NVO (10 strani).",
+      "examTip": "Know these three 'pillars' of UPR documentation!"
+    },
+    {
+      "id": 242,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "advanced",
+      "question": "What happens when a state 'notes' rather than 'accepts' a UPR recommendation?",
+      "questionSL": "Kaj se zgodi, ko država 'vzame na znanje' namesto 'sprejme' priporočilo SPP?",
+      "options": [
+        "It must implement the recommendation anyway",
+        "It effectively rejects the recommendation without formal rejection",
+        "The recommendation becomes binding",
+        "A follow-up mechanism is automatically triggered"
+      ],
+      "optionsSL": [
+        "Mora vseeno implementirati priporočilo",
+        "Dejansko zavrne priporočilo brez formalne zavrnitve",
+        "Priporočilo postane zavezujoče",
+        "Samodejno se sproži mehanizem spremljanja"
+      ],
+      "correct": 1,
+      "explanation": "'Noted' recommendations are effectively rejected. States often 'note' recommendations they disagree with but don't want to formally reject. 'Accepted' recommendations create at least a political commitment to implement.",
+      "explanationSL": "'Vzeta na znanje' priporočila so dejansko zavrnjena. Države pogosto 'vzamejo na znanje' priporočila, s katerimi se ne strinjajo, a jih ne želijo formalno zavrniti.",
+      "examTip": "Analyze patterns: which countries 'note' many recommendations?"
+    },
+    {
+      "id": 243,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What principle did the Ireland v. United Kingdom case establish regarding Article 3 ECHR?",
+      "questionSL": "Katero načelo je uveljavila zadeva Irska proti Združenemu kraljestvu glede člena 3 EKČP?",
+      "options": [
+        "Torture is sometimes justified",
+        "The distinction between torture and inhuman/degrading treatment",
+        "Article 3 only applies in wartime",
+        "States can derogate from Article 3"
+      ],
+      "optionsSL": [
+        "Mučenje je včasih upravičeno",
+        "Razlikovanje med mučenjem in nečloveškim/ponižujočim ravnanjem",
+        "Člen 3 se uporablja samo v vojnem času",
+        "Države se lahko derogirajo od člena 3"
+      ],
+      "correct": 1,
+      "explanation": "Ireland v. UK (1978) established the threshold distinction: torture requires a particularly serious and cruel level of suffering, with purposive element. The 'five techniques' used by UK were found to be inhuman and degrading, but not torture.",
+      "explanationSL": "Irska proti UK (1978) je uveljavila razlikovanje praga: mučenje zahteva posebej resno in kruto raven trpljenja z namenskim elementom. 'Pet tehnik', ki jih je uporabila UK, je bilo ugotovljeno kot nečloveško in ponižujoče, a ne mučenje."
+    },
+    {
+      "id": 244,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did the Osman v. UK case establish?",
+      "questionSL": "Kaj je uveljavila zadeva Osman proti Združenemu kraljestvu?",
+      "options": [
+        "The right to a fair trial",
+        "Positive obligations under Article 2 to protect life",
+        "Freedom of expression limits",
+        "Right to property"
+      ],
+      "optionsSL": [
+        "Pravico do poštenega sojenja",
+        "Pozitivne obveznosti po členu 2 za varstvo življenja",
+        "Omejitve svobode izražanja",
+        "Pravica do lastnine"
+      ],
+      "correct": 1,
+      "explanation": "Osman v. UK (1998) established that Article 2 includes positive obligations on states to take preventive measures to protect individuals whose lives are at risk, where authorities knew or ought to have known of a real and immediate threat.",
+      "explanationSL": "Osman proti UK (1998) je uveljavila, da člen 2 vključuje pozitivne obveznosti držav, da sprejmejo preventivne ukrepe za varstvo posameznikov, katerih življenje je ogroženo, kjer so oblasti vedele ali bi morale vedeti za resnično in neposredno grožnjo.",
+      "examTip": "The 'Osman test' is crucial for positive obligations under Article 2!"
+    },
+    {
+      "id": 245,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What is the 'living instrument' doctrine?",
+      "questionSL": "Kaj je doktrina 'živega instrumenta'?",
+      "options": [
+        "The ECHR applies only to living persons",
+        "The ECHR must be interpreted in light of present-day conditions",
+        "The ECHR can be amended easily",
+        "The ECHR applies to medical ethics"
+      ],
+      "optionsSL": [
+        "EKČP se uporablja samo za žive osebe",
+        "EKČP je treba razlagati v luči današnjih razmer",
+        "EKČP se lahko enostavno spremeni",
+        "EKČP se uporablja za medicinsko etiko"
+      ],
+      "correct": 1,
+      "explanation": "The 'living instrument' doctrine (from Tyrer v. UK, 1978) means the ECHR must be interpreted in light of present-day conditions, not the conditions when it was drafted. This allows the Convention to evolve with society.",
+      "explanationSL": "Doktrina 'živega instrumenta' (iz Tyrer proti UK, 1978) pomeni, da je treba EKČP razlagati v luči današnjih razmer, ne razmer ob njeni sestavi. To omogoča, da se konvencija razvija s družbo.",
+      "examTip": "Key interpretive principle - allows dynamic interpretation!"
+    },
+    {
+      "id": 246,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "How long does an applicant have to file a case with the ECtHR after exhausting domestic remedies?",
+      "questionSL": "Koliko časa ima pritožnik za vložitev zadeve pri ESČP po izčrpanju domačih pravnih sredstev?",
+      "options": [
+        "6 months",
+        "4 months",
+        "1 year",
+        "3 years"
+      ],
+      "optionsSL": [
+        "6 mesecev",
+        "4 mesece",
+        "1 leto",
+        "3 leta"
+      ],
+      "correct": 1,
+      "explanation": "Since Protocol 15 (2021), the time limit is 4 months from the final domestic decision (previously 6 months). This applies to applications lodged from February 1, 2022.",
+      "explanationSL": "Od Protokola 15 (2021) je rok 4 mesece od končne domače odločitve (prej 6 mesecev). To velja za vloge, vložene od 1. februarja 2022.",
+      "examTip": "Important change! Previously it was 6 months."
+    },
+    {
+      "id": 247,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "What is the 'victim requirement' for ECtHR applications?",
+      "questionSL": "Kaj je 'zahteva po žrtvi' za vloge pri ESČP?",
+      "options": [
+        "Only crime victims can apply",
+        "The applicant must claim to be a victim of a Convention violation",
+        "Only states can bring complaints",
+        "The violation must have caused physical harm"
+      ],
+      "optionsSL": [
+        "Samo žrtve kaznivih dejanj lahko vložijo",
+        "Pritožnik mora trditi, da je žrtev kršitve konvencije",
+        "Samo države lahko vložijo pritožbe",
+        "Kršitev mora povzročiti fizično škodo"
+      ],
+      "correct": 1,
+      "explanation": "Article 34 ECHR requires applicants to be 'victims' - they must claim to be directly affected by the alleged violation. There is no actio popularis - you cannot bring cases in the general public interest.",
+      "explanationSL": "Člen 34 EKČP zahteva, da so pritožniki 'žrtve' - morajo trditi, da so neposredno prizadeti z domnevno kršitvijo. Ni actio popularis - ni mogoče vlagati zadev v splošnem javnem interesu."
+    },
+    {
+      "id": 248,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "What is a 'pilot judgment' procedure in the ECtHR?",
+      "questionSL": "Kaj je postopek 'pilotne sodbe' pri ESČP?",
+      "options": [
+        "A preliminary ruling before the main case",
+        "A judgment identifying systemic problems and requiring general measures",
+        "A judgment by a single judge",
+        "An experimental procedure not yet finalized"
+      ],
+      "optionsSL": [
+        "Predhodni sklep pred glavno zadevo",
+        "Sodba, ki identificira sistemske probleme in zahteva splošne ukrepe",
+        "Sodba posamičnega sodnika",
+        "Eksperimentalni postopek, ki še ni dokončan"
+      ],
+      "correct": 1,
+      "explanation": "The pilot judgment procedure (from Broniowski v. Poland, 2004) is used when there's a systemic/structural problem causing many similar cases. The Court identifies the problem and requires general measures, while similar cases are adjourned.",
+      "explanationSL": "Postopek pilotne sodbe (iz Broniowski proti Poljski, 2004) se uporablja, ko sistemski/strukturni problem povzroča veliko podobnih zadev. Sodišče identificira problem in zahteva splošne ukrepe, medtem ko se podobne zadeve preložijo."
+    },
+    {
+      "id": 249,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What did the Soering v. UK case establish about extradition?",
+      "questionSL": "Kaj je uveljavila zadeva Soering proti Združenemu kraljestvu glede izročitve?",
+      "options": [
+        "Extradition is always permitted",
+        "Article 3 prohibits extradition where there's a real risk of torture or inhuman treatment",
+        "Only political refugees are protected",
+        "The death penalty always violates Article 3"
+      ],
+      "optionsSL": [
+        "Izročitev je vedno dovoljena",
+        "Člen 3 prepoveduje izročitev, kjer obstaja resnična nevarnost mučenja ali nečloveškega ravnanja",
+        "Samo politični begunci so zaščiteni",
+        "Smrtna kazen vedno krši člen 3"
+      ],
+      "correct": 1,
+      "explanation": "Soering v. UK (1989) established that Article 3 creates an implied prohibition on extradition or deportation where substantial grounds exist for believing the person faces a real risk of torture or inhuman/degrading treatment.",
+      "explanationSL": "Soering proti UK (1989) je uveljavila, da člen 3 ustvarja implicirano prepoved izročitve ali deportacije, kjer obstajajo tehtni razlogi za prepričanje, da oseba tvega resnično nevarnost mučenja ali nečloveškega/ponižujočega ravnanja.",
+      "examTip": "This extended Article 3 protection extraterritorially!"
+    },
+    {
+      "id": 250,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What is the 'Lautsi' case about?",
+      "questionSL": "O čem je zadeva 'Lautsi'?",
+      "options": [
+        "Freedom of assembly",
+        "Crucifixes in Italian public school classrooms",
+        "Right to education",
+        "Prohibition of discrimination"
+      ],
+      "optionsSL": [
+        "Svoboda zbiranja",
+        "Križi v italijanskih javnih šolskih učilnicah",
+        "Pravica do izobraževanja",
+        "Prepoved diskriminacije"
+      ],
+      "correct": 1,
+      "explanation": "Lautsi v. Italy (Grand Chamber, 2011) concerned crucifixes in Italian public school classrooms. The GC found no violation of Article 2 Protocol 1 (education) or Article 9, applying wide margin of appreciation for 'passive' religious symbols.",
+      "explanationSL": "Lautsi proti Italiji (Veliki senat, 2011) se je nanašala na križe v italijanskih javnih šolskih učilnicah. VS ni ugotovil kršitve člena 2 Protokola 1 (izobraževanje) ali člena 9, ob uporabi širokega polja proste presoje za 'pasivne' verske simbole.",
+      "examTip": "Compare with S.A.S. v. France (Islamic face-covering ban)!"
     }
   ]
 }
