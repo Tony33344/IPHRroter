@@ -2236,6 +2236,22 @@ main {
     height: 16px;
 }
 
+/* Fullscreen timeline state */
+#timeline.timeline-fullscreen {
+    position: fixed;
+    inset: 64px 0 0 0; /* leave room for navbar */
+    z-index: 40;
+    background: var(--bg-primary);
+    overflow: auto;
+    padding-bottom: var(--spacing-2xl);
+}
+
+.action-btn#timelineFullscreen.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
 /* Timeline Help Text */
 .timeline-help-text {
     text-align: center;

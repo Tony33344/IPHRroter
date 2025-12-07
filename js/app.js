@@ -29,7 +29,10 @@ const App = {
             zoom: 1,
             filter: 'all',
             viewMode: 'eras', // 'eras', 'zoom', 'stacked'
-            selectedEra: null
+            selectedEra: null,
+            labelsVisible: false,
+            eras: [],
+            events: []
         },
         web: {
             filter: 'all',
@@ -725,8 +728,8 @@ function renderEraEventsList(eraEvents) {
 // ZOOM TIMELINE VIEW (IMPROVED)
 // =====================================================
 
-// Global state for timeline labels
-let timelineLabelsVisible = false;
+// Global state for timeline labels - moved to App.state for proper management
+// let timelineLabelsVisible = false;
 
 function renderZoomTimeline(events, eras) {
     const container = document.getElementById('timelineWrapper');
@@ -735,11 +738,15 @@ function renderZoomTimeline(events, eras) {
     // Sort events by year
     const sortedEvents = [...events].sort((a, b) => a.year - b.year);
     
-    // Setup dimensions - INCREASED HEIGHT
+    // Setup dimensions - INCREASED HEIGHT + support for fullscreen container
     const containerWidth = container.clientWidth || 1200;
     const margin = { top: 80, right: 60, bottom: 80, left: 60 };
     const contentWidth = Math.max(4000, sortedEvents.length * 100);
-    const height = 550; // Increased from 400
+    // If the timeline section is in fullscreen mode, use more vertical space
+    const timelineSection = document.getElementById('timeline');
+    const isFullscreen = timelineSection?.classList.contains('timeline-fullscreen');
+    const baseHeight = isFullscreen ? window.innerHeight - 160 : 650;
+    const height = Math.max(500, baseHeight);
     const innerHeight = height - margin.top - margin.bottom;
     
     // Clear existing
@@ -751,7 +758,7 @@ function renderZoomTimeline(events, eras) {
         .attr('class', 'timeline-svg-wrapper')
         .style('width', '100%')
         .style('height', height + 'px')
-        .style('overflow', 'hidden')
+        .style('overflow', 'auto')
         .style('cursor', 'grab');
     
     // Create SVG
@@ -864,7 +871,6 @@ function renderZoomTimeline(events, eras) {
         .attr('fill', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke', 'white')
         .attr('stroke-width', 2.5)
-        .style('filter', 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))')
         .style('pointer-events', 'all');
     
     // Draw year inside circle
@@ -881,7 +887,7 @@ function renderZoomTimeline(events, eras) {
     const labelGroups = eventGroups.append('g')
         .attr('class', 'label-group')
         .attr('transform', (d, i) => `translate(0, ${positions[i].y < innerHeight/2 ? -28 : 28})`)
-        .style('opacity', timelineLabelsVisible ? 1 : 0)
+        .style('opacity', App.state.timeline.labelsVisible ? 1 : 0)
         .style('pointer-events', 'none');
     
     labelGroups.append('rect')
@@ -905,33 +911,32 @@ function renderZoomTimeline(events, eras) {
         .attr('fill', 'var(--text-primary)')
         .text(d => truncateText(d.title, 20));
     
-    // Debounced hover to prevent flickering
-    let hoverTimeout = null;
-    
-    // Add interactions - FIXED flickering by using debouncing
+    // Add interactions - NO transitions, simple class toggle only
     eventGroups
         .on('mouseenter', function(event, d) {
-            clearTimeout(hoverTimeout);
-            const self = this;
-            hoverTimeout = setTimeout(() => {
-                d3.select(self).select('.event-circle')
-                    .transition().duration(100)
-                    .attr('r', d.highlight ? 20 : 16);
-                d3.select(self).raise(); // Bring to front
-                showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
-            }, 30);
+            // Cancel any pending hide
+            if (window.tooltipHideTimeout) {
+                clearTimeout(window.tooltipHideTimeout);
+                window.tooltipHideTimeout = null;
+            }
+            
+            // Add highlight class (CSS handles visual change)
+            d3.select(this).select('.event-circle').classed('highlighted', true);
+            
+            // Show tooltip
+            showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
         })
         .on('mousemove', function(event) {
             updateTooltipPosition(event);
         })
         .on('mouseleave', function(event, d) {
-            clearTimeout(hoverTimeout);
-            hoverTimeout = setTimeout(() => {
-                d3.select(this).select('.event-circle')
-                    .transition().duration(100)
-                    .attr('r', d.highlight ? 16 : 12);
+            // Remove highlight immediately
+            d3.select(this).select('.event-circle').classed('highlighted', false);
+            
+            // Delayed hide for tooltip
+            window.tooltipHideTimeout = setTimeout(() => {
                 hideTimelineTooltip();
-            }, 50);
+            }, 150);
         })
         .on('click', function(event, d) {
             event.stopPropagation();
@@ -993,9 +998,9 @@ function setupTimelinePan(wrapper, container) {
         wrapper.scrollLeft = scrollLeft - walk;
     });
     
-    // Mouse wheel horizontal scroll
+    // Mouse wheel horizontal scroll when holding Shift (plain wheel is used for zoom)
     wrapper.addEventListener('wheel', (e) => {
-        if (e.shiftKey) return; // Allow zoom with shift+wheel
+        if (!e.shiftKey) return;
         e.preventDefault();
         wrapper.scrollLeft += e.deltaY;
     }, { passive: false });
@@ -1004,34 +1009,50 @@ function setupTimelinePan(wrapper, container) {
 // Setup label toggle button
 function setupLabelToggle() {
     const toggleBtn = document.getElementById('toggleLabels');
-    if (!toggleBtn) return;
+    if (!toggleBtn || toggleBtn.hasAttribute('data-initialized')) return;
+    
+    toggleBtn.setAttribute('data-initialized', 'true');
     
     toggleBtn.addEventListener('click', () => {
-        timelineLabelsVisible = !timelineLabelsVisible;
+        App.state.timeline.labelsVisible = !App.state.timeline.labelsVisible;
         
         d3.selectAll('.label-group')
             .transition()
             .duration(200)
-            .style('opacity', timelineLabelsVisible ? 1 : 0);
+            .style('opacity', App.state.timeline.labelsVisible ? 1 : 0);
         
         const lang = App.state.language;
-        toggleBtn.innerHTML = `
-            <i data-lucide="${timelineLabelsVisible ? 'eye-off' : 'eye'}"></i>
-            <span>${timelineLabelsVisible 
+        const span = toggleBtn.querySelector('span');
+        if (span) {
+            span.textContent = App.state.timeline.labelsVisible 
                 ? (lang === 'sl' ? 'Skrij oznake' : 'Hide Labels') 
-                : (lang === 'sl' ? 'Pokaži oznake' : 'Show Labels')}</span>
-        `;
+                : (lang === 'sl' ? 'Pokaži oznake' : 'Show Labels');
+        }
+        
+        // Update button active state
+        toggleBtn.classList.toggle('active', App.state.timeline.labelsVisible);
+        
         lucide.createIcons();
     });
 }
 
 function setupEraQuickNav(container, xScale) {
+    const wrapper = container.querySelector('.timeline-svg-wrapper');
+    const marginLeft = 60; // keep in sync with renderZoomTimeline margin
+    
     document.querySelectorAll('.era-btn').forEach(btn => {
+        if (btn.hasAttribute('data-era-initialized')) return;
+        btn.setAttribute('data-era-initialized', 'true');
+        
         btn.addEventListener('click', () => {
             const start = parseInt(btn.dataset.start);
-            const scrollTo = xScale(start) - 100;
-            container.scrollTo({ left: Math.max(0, scrollTo), behavior: 'smooth' });
+            if (!wrapper) return;
             
+            // Calculate target position
+            const target = xScale(start) + marginLeft - (wrapper.clientWidth / 2) + 100;
+            wrapper.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+            
+            // Update active state
             document.querySelectorAll('.era-btn').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
         });
@@ -1165,8 +1186,10 @@ function truncateText(text, maxLength) {
 }
 
 let timelineTooltip = null;
+let tooltipHideTimer = null;
 
 function showTimelineTooltip(event, data, color) {
+    clearTimeout(tooltipHideTimer);
     if (!timelineTooltip) {
         timelineTooltip = document.createElement('div');
         timelineTooltip.className = 'timeline-tooltip';
@@ -1203,9 +1226,11 @@ function updateTooltipPosition(event) {
 }
 
 function hideTimelineTooltip() {
-    if (timelineTooltip) {
+    if (!timelineTooltip) return;
+    clearTimeout(tooltipHideTimer);
+    tooltipHideTimer = setTimeout(() => {
         timelineTooltip.style.display = 'none';
-    }
+    }, 200);
 }
 
 function filterTimeline(filter) {
@@ -1226,6 +1251,7 @@ function setupTimelineZoom(container, svgElement, xScale, contentWidth) {
     const zoomReset = document.getElementById('zoomReset');
     const zoomLevel = document.querySelector('.zoom-level');
     const wrapper = container.querySelector('.timeline-svg-wrapper');
+    const fullscreenBtn = document.getElementById('timelineFullscreen');
     
     // Smooth zoom with smaller increments
     const zoomStep = 1.15; // 15% per click instead of 20%
@@ -1277,17 +1303,25 @@ function setupTimelineZoom(container, svgElement, xScale, contentWidth) {
         updateTimelineZoom();
     });
     
-    // Shift + mouse wheel for zoom
+    // Mouse wheel for zoom (plain wheel), Shift+wheel handled by setupTimelinePan for panning
     if (wrapper) {
         wrapper.addEventListener('wheel', (e) => {
-            if (!e.shiftKey) return;
+            if (e.shiftKey) return; // Shift+wheel is reserved for horizontal pan
             e.preventDefault();
-            
             const delta = e.deltaY > 0 ? (1 / zoomStep) : zoomStep;
             const oldZoom = App.state.timeline.zoom;
             App.state.timeline.zoom = Math.max(minZoom, Math.min(maxZoom, oldZoom * delta));
             updateTimelineZoom(false);
         }, { passive: false });
+    }
+    
+    // Fullscreen toggle for zoom timeline (CSS-based, not browser API)
+    if (fullscreenBtn && !fullscreenBtn.hasAttribute('data-initialized')) {
+        fullscreenBtn.setAttribute('data-initialized', 'true');
+        
+        fullscreenBtn.addEventListener('click', () => {
+            enterTimelineFullscreen();
+        });
     }
     
     // Initialize zoom level display
