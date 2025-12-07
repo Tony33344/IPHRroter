@@ -1731,29 +1731,38 @@ function startQuiz() {
 function showQuestion(index) {
     const quiz = App.state.quiz;
     const question = quiz.questions[index];
+    const lang = App.state.language || 'en';
     
     // Update progress
     const progress = ((index) / quiz.questions.length) * 100;
     document.getElementById('quizProgressBar').style.width = `${progress}%`;
     document.getElementById('quizProgressText').textContent = `Question ${index + 1} of ${quiz.questions.length}`;
     
+    // Get localized question text
+    const questionText = lang === 'sl' && question.questionSL ? question.questionSL : question.question;
+    
     // Show question
     const questionEl = document.getElementById('quizQuestion');
     questionEl.innerHTML = `
-        <span class="question-meta">${question.category.replace('-', ' ')} • ${question.difficulty}</span>
-        <h3>${question.question}</h3>
+        <span class="question-meta">${question.category.replace(/-/g, ' ')} • ${question.difficulty}</span>
+        <h3>${questionText}</h3>
     `;
     
     // Show options
     const optionsEl = document.getElementById('quizOptions');
     
-    if (question.type === 'true-false') {
+    // Handle both 'true-false' and 'truefalse' types
+    if (question.type === 'true-false' || question.type === 'truefalse') {
+        const trueLabel = lang === 'sl' ? 'Res' : 'True';
+        const falseLabel = lang === 'sl' ? 'Ni res' : 'False';
         optionsEl.innerHTML = `
-            <button class="quiz-option" data-answer="true">True</button>
-            <button class="quiz-option" data-answer="false">False</button>
+            <button class="quiz-option" data-answer="true">${trueLabel}</button>
+            <button class="quiz-option" data-answer="false">${falseLabel}</button>
         `;
     } else {
-        optionsEl.innerHTML = question.options.map((opt, i) => `
+        // Get localized options
+        const options = lang === 'sl' && question.optionsSL ? question.optionsSL : question.options;
+        optionsEl.innerHTML = options.map((opt, i) => `
             <button class="quiz-option" data-answer="${i}">${opt}</button>
         `).join('');
     }
@@ -1773,6 +1782,8 @@ function showQuestion(index) {
         style.id = 'quiz-styles';
         style.textContent = `
             .question-meta { display: block; font-size: 12px; color: #9ca3af; text-transform: uppercase; margin-bottom: 8px; }
+            .exam-tip { margin-top: 12px; padding: 10px 14px; background: #fef3c7; border-left: 3px solid #f59e0b; border-radius: 4px; font-size: 13px; color: #92400e; }
+            .exam-tip strong { color: #b45309; }
         `;
         document.head.appendChild(style);
     }
@@ -1781,6 +1792,7 @@ function showQuestion(index) {
 function selectAnswer(btn) {
     const quiz = App.state.quiz;
     const question = quiz.questions[quiz.currentIndex];
+    const lang = App.state.language || 'en';
     
     // Disable all options
     document.querySelectorAll('.quiz-option').forEach(opt => {
@@ -1791,8 +1803,9 @@ function selectAnswer(btn) {
     // Check answer
     let isCorrect;
     const answer = btn.dataset.answer;
+    const isTrueFalse = question.type === 'true-false' || question.type === 'truefalse';
     
-    if (question.type === 'true-false') {
+    if (isTrueFalse) {
         isCorrect = (answer === 'true') === question.correct;
     } else {
         isCorrect = parseInt(answer) === question.correct;
@@ -1803,7 +1816,7 @@ function selectAnswer(btn) {
     
     // Mark correct answer if wrong
     if (!isCorrect) {
-        const correctAnswer = question.type === 'true-false' 
+        const correctAnswer = isTrueFalse 
             ? question.correct.toString() 
             : question.correct.toString();
         document.querySelector(`.quiz-option[data-answer="${correctAnswer}"]`)?.classList.add('correct');
@@ -1821,22 +1834,31 @@ function selectAnswer(btn) {
         isCorrect
     });
     
-    // Show feedback
-    showFeedback(isCorrect, question.explanation);
+    // Get localized explanation
+    const explanation = lang === 'sl' && question.explanationSL ? question.explanationSL : question.explanation;
+    
+    // Show feedback with exam tip if available
+    showFeedback(isCorrect, explanation, question.examTip);
     
     // Enable next button
     document.getElementById('nextQuestion').disabled = false;
 }
 
-function showFeedback(isCorrect, explanation) {
+function showFeedback(isCorrect, explanation, examTip) {
     const feedbackEl = document.getElementById('quizFeedback');
+    const lang = App.state.language || 'en';
+    const correctLabel = lang === 'sl' ? 'Pravilno!' : 'Correct!';
+    const incorrectLabel = lang === 'sl' ? 'Napačno' : 'Incorrect';
+    const examTipLabel = lang === 'sl' ? 'Nasvet za izpit' : 'Exam Tip';
+    
     feedbackEl.className = `quiz-feedback ${isCorrect ? 'correct' : 'incorrect'}`;
     feedbackEl.innerHTML = `
         <div class="feedback-icon">
             ${isCorrect ? '<svg width="24" height="24" fill="white"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg>' : '<svg width="24" height="24" fill="white"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/></svg>'}
         </div>
-        <p class="feedback-text">${isCorrect ? 'Correct!' : 'Incorrect'}</p>
-        <p class="feedback-explanation">${explanation}</p>
+        <p class="feedback-text">${isCorrect ? correctLabel : incorrectLabel}</p>
+        <p class="feedback-explanation">${explanation || ''}</p>
+        ${examTip ? `<div class="exam-tip"><strong>💡 ${examTipLabel}:</strong> ${examTip}</div>` : ''}
     `;
     feedbackEl.style.display = 'block';
 }
