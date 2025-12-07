@@ -1,23 +1,42 @@
 {
   "metadata": {
-    "totalQuestions": 172,
+    "totalQuestions": 250,
     "lastUpdated": "2025-01-20",
+    "version": "2.0",
     "categories": [
+      "foundations",
       "un-system",
+      "un-treaties",
+      "european-coe",
+      "european-eu",
       "european-system",
+      "inter-american",
+      "african",
       "regional-systems",
       "treaties",
+      "procedures",
+      "case-law",
+      "cases",
       "history",
       "mechanisms",
-      "cases",
-      "theory"
+      "theory",
+      "contemporary",
+      "rights",
+      "slovenia"
     ],
     "difficultyLevels": [
       "basic",
       "intermediate",
       "advanced",
       "expert"
-    ]
+    ],
+    "questionTypes": [
+      "multiple",
+      "truefalse",
+      "matching",
+      "ordering"
+    ],
+    "languages": ["en", "sl"]
   },
   "questions": [
     {
@@ -2545,6 +2564,563 @@
       ],
       "correct": 0,
       "explanation": "Deklaracija iz leta 1998 potrjuje vlogo zagovornikov človekovih pravic in odgovornost držav za njihovo zaščito."
+    },
+    {
+      "id": 183,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Which document is considered the foundation of modern international human rights protection?",
+      "questionSL": "Kateri dokument velja za temelj sodobnega mednarodnega varovanja človekovih pravic?",
+      "options": [
+        "Magna Carta (1215)",
+        "Universal Declaration of Human Rights (1948)",
+        "UN Charter (1945)",
+        "European Convention on Human Rights (1950)"
+      ],
+      "optionsSL": [
+        "Magna Carta (1215)",
+        "Splošna deklaracija človekovih pravic (1948)",
+        "Ustanovna listina OZN (1945)",
+        "Evropska konvencija o človekovih pravicah (1950)"
+      ],
+      "correct": 1,
+      "explanation": "The Universal Declaration of Human Rights (UDHR), adopted on December 10, 1948, is the first international document to articulate universal human rights.",
+      "explanationSL": "Splošna deklaracija človekovih pravic (SDČP), sprejeta 10. decembra 1948, je prvi mednarodni dokument, ki je artikuliral univerzalne človekove pravice.",
+      "examTip": "Distinguish between legally binding treaties and declarations!"
+    },
+    {
+      "id": 184,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "When do we celebrate International Human Rights Day?",
+      "questionSL": "Kdaj praznujemo Mednarodni dan človekovih pravic?",
+      "options": [
+        "June 26",
+        "October 24",
+        "December 10",
+        "January 1"
+      ],
+      "optionsSL": [
+        "26. junij",
+        "24. oktober",
+        "10. december",
+        "1. januar"
+      ],
+      "correct": 2,
+      "explanation": "International Human Rights Day is celebrated on December 10, the anniversary of the adoption of the UDHR in 1948.",
+      "explanationSL": "Mednarodni dan človekovih pravic praznujemo 10. decembra, na obletnico sprejetja Splošne deklaracije človekovih pravic leta 1948."
+    },
+    {
+      "id": 185,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "Who chaired the commission that drafted the UDHR?",
+      "questionSL": "Kdo je bil predsednik komisije, ki je pripravila osnutek SDČP?",
+      "options": [
+        "Dag Hammarskjöld",
+        "Eleanor Roosevelt",
+        "René Cassin",
+        "Charles Malik"
+      ],
+      "correct": 1,
+      "explanation": "Eleanor Roosevelt, wife of former US President Franklin D. Roosevelt, chaired the UN Commission on Human Rights that drafted the UDHR. René Cassin was the main author of the text.",
+      "explanationSL": "Eleanor Roosevelt, žena nekdanjega ameriškega predsednika Franklina D. Roosevelta, je predsedovala Komisiji OZN za človekove pravice, ki je pripravila osnutek SDČP."
+    },
+    {
+      "id": 186,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Which concept refers to the idea that human rights apply to all people regardless of cultural differences?",
+      "questionSL": "Kateri koncept označuje idejo, da so človekove pravice veljavne za vse ljudi ne glede na kulturne razlike?",
+      "options": [
+        "Cultural relativism",
+        "Particularism",
+        "Universality of human rights",
+        "Legal positivism"
+      ],
+      "optionsSL": [
+        "Kulturni relativizem",
+        "Partikularizem",
+        "Univerzalnost človekovih pravic",
+        "Pravni pozitivizem"
+      ],
+      "correct": 2,
+      "explanation": "Universality of human rights means that these rights belong to all people solely on the basis of their human dignity. This principle was confirmed in the Vienna Declaration of 1993.",
+      "explanationSL": "Univerzalnost človekovih pravic pomeni, da te pravice pripadajo vsem ljudem zgolj na podlagi njihovega človeškega dostojanstva. To načelo je potrjeno v Dunajski deklaraciji iz leta 1993."
+    },
+    {
+      "id": 187,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "What are the three generations of human rights according to Karel Vasak's classification?",
+      "questionSL": "Katere so tri generacije človekovih pravic po klasifikaciji Karela Vasaka?",
+      "options": [
+        "Political, economic, cultural",
+        "Civil and political; economic, social and cultural; solidarity",
+        "Individual, collective, procedural",
+        "Negative, positive, programmatic"
+      ],
+      "optionsSL": [
+        "Politične, ekonomske, kulturne",
+        "Državljanske in politične; ekonomske, socialne in kulturne; solidarnostne",
+        "Individualne, kolektivne, procesne",
+        "Negativne, pozitivne, programske"
+      ],
+      "correct": 1,
+      "explanation": "Karel Vasak proposed in 1977 a division into three generations: 1st (blue) - civil and political rights; 2nd (red) - economic, social and cultural rights; 3rd (green) - solidarity/collective rights.",
+      "explanationSL": "Karel Vasak je leta 1977 predlagal delitev na tri generacije: 1. generacija (modra) - državljanske in politične pravice; 2. generacija (rdeča) - ekonomske, socialne in kulturne pravice; 3. generacija (zelena) - solidarnostne/kolektivne pravice."
+    },
+    {
+      "id": 188,
+      "type": "truefalse",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "The Universal Declaration of Human Rights is a legally binding international document.",
+      "questionSL": "Splošna deklaracija človekovih pravic je pravno zavezujoč mednarodni dokument.",
+      "correct": false,
+      "explanation": "The UDHR was adopted as a UN General Assembly resolution and as such is not a legally binding treaty. However, many of its provisions have become part of customary international law.",
+      "explanationSL": "SDČP je bila sprejeta kot resolucija Generalne skupščine OZN in kot taka ni pravno zavezujoča pogodba. Vendar so številne njene določbe postale del mednarodnega običajnega prava."
+    },
+    {
+      "id": 189,
+      "type": "truefalse",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Natural law theory of human rights is based on the idea that rights derive from human dignity and exist independently of the state.",
+      "questionSL": "Naravnopravna teorija človekovih pravic temelji na ideji, da pravice izhajajo iz človeškega dostojanstva in obstajajo neodvisno od države.",
+      "correct": true,
+      "explanation": "Natural law theory claims that human rights derive from human nature or dignity and are not granted by the state. This contrasts with legal positivism, which sees rights as a product of positive (state) law.",
+      "explanationSL": "Naravnopravna teorija trdi, da človekove pravice izhajajo iz človekove narave oziroma dostojanstva in niso podeljene s strani države."
+    },
+    {
+      "id": 190,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "What does the 'margin of appreciation' doctrine mean in the context of the ECtHR?",
+      "questionSL": "Kaj pomeni načelo 'margin of appreciation' v kontekstu ESČP?",
+      "options": [
+        "Absolute prohibition of interference with rights",
+        "Discretion that states have in implementing Convention rights",
+        "Obligation of the court to consider state opinions",
+        "Individual's right to complain"
+      ],
+      "optionsSL": [
+        "Absolutna prepoved posegov v pravice",
+        "Prostor presoje, ki ga imajo države pri implementaciji konvencijskih pravic",
+        "Obveznost sodišča, da upošteva mnenje držav",
+        "Pravica posameznika do pritožbe"
+      ],
+      "correct": 1,
+      "explanation": "The 'margin of appreciation' doctrine means that the ECtHR recognizes states some discretion in implementing Convention rights, especially on sensitive issues where there is no European consensus.",
+      "explanationSL": "Doktrina 'margin of appreciation' (polje proste presoje) pomeni, da ESČP prizna državam določeno diskrecijo pri implementaciji konvencijskih pravic.",
+      "examTip": "This is one of the most important concepts for understanding ECtHR case law!"
+    },
+    {
+      "id": 191,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "Which body succeeded the UN Commission on Human Rights in 2006?",
+      "questionSL": "Kateri organ je nasledil Komisijo OZN za človekove pravice leta 2006?",
+      "options": [
+        "Human Rights Committee",
+        "Human Rights Council",
+        "OHCHR",
+        "ECOSOC"
+      ],
+      "optionsSL": [
+        "Odbor za človekove pravice",
+        "Svet za človekove pravice",
+        "OHCHR",
+        "ECOSOC"
+      ],
+      "correct": 1,
+      "explanation": "The Human Rights Council was established by General Assembly resolution 60/251 in 2006 as the successor to the Commission on Human Rights.",
+      "explanationSL": "Svet za človekove pravice je bil ustanovljen z resolucijo Generalne skupščine 60/251 leta 2006 kot naslednik Komisije za človekove pravice."
+    },
+    {
+      "id": 192,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "How many member states does the UN Human Rights Council have?",
+      "questionSL": "Koliko držav članic ima Svet OZN za človekove pravice?",
+      "options": [
+        "15",
+        "27",
+        "47",
+        "193"
+      ],
+      "correct": 2,
+      "explanation": "The Human Rights Council has 47 member states elected by the UN General Assembly for three-year terms. Seats are geographically distributed among regional groups.",
+      "explanationSL": "Svet za človekove pravice ima 47 držav članic, ki jih izvoli Generalna skupščina OZN za triletne mandate."
+    },
+    {
+      "id": 193,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is the UPR (Universal Periodic Review)?",
+      "questionSL": "Kaj je UPR (Universal Periodic Review)?",
+      "options": [
+        "Individual complaints procedure",
+        "Periodic review of human rights situation in all UN member states",
+        "Annual report of the High Commissioner",
+        "Revision of international treaties"
+      ],
+      "optionsSL": [
+        "Postopek individualnih pritožb",
+        "Periodični pregled stanja človekovih pravic v vseh državah članicah OZN",
+        "Letno poročilo Visokega komisarja",
+        "Revizija mednarodnih pogodb"
+      ],
+      "correct": 1,
+      "explanation": "The Universal Periodic Review (UPR) is a mechanism of the Human Rights Council that reviews the human rights situation in all 193 UN member states every 4.5 years.",
+      "explanationSL": "Univerzalni periodični pregled (UPR) je mehanizem Sveta za človekove pravice, v okviru katerega se pregleduje stanje človekovih pravic v vseh 193 državah članicah OZN.",
+      "examTip": "UPR is a unique mechanism - it covers ALL UN states, not just treaty parties!"
+    },
+    {
+      "id": 194,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "How many core UN human rights treaties exist?",
+      "questionSL": "Koliko temeljnih (core) pogodb OZN o človekovih pravicah obstaja?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "There are 9 core UN human rights treaties: ICCPR, ICESCR, CERD, CEDAW, CAT, CRC, CMW, CRPD and CED. Each has its own monitoring body (treaty body).",
+      "explanationSL": "Obstaja 9 temeljnih pogodb OZN o človekovih pravicah: MPDPP, MPESKP, CERD, CEDAW, CAT, CRC, CMW, CRPD in CED. Vsaka ima svoj nadzorni odbor."
+    },
+    {
+      "id": 195,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "Which UN human rights treaty has the most states parties?",
+      "questionSL": "Katera pogodba OZN o človekovih pravicah ima največ pogodbenic?",
+      "options": [
+        "ICCPR",
+        "ICESCR",
+        "Convention on the Rights of the Child (CRC)",
+        "CEDAW"
+      ],
+      "optionsSL": [
+        "MPDPP",
+        "MPESKP",
+        "Konvencija o otrokovih pravicah (CRC)",
+        "CEDAW"
+      ],
+      "correct": 2,
+      "explanation": "The Convention on the Rights of the Child (CRC) from 1989 is the most universally ratified human rights treaty with 196 states parties. The only UN member state that has not ratified it is the USA.",
+      "explanationSL": "Konvencija o otrokovih pravicah (CRC) iz leta 1989 je najbolj univerzalno ratificirana pogodba o človekovih pravicah s 196 pogodbenicami.",
+      "examTip": "CRC has near-universal ratification - this is a common exam question!"
+    },
+    {
+      "id": 196,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "When was the European Convention on Human Rights adopted?",
+      "questionSL": "Kdaj je bila sprejeta Evropska konvencija o človekovih pravicah?",
+      "options": [
+        "1948",
+        "1950",
+        "1953",
+        "1959"
+      ],
+      "correct": 1,
+      "explanation": "The European Convention for the Protection of Human Rights and Fundamental Freedoms (ECHR) was adopted on November 4, 1950 within the Council of Europe and entered into force on September 3, 1953.",
+      "explanationSL": "Evropska konvencija o varstvu človekovih pravic in temeljnih svoboščin (EKČP) je bila sprejeta 4. novembra 1950 v okviru Sveta Evrope in je začela veljati 3. septembra 1953."
+    },
+    {
+      "id": 197,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "How many states are currently members of the Council of Europe?",
+      "questionSL": "Koliko držav je trenutno članic Sveta Evrope?",
+      "options": [
+        "27",
+        "46",
+        "47",
+        "50"
+      ],
+      "correct": 1,
+      "explanation": "The Council of Europe currently has 46 member states (after Russia's exclusion in March 2022 due to aggression against Ukraine). All CoE members are parties to the ECHR.",
+      "explanationSL": "Svet Evrope ima trenutno 46 držav članic (po izključitvi Rusije marca 2022 zaradi agresije na Ukrajino). Vse članice SE so pogodbenice EKČP.",
+      "examTip": "Don't confuse the Council of Europe (46 members) with the European Union (27 members)!"
+    },
+    {
+      "id": 198,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "Where is the European Court of Human Rights located?",
+      "questionSL": "Kje ima sedež Evropsko sodišče za človekove pravice?",
+      "options": [
+        "Brussels",
+        "Luxembourg",
+        "Strasbourg",
+        "Geneva"
+      ],
+      "optionsSL": [
+        "Bruselj",
+        "Luxembourg",
+        "Strasbourg",
+        "Ženeva"
+      ],
+      "correct": 2,
+      "explanation": "The European Court of Human Rights (ECtHR) is located in Strasbourg, France, where the Council of Europe is also headquartered. Don't confuse it with the EU Court of Justice in Luxembourg.",
+      "explanationSL": "Evropsko sodišče za človekove pravice (ESČP) ima sedež v Strasbourgu (Francija), kjer je tudi sedež Sveta Evrope."
+    },
+    {
+      "id": 199,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Which article of the ECHR protects the right to life?",
+      "questionSL": "Kateri člen EKČP varuje pravico do življenja?",
+      "options": [
+        "Article 1",
+        "Article 2",
+        "Article 3",
+        "Article 5"
+      ],
+      "optionsSL": [
+        "Člen 1",
+        "Člen 2",
+        "Člen 3",
+        "Člen 5"
+      ],
+      "correct": 1,
+      "explanation": "Article 2 ECHR protects the right to life. Article 1 establishes the obligation of states to secure Convention rights. Article 3 prohibits torture, Article 5 protects the right to liberty and security.",
+      "explanationSL": "Člen 2 EKČP varuje pravico do življenja. Člen 1 določa obveznost držav, da zagotovijo konvencijske pravice. Člen 3 prepoveduje mučenje, člen 5 pa varuje pravico do svobode in varnosti.",
+      "examTip": "You must know the ECHR articles by heart - this is often on the exam!"
+    },
+    {
+      "id": 200,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "Which article of the ECHR contains the prohibition of torture?",
+      "questionSL": "Kateri člen EKČP vsebuje prepoved mučenja?",
+      "options": [
+        "Article 2",
+        "Article 3",
+        "Article 4",
+        "Article 5"
+      ],
+      "optionsSL": [
+        "Člen 2",
+        "Člen 3",
+        "Člen 4",
+        "Člen 5"
+      ],
+      "correct": 1,
+      "explanation": "Article 3 ECHR states: 'No one shall be subjected to torture or to inhuman or degrading treatment or punishment.' This is an absolute right - it allows no exceptions or limitations, even in time of war or emergency.",
+      "explanationSL": "Člen 3 EKČP določa: 'Nikogar se ne sme mučiti ali nečloveško in ponižujoče z njim ravnati ali ga kaznovati.' To je absolutna pravica - ne dopušča izjem ali omejitev.",
+      "examTip": "Article 3 is an ABSOLUTE right - this is essential for understanding the system!"
+    },
+    {
+      "id": 201,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "ECtHR judgments are legally binding on states parties.",
+      "questionSL": "Sodbe ESČP so pravno zavezujoče za države pogodbenice.",
+      "correct": true,
+      "explanation": "Under Article 46 ECHR, ECtHR judgments are legally binding on the respondent state. Execution of judgments is supervised by the Committee of Ministers of the Council of Europe.",
+      "explanationSL": "Po členu 46 EKČP so sodbe ESČP pravno zavezujoče za toženo državo. Izvajanje sodb nadzoruje Odbor ministrov Sveta Evrope."
+    },
+    {
+      "id": 202,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "An individual can lodge an application with the ECtHR only after exhausting domestic remedies.",
+      "questionSL": "Posameznik lahko vloži pritožbo na ESČP šele po izčrpanju domačih pravnih sredstev.",
+      "correct": true,
+      "explanation": "Article 35(1) ECHR requires that the applicant must exhaust all domestic remedies before lodging an application. The application must be lodged within four months of the final domestic decision.",
+      "explanationSL": "Člen 35(1) EKČP določa, da mora pritožnik pred vložitvijo pritožbe izčrpati vsa domača pravna sredstva. Pritožbo mora vložiti v štirih mesecih od končne domače odločitve."
+    },
+    {
+      "id": 203,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "basic",
+      "question": "When was the American Convention on Human Rights adopted?",
+      "questionSL": "Kdaj je bila sprejeta Ameriška konvencija o človekovih pravicah?",
+      "options": [
+        "1948",
+        "1959",
+        "1969",
+        "1978"
+      ],
+      "correct": 2,
+      "explanation": "The American Convention on Human Rights (also known as the Pact of San José) was adopted on November 22, 1969 and entered into force on July 18, 1978.",
+      "explanationSL": "Ameriška konvencija o človekovih pravicah (znana tudi kot Pakt iz San Joséja) je bila sprejeta 22. novembra 1969 in je začela veljati 18. julija 1978."
+    },
+    {
+      "id": 204,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "basic",
+      "question": "What is the name of the main instrument of the African human rights system?",
+      "questionSL": "Kako se imenuje osrednja listina afriškega sistema človekovih pravic?",
+      "options": [
+        "African Convention on Human Rights",
+        "African Charter on Human and Peoples' Rights",
+        "African Declaration of Human Rights",
+        "African Union Charter of Fundamental Rights"
+      ],
+      "optionsSL": [
+        "Afriška konvencija o človekovih pravicah",
+        "Afriška listina o človekovih pravicah in pravicah ljudstev",
+        "Afriška deklaracija človekovih pravic",
+        "Listina Afriške unije o temeljnih pravicah"
+      ],
+      "correct": 1,
+      "explanation": "The African Charter on Human and Peoples' Rights (also known as the Banjul Charter) was adopted in 1981 and entered into force in 1986. It is unique in that it includes peoples' rights and individual duties.",
+      "explanationSL": "Afriška listina o človekovih pravicah in pravicah ljudstev (znana tudi kot Banjulska listina) je bila sprejeta leta 1981. Edinstvena je po tem, da poleg individualnih pravic vsebuje tudi kolektivne pravice in obveznosti posameznikov."
+    },
+    {
+      "id": 205,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "intermediate",
+      "question": "What is unique about the African Charter compared to other regional systems?",
+      "questionSL": "Kaj je posebnost afriške Listine v primerjavi z drugimi regionalnimi sistemi?",
+      "options": [
+        "It has no judicial body",
+        "It includes only civil and political rights",
+        "It includes individual duties",
+        "It applies only to democratic states"
+      ],
+      "optionsSL": [
+        "Nima sodnega organa",
+        "Vključuje le državljanske in politične pravice",
+        "Vključuje tudi dolžnosti posameznikov",
+        "Velja le za demokratične države"
+      ],
+      "correct": 2,
+      "explanation": "The African Charter is unique because it includes individual duties (Articles 27-29) in addition to rights. It also includes peoples' rights and economic, social and cultural rights in the same document.",
+      "explanationSL": "Afriška listina je edinstvena, ker poleg pravic vključuje tudi dolžnosti posameznikov do družine, družbe, države in mednarodne skupnosti (členi 27-29).",
+      "examTip": "Individual duties are a unique African innovation - know the examples!"
+    },
+    {
+      "id": 206,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "basic",
+      "question": "What does the principle of 'exhaustion of domestic remedies' mean?",
+      "questionSL": "Kaj pomeni načelo 'izčrpanja domačih pravnih sredstev'?",
+      "options": [
+        "The state must use all means",
+        "The applicant must first use national legal avenues before international ones",
+        "International bodies must try all options",
+        "Financial resources must be spent"
+      ],
+      "optionsSL": [
+        "Država mora uporabiti vsa sredstva",
+        "Pritožnik mora najprej uporabiti nacionalne pravne poti pred mednarodnimi",
+        "Mednarodna telesa morajo preizkusiti vse možnosti",
+        "Finančna sredstva morajo biti porabljena"
+      ],
+      "correct": 1,
+      "explanation": "Exhaustion of domestic remedies is a procedural requirement that the applicant must use all available and effective national legal avenues before lodging an international complaint.",
+      "explanationSL": "Izčrpanje domačih pravnih sredstev je procesna zahteva, po kateri mora pritožnik pred vložitvijo mednarodne pritožbe najprej uporabiti vse razpoložljive in učinkovite nacionalne pravne poti."
+    },
+    {
+      "id": 207,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "What is the time limit to lodge an application with the ECtHR after the final domestic decision?",
+      "questionSL": "Kakšen je rok za vložitev pritožbe na ESČP po končni domači odločitvi?",
+      "options": [
+        "6 months",
+        "4 months",
+        "1 year",
+        "3 months"
+      ],
+      "optionsSL": [
+        "6 mesecev",
+        "4 mesece",
+        "1 leto",
+        "3 mesece"
+      ],
+      "correct": 1,
+      "explanation": "Under Protocol 15, which entered into force in August 2021, the time limit for lodging an application with the ECtHR is 4 months from the final domestic decision (previously 6 months).",
+      "explanationSL": "Po Protokolu št. 15, ki je začel veljati avgusta 2021, je rok za vložitev pritožbe na ESČP 4 mesece od končne domače odločitve (prej je bil 6 mesecev).",
+      "examTip": "Note the change! Protocol 15 shortened the deadline from 6 to 4 months!"
+    },
+    {
+      "id": 208,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "In which case did the ECtHR first systematically apply the 'margin of appreciation' doctrine?",
+      "questionSL": "V kateri zadevi je ESČP prvič sistematično uporabilo doktorino 'margin of appreciation'?",
+      "options": [
+        "Golder v. UK",
+        "Handyside v. UK",
+        "Ireland v. UK",
+        "Tyrer v. UK"
+      ],
+      "correct": 1,
+      "explanation": "The 'margin of appreciation' doctrine was systematically developed in Handyside v. UK (1976), which concerned restrictions on freedom of expression. The Court recognized that it is 'impossible to find in European law a uniform conception of morals'.",
+      "explanationSL": "Doktrina 'margin of appreciation' je bila sistematično razvita v zadevi Handyside v. UK (1976), ki se je nanašala na omejitve svobode izražanja."
+    },
+    {
+      "id": 209,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "basic",
+      "question": "When did Slovenia ratify the European Convention on Human Rights?",
+      "questionSL": "Kdaj je Slovenija ratificirala Evropsko konvencijo o človekovih pravicah?",
+      "options": [
+        "1991",
+        "1993",
+        "1994",
+        "2004"
+      ],
+      "correct": 2,
+      "explanation": "Slovenia became a member of the Council of Europe on May 14, 1993, and signed the ECHR on the same day. Ratification followed on June 28, 1994. The ECHR thus entered into force for Slovenia on June 28, 1994.",
+      "explanationSL": "Slovenija je postala članica Sveta Evrope 14. maja 1993, istega dne je podpisala EKČP. Ratifikacija je sledila 28. junija 1994. EKČP je tako za Slovenijo začela veljati 28. junija 1994."
+    },
+    {
+      "id": 210,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "intermediate",
+      "question": "Which body in Slovenia handles constitutional complaints regarding human rights?",
+      "questionSL": "Kateri organ v Sloveniji je pristojen za ustavne pritožbe v zvezi s človekovimi pravicami?",
+      "options": [
+        "Supreme Court",
+        "Constitutional Court",
+        "Human Rights Ombudsman",
+        "Administrative Court"
+      ],
+      "optionsSL": [
+        "Vrhovno sodišče",
+        "Ustavno sodišče",
+        "Varuh človekovih pravic",
+        "Upravno sodišče"
+      ],
+      "correct": 1,
+      "explanation": "The Constitutional Court of the Republic of Slovenia is competent for constitutional complaints (Article 160 of the Constitution), which can challenge violations of constitutional rights by individual acts of state bodies.",
+      "explanationSL": "Ustavno sodišče RS je pristojno za ustavne pritožbe (člen 160 Ustave), s katerimi se lahko izpodbijajo kršitve ustavnih pravic s posamičnimi akti državnih organov."
     }
   ]
 }
