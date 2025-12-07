@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalQuestions": 250,
+    "totalQuestions": 220,
     "lastUpdated": "2025-01-20",
     "version": "2.0",
     "categories": [
@@ -3121,6 +3121,460 @@
       "correct": 1,
       "explanation": "The Constitutional Court of the Republic of Slovenia is competent for constitutional complaints (Article 160 of the Constitution), which can challenge violations of constitutional rights by individual acts of state bodies.",
       "explanationSL": "Ustavno sodišče RS je pristojno za ustavne pritožbe (člen 160 Ustave), s katerimi se lahko izpodbijajo kršitve ustavnih pravic s posamičnimi akti državnih organov."
+    },
+    {
+      "id": 211,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "What is the principle of non-refoulement?",
+      "questionSL": "Kaj je načelo nevračanja (non-refoulement)?",
+      "options": [
+        "Right to return to one's country",
+        "Prohibition of returning a person to a country where they face persecution or torture",
+        "Right to seek asylum",
+        "Obligation to accept refugees"
+      ],
+      "optionsSL": [
+        "Pravica do vrnitve v svojo državo",
+        "Prepoved vračanja osebe v državo, kjer ji grozi preganjanje ali mučenje",
+        "Pravica do azila",
+        "Obveznost sprejemanja beguncev"
+      ],
+      "correct": 1,
+      "explanation": "Non-refoulement is a fundamental principle of international refugee law (Article 33 of the 1951 Refugee Convention) that prohibits returning refugees to countries where they face serious threats.",
+      "explanationSL": "Načelo nevračanja je temeljno načelo mednarodnega begunskega prava (člen 33 Ženevske konvencije iz 1951), ki prepoveduje vračanje beguncev v države, kjer jim grozi resna nevarnost.",
+      "examTip": "Non-refoulement is also protected under Article 3 ECHR (Soering case)!"
+    },
+    {
+      "id": 212,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Which convention is the primary international instrument for refugee protection?",
+      "questionSL": "Katera konvencija je primarni mednarodni instrument za varstvo beguncev?",
+      "options": [
+        "Geneva Convention of 1949",
+        "1951 Convention Relating to the Status of Refugees",
+        "ICCPR",
+        "Convention against Torture"
+      ],
+      "optionsSL": [
+        "Ženevska konvencija iz 1949",
+        "Konvencija o statusu beguncev iz 1951",
+        "MPDPP",
+        "Konvencija proti mučenju"
+      ],
+      "correct": 1,
+      "explanation": "The 1951 Convention Relating to the Status of Refugees (and its 1967 Protocol) is the cornerstone of international refugee protection, defining who is a refugee and their rights.",
+      "explanationSL": "Konvencija o statusu beguncev iz leta 1951 (in njen Protokol iz 1967) je temelj mednarodnega varstva beguncev, ki opredeljuje, kdo je begunec in kakšne so njegove pravice."
+    },
+    {
+      "id": 213,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is the definition of a refugee under the 1951 Convention?",
+      "questionSL": "Kakšna je definicija begunca po Konvenciji iz leta 1951?",
+      "options": [
+        "Anyone who leaves their country",
+        "A person fleeing war",
+        "A person with well-founded fear of persecution based on race, religion, nationality, political opinion, or membership in a particular social group",
+        "A person seeking better economic opportunities"
+      ],
+      "optionsSL": [
+        "Vsak, ki zapusti svojo državo",
+        "Oseba, ki beži pred vojno",
+        "Oseba z utemeljenim strahom pred preganjanjem zaradi rase, vere, narodnosti, političnega prepričanja ali pripadnosti določeni družbeni skupini",
+        "Oseba, ki išče boljše ekonomske priložnosti"
+      ],
+      "correct": 2,
+      "explanation": "Article 1A(2) of the 1951 Convention defines a refugee as someone with a well-founded fear of persecution for reasons of race, religion, nationality, membership of a particular social group, or political opinion.",
+      "explanationSL": "Člen 1A(2) Konvencije iz 1951 opredeljuje begunca kot osebo z utemeljenim strahom pred preganjanjem zaradi rase, vere, narodnosti, pripadnosti določeni družbeni skupini ali političnega prepričanja."
+    },
+    {
+      "id": 214,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "How does populism typically affect human rights protection?",
+      "questionSL": "Kako populizem običajno vpliva na varstvo človekovih pravic?",
+      "options": [
+        "It strengthens international institutions",
+        "It often undermines human rights institutions and norms",
+        "It has no effect on human rights",
+        "It always improves domestic rights protection"
+      ],
+      "optionsSL": [
+        "Krepi mednarodne institucije",
+        "Pogosto spodkopava institucije in norme človekovih pravic",
+        "Nima vpliva na človekove pravice",
+        "Vedno izboljša domače varstvo pravic"
+      ],
+      "correct": 1,
+      "explanation": "Populist movements often attack the legitimacy of international human rights institutions, courts, and norms, framing them as elitist or foreign interference (see Roth 2017, Helfer 2020).",
+      "explanationSL": "Populistična gibanja pogosto napadajo legitimnost mednarodnih institucij, sodišč in norm človekovih pravic ter jih označujejo za elitistične ali tuje vmešavanje.",
+      "examTip": "Key readings: Roth (2017) 'The Dangerous Rise of Populism' and Helfer (2020) on populism and HR institutions."
+    },
+    {
+      "id": 215,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "What are the main threats populism poses to international human rights mechanisms?",
+      "questionSL": "Katere so glavne grožnje, ki jih populizem predstavlja za mednarodne mehanizme človekovih pravic?",
+      "options": [
+        "Increased funding and support",
+        "Withdrawal from treaties, attacks on courts, and delegitimization of international norms",
+        "Strengthening of civil society",
+        "More ratifications of human rights treaties"
+      ],
+      "optionsSL": [
+        "Povečano financiranje in podpora",
+        "Izstop iz pogodb, napadi na sodišča in delegitimizacija mednarodnih norm",
+        "Krepitev civilne družbe",
+        "Več ratifikacij pogodb o človekovih pravicah"
+      ],
+      "correct": 1,
+      "explanation": "Populist governments may withdraw from human rights treaties, attack international courts (like the ECtHR or ICC), and undermine the legitimacy of universal human rights standards.",
+      "explanationSL": "Populistične vlade se lahko umaknejo iz pogodb o človekovih pravicah, napadajo mednarodna sodišča (kot sta ESČP ali MKS) in spodkopavajo legitimnost univerzalnih standardov človekovih pravic."
+    },
+    {
+      "id": 216,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "When did the UN General Assembly recognize the right to a clean, healthy and sustainable environment?",
+      "questionSL": "Kdaj je Generalna skupščina OZN priznala pravico do čistega, zdravega in trajnostnega okolja?",
+      "options": [
+        "1992",
+        "2015",
+        "2022",
+        "It has not been recognized yet"
+      ],
+      "optionsSL": [
+        "1992",
+        "2015",
+        "2022",
+        "Še ni bila priznana"
+      ],
+      "correct": 2,
+      "explanation": "On July 28, 2022, the UN General Assembly adopted resolution A/RES/76/300 recognizing the right to a clean, healthy and sustainable environment as a universal human right.",
+      "explanationSL": "28. julija 2022 je Generalna skupščina OZN sprejela resolucijo A/RES/76/300, ki priznava pravico do čistega, zdravega in trajnostnega okolja kot univerzalno človekovo pravico."
+    },
+    {
+      "id": 217,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Which regional human rights system first recognized the right to a healthy environment in a binding treaty?",
+      "questionSL": "Kateri regionalni sistem človekovih pravic je prvi priznal pravico do zdravega okolja v zavezujoči pogodbi?",
+      "options": [
+        "European (ECHR)",
+        "Inter-American (San Salvador Protocol)",
+        "African (Banjul Charter)",
+        "Arab League"
+      ],
+      "optionsSL": [
+        "Evropski (EKČP)",
+        "Medameriški (Protokol iz San Salvadorja)",
+        "Afriški (Banjulska listina)",
+        "Arabska liga"
+      ],
+      "correct": 2,
+      "explanation": "The African Charter on Human and Peoples' Rights (1981) was the first binding regional treaty to include the right to a 'general satisfactory environment' (Article 24).",
+      "explanationSL": "Afriška listina o človekovih pravicah in pravicah ljudstev (1981) je bila prva zavezujoča regionalna pogodba, ki je vključila pravico do 'splošno zadovoljivega okolja' (člen 24)."
+    },
+    {
+      "id": 218,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What human rights issue is central to the documentary 'Citizenfour'?",
+      "questionSL": "Katero človekovopravno vprašanje je osrednje v dokumentarcu 'Citizenfour'?",
+      "options": [
+        "Right to education",
+        "Right to privacy and mass surveillance",
+        "Freedom of religion",
+        "Right to health"
+      ],
+      "optionsSL": [
+        "Pravica do izobraževanja",
+        "Pravica do zasebnosti in množični nadzor",
+        "Svoboda veroizpovedi",
+        "Pravica do zdravja"
+      ],
+      "correct": 1,
+      "explanation": "Citizenfour (2014) documents Edward Snowden's revelations about NSA mass surveillance programs, raising fundamental questions about the right to privacy in the digital age.",
+      "explanationSL": "Citizenfour (2014) dokumentira razkritja Edwarda Snowdna o programih množičnega nadzora NSA in odpira temeljna vprašanja o pravici do zasebnosti v digitalni dobi."
+    },
+    {
+      "id": 219,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "Which article of the ICCPR protects the right to privacy?",
+      "questionSL": "Kateri člen MPDPP varuje pravico do zasebnosti?",
+      "options": [
+        "Article 14",
+        "Article 17",
+        "Article 19",
+        "Article 21"
+      ],
+      "optionsSL": [
+        "Člen 14",
+        "Člen 17",
+        "Člen 19",
+        "Člen 21"
+      ],
+      "correct": 1,
+      "explanation": "Article 17 ICCPR protects against arbitrary or unlawful interference with privacy, family, home, or correspondence.",
+      "explanationSL": "Člen 17 MPDPP varuje pred samovoljnim ali nezakonitim vmešavanjem v zasebnost, družino, dom ali dopisovanje."
+    },
+    {
+      "id": 220,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is 'cultural relativism' in the context of human rights?",
+      "questionSL": "Kaj je 'kulturni relativizem' v kontekstu človekovih pravic?",
+      "options": [
+        "The idea that all cultures are equal",
+        "The view that human rights standards should vary according to cultural context",
+        "A legal doctrine of the ECtHR",
+        "The principle that culture is a human right"
+      ],
+      "optionsSL": [
+        "Ideja, da so vse kulture enake",
+        "Stališče, da bi morali standardi človekovih pravic variirati glede na kulturni kontekst",
+        "Pravna doktrina ESČP",
+        "Načelo, da je kultura človekova pravica"
+      ],
+      "correct": 1,
+      "explanation": "Cultural relativism argues that human rights cannot be universal because moral standards vary between cultures. Critics argue it is often used to justify human rights violations.",
+      "explanationSL": "Kulturni relativizem trdi, da človekove pravice ne morejo biti univerzalne, ker se moralni standardi razlikujejo med kulturami. Kritiki trdijo, da se pogosto uporablja za opravičevanje kršitev človekovih pravic.",
+      "examTip": "Key debate: Is cultural relativism a genuine concern or an excuse to avoid human rights obligations?"
+    },
+    {
+      "id": 221,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What are 'Asian values' in the human rights debate?",
+      "questionSL": "Kaj so 'azijske vrednote' v razpravi o človekovih pravicah?",
+      "options": [
+        "A set of UN standards for Asia",
+        "An argument that Asian cultures prioritize community over individual rights",
+        "A regional human rights treaty",
+        "The official position of ASEAN on human rights"
+      ],
+      "optionsSL": [
+        "Sklop standardov OZN za Azijo",
+        "Argument, da azijske kulture dajejo prednost skupnosti pred individualnimi pravicami",
+        "Regionalna pogodba o človekovih pravicah",
+        "Uradno stališče ASEAN o človekovih pravicah"
+      ],
+      "correct": 1,
+      "explanation": "The 'Asian values' argument, prominent in the 1990s, claimed that Asian societies prioritize community harmony and economic development over Western-style individual rights. Critics like Amartya Sen have challenged this view.",
+      "explanationSL": "Argument 'azijskih vrednot', izrazit v 1990-ih, je trdil, da azijske družbe dajejo prednost skupnostni harmoniji in ekonomskemu razvoju pred zahodnimi individualnimi pravicami.",
+      "examTip": "Read: Sen, A. (2015) 'Human Rights and Asian Values' - key critique of cultural relativism."
+    },
+    {
+      "id": 222,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is the right to self-determination?",
+      "questionSL": "Kaj je pravica do samoodločbe?",
+      "options": [
+        "The right of individuals to make personal choices",
+        "The right of peoples to freely determine their political status and pursue their development",
+        "The right to vote in elections",
+        "The right to leave one's country"
+      ],
+      "optionsSL": [
+        "Pravica posameznikov do osebnih odločitev",
+        "Pravica narodov, da svobodno določijo svoj politični status in zasledujejo svoj razvoj",
+        "Pravica do glasovanja na volitvah",
+        "Pravica do zapustitve svoje države"
+      ],
+      "correct": 1,
+      "explanation": "The right to self-determination (Article 1 of both ICCPR and ICESCR) is a collective right of peoples to freely determine their political status and pursue their economic, social, and cultural development.",
+      "explanationSL": "Pravica do samoodločbe (člen 1 MPDPP in MPESKP) je kolektivna pravica narodov, da svobodno določijo svoj politični status in zasledujejo svoj ekonomski, socialni in kulturni razvoj."
+    },
+    {
+      "id": 223,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "Which international instrument specifically protects minority rights?",
+      "questionSL": "Kateri mednarodni instrument posebej varuje pravice manjšin?",
+      "options": [
+        "ICCPR Article 27",
+        "UDHR Article 1",
+        "CRC Article 2",
+        "CEDAW Article 1"
+      ],
+      "optionsSL": [
+        "Člen 27 MPDPP",
+        "Člen 1 SDČP",
+        "Člen 2 CRC",
+        "Člen 1 CEDAW"
+      ],
+      "correct": 0,
+      "explanation": "Article 27 ICCPR protects the rights of persons belonging to ethnic, religious, or linguistic minorities to enjoy their culture, practice their religion, and use their language.",
+      "explanationSL": "Člen 27 MPDPP varuje pravice pripadnikov etničnih, verskih ali jezikovnih manjšin, da uživajo svojo kulturo, prakticirajo svojo vero in uporabljajo svoj jezik.",
+      "examTip": "Also important: Framework Convention for the Protection of National Minorities (Council of Europe, 1995)."
+    },
+    {
+      "id": 224,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "What is the right to development?",
+      "questionSL": "Kaj je pravica do razvoja?",
+      "options": [
+        "The right of states to develop nuclear weapons",
+        "An inalienable human right to participate in and benefit from economic, social, cultural, and political development",
+        "The right of corporations to expand",
+        "A principle of environmental law"
+      ],
+      "optionsSL": [
+        "Pravica držav do razvoja jedrskega orožja",
+        "Neodtujljiva človekova pravica do sodelovanja in uživanja koristi ekonomskega, socialnega, kulturnega in političnega razvoja",
+        "Pravica podjetij do širitve",
+        "Načelo okoljskega prava"
+      ],
+      "correct": 1,
+      "explanation": "The right to development was proclaimed in the 1986 UN Declaration on the Right to Development as an inalienable human right enabling all peoples to participate in and benefit from development.",
+      "explanationSL": "Pravica do razvoja je bila razglašena v Deklaraciji OZN o pravici do razvoja iz leta 1986 kot neodtujljiva človekova pravica, ki vsem narodom omogoča sodelovanje in uživanje koristi razvoja."
+    },
+    {
+      "id": 225,
+      "type": "truefalse",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "The right to development is considered a 'third generation' or solidarity right.",
+      "questionSL": "Pravica do razvoja se šteje za pravico 'tretje generacije' oziroma solidarnostno pravico.",
+      "correct": true,
+      "explanation": "Under Karel Vasak's classification, the right to development is a third-generation (solidarity) right, along with the right to peace, right to a healthy environment, and rights of peoples.",
+      "explanationSL": "Po klasifikaciji Karela Vasaka je pravica do razvoja pravica tretje generacije (solidarnostna pravica), skupaj s pravico do miru, pravico do zdravega okolja in pravicami narodov."
+    },
+    {
+      "id": 226,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What does the prohibition of genocide include?",
+      "questionSL": "Kaj vključuje prepoved genocida?",
+      "options": [
+        "Only mass killings",
+        "Acts committed with intent to destroy a national, ethnic, racial, or religious group",
+        "Any war crime",
+        "Only crimes committed by states"
+      ],
+      "optionsSL": [
+        "Samo množične poboje",
+        "Dejanja, storjena z namenom uničiti nacionalno, etnično, rasno ali versko skupino",
+        "Vsak vojni zločin",
+        "Samo zločine, ki jih storijo države"
+      ],
+      "correct": 1,
+      "explanation": "The 1948 Genocide Convention defines genocide as acts committed with intent to destroy, in whole or in part, a national, ethnical, racial, or religious group, including killing, causing serious harm, imposing conditions to destroy the group, preventing births, or forcibly transferring children.",
+      "explanationSL": "Konvencija o genocidu iz leta 1948 opredeljuje genocid kot dejanja, storjena z namenom uničiti, v celoti ali delno, nacionalno, etnično, rasno ali versko skupino."
+    },
+    {
+      "id": 227,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "Which article of the ECHR protects freedom of expression?",
+      "questionSL": "Kateri člen EKČP varuje svobodo izražanja?",
+      "options": [
+        "Article 8",
+        "Article 9",
+        "Article 10",
+        "Article 11"
+      ],
+      "optionsSL": [
+        "Člen 8",
+        "Člen 9",
+        "Člen 10",
+        "Člen 11"
+      ],
+      "correct": 2,
+      "explanation": "Article 10 ECHR protects freedom of expression, including the freedom to hold opinions and to receive and impart information and ideas without interference by public authority.",
+      "explanationSL": "Člen 10 EKČP varuje svobodo izražanja, vključno s svobodo imeti mnenja ter sprejemati in širiti informacije in ideje brez vmešavanja javne oblasti."
+    },
+    {
+      "id": 228,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "Which article of the ECHR protects freedom of religion?",
+      "questionSL": "Kateri člen EKČP varuje svobodo veroizpovedi?",
+      "options": [
+        "Article 8",
+        "Article 9",
+        "Article 10",
+        "Article 14"
+      ],
+      "optionsSL": [
+        "Člen 8",
+        "Člen 9",
+        "Člen 10",
+        "Člen 14"
+      ],
+      "correct": 1,
+      "explanation": "Article 9 ECHR protects freedom of thought, conscience and religion, including the freedom to change religion and to manifest religion in worship, teaching, practice, and observance.",
+      "explanationSL": "Člen 9 EKČP varuje svobodo mišljenja, vesti in vere, vključno s svobodo spremeniti vero in izražati vero v bogoslužju, poučevanju, praksi in obredih."
+    },
+    {
+      "id": 229,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "What did the Handyside v. UK case establish about freedom of expression?",
+      "questionSL": "Kaj je zadeva Handyside proti Združenemu kraljestvu ugotovila o svobodi izražanja?",
+      "options": [
+        "Expression can be limited for any reason",
+        "Freedom of expression protects ideas that 'offend, shock or disturb'",
+        "Only political speech is protected",
+        "States have no margin of appreciation"
+      ],
+      "optionsSL": [
+        "Izražanje se lahko omeji iz kateregakoli razloga",
+        "Svoboda izražanja varuje tudi ideje, ki 'žalijo, šokirajo ali vznemirjajo'",
+        "Varovano je samo politično izražanje",
+        "Države nimajo polja proste presoje"
+      ],
+      "correct": 1,
+      "explanation": "In Handyside v. UK (1976), the ECtHR held that freedom of expression applies not only to information or ideas that are favorably received, but also to those that 'offend, shock or disturb the State or any sector of the population.'",
+      "explanationSL": "V zadevi Handyside proti Združenemu kraljestvu (1976) je ESČP odločilo, da se svoboda izražanja ne nanaša le na informacije ali ideje, ki so ugodno sprejete, temveč tudi na tiste, ki 'žalijo, šokirajo ali vznemirjajo državo ali katerikoli del prebivalstva.'",
+      "examTip": "This is one of the most cited ECtHR cases on freedom of expression!"
+    },
+    {
+      "id": 230,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What are enforced disappearances?",
+      "questionSL": "Kaj so prisilna izginotja?",
+      "options": [
+        "Voluntary emigration",
+        "Arrest or detention by state agents followed by refusal to acknowledge the deprivation of liberty",
+        "Missing persons cases",
+        "Witness protection programs"
+      ],
+      "optionsSL": [
+        "Prostovoljna emigracija",
+        "Aretacija ali pridržanje s strani državnih agentov, ki ji sledi zavrnitev priznanja odvzema prostosti",
+        "Primeri pogrešanih oseb",
+        "Programi zaščite prič"
+      ],
+      "correct": 1,
+      "explanation": "The International Convention for the Protection of All Persons from Enforced Disappearance (2006) defines enforced disappearance as arrest, detention, or abduction by state agents, followed by refusal to acknowledge the deprivation of liberty or concealment of the fate of the disappeared person.",
+      "explanationSL": "Mednarodna konvencija o zaščiti vseh oseb pred prisilnim izginotjem (2006) opredeljuje prisilno izginotje kot aretacijo, pridržanje ali ugrabitev s strani državnih agentov, ki ji sledi zavrnitev priznanja odvzema prostosti ali prikrivanje usode izginule osebe."
     }
   ]
 }
