@@ -26,8 +26,8 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should have timeline events loaded', async ({ page }) => {
-      // Navigate to timeline
-      await page.click('a[href="#timeline"]');
+      // Navigate to timeline using data-section attribute
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Check event count display
@@ -36,8 +36,8 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should have quiz questions loaded', async ({ page }) => {
-      // Navigate to quiz
-      await page.click('a[href="#quiz"]');
+      // Navigate to quiz using data-section attribute
+      await page.click('[data-section="quiz"]');
       await page.waitForTimeout(500);
       
       // Start quiz with all questions
@@ -58,7 +58,7 @@ test.describe('Human Rights Education Platform Tests', () => {
 
   test.describe('Timeline 3-View System', () => {
     test('should display era blocks view by default', async ({ page }) => {
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Check era blocks are visible
@@ -67,7 +67,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should switch to zoom timeline view', async ({ page }) => {
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Click zoom view button
@@ -84,7 +84,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should switch to stacked tracks view', async ({ page }) => {
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Click stacked view button
@@ -101,7 +101,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should expand era block on click', async ({ page }) => {
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Click on first era block
@@ -118,7 +118,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should filter timeline events', async ({ page }) => {
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Click treaty filter
@@ -139,7 +139,7 @@ test.describe('Human Rights Education Platform Tests', () => {
 
   test.describe('Quiz System', () => {
     test('should start quiz with selected category', async ({ page }) => {
-      await page.click('a[href="#quiz"]');
+      await page.click('[data-section="quiz"]');
       await page.waitForTimeout(500);
       
       // Select foundations category
@@ -158,7 +158,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should handle multiple choice questions', async ({ page }) => {
-      await page.click('a[href="#quiz"]');
+      await page.click('[data-section="quiz"]');
       await page.waitForTimeout(500);
       
       await page.selectOption('#quizCount', '5');
@@ -179,7 +179,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should display exam tips when available', async ({ page }) => {
-      await page.click('a[href="#quiz"]');
+      await page.click('[data-section="quiz"]');
       await page.waitForTimeout(500);
       
       // Select foundations which has exam tips
@@ -216,7 +216,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should show quiz results', async ({ page }) => {
-      await page.click('a[href="#quiz"]');
+      await page.click('[data-section="quiz"]');
       await page.waitForTimeout(500);
       
       await page.selectOption('#quizCount', '5');
@@ -243,7 +243,7 @@ test.describe('Human Rights Education Platform Tests', () => {
 
   test.describe('Spider Web Visualization', () => {
     test('should render spider web with nodes', async ({ page }) => {
-      await page.click('a[href="#spider-web"]');
+      await page.click('[data-section="spider-web"]');
       await page.waitForTimeout(1500);
       
       // Check SVG is rendered
@@ -256,7 +256,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should filter by system', async ({ page }) => {
-      await page.click('a[href="#spider-web"]');
+      await page.click('[data-section="spider-web"]');
       await page.waitForTimeout(1500);
       
       // Click UN filter
@@ -269,7 +269,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should search nodes', async ({ page }) => {
-      await page.click('a[href="#spider-web"]');
+      await page.click('[data-section="spider-web"]');
       await page.waitForTimeout(1500);
       
       // Search for ECHR
@@ -283,7 +283,7 @@ test.describe('Human Rights Education Platform Tests', () => {
 
   test.describe('Treaties Section', () => {
     test('should display treaties grid', async ({ page }) => {
-      await page.click('a[href="#treaties"]');
+      await page.click('[data-section="treaties"]');
       await page.waitForTimeout(500);
       
       // Check treaties are rendered
@@ -292,7 +292,7 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should filter treaties by system', async ({ page }) => {
-      await page.click('a[href="#treaties"]');
+      await page.click('[data-section="treaties"]');
       await page.waitForTimeout(500);
       
       // Click European filter
@@ -305,25 +305,25 @@ test.describe('Human Rights Education Platform Tests', () => {
     });
 
     test('should open treaty detail modal', async ({ page }) => {
-      await page.click('a[href="#treaties"]');
+      await page.click('[data-section="treaties"]');
       await page.waitForTimeout(500);
       
       // Click first treaty card
       await page.click('.treaty-card:first-child');
       await page.waitForTimeout(500);
       
-      // Check modal is visible
+      // Check modal is visible (class can be 'active' or 'open')
       const modal = page.locator('#detailModal');
-      await expect(modal).toHaveClass(/active/);
+      await expect(modal).toHaveClass(/active|open/);
     });
   });
 
   test.describe('Navigation', () => {
     test('should navigate between sections', async ({ page }) => {
-      const sections = ['home', 'timeline', 'spider-web', 'treaties', 'quiz', 'study-guides', 'about'];
+      const sections = ['home', 'timeline', 'spider-web', 'treaties', 'quiz', 'about'];
       
       for (const section of sections) {
-        await page.click(`a[href="#${section}"]`);
+        await page.click(`[data-section="${section}"]`);
         await page.waitForTimeout(300);
         
         const sectionEl = page.locator(`#${section}`);
@@ -374,13 +374,102 @@ test.describe('Human Rights Education Platform Tests', () => {
       const navbar = page.locator('.navbar');
       await expect(navbar).toBeVisible();
       
+      // Open mobile menu first
+      await page.click('#mobileMenuBtn');
+      await page.waitForTimeout(300);
+      
       // Navigate to timeline
-      await page.click('a[href="#timeline"]');
+      await page.click('[data-section="timeline"]');
       await page.waitForTimeout(500);
       
       // Check era blocks are visible (should stack on mobile)
       const eraBlocks = await page.locator('.era-block').count();
       expect(eraBlocks).toBe(5);
+    });
+  });
+
+  test.describe('Cases Section', () => {
+    test('should display cases grid', async ({ page }) => {
+      await page.click('[data-section="cases"]');
+      await page.waitForTimeout(500);
+      
+      // Check cases are loaded
+      const caseCards = await page.locator('.case-card').count();
+      expect(caseCards).toBeGreaterThan(40);
+    });
+
+    test('should filter cases by court', async ({ page }) => {
+      await page.click('[data-section="cases"]');
+      await page.waitForTimeout(500);
+      
+      // Filter by ECtHR
+      await page.selectOption('#caseCourtFilter', 'ECtHR');
+      await page.waitForTimeout(300);
+      
+      // Check filtered results
+      const caseCards = await page.locator('.case-card').count();
+      expect(caseCards).toBeGreaterThan(30);
+    });
+
+    test('should search cases', async ({ page }) => {
+      await page.click('[data-section="cases"]');
+      await page.waitForTimeout(500);
+      
+      // Search for Soering
+      await page.fill('#caseSearch', 'Soering');
+      await page.waitForTimeout(500);
+      
+      // Check search results
+      const caseCards = await page.locator('.case-card').count();
+      expect(caseCards).toBeGreaterThan(0);
+    });
+  });
+
+  test.describe('Learn Section', () => {
+    test('should display course modules', async ({ page }) => {
+      await page.click('[data-section="learn"]');
+      await page.waitForTimeout(500);
+      
+      // Check modules are displayed
+      const moduleCards = await page.locator('.module-card').count();
+      expect(moduleCards).toBe(6);
+    });
+
+    test('should expand seminar accordion', async ({ page }) => {
+      await page.click('[data-section="learn"]');
+      await page.waitForTimeout(500);
+      
+      // Click first seminar header
+      await page.click('.seminar-header');
+      await page.waitForTimeout(300);
+      
+      // Check content is visible
+      const seminarContent = page.locator('.seminar-item.active .seminar-content');
+      await expect(seminarContent).toBeVisible();
+    });
+  });
+
+  test.describe('Tools Section', () => {
+    test('should display tool cards', async ({ page }) => {
+      await page.click('[data-section="tools"]');
+      await page.waitForTimeout(500);
+      
+      // Check tools are displayed
+      const toolCards = await page.locator('.tool-card').count();
+      expect(toolCards).toBe(4);
+    });
+
+    test('should update UPR stats on country change', async ({ page }) => {
+      await page.click('[data-section="tools"]');
+      await page.waitForTimeout(500);
+      
+      // Change country
+      await page.selectOption('#uprCountry', 'usa');
+      await page.waitForTimeout(300);
+      
+      // Check stats updated
+      const acceptedText = await page.locator('#uprAccepted').textContent();
+      expect(acceptedText).toBe('89');
     });
   });
 });

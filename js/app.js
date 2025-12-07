@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     initTreatiesGrid();
     initQuiz();
     initProgressDisplay();
+    initCasesSection();
+    initLearnSection();
+    initToolsSection();
     
     // Check URL hash for direct navigation
     const hash = window.location.hash.slice(1);
@@ -172,12 +175,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadAllData() {
     try {
-        const [treaties, institutions, connections, timeline, quiz] = await Promise.all([
+        const [treaties, institutions, connections, timeline, quiz, cases] = await Promise.all([
             fetch('data/treaties.json').then(r => r.json()),
             fetch('data/institutions.json').then(r => r.json()),
             fetch('data/connections.json').then(r => r.json()),
             fetch('data/timeline-events.json').then(r => r.json()),
-            fetch('data/quiz-questions.json').then(r => r.json())
+            fetch('data/quiz-questions.json').then(r => r.json()),
+            fetch('data/cases.json').then(r => r.json()).catch(() => ({ cases: [] }))
         ]);
         
         App.data.treaties = treaties.treaties;
@@ -186,12 +190,14 @@ async function loadAllData() {
         App.data.timelineEvents = timeline.events;
         App.data.timelineMetadata = timeline.metadata || null;
         App.data.quizQuestions = quiz.questions;
+        App.data.cases = cases.cases || [];
         
         console.log('Data loaded successfully:', {
             treaties: App.data.treaties.length,
             institutions: App.data.institutions.length,
             timelineEvents: App.data.timelineEvents.length,
-            quizQuestions: App.data.quizQuestions.length
+            quizQuestions: App.data.quizQuestions.length,
+            cases: App.data.cases.length
         });
     } catch (error) {
         console.error('Error loading data:', error);
@@ -2529,3 +2535,401 @@ document.addEventListener('keydown', (e) => {
 
 window.App = App;
 window.Progress = Progress;
+
+// =====================================================
+// CASES SECTION
+// =====================================================
+
+function initCasesSection() {
+    renderCases();
+    setupCaseFilters();
+}
+
+function renderCases(filter = {}) {
+    const grid = document.getElementById('casesGrid');
+    if (!grid || !App.data.cases) return;
+    
+    let cases = App.data.cases;
+    
+    // Apply filters
+    if (filter.court && filter.court !== 'all') {
+        cases = cases.filter(c => c.court === filter.court);
+    }
+    if (filter.category && filter.category !== 'all') {
+        cases = cases.filter(c => c.category === filter.category);
+    }
+    if (filter.search) {
+        const search = filter.search.toLowerCase();
+        cases = cases.filter(c => 
+            c.name.toLowerCase().includes(search) ||
+            c.significance.toLowerCase().includes(search) ||
+            c.keywords.some(k => k.toLowerCase().includes(search)) ||
+            c.articles.some(a => a.toLowerCase().includes(search))
+        );
+    }
+    
+    // Update count
+    const countEl = document.getElementById('casesFiltered');
+    if (countEl) countEl.textContent = cases.length;
+    
+    grid.innerHTML = cases.map(c => `
+        <div class="case-card" data-case-id="${c.id}">
+            <div class="case-card-header">
+                <h3 class="case-name">${c.name}</h3>
+                <span class="case-year">${c.year}</span>
+            </div>
+            <div class="case-meta">
+                <span class="case-court">${c.court}</span>
+                <span class="case-articles">Art. ${c.articles.join(', ')}</span>
+                <span class="case-category">${c.category}</span>
+            </div>
+            <p class="case-significance">${c.significance}</p>
+            <div class="case-keywords">
+                ${c.keywords.slice(0, 4).map(k => `<span class="case-keyword">${k}</span>`).join('')}
+            </div>
+        </div>
+    `).join('');
+    
+    // Add click handlers
+    grid.querySelectorAll('.case-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const caseId = card.dataset.caseId;
+            const caseData = App.data.cases.find(c => c.id === caseId);
+            if (caseData) showCaseDetail(caseData);
+        });
+    });
+    
+    lucide.createIcons();
+}
+
+function setupCaseFilters() {
+    const searchInput = document.getElementById('caseSearch');
+    const courtFilter = document.getElementById('caseCourtFilter');
+    const categoryFilter = document.getElementById('caseCategoryFilter');
+    
+    const applyFilters = () => {
+        renderCases({
+            search: searchInput?.value || '',
+            court: courtFilter?.value || 'all',
+            category: categoryFilter?.value || 'all'
+        });
+    };
+    
+    searchInput?.addEventListener('input', debounce(applyFilters, 300));
+    courtFilter?.addEventListener('change', applyFilters);
+    categoryFilter?.addEventListener('change', applyFilters);
+}
+
+function showCaseDetail(caseData) {
+    const content = `
+        <div class="case-detail">
+            <div class="case-detail-header">
+                <h2>${caseData.name}</h2>
+                <div class="case-detail-meta">
+                    <span class="case-year">${caseData.year}</span>
+                    <span class="case-court">${caseData.court}</span>
+                    <span class="case-importance ${caseData.importance}">${caseData.importance}</span>
+                </div>
+            </div>
+            
+            <div class="case-detail-section">
+                <h4><i data-lucide="file-text"></i> Facts</h4>
+                <p>${caseData.facts}</p>
+            </div>
+            
+            <div class="case-detail-section">
+                <h4><i data-lucide="help-circle"></i> Issue</h4>
+                <p>${caseData.issue}</p>
+            </div>
+            
+            <div class="case-detail-section">
+                <h4><i data-lucide="gavel"></i> Holding</h4>
+                <p>${caseData.holding}</p>
+            </div>
+            
+            <div class="case-detail-section">
+                <h4><i data-lucide="star"></i> Significance</h4>
+                <p>${caseData.significance}</p>
+            </div>
+            
+            <div class="case-detail-section">
+                <h4><i data-lucide="tag"></i> Keywords</h4>
+                <div class="case-keywords">
+                    ${caseData.keywords.map(k => `<span class="case-keyword">${k}</span>`).join('')}
+                </div>
+            </div>
+            
+            <div class="case-detail-articles">
+                <strong>Articles:</strong> ${caseData.articles.join(', ')}
+            </div>
+        </div>
+    `;
+    
+    showModal(content);
+}
+
+// =====================================================
+// LEARN SECTION
+// =====================================================
+
+function initLearnSection() {
+    // Setup seminar accordion
+    document.querySelectorAll('.seminar-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        });
+    });
+}
+
+// =====================================================
+// TOOLS SECTION
+// =====================================================
+
+function initToolsSection() {
+    // UPR data (simplified for demo)
+    const uprData = {
+        slovenia: { accepted: 178, noted: 32, total: 210 },
+        usa: { accepted: 89, noted: 174, total: 263 },
+        china: { accepted: 204, noted: 80, total: 284 },
+        russia: { accepted: 148, noted: 83, total: 231 },
+        germany: { accepted: 197, noted: 22, total: 219 },
+        france: { accepted: 182, noted: 29, total: 211 }
+    };
+    
+    const countrySelect = document.getElementById('uprCountry');
+    if (countrySelect) {
+        countrySelect.addEventListener('change', () => {
+            const country = countrySelect.value;
+            const data = uprData[country];
+            if (data) {
+                document.getElementById('uprAccepted').textContent = data.accepted;
+                document.getElementById('uprNoted').textContent = data.noted;
+                document.getElementById('uprRate').textContent = Math.round(data.accepted / data.total * 100) + '%';
+            }
+        });
+        // Trigger initial load
+        countrySelect.dispatchEvent(new Event('change'));
+    }
+}
+
+// Tool functions (called from HTML onclick)
+function openUPRExplorer() {
+    const content = `
+        <div class="upr-explorer-modal">
+            <h2><i data-lucide="globe-2"></i> UPR Explorer</h2>
+            <p>The Universal Periodic Review examines the human rights record of all 193 UN member states every 4.5 years.</p>
+            
+            <div class="upr-info-grid">
+                <div class="upr-info-card">
+                    <h4>How UPR Works</h4>
+                    <ol>
+                        <li>State submits national report (20 pages)</li>
+                        <li>OHCHR compiles UN info (10 pages)</li>
+                        <li>Stakeholders submit reports (10 pages)</li>
+                        <li>Interactive dialogue (3.5 hours)</li>
+                        <li>Working Group adopts report</li>
+                        <li>State responds to recommendations</li>
+                    </ol>
+                </div>
+                <div class="upr-info-card">
+                    <h4>Key Terms</h4>
+                    <ul>
+                        <li><strong>Accepted:</strong> State commits to implement</li>
+                        <li><strong>Noted:</strong> Effectively rejected</li>
+                        <li><strong>Troika:</strong> 3 states facilitating review</li>
+                        <li><strong>Mid-term report:</strong> Voluntary progress update</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="upr-link">
+                <a href="https://www.ohchr.org/en/hr-bodies/upr/upr-main" target="_blank">
+                    <i data-lucide="external-link"></i> Visit OHCHR UPR Database
+                </a>
+            </p>
+        </div>
+    `;
+    showModal(content);
+}
+
+function openCaseAnalyzer() {
+    const content = `
+        <div class="case-analyzer-modal">
+            <h2><i data-lucide="file-search"></i> Case Analysis Framework</h2>
+            <p>Use this framework to analyze ECtHR cases systematically:</p>
+            
+            <div class="analysis-framework">
+                <div class="analysis-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Identify the Right</h4>
+                        <p>Which Convention article is engaged? Is it absolute (Art. 3) or qualified (Arts. 8-11)?</p>
+                    </div>
+                </div>
+                
+                <div class="analysis-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Establish Interference</h4>
+                        <p>Has there been an interference with the right? Consider both negative and positive obligations.</p>
+                    </div>
+                </div>
+                
+                <div class="analysis-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Apply Three-Part Test</h4>
+                        <ul>
+                            <li><strong>Prescribed by law?</strong> Legal basis, accessible, foreseeable</li>
+                            <li><strong>Legitimate aim?</strong> Listed in the article (e.g., public safety, morals)</li>
+                            <li><strong>Necessary in democratic society?</strong> Pressing social need, proportionate</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="analysis-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Consider Margin of Appreciation</h4>
+                        <p>How much discretion should the state have? Consider European consensus, nature of right, nature of interference.</p>
+                    </div>
+                </div>
+                
+                <div class="analysis-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Conclusion</h4>
+                        <p>Was the interference proportionate? Was there a violation?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    showModal(content);
+}
+
+function openTreatyCompare() {
+    const content = `
+        <div class="treaty-compare-modal">
+            <h2><i data-lucide="git-compare"></i> Treaty Comparison</h2>
+            <p>Compare how different treaties protect fundamental rights:</p>
+            
+            <table class="treaty-compare-table">
+                <thead>
+                    <tr>
+                        <th>Right</th>
+                        <th>ICCPR</th>
+                        <th>ECHR</th>
+                        <th>ACHR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Right to Life</td>
+                        <td>Art. 6</td>
+                        <td>Art. 2</td>
+                        <td>Art. 4</td>
+                    </tr>
+                    <tr>
+                        <td>Prohibition of Torture</td>
+                        <td>Art. 7</td>
+                        <td>Art. 3</td>
+                        <td>Art. 5</td>
+                    </tr>
+                    <tr>
+                        <td>Liberty & Security</td>
+                        <td>Art. 9</td>
+                        <td>Art. 5</td>
+                        <td>Art. 7</td>
+                    </tr>
+                    <tr>
+                        <td>Fair Trial</td>
+                        <td>Art. 14</td>
+                        <td>Art. 6</td>
+                        <td>Art. 8</td>
+                    </tr>
+                    <tr>
+                        <td>Privacy</td>
+                        <td>Art. 17</td>
+                        <td>Art. 8</td>
+                        <td>Art. 11</td>
+                    </tr>
+                    <tr>
+                        <td>Freedom of Religion</td>
+                        <td>Art. 18</td>
+                        <td>Art. 9</td>
+                        <td>Art. 12</td>
+                    </tr>
+                    <tr>
+                        <td>Freedom of Expression</td>
+                        <td>Art. 19</td>
+                        <td>Art. 10</td>
+                        <td>Art. 13</td>
+                    </tr>
+                    <tr>
+                        <td>Freedom of Assembly</td>
+                        <td>Art. 21</td>
+                        <td>Art. 11</td>
+                        <td>Art. 15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    `;
+    showModal(content);
+}
+
+function startExamMode() {
+    const length = document.querySelector('input[name="examLength"]:checked')?.value || 10;
+    
+    // Set quiz to exam mode
+    App.state.quiz.examMode = true;
+    App.state.quiz.examLength = parseInt(length);
+    
+    // Navigate to quiz
+    navigateToSection('quiz');
+    
+    // Start quiz with random questions
+    setTimeout(() => {
+        const categorySelect = document.getElementById('quizCategory');
+        if (categorySelect) categorySelect.value = 'all';
+        
+        const difficultySelect = document.getElementById('quizDifficulty');
+        if (difficultySelect) difficultySelect.value = 'all';
+        
+        // Click start button
+        document.querySelector('.quiz-setup .btn-primary')?.click();
+    }, 100);
+}
+
+// Make tool functions global
+window.openUPRExplorer = openUPRExplorer;
+window.openCaseAnalyzer = openCaseAnalyzer;
+window.openTreatyCompare = openTreatyCompare;
+window.startExamMode = startExamMode;
+
+// Utility function for debouncing
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Show modal helper
+function showModal(content) {
+    const modal = document.getElementById('detailModal');
+    const modalBody = document.getElementById('modalBody');
+    
+    if (modal && modalBody) {
+        modalBody.innerHTML = content;
+        modal.classList.add('active');
+        lucide.createIcons();
+    }
+}
