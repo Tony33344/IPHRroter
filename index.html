@@ -249,13 +249,21 @@
                     <button class="filter-btn" data-filter="event">Events</button>
                     <button class="filter-btn" data-filter="historical">Historical</button>
                 </div>
+                <div class="timeline-actions">
+                    <button class="action-btn" id="toggleLabels" title="Toggle event labels">
+                        <i data-lucide="eye"></i>
+                        <span>Show Labels</span>
+                    </button>
+                </div>
                 <div class="timeline-zoom">
-                    <button class="zoom-btn" id="zoomOut"><i data-lucide="zoom-out"></i></button>
+                    <button class="zoom-btn" id="zoomOut" title="Zoom out"><i data-lucide="zoom-out"></i></button>
                     <span class="zoom-level">100%</span>
-                    <button class="zoom-btn" id="zoomIn"><i data-lucide="zoom-in"></i></button>
-                    <button class="zoom-btn" id="zoomReset"><i data-lucide="maximize-2"></i></button>
+                    <button class="zoom-btn" id="zoomIn" title="Zoom in"><i data-lucide="zoom-in"></i></button>
+                    <button class="zoom-btn" id="zoomReset" title="Reset zoom"><i data-lucide="maximize-2"></i></button>
                 </div>
             </div>
+            
+            <p class="timeline-help-text">💡 <strong>Tip:</strong> Drag to pan, scroll to move horizontally, Shift+scroll to zoom. Click events for details.</p>
             
             <!-- Era Quick Navigation (for zoom view) -->
             <div class="era-quick-nav" id="eraQuickNav" style="display: none;">

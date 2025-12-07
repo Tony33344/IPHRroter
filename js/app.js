@@ -275,6 +275,7 @@ function navigateToSection(sectionId, filter = null) {
 
 function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
+    const langToggle = document.getElementById('langToggle');
     
     // Check for saved theme
     const savedTheme = localStorage.getItem('theme');
@@ -283,13 +284,97 @@ function setupThemeToggle() {
         App.state.theme = savedTheme;
     }
     
+    // Check for saved language
+    const savedLang = localStorage.getItem('language');
+    if (savedLang) {
+        App.state.language = savedLang;
+        updateUILanguage();
+    }
+    
     themeToggle?.addEventListener('click', () => {
         const newTheme = App.state.theme === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         App.state.theme = newTheme;
     });
+    
+    // Language toggle
+    langToggle?.addEventListener('click', () => {
+        const newLang = App.state.language === 'en' ? 'sl' : 'en';
+        App.state.language = newLang;
+        localStorage.setItem('language', newLang);
+        updateUILanguage();
+        showToast(newLang === 'sl' ? 'Jezik spremenjen v slovenščino' : 'Language changed to English');
+    });
 }
+
+// Language switching
+function updateUILanguage() {
+    const lang = App.state.language;
+    
+    // Update lang toggle button text
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        langToggle.innerHTML = lang === 'en' 
+            ? '<i data-lucide="globe"></i><span>SL</span>' 
+            : '<i data-lucide="globe"></i><span>EN</span>';
+        lucide.createIcons();
+    }
+    
+    // Update translatable elements
+    document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.dataset.translate;
+        if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+            el.textContent = TRANSLATIONS[lang][key];
+        }
+    });
+}
+
+// Translation strings
+const TRANSLATIONS = {
+    en: {
+        'nav.home': 'Home',
+        'nav.timeline': 'Timeline',
+        'nav.systems': 'Systems Map',
+        'nav.treaties': 'Treaties',
+        'nav.quiz': 'Quiz',
+        'nav.study': 'Study Guides',
+        'nav.about': 'About',
+        'quiz.start': 'Start Quiz',
+        'quiz.next': 'Next Question',
+        'quiz.skip': 'Skip',
+        'quiz.results': 'Results',
+        'quiz.correct': 'Correct!',
+        'quiz.incorrect': 'Incorrect',
+        'quiz.examTip': 'Exam Tip',
+        'timeline.eraBlocks': 'Era Blocks',
+        'timeline.zoomTimeline': 'Zoom Timeline',
+        'timeline.stackedTracks': 'Stacked Tracks',
+        'timeline.showLabels': 'Show Labels',
+        'timeline.hideLabels': 'Hide Labels'
+    },
+    sl: {
+        'nav.home': 'Domov',
+        'nav.timeline': 'Časovnica',
+        'nav.systems': 'Zemljevid sistemov',
+        'nav.treaties': 'Pogodbe',
+        'nav.quiz': 'Kviz',
+        'nav.study': 'Učni pripomočki',
+        'nav.about': 'O projektu',
+        'quiz.start': 'Začni kviz',
+        'quiz.next': 'Naslednje vprašanje',
+        'quiz.skip': 'Preskoči',
+        'quiz.results': 'Rezultati',
+        'quiz.correct': 'Pravilno!',
+        'quiz.incorrect': 'Napačno',
+        'quiz.examTip': 'Nasvet za izpit',
+        'timeline.eraBlocks': 'Obdobja',
+        'timeline.zoomTimeline': 'Povečana časovnica',
+        'timeline.stackedTracks': 'Zloženi prikaz',
+        'timeline.showLabels': 'Pokaži oznake',
+        'timeline.hideLabels': 'Skrij oznake'
+    }
+};
 
 // =====================================================
 // CARDS INTERACTION
@@ -631,8 +716,11 @@ function renderEraEventsList(eraEvents) {
 }
 
 // =====================================================
-// ZOOM TIMELINE VIEW
+// ZOOM TIMELINE VIEW (IMPROVED)
 // =====================================================
+
+// Global state for timeline labels
+let timelineLabelsVisible = false;
 
 function renderZoomTimeline(events, eras) {
     const container = document.getElementById('timelineWrapper');
@@ -641,49 +729,70 @@ function renderZoomTimeline(events, eras) {
     // Sort events by year
     const sortedEvents = [...events].sort((a, b) => a.year - b.year);
     
-    // Setup dimensions
-    const margin = { top: 100, right: 100, bottom: 100, left: 100 };
-    const eventSpacing = 120;
-    const width = Math.max(3000, sortedEvents.length * eventSpacing);
-    const height = 600 - margin.top - margin.bottom;
+    // Setup dimensions - INCREASED HEIGHT
+    const containerWidth = container.clientWidth || 1200;
+    const margin = { top: 80, right: 60, bottom: 80, left: 60 };
+    const contentWidth = Math.max(4000, sortedEvents.length * 100);
+    const height = 550; // Increased from 400
+    const innerHeight = height - margin.top - margin.bottom;
     
     // Clear existing
     container.innerHTML = '';
     
+    // Create wrapper for zoom/pan
+    const svgWrapper = d3.select(container)
+        .append('div')
+        .attr('class', 'timeline-svg-wrapper')
+        .style('width', '100%')
+        .style('height', height + 'px')
+        .style('overflow', 'hidden')
+        .style('cursor', 'grab');
+    
     // Create SVG
-    const svg = d3.select(container)
+    const svg = svgWrapper
         .append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom)
-        .append('g')
+        .attr('width', contentWidth)
+        .attr('height', height)
+        .attr('class', 'zoom-timeline-svg');
+    
+    // Main group for content
+    const mainGroup = svg.append('g')
+        .attr('class', 'timeline-main-group')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
     
     // Time scale
     const timeExtent = d3.extent(sortedEvents, d => d.year);
     const xScale = d3.scaleLinear()
-        .domain([timeExtent[0] - 20, timeExtent[1] + 20])
-        .range([0, width]);
+        .domain([timeExtent[0] - 30, timeExtent[1] + 30])
+        .range([0, contentWidth - margin.left - margin.right]);
+    
+    // Store scale for zoom
+    App.state.timeline.xScale = xScale;
+    App.state.timeline.originalXScale = xScale.copy();
     
     // Draw era backgrounds
+    const eraGroup = mainGroup.append('g').attr('class', 'era-backgrounds');
     eras.forEach(era => {
         const x1 = Math.max(0, xScale(era.start));
-        const x2 = Math.min(width, xScale(era.end));
+        const x2 = Math.min(contentWidth - margin.left - margin.right, xScale(era.end));
         if (x2 > x1) {
-            svg.append('rect')
+            eraGroup.append('rect')
                 .attr('x', x1)
                 .attr('y', 0)
                 .attr('width', x2 - x1)
-                .attr('height', height)
+                .attr('height', innerHeight)
                 .attr('fill', era.color)
-                .attr('opacity', 0.1);
+                .attr('opacity', 0.08)
+                .attr('class', 'era-bg');
             
-            svg.append('text')
+            eraGroup.append('text')
                 .attr('x', (x1 + x2) / 2)
-                .attr('y', 20)
+                .attr('y', 25)
                 .attr('text-anchor', 'middle')
-                .attr('font-size', '14px')
+                .attr('font-size', '13px')
                 .attr('font-weight', '600')
                 .attr('fill', era.color)
+                .attr('class', 'era-label')
                 .text(era.name);
         }
     });
@@ -691,35 +800,44 @@ function renderZoomTimeline(events, eras) {
     // Draw timeline axis
     const xAxis = d3.axisBottom(xScale)
         .tickFormat(d => d)
-        .tickValues(d3.range(Math.ceil(timeExtent[0] / 50) * 50, timeExtent[1] + 50, 50));
+        .tickValues(d3.range(Math.ceil(timeExtent[0] / 25) * 25, timeExtent[1] + 25, 25));
     
-    svg.append('g')
+    const axisGroup = mainGroup.append('g')
         .attr('class', 'timeline-axis')
-        .attr('transform', `translate(0, ${height/2})`)
-        .call(xAxis)
-        .selectAll('text')
-        .attr('font-size', '14px')
-        .attr('font-weight', '500');
+        .attr('transform', `translate(0, ${innerHeight/2})`)
+        .call(xAxis);
+    
+    axisGroup.selectAll('text')
+        .attr('font-size', '12px')
+        .attr('font-weight', '500')
+        .attr('fill', 'var(--text-secondary)');
+    
+    axisGroup.selectAll('line, path')
+        .attr('stroke', 'var(--gray-300)');
     
     // Draw main line
-    svg.append('line')
+    mainGroup.append('line')
+        .attr('class', 'timeline-main-line')
         .attr('x1', 0)
-        .attr('x2', width)
-        .attr('y1', height/2)
-        .attr('y2', height/2)
-        .attr('stroke', '#6b7280')
-        .attr('stroke-width', 4);
+        .attr('x2', contentWidth - margin.left - margin.right)
+        .attr('y1', innerHeight/2)
+        .attr('y2', innerHeight/2)
+        .attr('stroke', 'var(--gray-400)')
+        .attr('stroke-width', 3);
     
     // Calculate positions to avoid overlap
-    const positions = calculateEventPositions(sortedEvents, xScale, height);
+    const positions = calculateEventPositions(sortedEvents, xScale, innerHeight);
     
     // Draw events
-    const eventGroups = svg.selectAll('g.timeline-event')
+    const eventsGroup = mainGroup.append('g').attr('class', 'events-group');
+    
+    const eventGroups = eventsGroup.selectAll('g.timeline-event')
         .data(sortedEvents)
         .enter()
         .append('g')
         .attr('class', d => `timeline-event ${d.type} ${d.highlight ? 'highlight' : ''}`)
         .attr('transform', (d, i) => `translate(${positions[i].x}, ${positions[i].y})`)
+        .attr('data-event-id', d => d.id)
         .style('cursor', 'pointer');
     
     // Draw connecting lines to axis
@@ -728,7 +846,7 @@ function renderZoomTimeline(events, eras) {
         .attr('x1', 0)
         .attr('y1', 0)
         .attr('x2', 0)
-        .attr('y2', (d, i) => height/2 - positions[i].y)
+        .attr('y2', (d, i) => innerHeight/2 - positions[i].y)
         .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke-width', 2)
         .attr('stroke-opacity', 0.4);
@@ -736,11 +854,12 @@ function renderZoomTimeline(events, eras) {
     // Draw circles
     eventGroups.append('circle')
         .attr('class', 'event-circle')
-        .attr('r', d => d.highlight ? 18 : 14)
+        .attr('r', d => d.highlight ? 16 : 12)
         .attr('fill', d => TIMELINE_COLORS[d.type] || '#6B7280')
         .attr('stroke', 'white')
-        .attr('stroke-width', 3)
-        .style('filter', 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))');
+        .attr('stroke-width', 2.5)
+        .style('filter', 'drop-shadow(0 2px 4px rgba(0,0,0,0.15))')
+        .style('pointer-events', 'all');
     
     // Draw year inside circle
     eventGroups.append('text')
@@ -752,66 +871,152 @@ function renderZoomTimeline(events, eras) {
         .attr('fill', 'white')
         .text(d => d.year);
     
-    // Draw labels with background
+    // Draw labels with background (hidden by default, toggled with button)
     const labelGroups = eventGroups.append('g')
         .attr('class', 'label-group')
-        .attr('transform', (d, i) => `translate(0, ${positions[i].y < height/2 ? -25 : 25})`);
+        .attr('transform', (d, i) => `translate(0, ${positions[i].y < innerHeight/2 ? -28 : 28})`)
+        .style('opacity', timelineLabelsVisible ? 1 : 0)
+        .style('pointer-events', 'none');
     
     labelGroups.append('rect')
         .attr('class', 'label-bg')
-        .attr('x', -60)
+        .attr('x', -65)
         .attr('y', -12)
-        .attr('width', 120)
+        .attr('width', 130)
         .attr('height', 24)
         .attr('rx', 4)
-        .attr('fill', 'white')
+        .attr('fill', 'var(--bg-primary)')
         .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
-        .attr('stroke-width', 1)
+        .attr('stroke-width', 1.5)
         .attr('opacity', 0.95);
     
     labelGroups.append('text')
         .attr('class', 'event-label')
         .attr('text-anchor', 'middle')
         .attr('dy', '0.35em')
-        .attr('font-size', '11px')
+        .attr('font-size', '10px')
         .attr('font-weight', '600')
-        .attr('fill', '#1f2937')
-        .text(d => truncateText(d.title, 18));
+        .attr('fill', 'var(--text-primary)')
+        .text(d => truncateText(d.title, 20));
     
-    // Add interactions
+    // Debounced hover to prevent flickering
+    let hoverTimeout = null;
+    
+    // Add interactions - FIXED flickering by using debouncing
     eventGroups
         .on('mouseenter', function(event, d) {
-            d3.select(this).select('.event-circle')
-                .transition().duration(150)
-                .attr('r', d.highlight ? 22 : 18);
-            showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
+            clearTimeout(hoverTimeout);
+            const self = this;
+            hoverTimeout = setTimeout(() => {
+                d3.select(self).select('.event-circle')
+                    .transition().duration(100)
+                    .attr('r', d.highlight ? 20 : 16);
+                d3.select(self).raise(); // Bring to front
+                showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
+            }, 30);
         })
-        .on('mousemove', updateTooltipPosition)
+        .on('mousemove', function(event) {
+            updateTooltipPosition(event);
+        })
         .on('mouseleave', function(event, d) {
-            d3.select(this).select('.event-circle')
-                .transition().duration(150)
-                .attr('r', d.highlight ? 18 : 14);
-            hideTimelineTooltip();
+            clearTimeout(hoverTimeout);
+            hoverTimeout = setTimeout(() => {
+                d3.select(this).select('.event-circle')
+                    .transition().duration(100)
+                    .attr('r', d.highlight ? 16 : 12);
+                hideTimelineTooltip();
+            }, 50);
         })
         .on('click', function(event, d) {
             event.stopPropagation();
+            hideTimelineTooltip();
             showTimelineDetail(d);
         });
     
+    // Setup smooth pan/scroll
+    setupTimelinePan(svgWrapper.node(), container);
+    
     // Setup zoom controls
-    setupTimelineZoom(container, svg);
+    setupTimelineZoom(container, svg.node(), xScale, contentWidth);
     
     // Setup era quick nav
     setupEraQuickNav(container, xScale);
     
+    // Setup label toggle button
+    setupLabelToggle();
+    
     // Scroll to 1945 initially
     setTimeout(() => {
-        const scrollTo = xScale(1940) - container.clientWidth / 3;
-        container.scrollLeft = Math.max(0, scrollTo);
+        const wrapperEl = svgWrapper.node();
+        const scrollTo = xScale(1940);
+        wrapperEl.scrollLeft = Math.max(0, scrollTo - 200);
     }, 100);
     
     // Apply current filter
     filterZoomTimeline(App.state.timeline.filter);
+}
+
+// Setup click and drag pan for timeline
+function setupTimelinePan(wrapper, container) {
+    let isDragging = false;
+    let startX, scrollLeft;
+    
+    wrapper.addEventListener('mousedown', (e) => {
+        if (e.target.closest('.timeline-event')) return;
+        isDragging = true;
+        wrapper.style.cursor = 'grabbing';
+        startX = e.pageX - wrapper.offsetLeft;
+        scrollLeft = wrapper.scrollLeft;
+    });
+    
+    wrapper.addEventListener('mouseleave', () => {
+        isDragging = false;
+        wrapper.style.cursor = 'grab';
+    });
+    
+    wrapper.addEventListener('mouseup', () => {
+        isDragging = false;
+        wrapper.style.cursor = 'grab';
+    });
+    
+    wrapper.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - wrapper.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        wrapper.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Mouse wheel horizontal scroll
+    wrapper.addEventListener('wheel', (e) => {
+        if (e.shiftKey) return; // Allow zoom with shift+wheel
+        e.preventDefault();
+        wrapper.scrollLeft += e.deltaY;
+    }, { passive: false });
+}
+
+// Setup label toggle button
+function setupLabelToggle() {
+    const toggleBtn = document.getElementById('toggleLabels');
+    if (!toggleBtn) return;
+    
+    toggleBtn.addEventListener('click', () => {
+        timelineLabelsVisible = !timelineLabelsVisible;
+        
+        d3.selectAll('.label-group')
+            .transition()
+            .duration(200)
+            .style('opacity', timelineLabelsVisible ? 1 : 0);
+        
+        const lang = App.state.language;
+        toggleBtn.innerHTML = `
+            <i data-lucide="${timelineLabelsVisible ? 'eye-off' : 'eye'}"></i>
+            <span>${timelineLabelsVisible 
+                ? (lang === 'sl' ? 'Skrij oznake' : 'Hide Labels') 
+                : (lang === 'sl' ? 'Pokaži oznake' : 'Show Labels')}</span>
+        `;
+        lucide.createIcons();
+    });
 }
 
 function setupEraQuickNav(container, xScale) {
@@ -1009,19 +1214,55 @@ function filterTimeline(filter) {
         });
 }
 
-function setupTimelineZoom(container, svg) {
+function setupTimelineZoom(container, svgElement, xScale, contentWidth) {
     const zoomIn = document.getElementById('zoomIn');
     const zoomOut = document.getElementById('zoomOut');
     const zoomReset = document.getElementById('zoomReset');
     const zoomLevel = document.querySelector('.zoom-level');
+    const wrapper = container.querySelector('.timeline-svg-wrapper');
+    
+    // Smooth zoom with smaller increments
+    const zoomStep = 1.15; // 15% per click instead of 20%
+    const minZoom = 0.5;
+    const maxZoom = 4;
+    
+    function updateTimelineZoom(animate = true) {
+        const zoom = App.state.timeline.zoom;
+        
+        if (svgElement) {
+            // Horizontal-only zoom: scale width, keep height constant
+            const newWidth = contentWidth * zoom;
+            
+            if (animate) {
+                svgElement.style.transition = 'width 0.25s ease-out';
+            } else {
+                svgElement.style.transition = 'none';
+            }
+            
+            svgElement.setAttribute('width', newWidth);
+            
+            // Scale the main group horizontally only
+            const mainGroup = svgElement.querySelector('.timeline-main-group');
+            if (mainGroup) {
+                mainGroup.style.transform = `scaleX(${zoom})`;
+                mainGroup.style.transformOrigin = 'left center';
+            }
+        }
+        
+        if (zoomLevel) {
+            zoomLevel.textContent = Math.round(zoom * 100) + '%';
+        }
+    }
     
     zoomIn?.addEventListener('click', () => {
-        App.state.timeline.zoom = Math.min(App.state.timeline.zoom * 1.2, 3);
+        const oldZoom = App.state.timeline.zoom;
+        App.state.timeline.zoom = Math.min(oldZoom * zoomStep, maxZoom);
         updateTimelineZoom();
     });
     
     zoomOut?.addEventListener('click', () => {
-        App.state.timeline.zoom = Math.max(App.state.timeline.zoom / 1.2, 0.5);
+        const oldZoom = App.state.timeline.zoom;
+        App.state.timeline.zoom = Math.max(oldZoom / zoomStep, minZoom);
         updateTimelineZoom();
     });
     
@@ -1030,16 +1271,22 @@ function setupTimelineZoom(container, svg) {
         updateTimelineZoom();
     });
     
-    function updateTimelineZoom() {
-        const zoom = App.state.timeline.zoom;
-        const svgEl = container.querySelector('svg');
-        if (svgEl) {
-            svgEl.style.transform = `scale(${zoom})`;
-            svgEl.style.transformOrigin = 'left center';
-        }
-        if (zoomLevel) {
-            zoomLevel.textContent = Math.round(zoom * 100) + '%';
-        }
+    // Shift + mouse wheel for zoom
+    if (wrapper) {
+        wrapper.addEventListener('wheel', (e) => {
+            if (!e.shiftKey) return;
+            e.preventDefault();
+            
+            const delta = e.deltaY > 0 ? (1 / zoomStep) : zoomStep;
+            const oldZoom = App.state.timeline.zoom;
+            App.state.timeline.zoom = Math.max(minZoom, Math.min(maxZoom, oldZoom * delta));
+            updateTimelineZoom(false);
+        }, { passive: false });
+    }
+    
+    // Initialize zoom level display
+    if (zoomLevel) {
+        zoomLevel.textContent = '100%';
     }
 }
 
