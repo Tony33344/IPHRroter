@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalQuestions": 315,
+    "totalQuestions": 345,
     "lastUpdated": "2025-01-20",
     "version": "2.0",
     "categories": [
@@ -5138,6 +5138,444 @@
       ],
       "correct": 1,
       "explanation": "The French Declaration (1789) proclaimed individual rights and popular sovereignty during the Revolution. It influenced subsequent human rights documents and remains part of French constitutional law."
+    },
+    {
+      "id": 326,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What was Pretty v. UK about?",
+      "options": [
+        "Freedom of expression",
+        "Right to assisted suicide/end of life issues",
+        "Property rights",
+        "Freedom of assembly"
+      ],
+      "correct": 1,
+      "explanation": "Pretty v. UK (2002) concerned a terminally ill woman's wish for assisted suicide. The Court found no violation - Article 2 protects life, not the right to die, though recognized personal autonomy under Article 8."
+    },
+    {
+      "id": 327,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did Hatton v. UK address?",
+      "options": [
+        "Freedom of religion",
+        "Night flights at Heathrow and Article 8 environmental rights",
+        "Right to education",
+        "Fair trial rights"
+      ],
+      "correct": 1,
+      "explanation": "Hatton v. UK (Grand Chamber, 2003) concerned night flights at Heathrow airport. The GC gave a wide margin of appreciation on balancing economic interests against residents' Article 8 rights to home/private life."
+    },
+    {
+      "id": 328,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "What is Article 6 ECHR about?",
+      "options": [
+        "Right to life",
+        "Right to a fair trial",
+        "Freedom of expression",
+        "Prohibition of torture"
+      ],
+      "correct": 1,
+      "explanation": "Article 6 guarantees the right to a fair trial, including a fair and public hearing within reasonable time by an independent and impartial tribunal, presumption of innocence, and minimum rights for criminal defendants."
+    },
+    {
+      "id": 329,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "What is the 'autonomous meaning' doctrine in ECHR interpretation?",
+      "options": [
+        "States can define terms independently",
+        "ECHR terms have independent meanings determined by the Court, not domestic law",
+        "Rights operate automatically",
+        "Robots interpret the Convention"
+      ],
+      "correct": 1,
+      "explanation": "The autonomous meaning doctrine means key Convention terms (like 'civil rights', 'criminal charge', 'tribunal') have independent meanings determined by the ECtHR, not by how states classify them domestically."
+    },
+    {
+      "id": 330,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "How many core UN human rights treaties are there?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "There are 9 core UN human rights treaties: ICERD, ICCPR, ICESCR, CEDAW, CAT, CRC, ICRMW, CRPD, and ICPPED (plus their optional protocols enabling complaints and other mechanisms)."
+    },
+    {
+      "id": 331,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "What is ICERD?",
+      "options": [
+        "International Convention on Economic Rights and Development",
+        "International Convention on the Elimination of All Forms of Racial Discrimination",
+        "International Committee on Education Rights",
+        "International Council on Environmental Rights"
+      ],
+      "correct": 1,
+      "explanation": "ICERD (1965) was the first UN human rights treaty. It defines racial discrimination and requires states to pursue a policy of eliminating it in all its forms."
+    },
+    {
+      "id": 332,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is the 'Bangalore Principles' about?",
+      "options": [
+        "Environmental protection",
+        "Judicial conduct and ethics for judges",
+        "Business and human rights",
+        "Freedom of religion"
+      ],
+      "correct": 1,
+      "explanation": "The Bangalore Principles of Judicial Conduct (2002) establish standards for judicial behavior including independence, impartiality, integrity, propriety, equality, and competence/diligence."
+    },
+    {
+      "id": 333,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "basic",
+      "question": "What is 'digital rights' as a human rights concept?",
+      "options": [
+        "Rights to own digital devices",
+        "Application of human rights in the digital/online environment",
+        "Copyright protection",
+        "Computer programming rights"
+      ],
+      "correct": 1,
+      "explanation": "Digital rights refers to the application of existing human rights (expression, privacy, assembly, access to information) in digital contexts, plus emerging issues like internet access and AI governance."
+    },
+    {
+      "id": 334,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What does the 'Citizenfour' documentary address?",
+      "options": [
+        "Climate change",
+        "Edward Snowden and mass surveillance",
+        "Migration",
+        "Child labor"
+      ],
+      "correct": 1,
+      "explanation": "Citizenfour (2014) documents Edward Snowden's revelations about NSA mass surveillance, raising crucial questions about the right to privacy vs. national security in the digital age."
+    },
+    {
+      "id": 335,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "intermediate",
+      "question": "What is the IACHR?",
+      "options": [
+        "International Association for Civil and Human Rights",
+        "Inter-American Commission on Human Rights",
+        "Inter-American Court of Human Rights",
+        "International Agreement on Children's Human Rights"
+      ],
+      "correct": 1,
+      "explanation": "IACHR (Inter-American Commission on Human Rights) is the first-instance body in the Inter-American system. It receives petitions, conducts country visits, issues reports, and refers cases to the IACtHR."
+    },
+    {
+      "id": 336,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "basic",
+      "question": "Where is the Inter-American Court of Human Rights located?",
+      "options": [
+        "Washington D.C.",
+        "San José, Costa Rica",
+        "Bogotá, Colombia",
+        "Mexico City"
+      ],
+      "correct": 1,
+      "explanation": "The Inter-American Court of Human Rights is located in San José, Costa Rica. It was established in 1979 and issues binding judgments on states that have accepted its jurisdiction."
+    },
+    {
+      "id": 337,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "intermediate",
+      "question": "What is the Maputo Protocol?",
+      "options": [
+        "Treaty on environmental protection",
+        "Protocol to the African Charter on the Rights of Women in Africa",
+        "Economic cooperation agreement",
+        "Peace and security framework"
+      ],
+      "correct": 1,
+      "explanation": "The Maputo Protocol (2003) is the Protocol to the African Charter on the Rights of Women in Africa. It's considered progressive, including provisions on reproductive rights and prohibiting FGM."
+    },
+    {
+      "id": 338,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "basic",
+      "question": "Where is the African Court on Human and Peoples' Rights located?",
+      "options": [
+        "Addis Ababa, Ethiopia",
+        "Arusha, Tanzania",
+        "Nairobi, Kenya",
+        "Banjul, The Gambia"
+      ],
+      "correct": 1,
+      "explanation": "The African Court on Human and Peoples' Rights is located in Arusha, Tanzania. It became operational in 2006 and complements the African Commission on Human and Peoples' Rights."
+    },
+    {
+      "id": 339,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "advanced",
+      "question": "What is the 'margin of appreciation' doctrine?",
+      "options": [
+        "A calculation of damages",
+        "Discretion allowed to states in implementing Convention rights based on local conditions",
+        "A voting margin in the Court",
+        "The appreciation shown to judges"
+      ],
+      "correct": 1,
+      "explanation": "The margin of appreciation is the latitude or deference the ECtHR gives to states in implementing Convention rights, recognizing that national authorities may be better placed to assess local needs and conditions."
+    },
+    {
+      "id": 340,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is 'European consensus' in ECtHR jurisprudence?",
+      "options": [
+        "All European states must agree",
+        "A factor in determining margin of appreciation based on common approaches among states",
+        "EU legislation",
+        "Consensus among judges"
+      ],
+      "correct": 1,
+      "explanation": "European consensus is a factor the ECtHR considers when determining the margin of appreciation. Where most Council of Europe states share a common approach, the margin tends to be narrower."
+    },
+    {
+      "id": 341,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "ECtHR judgments are legally binding on states parties.",
+      "correct": true,
+      "explanation": "Under Article 46(1) ECHR, states 'undertake to abide by the final judgment of the Court in any case to which they are parties.' Judgments are binding, though enforcement mechanisms are limited."
+    },
+    {
+      "id": 342,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "advanced",
+      "question": "What are 'interim measures' (Rule 39) at the ECtHR?",
+      "options": [
+        "Preliminary judgments",
+        "Urgent measures to prevent irreparable harm before judgment",
+        "Measures between court sessions",
+        "Temporary suspension of proceedings"
+      ],
+      "correct": 1,
+      "explanation": "Interim measures under Rule 39 are urgent orders (usually in expulsion/extradition cases) to prevent irreparable harm before the Court can examine the case. They are binding on states."
+    },
+    {
+      "id": 343,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "basic",
+      "question": "Is Slovenia a member of the EU?",
+      "options": [
+        "No",
+        "Yes, since 2004",
+        "Yes, since 1991",
+        "Observer status only"
+      ],
+      "correct": 1,
+      "explanation": "Slovenia joined the EU on May 1, 2004, as part of the largest EU enlargement. It was the first former Yugoslav republic to join the EU and adopted the euro in 2007."
+    },
+    {
+      "id": 344,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What are 'economic, social and cultural rights' examples?",
+      "options": [
+        "Right to vote, fair trial, liberty",
+        "Right to work, health, education, adequate housing, social security",
+        "Only right to property",
+        "Freedom of expression and assembly"
+      ],
+      "correct": 1,
+      "explanation": "ESC rights include: work and fair conditions, social security, adequate standard of living (food, housing, water), health, education, and cultural participation. They're primarily in ICESCR."
+    },
+    {
+      "id": 345,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "What are 'civil and political rights' examples?",
+      "options": [
+        "Right to work and housing",
+        "Right to life, liberty, fair trial, vote, expression, assembly, privacy",
+        "Only economic rights",
+        "Only social rights"
+      ],
+      "correct": 1,
+      "explanation": "Civil and political rights include: life, liberty, security, fair trial, privacy, expression, assembly, association, vote, and freedom from torture. They're primarily in ICCPR and ECHR."
+    },
+    {
+      "id": 346,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "advanced",
+      "question": "What is 'jus cogens' in international law?",
+      "options": [
+        "Regular customary law",
+        "Peremptory norms from which no derogation is permitted",
+        "Treaty law",
+        "Soft law"
+      ],
+      "correct": 1,
+      "explanation": "Jus cogens (peremptory norms) are fundamental principles of international law from which no derogation is permitted. Examples include prohibition of genocide, torture, slavery, and crimes against humanity."
+    },
+    {
+      "id": 347,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "What is 'customary international law'?",
+      "options": [
+        "Written treaties",
+        "Unwritten law derived from consistent state practice accepted as law",
+        "Domestic customs",
+        "Court decisions only"
+      ],
+      "correct": 1,
+      "explanation": "Customary international law consists of rules derived from consistent state practice (usus) combined with a belief that the practice is legally required (opinio juris). Many UDHR provisions are now considered customary law."
+    },
+    {
+      "id": 348,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "basic",
+      "question": "What is the significance of Tyrer v. UK (1978)?",
+      "options": [
+        "Freedom of expression",
+        "Corporal punishment as degrading treatment; introduced 'living instrument' doctrine",
+        "Right to property",
+        "Freedom of religion"
+      ],
+      "correct": 1,
+      "explanation": "Tyrer v. UK found judicial birching violated Article 3 as degrading punishment. Importantly, it established the 'living instrument' doctrine - the Convention must be interpreted in light of present-day conditions."
+    },
+    {
+      "id": 349,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What was the Dudgeon v. UK case about?",
+      "options": [
+        "Freedom of expression",
+        "Criminalization of homosexual acts between consenting adults violated Article 8",
+        "Right to education",
+        "Property rights"
+      ],
+      "correct": 1,
+      "explanation": "Dudgeon v. UK (1981) found that Northern Ireland's laws criminalizing homosexual acts between consenting adult men violated Article 8 (private life). This was a landmark case for LGBTI rights."
+    },
+    {
+      "id": 350,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is the difference between the Human Rights Council and the Human Rights Committee?",
+      "options": [
+        "They are the same body",
+        "HRC is a political UN body; HRCtee is the ICCPR treaty body of experts",
+        "HRC deals with treaties; HRCtee with politics",
+        "Both are treaty bodies"
+      ],
+      "correct": 1,
+      "explanation": "The Human Rights Council is a political body of 47 UN member states. The Human Rights Committee is the treaty body of 18 independent experts monitoring ICCPR implementation. Different roles and composition!"
+    },
+    {
+      "id": 351,
+      "type": "truefalse",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "The United States has ratified both ICCPR and ICESCR.",
+      "correct": false,
+      "explanation": "The US has ratified ICCPR (1992) but NOT ICESCR. The US is one of very few countries not to ratify ICESCR, though it signed in 1977. This reflects historical US skepticism toward economic and social rights."
+    },
+    {
+      "id": 352,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "What is 'transitional justice'?",
+      "options": [
+        "Transfer of cases between courts",
+        "Addressing past human rights violations through trials, truth commissions, reparations, reform",
+        "Temporary court procedures",
+        "Youth justice"
+      ],
+      "correct": 1,
+      "explanation": "Transitional justice refers to ways societies address legacies of massive human rights abuses, including criminal prosecutions, truth commissions, reparations, institutional reform, and memorialization."
+    },
+    {
+      "id": 353,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What is the ICC?",
+      "options": [
+        "International Commerce Commission",
+        "International Criminal Court",
+        "Inter-state Coordination Council",
+        "International Children's Convention"
+      ],
+      "correct": 1,
+      "explanation": "The ICC (International Criminal Court, The Hague) is a permanent court prosecuting individuals for genocide, crimes against humanity, war crimes, and aggression. Established by Rome Statute (1998), operational since 2002."
+    },
+    {
+      "id": 354,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "What is the distinction between 'negative' and 'positive' obligations?",
+      "options": [
+        "Bad vs good obligations",
+        "Obligations to refrain from violations vs obligations to take active measures to protect rights",
+        "Criminal vs civil obligations",
+        "International vs domestic obligations"
+      ],
+      "correct": 1,
+      "explanation": "Negative obligations require states to refrain from interfering with rights. Positive obligations require states to take active steps to protect and fulfill rights. Most rights have both dimensions."
+    },
+    {
+      "id": 355,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "What is a 'friendly settlement' at the ECtHR?",
+      "options": [
+        "Judges being friendly",
+        "Agreement between applicant and state to resolve case without judgment",
+        "Informal mediation",
+        "Dismissal of case"
+      ],
+      "correct": 1,
+      "explanation": "Under Article 39 ECHR, a friendly settlement is an agreement between the parties to resolve the case, often including compensation and measures. The Court then strikes the case from its list."
     }
   ]
 }
