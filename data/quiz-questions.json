@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalQuestions": 240,
+    "totalQuestions": 315,
     "lastUpdated": "2025-01-20",
     "version": "2.0",
     "categories": [
@@ -4037,6 +4037,1107 @@
       "explanation": "Lautsi v. Italy (Grand Chamber, 2011) concerned crucifixes in Italian public school classrooms. The GC found no violation of Article 2 Protocol 1 (education) or Article 9, applying wide margin of appreciation for 'passive' religious symbols.",
       "explanationSL": "Lautsi proti Italiji (Veliki senat, 2011) se je nanašala na križe v italijanskih javnih šolskih učilnicah. VS ni ugotovil kršitve člena 2 Protokola 1 (izobraževanje) ali člena 9, ob uporabi širokega polja proste presoje za 'pasivne' verske simbole.",
       "examTip": "Compare with S.A.S. v. France (Islamic face-covering ban)!"
+    },
+    {
+      "id": 251,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "What are the judicial formations of the ECtHR?",
+      "options": [
+        "Single judge, Committee, Chamber, Grand Chamber",
+        "Trial Court and Appeals Court",
+        "First Instance and Supreme Chamber",
+        "National Section and International Section"
+      ],
+      "correct": 0,
+      "explanation": "The ECtHR has four judicial formations: Single judge (inadmissibility), Committee of 3 judges (repetitive cases), Chamber of 7 judges (most cases), and Grand Chamber of 17 judges (important cases, relinquishment, referral)."
+    },
+    {
+      "id": 252,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "What is 'just satisfaction' under Article 41 ECHR?",
+      "options": [
+        "Criminal punishment for the violating state",
+        "Compensation awarded to the victim when domestic law only allows partial reparation",
+        "Automatic release from prison",
+        "Membership suspension from Council of Europe"
+      ],
+      "correct": 1,
+      "explanation": "Article 41 allows the Court to award 'just satisfaction' (compensation) to the injured party if the state's internal law allows only partial reparation. This typically includes pecuniary and non-pecuniary damages, plus costs."
+    },
+    {
+      "id": 253,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "Which body supervises the execution of ECtHR judgments?",
+      "options": [
+        "The European Court itself",
+        "The Committee of Ministers of the Council of Europe",
+        "The European Commission",
+        "National courts"
+      ],
+      "correct": 1,
+      "explanation": "Under Article 46(2) ECHR, the Committee of Ministers supervises execution of judgments. States must take individual measures (for the applicant) and general measures (to prevent similar violations)."
+    },
+    {
+      "id": 254,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is the 'best interests of the child' principle?",
+      "options": [
+        "Children always get what they want",
+        "A primary consideration in all actions concerning children",
+        "Parents decide what's best",
+        "Only applies in custody disputes"
+      ],
+      "correct": 1,
+      "explanation": "Article 3 CRC establishes that 'in all actions concerning children... the best interests of the child shall be a primary consideration.' This is a guiding principle for all decisions affecting children."
+    },
+    {
+      "id": 255,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "Which is the most widely ratified human rights treaty?",
+      "options": [
+        "ICCPR",
+        "CEDAW",
+        "CRC (Convention on the Rights of the Child)",
+        "CAT"
+      ],
+      "correct": 2,
+      "explanation": "The CRC is the most widely ratified human rights treaty with 196 state parties. Only the United States has not ratified it (though it has signed)."
+    },
+    {
+      "id": 256,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What does CEDAW stand for?",
+      "options": [
+        "Convention on Economic Development and Women",
+        "Convention on the Elimination of All Forms of Discrimination Against Women",
+        "Committee for Equal Development and Welfare",
+        "Charter of European Democratic and Women's Rights"
+      ],
+      "correct": 1,
+      "explanation": "CEDAW (1979) is the Convention on the Elimination of All Forms of Discrimination Against Women, often called the 'women's bill of rights.' It has 189 state parties."
+    },
+    {
+      "id": 257,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "What is the Istanbul Convention?",
+      "options": [
+        "A treaty on freedom of religion",
+        "Council of Europe convention on preventing and combating violence against women",
+        "EU treaty on migration",
+        "UN convention on torture"
+      ],
+      "correct": 1,
+      "explanation": "The Istanbul Convention (2011) is the Council of Europe Convention on preventing and combating violence against women and domestic violence. It's the most comprehensive international treaty on this issue."
+    },
+    {
+      "id": 258,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What paradigm shift did CRPD introduce for disability rights?",
+      "options": [
+        "From social model to medical model",
+        "From medical model to social/human rights model",
+        "From rights-based to charity-based approach",
+        "From individual to collective rights"
+      ],
+      "correct": 1,
+      "explanation": "CRPD (2006) shifted from the medical model (disability as individual deficiency) to the social/human rights model (disability as result of barriers in society). Focus moved to removing barriers and ensuring equal participation."
+    },
+    {
+      "id": 259,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "What is 'reasonable accommodation' under CRPD?",
+      "options": [
+        "Providing housing for disabled persons",
+        "Necessary modifications to ensure equal enjoyment of rights without disproportionate burden",
+        "Financial compensation for disability",
+        "Medical treatment requirements"
+      ],
+      "correct": 1,
+      "explanation": "Article 2 CRPD defines reasonable accommodation as necessary and appropriate modifications not imposing disproportionate burden, to ensure persons with disabilities enjoy rights on an equal basis with others."
+    },
+    {
+      "id": 260,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "basic",
+      "question": "What is the main human rights treaty in the Inter-American system?",
+      "options": [
+        "American Declaration on Human Rights",
+        "American Convention on Human Rights (Pact of San José)",
+        "Inter-American Charter",
+        "OAS Human Rights Protocol"
+      ],
+      "correct": 1,
+      "explanation": "The American Convention on Human Rights (1969), also known as the Pact of San José, is the main binding treaty. However, major states like the US and Canada have not ratified it."
+    },
+    {
+      "id": 261,
+      "type": "multiple",
+      "category": "inter-american",
+      "difficulty": "intermediate",
+      "question": "What was significant about Velásquez Rodríguez v. Honduras (1988)?",
+      "options": [
+        "First case on freedom of expression",
+        "First contentious judgment of IACtHR, established state duty to investigate",
+        "First case against the United States",
+        "Established the right to property"
+      ],
+      "correct": 1,
+      "explanation": "Velásquez Rodríguez (1988) was the first contentious judgment of the Inter-American Court. It established that states have duties to prevent, investigate, punish, and provide reparation for human rights violations."
+    },
+    {
+      "id": 262,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "intermediate",
+      "question": "What unique feature does the African Charter include that other regional systems don't?",
+      "options": [
+        "Individual complaints procedure",
+        "Duties of individuals and peoples' rights",
+        "Right to a fair trial",
+        "Protection of property"
+      ],
+      "correct": 1,
+      "explanation": "The African Charter uniquely includes duties of individuals (Arts 27-29) and peoples' rights (Arts 19-24), such as the right to self-determination, development, peace, and a satisfactory environment."
+    },
+    {
+      "id": 263,
+      "type": "multiple",
+      "category": "african",
+      "difficulty": "basic",
+      "question": "What is another name for the African Charter on Human and Peoples' Rights?",
+      "options": [
+        "Addis Ababa Charter",
+        "Banjul Charter",
+        "Nairobi Declaration",
+        "Cairo Convention"
+      ],
+      "correct": 1,
+      "explanation": "The African Charter (1981) is also called the Banjul Charter after the city in The Gambia where it was adopted. It entered into force in 1986."
+    },
+    {
+      "id": 264,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "basic",
+      "question": "Who is credited with proposing the 'three generations' of human rights?",
+      "options": [
+        "Eleanor Roosevelt",
+        "Karel Vasak",
+        "John Locke",
+        "Kofi Annan"
+      ],
+      "correct": 1,
+      "explanation": "Czech jurist Karel Vasak proposed the three generations theory in 1977, linking them to the French Revolution motto: 1st gen (liberty) = civil/political; 2nd gen (equality) = economic/social/cultural; 3rd gen (fraternity) = solidarity rights."
+    },
+    {
+      "id": 265,
+      "type": "truefalse",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "The 'three generations' theory is universally accepted in human rights scholarship.",
+      "correct": false,
+      "explanation": "The theory is criticized for suggesting a hierarchy (1st gen more important), for being Western-centric, and for artificially separating interdependent rights. The Vienna Declaration (1993) affirmed all rights are 'indivisible and interdependent.'"
+    },
+    {
+      "id": 266,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "What is 'actio popularis' and is it allowed at the ECtHR?",
+      "options": [
+        "A popular vote on cases; yes it's allowed",
+        "Bringing a case in the general public interest without being a victim; NOT allowed",
+        "A type of interim measure; yes it's allowed",
+        "Appeal to the Grand Chamber; yes it's allowed"
+      ],
+      "correct": 1,
+      "explanation": "Actio popularis means bringing a case in the abstract or general public interest without claiming to be a victim. The ECtHR does NOT allow this - applicants must be 'victims' under Article 34."
+    },
+    {
+      "id": 267,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "advanced",
+      "question": "What is the 'fourth instance' doctrine at the ECtHR?",
+      "options": [
+        "There are four levels of appeal",
+        "The ECtHR is not a fourth level of appeal to review domestic court decisions on facts/law",
+        "Cases must go through four domestic instances first",
+        "Four judges must agree for admissibility"
+      ],
+      "correct": 1,
+      "explanation": "The 'fourth instance' doctrine means the ECtHR is not an appeal court to review domestic courts' assessment of facts or application of domestic law. It only examines whether Convention rights were violated."
+    },
+    {
+      "id": 268,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What did McCann v. UK establish about the right to life?",
+      "options": [
+        "Capital punishment is always prohibited",
+        "Use of lethal force must be 'absolutely necessary' and strictly proportionate",
+        "States have no positive obligations under Article 2",
+        "Self-defense is never justified"
+      ],
+      "correct": 1,
+      "explanation": "McCann v. UK (1995) (Gibraltar shootings of IRA suspects) established that lethal force must be 'absolutely necessary' - a stricter test than the 'necessary in a democratic society' test for qualified rights."
+    },
+    {
+      "id": 269,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did Gäfgen v. Germany concern?",
+      "options": [
+        "Freedom of expression",
+        "Threat of torture during police interrogation and use of evidence",
+        "Right to privacy",
+        "Freedom of assembly"
+      ],
+      "correct": 1,
+      "explanation": "Gäfgen v. Germany (2010) involved police threatening torture to find a kidnapped child. The Grand Chamber found Article 3 violation for the threat, but not Article 6 violation as the conviction wasn't based solely on the tainted evidence."
+    },
+    {
+      "id": 270,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What is the 'Selmouni threshold' regarding Article 3?",
+      "options": [
+        "A minimum number of beatings to constitute torture",
+        "The Court may reclassify treatment as torture given evolving standards",
+        "A requirement for medical evidence",
+        "A time limit for complaints"
+      ],
+      "correct": 1,
+      "explanation": "In Selmouni v. France (1999), the Court stated that acts previously classified as inhuman treatment might be classified as torture as the Convention is a 'living instrument' and standards evolve."
+    },
+    {
+      "id": 271,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What are the UN Guiding Principles on Business and Human Rights (2011)?",
+      "options": [
+        "A binding treaty on corporate liability",
+        "A framework based on Protect, Respect, Remedy pillars",
+        "EU regulations on businesses",
+        "ILO labor standards"
+      ],
+      "correct": 1,
+      "explanation": "The UNGPs (Ruggie Principles) establish three pillars: State duty to Protect against business abuses, Corporate responsibility to Respect human rights, and Access to Remedy for victims."
+    },
+    {
+      "id": 272,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "basic",
+      "question": "What are the SDGs?",
+      "options": [
+        "Special Development Guidelines",
+        "Sustainable Development Goals",
+        "Standard Democratic Guarantees",
+        "Social Democratic Groups"
+      ],
+      "correct": 1,
+      "explanation": "The 17 Sustainable Development Goals (2015-2030) are the UN's global development agenda. While not human rights instruments, many SDGs relate to human rights (poverty, health, education, equality, etc.)."
+    },
+    {
+      "id": 273,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is a 'special procedure' in the UN human rights system?",
+      "options": [
+        "Emergency sessions of the Security Council",
+        "Independent experts or working groups with thematic or country mandates",
+        "Fast-track ratification of treaties",
+        "Expedited complaint procedures"
+      ],
+      "correct": 1,
+      "explanation": "Special procedures are independent human rights experts (Special Rapporteurs, Working Groups) who report on thematic issues or country situations. They conduct country visits, receive communications, and report to the HRC."
+    },
+    {
+      "id": 274,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "When was the Human Rights Council established?",
+      "options": [
+        "1946",
+        "1993",
+        "2006",
+        "2015"
+      ],
+      "correct": 2,
+      "explanation": "The Human Rights Council was established in 2006 by GA Resolution 60/251, replacing the Commission on Human Rights. It has 47 members elected by the GA for 3-year terms."
+    },
+    {
+      "id": 275,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "How many members does the Human Rights Council have?",
+      "options": [
+        "15",
+        "47",
+        "54",
+        "193"
+      ],
+      "correct": 1,
+      "explanation": "The HRC has 47 members elected by the General Assembly. Seats are distributed regionally: Africa 13, Asia-Pacific 13, Latin America 8, Western Europe & Others 7, Eastern Europe 6."
+    },
+    {
+      "id": 276,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "How many member states does the Council of Europe have (2024)?",
+      "options": [
+        "27",
+        "46",
+        "47",
+        "50"
+      ],
+      "correct": 1,
+      "explanation": "As of 2024, the Council of Europe has 46 member states. Russia was expelled in March 2022 following its invasion of Ukraine (previously 47 members)."
+    },
+    {
+      "id": 277,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "What is the CPT?",
+      "options": [
+        "Court for the Protection of Treaties",
+        "Committee for the Prevention of Torture",
+        "Council for Public Transparency",
+        "Commission on Political Transitions"
+      ],
+      "correct": 1,
+      "explanation": "The CPT (European Committee for the Prevention of Torture) conducts visits to places of detention in CoE member states. It operates under the European Convention for the Prevention of Torture (1987)."
+    },
+    {
+      "id": 278,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "What is Article 15 ECHR about?",
+      "options": [
+        "Right to education",
+        "Derogation in time of emergency",
+        "Prohibition of discrimination",
+        "Right to property"
+      ],
+      "correct": 1,
+      "explanation": "Article 15 allows states to derogate from certain Convention rights 'in time of war or other public emergency threatening the life of the nation.' However, some rights are non-derogable (Art 2 except lawful war, Art 3, Art 4(1), Art 7)."
+    },
+    {
+      "id": 279,
+      "type": "truefalse",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "States can derogate from Article 3 ECHR (prohibition of torture) during a public emergency.",
+      "correct": false,
+      "explanation": "Article 3 is one of the non-derogable rights under Article 15(2) ECHR. The prohibition of torture is absolute and applies even during war or emergency."
+    },
+    {
+      "id": 280,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "When was the Universal Declaration of Human Rights adopted?",
+      "options": [
+        "1945",
+        "1948",
+        "1950",
+        "1966"
+      ],
+      "correct": 1,
+      "explanation": "The UDHR was adopted by the UN General Assembly on December 10, 1948 (now celebrated as Human Rights Day). It was drafted by a committee chaired by Eleanor Roosevelt."
+    },
+    {
+      "id": 281,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "Who chaired the drafting committee of the UDHR?",
+      "options": [
+        "Winston Churchill",
+        "Eleanor Roosevelt",
+        "René Cassin",
+        "Charles Malik"
+      ],
+      "correct": 1,
+      "explanation": "Eleanor Roosevelt chaired the UN Commission on Human Rights that drafted the UDHR. Key drafters included René Cassin (France), Charles Malik (Lebanon), Peng Chun Chang (China), and John Humphrey (Canada)."
+    },
+    {
+      "id": 282,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "How many articles does the UDHR have?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "50"
+      ],
+      "correct": 2,
+      "explanation": "The UDHR has 30 articles covering civil, political, economic, social, and cultural rights. It begins with recognition of 'inherent dignity' and 'equal and inalienable rights' of all people."
+    },
+    {
+      "id": 283,
+      "type": "truefalse",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "The UDHR was originally legally binding on UN member states.",
+      "correct": false,
+      "explanation": "The UDHR was adopted as a GA resolution, which is not legally binding. However, many provisions are now considered customary international law, and the rights were made binding through ICCPR and ICESCR."
+    },
+    {
+      "id": 284,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "What is the 'International Bill of Rights'?",
+      "options": [
+        "The US Bill of Rights applied internationally",
+        "UDHR + ICCPR + ICESCR (and their protocols)",
+        "The European Convention on Human Rights",
+        "All UN human rights treaties combined"
+      ],
+      "correct": 1,
+      "explanation": "The International Bill of Rights refers to the UDHR, ICCPR, ICESCR, and their Optional Protocols. Together they form the foundation of the international human rights framework."
+    },
+    {
+      "id": 285,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "intermediate",
+      "question": "When did Slovenia join the Council of Europe?",
+      "options": [
+        "1991",
+        "1993",
+        "2004",
+        "2007"
+      ],
+      "correct": 1,
+      "explanation": "Slovenia joined the Council of Europe on May 14, 1993, and ratified the ECHR on June 28, 1994. It was among the first ex-Yugoslav states to join."
+    },
+    {
+      "id": 286,
+      "type": "multiple",
+      "category": "slovenia",
+      "difficulty": "advanced",
+      "question": "What was the 'Erased' (Izbrisani) case about in Slovenia?",
+      "options": [
+        "Freedom of expression",
+        "People removed from permanent residence register after independence",
+        "Property restitution",
+        "Language rights"
+      ],
+      "correct": 1,
+      "explanation": "The 'Erased' refers to people (mostly from other ex-Yugoslav republics) who were illegally removed from Slovenia's permanent residence register in 1992. The issue was addressed by Constitutional Court decisions and ECtHR judgments."
+    },
+    {
+      "id": 287,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What is the 'López Ostra' case significant for?",
+      "options": [
+        "Freedom of religion",
+        "Environmental protection through Article 8 (private/family life)",
+        "Right to education",
+        "Property rights"
+      ],
+      "correct": 1,
+      "explanation": "López Ostra v. Spain (1994) was groundbreaking for environmental protection. The Court found that severe environmental pollution can violate Article 8 (private and family life), even without serious health damage."
+    },
+    {
+      "id": 288,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did Öneryıldız v. Turkey establish?",
+      "options": [
+        "Right to peaceful protest",
+        "State's positive obligations under Article 2 regarding industrial/environmental dangers",
+        "Freedom of the press",
+        "Right to property"
+      ],
+      "correct": 1,
+      "explanation": "Öneryıldız v. Turkey (2004) concerned deaths from a methane explosion at a garbage dump near a slum. The Grand Chamber found Article 2 violations, establishing positive obligations to protect life from dangerous activities."
+    },
+    {
+      "id": 289,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "basic",
+      "question": "What does 'exhaustion of domestic remedies' mean?",
+      "options": [
+        "All money must be spent on lawyers",
+        "Applicants must use available national legal remedies before international complaints",
+        "Domestic courts are exhausted from cases",
+        "Only final court decisions count"
+      ],
+      "correct": 1,
+      "explanation": "Exhaustion of domestic remedies is an admissibility requirement. Applicants must give the state opportunity to remedy violations through its own legal system before bringing international complaints."
+    },
+    {
+      "id": 290,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "When can the exhaustion requirement be waived?",
+      "options": [
+        "Never",
+        "When domestic remedies are ineffective, inadequate, or unavailable",
+        "When the applicant is poor",
+        "When the case is urgent"
+      ],
+      "correct": 1,
+      "explanation": "The exhaustion rule can be waived if domestic remedies are ineffective in practice, inadequate to address the violation, or unavailable (e.g., excessive cost, lack of legal aid, or demonstrated futility)."
+    },
+    {
+      "id": 291,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What is the Handyside v. UK case famous for?",
+      "options": [
+        "Right to life",
+        "Freedom of expression includes information that 'offends, shocks or disturbs'",
+        "Prohibition of torture",
+        "Right to privacy"
+      ],
+      "correct": 1,
+      "explanation": "Handyside v. UK (1976) established that Article 10 protects not only favorable information but also that which 'offends, shocks or disturbs the State or any sector of the population.' This is fundamental to free speech jurisprudence."
+    },
+    {
+      "id": 292,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did Jersild v. Denmark concern?",
+      "options": [
+        "Religious symbols",
+        "Journalist convicted for broadcasting racist statements made by interviewees",
+        "Defamation of politicians",
+        "Press access to court proceedings"
+      ],
+      "correct": 1,
+      "explanation": "Jersild v. Denmark (1994) found a violation of Article 10 when a journalist was convicted for aiding dissemination of racist statements. The Court distinguished between reporting on racism and promoting it."
+    },
+    {
+      "id": 293,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What was S.A.S. v. France (2014) about?",
+      "options": [
+        "Freedom of assembly",
+        "Ban on wearing full-face veils in public",
+        "Right to education",
+        "Religious schools"
+      ],
+      "correct": 1,
+      "explanation": "S.A.S. v. France (Grand Chamber, 2014) upheld France's ban on full-face coverings in public, accepting 'living together' as a legitimate aim. The Court gave France a wide margin of appreciation."
+    },
+    {
+      "id": 294,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "What is the principle of non-refoulement?",
+      "options": [
+        "Right to return to one's country",
+        "Prohibition on returning someone to a place where they face persecution or serious harm",
+        "Right to refuse military service",
+        "Freedom to leave any country"
+      ],
+      "correct": 1,
+      "explanation": "Non-refoulement prohibits states from returning (refouler) individuals to countries where they face serious threats to life or freedom. It's a cornerstone of refugee law and Article 3 ECHR jurisprudence."
+    },
+    {
+      "id": 295,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is the 1951 Refugee Convention's definition of a refugee?",
+      "options": [
+        "Anyone who leaves their country",
+        "Person with well-founded fear of persecution based on race, religion, nationality, political opinion, or membership in a particular social group",
+        "Person fleeing natural disasters",
+        "Economic migrant"
+      ],
+      "correct": 1,
+      "explanation": "Article 1A(2) defines a refugee as someone with 'well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group or political opinion.'"
+    },
+    {
+      "id": 296,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "basic",
+      "question": "What is CAT?",
+      "options": [
+        "Convention Against Trafficking",
+        "Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment",
+        "Committee for African Treaties",
+        "Charter on Asylum and Trafficking"
+      ],
+      "correct": 1,
+      "explanation": "CAT (1984) is the UN Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment. It defines torture and establishes absolute prohibition."
+    },
+    {
+      "id": 297,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "intermediate",
+      "question": "What is OPCAT?",
+      "options": [
+        "Organization for Prevention of Child Abuse and Trafficking",
+        "Optional Protocol to CAT establishing preventive visiting mechanism",
+        "Office for Protection of Civilians in Armed Territories",
+        "Optional Protocol on Children and Armed Conflict"
+      ],
+      "correct": 1,
+      "explanation": "OPCAT (2002) establishes the Subcommittee on Prevention of Torture and requires states to set up National Preventive Mechanisms to conduct visits to places of detention."
+    },
+    {
+      "id": 298,
+      "type": "multiple",
+      "category": "un-treaties",
+      "difficulty": "advanced",
+      "question": "What distinguishes torture from cruel, inhuman or degrading treatment under CAT?",
+      "options": [
+        "Only the location",
+        "Severity of pain/suffering, purposive element, and involvement of public official",
+        "Whether the victim dies",
+        "The nationality of the perpetrator"
+      ],
+      "correct": 1,
+      "explanation": "Under Article 1 CAT, torture requires: (1) severe pain or suffering, (2) inflicted for a purpose (information, punishment, intimidation, discrimination), (3) by or with consent of a public official."
+    },
+    {
+      "id": 299,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "basic",
+      "question": "What rights does Article 8 ECHR protect?",
+      "options": [
+        "Right to life",
+        "Right to respect for private and family life, home and correspondence",
+        "Freedom of expression",
+        "Right to a fair trial"
+      ],
+      "correct": 1,
+      "explanation": "Article 8 protects four interests: private life, family life, home, and correspondence. It's a qualified right subject to limitations under Article 8(2)."
+    },
+    {
+      "id": 300,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "intermediate",
+      "question": "What is the three-part test for limitations on qualified ECHR rights?",
+      "options": [
+        "Necessary, proportionate, legitimate",
+        "Prescribed by law, legitimate aim, necessary in a democratic society",
+        "Legal, reasonable, justified",
+        "Fair, balanced, appropriate"
+      ],
+      "correct": 1,
+      "explanation": "Limitations on qualified rights (Articles 8-11) must be: (1) prescribed by law, (2) pursue a legitimate aim listed in the article, and (3) be necessary in a democratic society (proportionate)."
+    },
+    {
+      "id": 301,
+      "type": "multiple",
+      "category": "european-coe",
+      "difficulty": "advanced",
+      "question": "What is the 'proportionality' test in ECHR jurisprudence?",
+      "options": [
+        "Rights must be proportional to duties",
+        "Balancing the interference against the aim pursued - means must be proportionate to the legitimate aim",
+        "Equal treatment of all parties",
+        "Mathematical calculation of damages"
+      ],
+      "correct": 1,
+      "explanation": "Proportionality requires that limitations on rights not exceed what is necessary to achieve the legitimate aim. The Court balances individual rights against public interests, considering less restrictive alternatives."
+    },
+    {
+      "id": 302,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "intermediate",
+      "question": "What is 'legal positivism' in human rights theory?",
+      "options": [
+        "Rights exist only when positive about them",
+        "Human rights exist only when enacted in positive law by states",
+        "Natural law theory",
+        "Religious foundation of rights"
+      ],
+      "correct": 1,
+      "explanation": "Legal positivism holds that rights exist only when recognized in positive law (treaties, constitutions, statutes). This contrasts with natural law theory, which holds rights exist independently of legal recognition."
+    },
+    {
+      "id": 303,
+      "type": "multiple",
+      "category": "theory",
+      "difficulty": "basic",
+      "question": "What does 'inalienable' mean regarding human rights?",
+      "options": [
+        "Rights can be transferred to others",
+        "Rights cannot be given up, taken away, or transferred",
+        "Rights apply only to aliens",
+        "Rights are negotiable"
+      ],
+      "correct": 1,
+      "explanation": "Inalienable means human rights cannot be sold, given away, or taken away (though they may be limited in certain circumstances). They are inherent to human dignity and cannot be forfeited."
+    },
+    {
+      "id": 304,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "What does 'indivisibility' of human rights mean?",
+      "options": [
+        "Rights cannot be counted",
+        "All rights are equally important and interdependent - cannot pick and choose",
+        "Rights only apply in undivided countries",
+        "Individual rights only"
+      ],
+      "correct": 1,
+      "explanation": "Indivisibility means all human rights (civil, political, economic, social, cultural) are equally important, interrelated, and interdependent. Violating one right affects others."
+    },
+    {
+      "id": 305,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "What did the Vienna Declaration and Programme of Action (1993) affirm?",
+      "options": [
+        "Human rights are only Western values",
+        "Human rights are universal, indivisible, interdependent and interrelated",
+        "Economic rights are secondary",
+        "Cultural relativism prevails"
+      ],
+      "correct": 1,
+      "explanation": "The Vienna Declaration (World Conference on Human Rights, 1993) affirmed that 'All human rights are universal, indivisible and interdependent and interrelated.' It rejected the hierarchy of rights."
+    },
+    {
+      "id": 306,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "What is OHCHR?",
+      "options": [
+        "Organization for Human and Civil Rights",
+        "Office of the High Commissioner for Human Rights",
+        "Office for Humanitarian Crisis Response",
+        "Organization of Human Rights Commissioners"
+      ],
+      "correct": 1,
+      "explanation": "OHCHR is the UN Office of the High Commissioner for Human Rights, established in 1993. It's the principal UN office for human rights, headed by the High Commissioner."
+    },
+    {
+      "id": 307,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What is a 'General Comment' or 'General Recommendation'?",
+      "options": [
+        "Casual advice from the UN",
+        "Authoritative interpretation of treaty provisions by treaty bodies",
+        "Comments from the general public",
+        "Recommendations that are legally binding"
+      ],
+      "correct": 1,
+      "explanation": "General Comments/Recommendations are authoritative interpretations of treaty provisions issued by treaty bodies. While not legally binding, they carry significant weight in interpreting state obligations."
+    },
+    {
+      "id": 308,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "intermediate",
+      "question": "What are 'concluding observations' in the UN treaty body system?",
+      "options": [
+        "Final conclusions of court cases",
+        "Treaty body's assessment of a state's compliance after reviewing its periodic report",
+        "Observations at the end of treaty negotiations",
+        "Comments from NGOs"
+      ],
+      "correct": 1,
+      "explanation": "Concluding observations are issued by treaty bodies after examining a state party's periodic report. They identify concerns and make recommendations for improving implementation."
+    },
+    {
+      "id": 309,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "advanced",
+      "question": "What is an 'individual communication' to a UN treaty body?",
+      "options": [
+        "Letter from one individual to another",
+        "Complaint mechanism allowing individuals to bring claims of treaty violations",
+        "Communication from a single government",
+        "One-way communication"
+      ],
+      "correct": 1,
+      "explanation": "Individual communications are complaints brought by individuals claiming violation of treaty rights. Most UN treaties have Optional Protocols enabling this quasi-judicial procedure."
+    },
+    {
+      "id": 310,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What is 'R2P' or 'Responsibility to Protect'?",
+      "options": [
+        "Right to privacy",
+        "Framework for international response to genocide, war crimes, ethnic cleansing, crimes against humanity",
+        "Regional treaty on protection",
+        "Religious freedom principle"
+      ],
+      "correct": 1,
+      "explanation": "R2P (2005 World Summit) holds that states have primary responsibility to protect their populations from atrocity crimes. If they fail, the international community may intervene through the Security Council."
+    },
+    {
+      "id": 311,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "intermediate",
+      "question": "What is 'intergenerational equity' in environmental rights?",
+      "options": [
+        "Equal rights between generations of the same family",
+        "Responsibility to preserve the environment for future generations",
+        "Rights of elderly people",
+        "Inheritance rights"
+      ],
+      "correct": 1,
+      "explanation": "Intergenerational equity means present generations must preserve environmental resources and conditions for future generations. It's a key principle linking environmental protection to human rights."
+    },
+    {
+      "id": 312,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "basic",
+      "question": "When did the UN recognize the right to a clean, healthy and sustainable environment?",
+      "options": [
+        "1948",
+        "1972",
+        "2022",
+        "Not yet recognized"
+      ],
+      "correct": 2,
+      "explanation": "In July 2022, the UN General Assembly adopted a resolution declaring access to a clean, healthy and sustainable environment as a universal human right. This was a landmark decision after decades of advocacy."
+    },
+    {
+      "id": 313,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "basic",
+      "question": "What is the EU Charter of Fundamental Rights?",
+      "options": [
+        "Same as the ECHR",
+        "EU's own bill of rights, legally binding since Lisbon Treaty (2009)",
+        "A non-binding declaration",
+        "European Parliament's internal rules"
+      ],
+      "correct": 1,
+      "explanation": "The EU Charter of Fundamental Rights (2000) became legally binding with the Lisbon Treaty (2009). It applies to EU institutions and to member states when implementing EU law."
+    },
+    {
+      "id": 314,
+      "type": "multiple",
+      "category": "european-eu",
+      "difficulty": "intermediate",
+      "question": "What is FRA?",
+      "options": [
+        "Federal Rights Agency",
+        "EU Agency for Fundamental Rights",
+        "French Rights Association",
+        "Freedom and Rights Alliance"
+      ],
+      "correct": 1,
+      "explanation": "FRA (EU Agency for Fundamental Rights, Vienna) provides evidence-based advice on fundamental rights issues in the EU. It assists EU institutions and member states with expertise and data."
+    },
+    {
+      "id": 315,
+      "type": "truefalse",
+      "category": "european-eu",
+      "difficulty": "intermediate",
+      "question": "The EU has acceded to the European Convention on Human Rights.",
+      "correct": false,
+      "explanation": "Despite Article 6(2) TEU requiring EU accession to the ECHR, the CJEU's Opinion 2/13 (2014) found the draft accession agreement incompatible with EU law. Negotiations continue but accession hasn't happened."
+    },
+    {
+      "id": 316,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "advanced",
+      "question": "What did Al-Skeini v. UK establish?",
+      "options": [
+        "Freedom of press",
+        "Extraterritorial application of ECHR when state exercises control",
+        "Right to asylum",
+        "Prohibition of rendition"
+      ],
+      "correct": 1,
+      "explanation": "Al-Skeini v. UK (2011) established that the ECHR applies extraterritorially when a state exercises control and authority over individuals, including in occupied territories like Iraq."
+    },
+    {
+      "id": 317,
+      "type": "multiple",
+      "category": "case-law",
+      "difficulty": "intermediate",
+      "question": "What is the significance of M.S.S. v. Belgium and Greece?",
+      "options": [
+        "Freedom of movement",
+        "Dublin Regulation transfers can violate Articles 3 and 13 if receiving state has inadequate asylum system",
+        "Right to nationality",
+        "Environmental protection"
+      ],
+      "correct": 1,
+      "explanation": "M.S.S. v. Belgium and Greece (2011) found that Belgium violated Articles 3 and 13 by transferring an asylum seeker to Greece under Dublin, where detention and living conditions were inhuman."
+    },
+    {
+      "id": 318,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "advanced",
+      "question": "What does the ICJ's advisory opinion on the 'Wall' in Palestine (2004) address?",
+      "options": [
+        "Building regulations",
+        "Legality of Israel's barrier in occupied Palestinian territory under international law",
+        "Property disputes",
+        "Immigration controls"
+      ],
+      "correct": 1,
+      "explanation": "The ICJ advisory opinion (2004) found the construction of the wall in occupied Palestinian territory violated international law, including humanitarian law and human rights obligations."
+    },
+    {
+      "id": 319,
+      "type": "multiple",
+      "category": "contemporary",
+      "difficulty": "intermediate",
+      "question": "What is 'backsliding' in human rights discourse?",
+      "options": [
+        "Returning to earlier positions",
+        "Regression in human rights protection, often in established democracies",
+        "Moving backwards physically",
+        "Withdrawing from treaties"
+      ],
+      "correct": 1,
+      "explanation": "Democratic or human rights backsliding refers to the erosion of democratic norms and human rights protections, often seen in attacks on judicial independence, media freedom, and civil society space."
+    },
+    {
+      "id": 320,
+      "type": "multiple",
+      "category": "rights",
+      "difficulty": "advanced",
+      "question": "What does 'SOGI' stand for in human rights?",
+      "options": [
+        "Social and Geographic Indicators",
+        "Sexual Orientation and Gender Identity",
+        "Standards of Global Implementation",
+        "Sovereignty and Government Independence"
+      ],
+      "correct": 1,
+      "explanation": "SOGI refers to Sexual Orientation and Gender Identity rights. UN bodies have increasingly addressed discrimination based on SOGI, though this remains contested by some states."
+    },
+    {
+      "id": 321,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "basic",
+      "question": "How often does the UPR review each UN member state?",
+      "options": [
+        "Every year",
+        "Every 4.5 years (approximately)",
+        "Every 10 years",
+        "Only once"
+      ],
+      "correct": 1,
+      "explanation": "Each UN member state is reviewed approximately every 4.5 years through the UPR. The fourth cycle began in 2022. States submit reports and receive recommendations from other states."
+    },
+    {
+      "id": 322,
+      "type": "multiple",
+      "category": "un-system",
+      "difficulty": "intermediate",
+      "question": "What are 'treaty bodies' in the UN system?",
+      "options": [
+        "Bodies that draft treaties",
+        "Committees of independent experts that monitor implementation of core human rights treaties",
+        "Courts that adjudicate treaty disputes",
+        "Political bodies of UN member states"
+      ],
+      "correct": 1,
+      "explanation": "Treaty bodies are committees of independent experts (e.g., Human Rights Committee, CESCR) that monitor how states parties implement the core UN human rights treaties through reporting and complaints."
+    },
+    {
+      "id": 323,
+      "type": "multiple",
+      "category": "procedures",
+      "difficulty": "basic",
+      "question": "What is a 'periodic report' under UN human rights treaties?",
+      "options": [
+        "A newspaper published periodically",
+        "Report states must submit regularly describing measures taken to implement treaty rights",
+        "Monthly updates to the Secretary-General",
+        "Reports from NGOs"
+      ],
+      "correct": 1,
+      "explanation": "States parties must submit periodic reports (usually every 4-5 years) to treaty bodies describing legislative, judicial, administrative and other measures they've taken to implement treaty obligations."
+    },
+    {
+      "id": 324,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "intermediate",
+      "question": "What historical document from 1215 is considered an early precursor to human rights?",
+      "options": [
+        "Declaration of Independence",
+        "Magna Carta",
+        "Treaty of Westphalia",
+        "Napoleonic Code"
+      ],
+      "correct": 1,
+      "explanation": "Magna Carta (1215) limited the English king's power and established principles like due process. While not a human rights document per se, it's seen as an important historical precursor to modern rights."
+    },
+    {
+      "id": 325,
+      "type": "multiple",
+      "category": "foundations",
+      "difficulty": "basic",
+      "question": "What was the French Declaration of the Rights of Man and of the Citizen?",
+      "options": [
+        "A UN document",
+        "1789 declaration establishing fundamental rights during the French Revolution",
+        "EU legislation",
+        "International treaty"
+      ],
+      "correct": 1,
+      "explanation": "The French Declaration (1789) proclaimed individual rights and popular sovereignty during the Revolution. It influenced subsequent human rights documents and remains part of French constitutional law."
     }
   ]
 }
