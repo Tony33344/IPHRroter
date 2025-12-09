@@ -667,9 +667,14 @@ function renderErasView(events, eras) {
                     ${previewEvents.map(e => `<span class="era-event-tag">${e.title}</span>`).join('')}
                     ${eraEvents.length > 3 ? `<span class="era-event-tag">+${eraEvents.length - 3} more</span>` : ''}
                 </div>
-                <div class="era-expand-hint">
-                    <i data-lucide="${isExpanded ? 'chevron-up' : 'chevron-down'}"></i>
-                    ${isExpanded ? 'Collapse' : 'Click to expand'}
+                <div class="era-actions">
+                    <button class="era-details-btn" data-era="${era.id}" title="View era details in popup">
+                        <i data-lucide="info"></i> Details
+                    </button>
+                    <div class="era-expand-hint">
+                        <i data-lucide="${isExpanded ? 'chevron-up' : 'chevron-down'}"></i>
+                        ${isExpanded ? 'Collapse' : 'Expand'}
+                    </div>
                 </div>
                 ${isExpanded ? renderEraEventsList(eraEvents) : ''}
             </div>
@@ -705,6 +710,17 @@ function renderErasView(events, eras) {
         });
     });
     
+    // Add details button click handlers
+    container.querySelectorAll('.era-details-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const eraId = btn.dataset.era;
+            const era = eras.find(er => er.id === eraId);
+            const eraEvents = events.filter(ev => ev.year >= era.start && ev.year < era.end);
+            if (era) showEraDetailsModal(era, eraEvents);
+        });
+    });
+    
     lucide.createIcons();
 }
 
@@ -724,6 +740,79 @@ function renderEraEventsList(eraEvents) {
     `;
 }
 
+function showEraDetailsModal(era, eraEvents) {
+    // Group events by type
+    const eventsByType = {};
+    eraEvents.forEach(e => {
+        if (!eventsByType[e.type]) eventsByType[e.type] = [];
+        eventsByType[e.type].push(e);
+    });
+    
+    const typeLabels = {
+        treaty: 'Treaties',
+        institution: 'Institutions',
+        declaration: 'Declarations',
+        event: 'Events',
+        charter: 'Charters',
+        historical: 'Historical'
+    };
+    
+    const content = `
+        <div class="era-modal-content">
+            <div class="era-modal-header" style="border-left: 5px solid ${era.color}">
+                <h2>${era.name}</h2>
+                <div class="era-modal-years">${era.start} – ${era.end === 2030 ? 'Present' : era.end}</div>
+            </div>
+            <div class="era-modal-description">
+                <p>${era.description || 'This era marks a significant period in human rights development.'}</p>
+            </div>
+            <div class="era-modal-stats">
+                <div class="era-stat">
+                    <span class="stat-value">${eraEvents.length}</span>
+                    <span class="stat-label">Total Events</span>
+                </div>
+                ${Object.entries(eventsByType).map(([type, events]) => `
+                    <div class="era-stat">
+                        <span class="stat-value" style="color: ${TIMELINE_COLORS[type]}">${events.length}</span>
+                        <span class="stat-label">${typeLabels[type] || type}</span>
+                    </div>
+                `).join('')}
+            </div>
+            <div class="era-modal-events">
+                <h3>Key Events</h3>
+                <div class="era-modal-events-grid">
+                    ${eraEvents.slice(0, 12).map(e => `
+                        <div class="era-modal-event" onclick="showTimelineDetail(App.data.timelineEvents.find(ev => ev.id === '${e.id}'))">
+                            <span class="event-year" style="color: ${TIMELINE_COLORS[e.type]}">${e.year}</span>
+                            <span class="event-title">${e.title}</span>
+                        </div>
+                    `).join('')}
+                </div>
+                ${eraEvents.length > 12 ? `<p class="more-events">And ${eraEvents.length - 12} more events...</p>` : ''}
+            </div>
+        </div>
+        <style>
+            .era-modal-content { max-width: 700px; }
+            .era-modal-header { padding: 15px 20px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 20px; }
+            .era-modal-header h2 { margin: 0 0 5px 0; font-size: 1.5rem; }
+            .era-modal-years { color: var(--text-secondary); font-size: 0.95rem; }
+            .era-modal-description { margin-bottom: 20px; line-height: 1.6; }
+            .era-modal-stats { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 25px; padding: 15px; background: var(--bg-tertiary); border-radius: 8px; }
+            .era-stat { text-align: center; }
+            .era-stat .stat-value { display: block; font-size: 1.5rem; font-weight: 700; }
+            .era-stat .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+            .era-modal-events h3 { margin-bottom: 15px; font-size: 1.1rem; }
+            .era-modal-events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+            .era-modal-event { display: flex; gap: 10px; padding: 10px; background: var(--bg-secondary); border-radius: 6px; cursor: pointer; transition: background 0.15s; }
+            .era-modal-event:hover { background: var(--primary-light); color: white; }
+            .era-modal-event .event-year { font-weight: 700; min-width: 40px; }
+            .era-modal-event .event-title { font-size: 0.85rem; }
+            .more-events { color: var(--text-muted); font-style: italic; margin-top: 15px; }
+        </style>
+    `;
+    openModal(content);
+}
+
 // =====================================================
 // ZOOM TIMELINE VIEW (IMPROVED)
 // =====================================================
@@ -738,27 +827,27 @@ function renderZoomTimeline(events, eras) {
     // Sort events by year
     const sortedEvents = [...events].sort((a, b) => a.year - b.year);
     
-    // Setup dimensions - INCREASED HEIGHT + support for fullscreen container
+    // Setup dimensions - use zoom level to spread events
     const containerWidth = container.clientWidth || 1200;
-    const margin = { top: 80, right: 60, bottom: 80, left: 60 };
-    const contentWidth = Math.max(4000, sortedEvents.length * 100);
-    // If the timeline section is in fullscreen mode, use more vertical space
-    const timelineSection = document.getElementById('timeline');
-    const isFullscreen = timelineSection?.classList.contains('timeline-fullscreen');
-    const baseHeight = isFullscreen ? window.innerHeight - 160 : 650;
-    const height = Math.max(500, baseHeight);
+    const margin = { top: 40, right: 60, bottom: 40, left: 60 };
+    const zoom = App.state.timeline.zoom || 1;
+    const baseWidth = 4000;
+    const contentWidth = Math.max(baseWidth * zoom, sortedEvents.length * 50 * zoom);
+    const height = 500;
     const innerHeight = height - margin.top - margin.bottom;
+    const centerY = innerHeight / 2; // Axis in the MIDDLE
     
     // Clear existing
     container.innerHTML = '';
     
-    // Create wrapper for zoom/pan
+    // Create wrapper for horizontal scroll
     const svgWrapper = d3.select(container)
         .append('div')
         .attr('class', 'timeline-svg-wrapper')
         .style('width', '100%')
         .style('height', height + 'px')
-        .style('overflow', 'auto')
+        .style('overflow-x', 'auto')
+        .style('overflow-y', 'hidden')
         .style('cursor', 'grab');
     
     // Create SVG
@@ -773,17 +862,18 @@ function renderZoomTimeline(events, eras) {
         .attr('class', 'timeline-main-group')
         .attr('transform', `translate(${margin.left}, ${margin.top})`);
     
-    // Time scale
-    const timeExtent = d3.extent(sortedEvents, d => d.year);
+    // Time scale - fixed range from 1200 to 2030
+    const minYear = 1200;
+    const maxYear = 2030;
     const xScale = d3.scaleLinear()
-        .domain([timeExtent[0] - 30, timeExtent[1] + 30])
+        .domain([minYear, maxYear])
         .range([0, contentWidth - margin.left - margin.right]);
     
     // Store scale for zoom
     App.state.timeline.xScale = xScale;
     App.state.timeline.originalXScale = xScale.copy();
     
-    // Draw era backgrounds
+    // Draw era backgrounds (full height)
     const eraGroup = mainGroup.append('g').attr('class', 'era-backgrounds');
     eras.forEach(era => {
         const x1 = Math.max(0, xScale(era.start));
@@ -795,48 +885,51 @@ function renderZoomTimeline(events, eras) {
                 .attr('width', x2 - x1)
                 .attr('height', innerHeight)
                 .attr('fill', era.color)
-                .attr('opacity', 0.08)
+                .attr('opacity', 0.1)
                 .attr('class', 'era-bg');
             
+            // Era name at top
             eraGroup.append('text')
                 .attr('x', (x1 + x2) / 2)
-                .attr('y', 25)
+                .attr('y', 15)
                 .attr('text-anchor', 'middle')
-                .attr('font-size', '13px')
+                .attr('font-size', '11px')
                 .attr('font-weight', '600')
                 .attr('fill', era.color)
+                .attr('opacity', 0.8)
                 .attr('class', 'era-label')
                 .text(era.name);
         }
     });
     
-    // Draw timeline axis
-    const xAxis = d3.axisBottom(xScale)
-        .tickFormat(d => d)
-        .tickValues(d3.range(Math.ceil(timeExtent[0] / 25) * 25, timeExtent[1] + 25, 25));
-    
-    const axisGroup = mainGroup.append('g')
-        .attr('class', 'timeline-axis')
-        .attr('transform', `translate(0, ${innerHeight/2})`)
-        .call(xAxis);
-    
-    axisGroup.selectAll('text')
-        .attr('font-size', '12px')
-        .attr('font-weight', '500')
-        .attr('fill', 'var(--text-secondary)');
-    
-    axisGroup.selectAll('line, path')
-        .attr('stroke', 'var(--gray-300)');
-    
-    // Draw main line
+    // Draw main horizontal line in the MIDDLE
     mainGroup.append('line')
         .attr('class', 'timeline-main-line')
         .attr('x1', 0)
         .attr('x2', contentWidth - margin.left - margin.right)
-        .attr('y1', innerHeight/2)
-        .attr('y2', innerHeight/2)
+        .attr('y1', centerY)
+        .attr('y2', centerY)
         .attr('stroke', 'var(--gray-400)')
-        .attr('stroke-width', 3);
+        .attr('stroke-width', 2);
+    
+    // Draw axis with years - BELOW the center line so they're visible
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(d => d)
+        .tickValues(d3.range(1200, 2050, 25)); // Every 25 years for more detail
+    
+    const axisGroup = mainGroup.append('g')
+        .attr('class', 'timeline-axis')
+        .attr('transform', `translate(0, ${centerY + 5})`) // Slightly below center
+        .call(xAxis);
+    
+    axisGroup.selectAll('text')
+        .attr('font-size', '11px')
+        .attr('font-weight', '600')
+        .attr('fill', 'var(--text-primary)')
+        .attr('dy', '1.2em'); // Push text down so it's visible
+    
+    axisGroup.select('.domain').attr('stroke', 'var(--gray-400)').attr('stroke-width', 2);
+    axisGroup.selectAll('.tick line').attr('stroke', 'var(--gray-400)').attr('y2', 8);
     
     // Calculate positions to avoid overlap
     const positions = calculateEventPositions(sortedEvents, xScale, innerHeight);
@@ -853,16 +946,16 @@ function renderZoomTimeline(events, eras) {
         .attr('data-event-id', d => d.id)
         .style('cursor', 'pointer');
     
-    // Draw connecting lines to axis
+    // Draw connecting lines from circle to CENTER line
     eventGroups.append('line')
         .attr('class', 'connector')
         .attr('x1', 0)
         .attr('y1', 0)
         .attr('x2', 0)
-        .attr('y2', (d, i) => innerHeight/2 - positions[i].y)
+        .attr('y2', (d, i) => centerY - positions[i].y)
         .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
-        .attr('stroke-width', 2)
-        .attr('stroke-opacity', 0.4);
+        .attr('stroke-width', 1.5)
+        .attr('stroke-opacity', 0.5);
     
     // Draw circles
     eventGroups.append('circle')
@@ -883,33 +976,36 @@ function renderZoomTimeline(events, eras) {
         .attr('fill', 'white')
         .text(d => d.year);
     
-    // Draw labels with background (hidden by default, toggled with button)
+    // Draw labels - position based on whether event is above or below center
     const labelGroups = eventGroups.append('g')
         .attr('class', 'label-group')
-        .attr('transform', (d, i) => `translate(0, ${positions[i].y < innerHeight/2 ? -28 : 28})`)
+        .attr('transform', (d, i) => {
+            const isAbove = positions[i].y < centerY;
+            return `translate(0, ${isAbove ? -18 : 18})`;
+        })
         .style('opacity', App.state.timeline.labelsVisible ? 1 : 0)
         .style('pointer-events', 'none');
     
     labelGroups.append('rect')
         .attr('class', 'label-bg')
-        .attr('x', -65)
-        .attr('y', -12)
-        .attr('width', 130)
-        .attr('height', 24)
-        .attr('rx', 4)
+        .attr('x', -48)
+        .attr('y', -8)
+        .attr('width', 96)
+        .attr('height', 16)
+        .attr('rx', 3)
         .attr('fill', 'var(--bg-primary)')
         .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6B7280')
-        .attr('stroke-width', 1.5)
+        .attr('stroke-width', 1)
         .attr('opacity', 0.95);
     
     labelGroups.append('text')
         .attr('class', 'event-label')
         .attr('text-anchor', 'middle')
         .attr('dy', '0.35em')
-        .attr('font-size', '10px')
+        .attr('font-size', '8px')
         .attr('font-weight', '600')
         .attr('fill', 'var(--text-primary)')
-        .text(d => truncateText(d.title, 20));
+        .text(d => truncateText(d.title, 14));
     
     // Add interactions - NO transitions, simple class toggle only
     eventGroups
@@ -925,9 +1021,6 @@ function renderZoomTimeline(events, eras) {
             
             // Show tooltip
             showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
-        })
-        .on('mousemove', function(event) {
-            updateTooltipPosition(event);
         })
         .on('mouseleave', function(event, d) {
             // Remove highlight immediately
@@ -1060,12 +1153,25 @@ function setupEraQuickNav(container, xScale) {
 }
 
 function filterZoomTimeline(filter) {
+    const isAll = filter === 'all';
+
+    // Fade circles / stems group
     d3.selectAll('.timeline-event')
         .transition()
         .duration(300)
         .style('opacity', d => {
-            if (filter === 'all') return 1;
-            return d.type === filter ? 1 : 0.15;
+            if (isAll) return 1;
+            return d.type === filter ? 1 : 0.07; // much lighter background
+        });
+
+    // Fade label groups as well so only selected type is clearly readable
+    d3.selectAll('.label-group')
+        .transition()
+        .duration(300)
+        .style('opacity', function(d) {
+            // Some label-groups are used in fullscreen; guard against missing data
+            if (!d || isAll) return App.state.timeline.labelsVisible ? 1 : 0;
+            return d.type === filter && App.state.timeline.labelsVisible ? 1 : 0.05;
         });
 }
 
@@ -1089,12 +1195,13 @@ function renderStackedView(events) {
         { type: 'historical', label: 'Historical', color: TIMELINE_COLORS.historical }
     ];
     
-    // Calculate time scale
-    const timeExtent = d3.extent(events, d => d.year);
-    const width = 2000;
+    // Calculate time scale - FIXED: Use proper year range 1940-2025
+    const minYear = 1940;
+    const maxYear = 2026;
+    const width = 3000; // Wider for better spacing
     const xScale = d3.scaleLinear()
-        .domain([timeExtent[0] - 20, timeExtent[1] + 20])
-        .range([50, width - 50]);
+        .domain([minYear, maxYear])
+        .range([80, width - 80]);
     
     container.innerHTML = `
         <div class="stacked-tracks-container" style="overflow-x: auto;">
@@ -1109,22 +1216,36 @@ function renderStackedView(events) {
                         <div class="stacked-track-label">${track.label} (${trackEvents.length})</div>
                         <div class="stacked-track-line" style="min-width: ${width}px;">
                             <div class="stacked-track-axis"></div>
-                            ${trackEvents.map(event => `
-                                <div class="stacked-event ${event.highlight ? 'highlight' : ''}" 
-                                     data-event-id="${event.id}"
-                                     style="left: ${xScale(event.year)}px;"
-                                     title="${event.year}: ${event.title}">
-                                </div>
-                            `).join('')}
+                            ${trackEvents.map((event, index) => {
+                                // Distribute labels across 4 rows: above/below row1 + above/below row2
+                                const pattern = [
+                                    { pos: 'above', row: 1 },
+                                    { pos: 'below', row: 1 },
+                                    { pos: 'above', row: 2 },
+                                    { pos: 'below', row: 2 }
+                                ];
+                                const cfg = pattern[index % pattern.length];
+                                const baseText = `${event.year} – ${event.title}`;
+                                const labelText = truncateText(baseText, 24);
+                                const labelClass = `stacked-event-label-${cfg.pos} stacked-event-label-row${cfg.row}`;
+                                return `
+                                    <div class="stacked-event ${event.highlight ? 'highlight' : ''}" 
+                                         data-event-id="${event.id}"
+                                         style="left: ${xScale(event.year)}px;"
+                                         title="${event.year}: ${event.title}">
+                                        <div class="stacked-event-label ${labelClass}">${labelText}</div>
+                                    </div>
+                                `;
+                            }).join('')}
                         </div>
                     </div>
                 `;
             }).join('')}
             
-            <!-- Time axis -->
-            <div class="stacked-axis" style="min-width: ${width}px; padding: 10px 0; display: flex; justify-content: space-between;">
-                ${d3.range(Math.ceil(timeExtent[0] / 50) * 50, timeExtent[1] + 50, 50).map(year => `
-                    <span style="font-size: 12px; color: var(--text-muted); position: absolute; left: ${xScale(year)}px;">${year}</span>
+            <!-- Time axis - FIXED: proper year range -->
+            <div class="stacked-axis" style="min-width: ${width}px; padding: 15px 0; position: relative; height: 40px;">
+                ${d3.range(1940, 2030, 10).map(year => `
+                    <span style="font-size: 12px; font-weight: 600; color: var(--text-secondary); position: absolute; left: ${xScale(year)}px; transform: translateX(-50%);">${year}</span>
                 `).join('')}
             </div>
         </div>
@@ -1147,37 +1268,102 @@ function renderStackedView(events) {
 function calculateEventPositions(events, xScale, height) {
     const positions = [];
     const usedPositions = [];
-    const minDistance = 100;
+    const minXDistance = 55; // Minimum horizontal distance between circles
+    const centerY = height / 2; // Center line
+    const minY = 40;            // Top padding
+    const maxY = height - 40;   // Bottom padding
     
     events.forEach((event, i) => {
         const x = xScale(event.year);
         let y;
         let level = 0;
         
-        // Find a y position that doesn't overlap
-        const baseOffset = 100;
-        const levelHeight = 60;
-        
-        // Alternate above/below axis
+        // Alternate above/below center line
         const above = i % 2 === 0;
+        const baseOffset = 60; // Distance from center line
+        const levelHeight = 55;
+        const maxLevels = 5;
         
-        // Check for overlaps and adjust level
-        for (let l = 0; l < 3; l++) {
-            y = above ? height/2 - baseOffset - (l * levelHeight) : height/2 + baseOffset + (l * levelHeight);
+        // Find a level that doesn't overlap
+        for (let l = 0; l < maxLevels; l++) {
+            if (above) {
+                y = centerY - baseOffset - (l * levelHeight);
+            } else {
+                y = centerY + baseOffset + (l * levelHeight);
+            }
+            // Clamp to safe vertical range
+            y = Math.max(minY, Math.min(maxY, y));
             
             const hasOverlap = usedPositions.some(pos => {
-                return Math.abs(pos.x - x) < minDistance && Math.abs(pos.y - y) < 40;
+                return Math.abs(pos.x - x) < minXDistance && Math.abs(pos.y - y) < 35;
             });
             
-            if (!hasOverlap) break;
-            level++;
+            if (!hasOverlap) {
+                level = l;
+                break;
+            }
+            level = l;
         }
+        // Small horizontal offset per level to avoid perfect vertical stacks
+        const horizontalJitter = (above ? -1 : 1) * (level * 6);
+        const finalX = x + horizontalJitter;
         
-        positions.push({ x, y });
-        usedPositions.push({ x, y });
+        positions.push({ x: finalX, y, level, centerY });
+        usedPositions.push({ x: finalX, y });
     });
     
     return positions;
+}
+
+// Calculate label positions with collision avoidance
+function calculateLabelPositions(events, circlePositions, height) {
+    const labelWidth = 115;
+    const labelHeight = 22;
+    const labelPositions = [];
+    const usedLabelPositions = [];
+    
+    events.forEach((event, i) => {
+        const circlePos = circlePositions[i];
+        const above = circlePos.y < height / 2;
+        
+        // Start position: directly above/below the circle
+        let labelX = circlePos.x;
+        let labelY = above ? circlePos.y - 35 : circlePos.y + 35;
+        
+        // Check for overlaps with existing labels and adjust
+        let attempts = 0;
+        const maxAttempts = 20;
+        
+        while (attempts < maxAttempts) {
+            const hasOverlap = usedLabelPositions.some(pos => {
+                return Math.abs(pos.x - labelX) < labelWidth && Math.abs(pos.y - labelY) < labelHeight;
+            });
+            
+            if (!hasOverlap) break;
+            
+            // Try different positions: alternate left/right, then move up/down
+            const step = Math.floor(attempts / 2) + 1;
+            const direction = attempts % 2 === 0 ? -1 : 1;
+            
+            if (attempts < 10) {
+                // First try horizontal shifts
+                labelX = circlePos.x + (direction * step * 60);
+            } else {
+                // Then try vertical shifts
+                labelX = circlePos.x + (direction * ((attempts - 10) % 5) * 40);
+                labelY = above ? 
+                    circlePos.y - 35 - (Math.floor((attempts - 10) / 2) * 25) :
+                    circlePos.y + 35 + (Math.floor((attempts - 10) / 2) * 25);
+            }
+            
+            attempts++;
+        }
+        
+        labelPositions.push({ x: labelX, y: labelY });
+        usedLabelPositions.push({ x: labelX, y: labelY });
+    });
+    
+    return labelPositions;
 }
 
 function truncateText(text, maxLength) {
@@ -1253,67 +1439,76 @@ function setupTimelineZoom(container, svgElement, xScale, contentWidth) {
     const wrapper = container.querySelector('.timeline-svg-wrapper');
     const fullscreenBtn = document.getElementById('timelineFullscreen');
     
-    // Smooth zoom with smaller increments
-    const zoomStep = 1.15; // 15% per click instead of 20%
+    // Zoom parameters
+    const zoomStep = 1.3; // 30% per click for more noticeable zoom
     const minZoom = 0.5;
-    const maxZoom = 4;
+    const maxZoom = 5;
     
-    function updateTimelineZoom(animate = true) {
-        const zoom = App.state.timeline.zoom;
-        
-        if (svgElement) {
-            // Horizontal-only zoom: scale width, keep height constant
-            const newWidth = contentWidth * zoom;
-            
-            if (animate) {
-                svgElement.style.transition = 'width 0.25s ease-out';
-            } else {
-                svgElement.style.transition = 'none';
-            }
-            
-            svgElement.setAttribute('width', newWidth);
-            
-            // Scale the main group horizontally only
-            const mainGroup = svgElement.querySelector('.timeline-main-group');
-            if (mainGroup) {
-                mainGroup.style.transform = `scaleX(${zoom})`;
-                mainGroup.style.transformOrigin = 'left center';
-            }
-        }
-        
+    function updateZoomDisplay() {
         if (zoomLevel) {
-            zoomLevel.textContent = Math.round(zoom * 100) + '%';
+            zoomLevel.textContent = Math.round(App.state.timeline.zoom * 100) + '%';
         }
     }
     
+    function applyZoom() {
+        // Re-render the timeline with new zoom level
+        const events = App.data.timelineEvents || [];
+        // Get eras from the loaded metadata
+        const eras = App.data.eras || [
+            { id: 'origins', name: 'Origins', start: 1215, end: 1944, color: '#6B7280' },
+            { id: 'foundation', name: 'Foundation', start: 1945, end: 1966, color: '#3B82F6' },
+            { id: 'expansion', name: 'Expansion', start: 1966, end: 1990, color: '#10B981' },
+            { id: 'postcold', name: 'Post-Cold War', start: 1990, end: 2006, color: '#8B5CF6' },
+            { id: 'modern', name: 'Modern', start: 2006, end: 2030, color: '#F59E0B' }
+        ];
+        
+        // Get current scroll position as percentage
+        const currentWrapper = container.querySelector('.timeline-svg-wrapper');
+        const scrollPercent = currentWrapper ? 
+            currentWrapper.scrollLeft / Math.max(1, currentWrapper.scrollWidth - currentWrapper.clientWidth) : 0;
+        
+        // Re-render
+        renderZoomTimeline(events, eras);
+        
+        // Restore scroll position
+        setTimeout(() => {
+            const newWrapper = container.querySelector('.timeline-svg-wrapper');
+            if (newWrapper && newWrapper.scrollWidth > newWrapper.clientWidth) {
+                const newScrollLeft = scrollPercent * (newWrapper.scrollWidth - newWrapper.clientWidth);
+                newWrapper.scrollLeft = newScrollLeft;
+            }
+        }, 50);
+        
+        updateZoomDisplay();
+    }
+    
     zoomIn?.addEventListener('click', () => {
-        const oldZoom = App.state.timeline.zoom;
-        App.state.timeline.zoom = Math.min(oldZoom * zoomStep, maxZoom);
-        updateTimelineZoom();
+        App.state.timeline.zoom = Math.min(App.state.timeline.zoom * zoomStep, maxZoom);
+        applyZoom();
     });
     
     zoomOut?.addEventListener('click', () => {
-        const oldZoom = App.state.timeline.zoom;
-        App.state.timeline.zoom = Math.max(oldZoom / zoomStep, minZoom);
-        updateTimelineZoom();
+        App.state.timeline.zoom = Math.max(App.state.timeline.zoom / zoomStep, minZoom);
+        applyZoom();
     });
     
     zoomReset?.addEventListener('click', () => {
         App.state.timeline.zoom = 1;
-        updateTimelineZoom();
+        applyZoom();
     });
     
-    // Mouse wheel for zoom (plain wheel), Shift+wheel handled by setupTimelinePan for panning
+    // Mouse wheel for zoom
     if (wrapper) {
         wrapper.addEventListener('wheel', (e) => {
-            if (e.shiftKey) return; // Shift+wheel is reserved for horizontal pan
+            if (e.shiftKey) return; // Shift+wheel is horizontal pan
             e.preventDefault();
             const delta = e.deltaY > 0 ? (1 / zoomStep) : zoomStep;
-            const oldZoom = App.state.timeline.zoom;
-            App.state.timeline.zoom = Math.max(minZoom, Math.min(maxZoom, oldZoom * delta));
-            updateTimelineZoom(false);
+            App.state.timeline.zoom = Math.max(minZoom, Math.min(maxZoom, App.state.timeline.zoom * delta));
+            applyZoom();
         }, { passive: false });
     }
+    
+    updateZoomDisplay();
     
     // Fullscreen toggle for zoom timeline (CSS-based, not browser API)
     if (fullscreenBtn && !fullscreenBtn.hasAttribute('data-initialized')) {
@@ -1400,6 +1595,443 @@ function showTimelineDetail(event) {
     `;
     openModal(content);
     lucide.createIcons();
+}
+
+// =====================================================
+// FULLSCREEN TIMELINE FUNCTIONS
+// =====================================================
+
+function createFullscreenOverlay() {
+    // Check if already exists
+    if (document.getElementById('timeline-fullscreen-overlay')) {
+        return document.getElementById('timeline-fullscreen-overlay');
+    }
+    
+    const overlay = document.createElement('div');
+    overlay.id = 'timeline-fullscreen-overlay';
+    overlay.className = 'timeline-fullscreen-overlay';
+    
+    overlay.innerHTML = `
+        <div class="fullscreen-header">
+            <h2>Human Rights Timeline - Fullscreen Mode</h2>
+            <div class="fullscreen-controls">
+                <div class="era-quick-nav">
+                    <button data-era="pre1945">Pre-1945</button>
+                    <button data-era="1945-1966" class="active">1945-1966</button>
+                    <button data-era="1966-1990">1966-1990</button>
+                    <button data-era="1990-2006">1990-2006</button>
+                    <button data-era="2006-now">2006-Now</button>
+                </div>
+                <div class="fs-filter-buttons">
+                    <button class="fs-filter-btn active" data-filter="all">All</button>
+                    <button class="fs-filter-btn" data-filter="treaty">Treaties</button>
+                    <button class="fs-filter-btn" data-filter="institution">Institutions</button>
+                    <button class="fs-filter-btn" data-filter="declaration">Declarations</button>
+                    <button class="fs-filter-btn" data-filter="event">Events</button>
+                </div>
+                <button id="fsToggleLabels" class="action-btn">
+                    <i data-lucide="tag"></i>
+                    <span>Labels</span>
+                </button>
+                <button id="exitFullscreen" class="exit-fullscreen-btn">
+                    <i data-lucide="x"></i>
+                    <span>Exit (ESC)</span>
+                </button>
+            </div>
+        </div>
+        <div class="fullscreen-content">
+            <div class="fullscreen-timeline-container" id="fullscreen-timeline-container">
+                <svg id="fullscreen-timeline-svg"></svg>
+            </div>
+        </div>
+        <div class="fullscreen-footer">
+            <div class="timeline-legend">
+                <div class="legend-item"><span class="legend-dot treaty"></span> Treaties</div>
+                <div class="legend-item"><span class="legend-dot institution"></span> Institutions</div>
+                <div class="legend-item"><span class="legend-dot declaration"></span> Declarations</div>
+                <div class="legend-item"><span class="legend-dot event"></span> Events</div>
+                <div class="legend-item"><span class="legend-dot charter"></span> Charters</div>
+                <div class="legend-item"><span class="legend-dot historical"></span> Historical</div>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(overlay);
+    
+    // Initialize icons
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+    
+    return overlay;
+}
+
+function enterTimelineFullscreen() {
+    const overlay = createFullscreenOverlay();
+    overlay.classList.add('active');
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+    
+    // Render timeline in fullscreen container
+    setTimeout(() => {
+        renderFullscreenTimeline();
+    }, 50);
+    
+    // Setup exit button
+    const exitBtn = document.getElementById('exitFullscreen');
+    if (exitBtn && !exitBtn.hasAttribute('data-initialized')) {
+        exitBtn.setAttribute('data-initialized', 'true');
+        exitBtn.addEventListener('click', exitTimelineFullscreen);
+    }
+    
+    // Setup era navigation in fullscreen
+    setupFullscreenEraNav();
+    
+    // Setup labels toggle in fullscreen
+    const fsLabelsBtn = document.getElementById('fsToggleLabels');
+    if (fsLabelsBtn && !fsLabelsBtn.hasAttribute('data-initialized')) {
+        fsLabelsBtn.setAttribute('data-initialized', 'true');
+        fsLabelsBtn.addEventListener('click', () => {
+            App.state.timeline.labelsVisible = !App.state.timeline.labelsVisible;
+            fsLabelsBtn.classList.toggle('active', App.state.timeline.labelsVisible);
+            d3.selectAll('#fullscreen-timeline-svg .label-group')
+                .style('opacity', App.state.timeline.labelsVisible ? 1 : 0);
+        });
+    }
+    
+    // Setup filter buttons in fullscreen
+    setupFullscreenFilters();
+    
+    // ESC key to exit
+    document.addEventListener('keydown', handleFullscreenEsc);
+}
+
+function setupFullscreenFilters() {
+    const buttons = document.querySelectorAll('.fs-filter-btn');
+    buttons.forEach(btn => {
+        if (btn.hasAttribute('data-fs-filter-initialized')) return;
+        btn.setAttribute('data-fs-filter-initialized', 'true');
+        
+        btn.addEventListener('click', function() {
+            const filter = this.dataset.filter;
+            
+            // Update active state
+            buttons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter events in fullscreen
+            d3.selectAll('#fullscreen-timeline-svg .event-group')
+                .style('opacity', d => {
+                    if (filter === 'all') return 1;
+                    return d.type === filter ? 1 : 0.15;
+                });
+        });
+    });
+}
+
+function exitTimelineFullscreen() {
+    const overlay = document.getElementById('timeline-fullscreen-overlay');
+    if (overlay) {
+        overlay.classList.remove('active');
+    }
+    
+    // Restore body scroll
+    document.body.style.overflow = '';
+    
+    // Remove ESC listener
+    document.removeEventListener('keydown', handleFullscreenEsc);
+}
+
+function handleFullscreenEsc(e) {
+    if (e.key === 'Escape') {
+        exitTimelineFullscreen();
+    }
+}
+
+function setupFullscreenEraNav() {
+    const buttons = document.querySelectorAll('#timeline-fullscreen-overlay .era-quick-nav button');
+    buttons.forEach(btn => {
+        if (btn.hasAttribute('data-era-fs-initialized')) return;
+        btn.setAttribute('data-era-fs-initialized', 'true');
+        
+        btn.addEventListener('click', function() {
+            const era = this.dataset.era;
+            zoomFullscreenToEra(era);
+            
+            // Update active state
+            buttons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+}
+
+function zoomFullscreenToEra(era) {
+    const eraRanges = {
+        'pre1945': [1200, 1945],
+        '1945-1966': [1943, 1968],
+        '1966-1990': [1964, 1992],
+        '1990-2006': [1988, 2008],
+        '2006-now': [2004, 2027]
+    };
+    
+    const range = eraRanges[era];
+    if (!range) return;
+    
+    const container = document.getElementById('fullscreen-timeline-container');
+    if (!container) return;
+    
+    // Use the same xScale as the fullscreen timeline and scroll horizontally only
+    const xScale = App.state.timeline.fullscreenXScale;
+    if (!xScale) return;
+    
+    // Scroll so that the center of the era is near the middle of the viewport
+    const centerYear = (range[0] + range[1]) / 2;
+    const targetX = xScale(centerYear);
+    const targetScroll = Math.max(0, targetX - container.clientWidth / 2);
+    container.scrollTo({ left: targetScroll, behavior: 'smooth' });
+}
+
+function renderFullscreenTimeline() {
+    const container = document.getElementById('fullscreen-timeline-container');
+    if (!container) return;
+    
+    const width = container.clientWidth;
+    const height = container.clientHeight || 600;
+    const centerY = height / 2; // Axis in MIDDLE
+    
+    const svg = d3.select('#fullscreen-timeline-svg')
+        .attr('width', width * 3) // Make it scrollable
+        .attr('height', height);
+    
+    // Clear existing
+    svg.selectAll('*').remove();
+    
+    // Get timeline data
+    const events = App.data.timelineEvents || [];
+    if (!events.length) return;
+    
+    // Create main group
+    const mainGroup = svg.append('g').attr('class', 'main-group');
+    
+    // Scales - FULL RANGE from 1200 to 2030
+    const xScale = d3.scaleLinear()
+        .domain([1200, 2030])
+        .range([80, width * 3 - 80]);
+
+    // Store scale for era navigation
+    App.state.timeline.fullscreenXScale = xScale;
+    
+    // Era backgrounds - include Origins era
+    const eras = [
+        { start: 1200, end: 1945, color: 'rgba(107,114,128,0.08)', name: 'Origins' },
+        { start: 1945, end: 1966, color: 'rgba(59,130,246,0.12)', name: 'Foundation' },
+        { start: 1966, end: 1990, color: 'rgba(139,92,246,0.1)', name: 'Expansion' },
+        { start: 1990, end: 2006, color: 'rgba(16,185,129,0.1)', name: 'Post-Cold War' },
+        { start: 2006, end: 2030, color: 'rgba(245,158,11,0.1)', name: 'Modern' }
+    ];
+    
+    eras.forEach(era => {
+        const x1 = xScale(era.start);
+        const x2 = xScale(era.end);
+        
+        mainGroup.append('rect')
+            .attr('x', x1)
+            .attr('y', 30)
+            .attr('width', x2 - x1)
+            .attr('height', height - 60)
+            .attr('fill', era.color);
+        
+        mainGroup.append('text')
+            .attr('x', (x1 + x2) / 2)
+            .attr('y', 35)
+            .attr('text-anchor', 'middle')
+            .attr('font-size', '12px')
+            .attr('font-weight', '600')
+            .attr('fill', 'var(--text-secondary)')
+            .text(era.name);
+    });
+    
+    // X-axis in the MIDDLE with year ticks
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(d => d)
+        .tickValues(d3.range(1200, 2050, 50));
+    
+    const axisGroup = mainGroup.append('g')
+        .attr('class', 'x-axis')
+        .attr('transform', `translate(0, ${centerY})`)
+        .call(xAxis);
+    
+    axisGroup.selectAll('text')
+        .attr('fill', 'var(--text-secondary)')
+        .attr('font-size', '10px')
+        .attr('font-weight', '500');
+    axisGroup.selectAll('line, path')
+        .attr('stroke', 'var(--gray-300)');
+    
+    // Main timeline line in MIDDLE
+    mainGroup.append('line')
+        .attr('class', 'center-line')
+        .attr('x1', 80)
+        .attr('x2', width * 3 - 80)
+        .attr('y1', centerY)
+        .attr('y2', centerY)
+        .attr('stroke', 'var(--gray-400)')
+        .attr('stroke-width', 2);
+    
+    // Calculate Y positions - alternate above/below center with multiple levels
+    const eventPositions = [];
+    const usedPositions = [];
+    events.forEach((event, i) => {
+        const x = xScale(event.year);
+        const above = i % 2 === 0;
+        let y;
+        // Find non-overlapping position
+        const baseOffset = 70;
+        const levelHeight = 55;
+        const maxLevels = 5;
+        for (let level = 0; level < maxLevels; level++) {
+            if (above) {
+                y = centerY - baseOffset - level * levelHeight;
+            } else {
+                y = centerY + baseOffset + level * levelHeight;
+            }
+            const hasOverlap = usedPositions.some(pos => 
+                Math.abs(pos.x - x) < 50 && Math.abs(pos.y - y) < 40
+            );
+            if (!hasOverlap) {
+                // Slight horizontal jitter per level to avoid straight columns
+                const jitter = (above ? -1 : 1) * (level * 6);
+                const finalX = x + jitter;
+                eventPositions.push({ x: finalX, y });
+                usedPositions.push({ x: finalX, y });
+                return;
+            }
+        }
+        // Fallback if everything is occupied
+        eventPositions.push({ x, y: above ? centerY - baseOffset : centerY + baseOffset });
+        usedPositions.push({ x, y: above ? centerY - baseOffset : centerY + baseOffset });
+    });
+    
+    // Event groups
+    const eventGroups = mainGroup.selectAll('.event-group')
+        .data(events)
+        .join('g')
+        .attr('class', 'event-group')
+        .attr('transform', (d, i) => `translate(${eventPositions[i].x}, ${eventPositions[i].y})`);
+    
+    // Vertical lines to center
+    eventGroups.append('line')
+        .attr('class', 'event-stem')
+        .attr('x1', 0)
+        .attr('x2', 0)
+        .attr('y1', 0)
+        .attr('y2', (d, i) => centerY - eventPositions[i].y)
+        .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6b7280')
+        .attr('stroke-width', 1.5)
+        .attr('opacity', 0.5);
+    
+    // Circles - NO TRANSITIONS
+    const circles = eventGroups.append('circle')
+        .attr('class', 'event-circle')
+        .attr('r', 10)
+        .attr('fill', d => TIMELINE_COLORS[d.type] || '#6b7280')
+        .attr('stroke', 'white')
+        .attr('stroke-width', 2);
+    
+    // Hover handling - FIXED
+    circles.on('mouseenter', function(event, d) {
+        if (window.tooltipHideTimeout) {
+            clearTimeout(window.tooltipHideTimeout);
+            window.tooltipHideTimeout = null;
+        }
+        d3.select(this).classed('highlighted', true);
+        showTimelineTooltip(event, d, TIMELINE_COLORS[d.type]);
+    })
+    .on('mouseleave', function() {
+        d3.select(this).classed('highlighted', false);
+        window.tooltipHideTimeout = setTimeout(() => {
+            hideTimelineTooltip();
+        }, 150);
+    })
+    .on('click', function(event, d) {
+        event.stopPropagation();
+        hideTimelineTooltip();
+        showTimelineDetail(d);
+    });
+    
+    // Labels - position based on above/below center
+    const labelGroups = eventGroups.append('g')
+        .attr('class', 'label-group')
+        .attr('transform', (d, i) => {
+            const isAbove = eventPositions[i].y < centerY;
+            return `translate(0, ${isAbove ? -16 : 16})`;
+        })
+        .style('opacity', App.state.timeline.labelsVisible ? 1 : 0)
+        .style('pointer-events', 'none');
+    
+    labelGroups.append('rect')
+        .attr('class', 'label-bg')
+        .attr('x', -45)
+        .attr('y', -8)
+        .attr('width', 90)
+        .attr('height', 16)
+        .attr('rx', 3)
+        .attr('fill', 'var(--bg-primary)')
+        .attr('stroke', d => TIMELINE_COLORS[d.type] || '#6b7280')
+        .attr('stroke-width', 1)
+        .attr('opacity', 0.95);
+    
+    labelGroups.append('text')
+        .attr('class', 'event-label')
+        .attr('text-anchor', 'middle')
+        .attr('dy', '0.35em')
+        .attr('font-size', '8px')
+        .attr('font-weight', '600')
+        .attr('fill', 'var(--text-primary)')
+        .text(d => truncateText(d.title, 12));
+}
+
+function calculateFullscreenEventPositions(events, xScale, yCenter, height) {
+    const positions = [];
+    const usedSpaces = [];
+    const minGap = 50;
+    
+    events.forEach((event, index) => {
+        const x = xScale(new Date(event.year, event.month || 0, event.day || 1));
+        
+        // Alternate above/below center line
+        let baseY = index % 2 === 0 ? yCenter - 100 : yCenter + 100;
+        let y = baseY;
+        
+        // Check for overlaps and adjust
+        let attempts = 0;
+        while (attempts < 8) {
+            let hasOverlap = false;
+            for (const used of usedSpaces) {
+                if (Math.abs(used.x - x) < minGap && Math.abs(used.y - y) < minGap) {
+                    hasOverlap = true;
+                    break;
+                }
+            }
+            
+            if (!hasOverlap) break;
+            
+            // Adjust Y further from center
+            y += (baseY < yCenter ? -40 : 40);
+            
+            // Clamp to bounds
+            if (y < 80) y = yCenter + 100 + (attempts * 40);
+            if (y > height - 100) y = yCenter - 100 - (attempts * 40);
+            
+            attempts++;
+        }
+        
+        usedSpaces.push({ x, y });
+        positions.push({ x, y });
+    });
+    
+    return positions;
 }
 
 // =====================================================
